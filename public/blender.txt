@@ -1,0 +1,14 @@
+///////////////////////////////////////////////////// 	BLENDER 	//////////////////////////////////////////////////////////////
+It can be used for 
+1) 3D Animation		 2) Video Editing
+3) Compositing
+4) Painting
+5) Sculpting
+6) Visual Effects
+7) Cloth Simulation
+8) Particle Simulation
+9) Fluid and smoke simulation
+10) 3D printing
+11) 2D Animation
+12) Real time rendering
+

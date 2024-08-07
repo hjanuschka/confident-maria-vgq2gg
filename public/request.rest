@@ -1,0 +1,9 @@
+GET http://192.168.4.1/manage-on
+
+###
+
+GET http://192.168.4.1/
+
+###
+
+GET http://192.168.4.1/manage-off

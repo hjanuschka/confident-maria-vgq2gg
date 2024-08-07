@@ -1,0 +1,24 @@
+(https://gist-github-com.translate.goog/georgealan/353a548814fe9b82a3a502926c7a42c6?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp#observa%C3%A7%C3%B5es)
+
+preportovat:
+iex " netsh interface portproxy delete v4tov4 listenport=8081 listenaddress=127.0.0.1 "  | out-null ; 
+$WSL_CLIENT = bash.exe -c " ifconfig eth0 | grep 'inet ' " ; 
+$WSL_CLIENT -match ' \d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3} ' ; 
+$WSL_CLIENT = $matches[0] ; 
+iex " netsh interface portproxy add v4tov4 listenport=8081 listenaddress=127.0.0.1 connectport=8081 connectaddress= $WSL_CLIENT "
+
+1) On windows
+    - go the folder where ever your cli's are located (typicall in android_root directory) - to sem dal do path
+    - Start the android emulator
+        - emulator @name (emulator should be up and running) (keep this tab open)
+    - in another tab run, - C:\platform-tools
+        - adb kill-server
+        - adb -a nodaemon server start (default to listening port 5037) (keep this tab open)
+2) On linux (wsl2)
+    - ensure that android studio is closed
+    - ensure that 5037 is not busy (sudo lsof -i -P -n | grep LISTEN)
+    - Run the proxy
+        - socat -d -d TCP-LISTEN:5037,reuseaddr,fork TCP:$(cat /etc/resolv.conf | tail -n1 | cut -d " " -f 2):5037
+    - check if adb are visible
+        - adb devices (it should show running adbs/emulator)
+    - Now you can start android studio

@@ -1,0 +1,30 @@
+{
+  "info": {
+    "title": "Paytrix client authentication",
+    "version": "0.1.0",
+    "description": "Client authentication to access paytrix apis",
+    "termsOfService": "http://paytrix.cloud/terms/",
+    "license": {
+      "name": "Paytrix license 1.0",
+      "url": "https://paytrix.io/licenses/LICENSE-1.0"
+    },
+    "contact": {
+      "name": "Paytrix API Team",
+      "url": "https://paytrix.io/contact",
+      "email": "support@paytrix.io"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://accounts.sandbox.paytrix.cloud",
+      "description": "Sandbox environment server"
+    },
+    {
+      "url": "https://accounts.paytrix.cloud",
+      "description": "Production environment server"
+    }
+  ],
+  "additionalVars": {
+    "realm": "company-name"
+  }
+}

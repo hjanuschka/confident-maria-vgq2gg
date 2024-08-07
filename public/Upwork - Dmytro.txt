@@ -1,0 +1,25 @@
+Anydesk
+226066141
+Apple.2882
+
+gmail
+kornukhdev@gmail.com
+Apple.2882
+
+upwork pass: Apple.2882
+secret answer upwork: Club
+
+The payment date is fixed on the 2nd of each month. $150
+
+UpWork Rules
+
+In general, a few rules on how to work so that your account is not blocked. 
+In general, if a client asks to make a call, then you should tell him that you have bad English and it is better to communicate via chat, (you can only say that your English is bad, so you won’t be able to speak, you can’t ignore trying to reschedule the call to another time and then just ignore it. upwork will immediately understand that you are trying to bypass the call and it will be suspicious.) or if you are confident in your English level and you do not have an Asian accent, then you can make a regular call (not a video call).  But it is imperative to answer the request, you cannot ignore it, as it can be blocked for it.
+
+when you communicate with a client, you cannot lie to him about the work experience.  The profile indicates that you have 2 years of work experience.  Therefore, you always need to write to the client that you have 2+ years of work experience, if you exaggerate and write that you have 3 or 4 years of experience, then upwork can also block your account for this.
+
+you also cannot change the data in the account (level of English, work experience, and so on) nothing can be changed after registration, as this may raise suspicions.
+
+in Bio and in cover later, when you send a proposal, you cannot use the text that you used on a previous account that was blocked, upwork can track this and block the account.
+
+You cannot use a previously used GitHub for another account that has been banned.  They can also find out the GitHub similarity, that is, you cannot transfer information from the old GitHub to the new one.

@@ -1,0 +1,991 @@
+{
+    "title": "Commercial Credit Report",
+    "description": "Custom Report for ABN# 30600424539 ACN# 600424539 - ACCOUNTABILITY ACCESS INTERNATIONAL I.P. PTY LTD + Credit Report + Scored Insights + On File ASIC Extract",
+    "creditReport": {
+        "insolvencyNotices": [],
+        "paymentDefaults": [],
+        "mercantileEnquiries": [],
+        "courtJudgements": [],
+        "creditEnquiries": 176
+    },
+    "organisationExtract": {
+        "additionalDetails": [
+            "This extract contains information derived from the Australian",
+            "Securities and Investment Commission's (ASIC) database under",
+            "section 1274A of the Corporations Act 2001.",
+            "Please advise ASIC of any error or omission which you may identify."
+        ],
+        "billing": {
+            "billingChargeCode": "955A",
+            "billingType": "C"
+        },
+        "companyAddresses": [
+            {
+                "addressStartDate": "17-04-2019",
+                "addressEndDate": null,
+                "addressType": "Registered Office",
+                "address2": "'FRESHWATER PLACE' LEVEL 13",
+                "careOf": null,
+                "city": "SOUTHBANK",
+                "country": null,
+                "detailsType": "Current",
+                "documentNumber": "0EJJ09844",
+                "documentNumberQualifier": null,
+                "postcode": "3006",
+                "state": "VIC",
+                "street": "2 SOUTHBANK BOULEVARD"
+            },
+            {
+                "addressStartDate": "16-04-2019",
+                "addressEndDate": null,
+                "addressType": "Registered Office",
+                "address2": "'FRESHWATER PLACE' L 13",
+                "careOf": null,
+                "city": "SOUTHBANK",
+                "country": "AUSTRALIA",
+                "detailsType": "Current",
+                "documentNumber": null,
+                "documentNumberQualifier": null,
+                "postcode": "3006",
+                "state": null,
+                "street": "2 SOUTHBANK BVD"
+            },
+            {
+                "addressStartDate": "30-06-2014",
+                "addressEndDate": null,
+                "addressType": "Principal Place of Business",
+                "address2": null,
+                "careOf": null,
+                "city": "PRAHRAN",
+                "country": null,
+                "detailsType": "Current",
+                "documentNumber": "2E0697869",
+                "documentNumberQualifier": null,
+                "postcode": "3181",
+                "state": "VIC",
+                "street": "47 AIRLIE AVENUE"
+            }
+        ],
+        "companyOfficeHolders": [
+            {
+                "address2": null,
+                "appointmentDate": "30-06-2014",
+                "ceasedDate": null,
+                "australianBusinessNumber": null,
+                "birthLocation": {
+                    "countryName": null,
+                    "iSO3166CountryCode": null,
+                    "line1": null,
+                    "line2": null,
+                    "line3": null,
+                    "locality": "MELBOURNE",
+                    "postcode": null,
+                    "state": "VIC",
+                    "suburb": null
+                },
+                "address": {
+                    "countryName": null,
+                    "iSO3166CountryCode": null,
+                    "line1": null,
+                    "line2": "47 AIRLIE AVENUE",
+                    "line3": null,
+                    "locality": null,
+                    "postcode": "3181",
+                    "state": "VIC",
+                    "suburb": "PRAHRAN"
+                },
+                "careOf": null,
+                "detailsType": "Current",
+                "documentNumber": "2E0697869",
+                "familyName": "COLLINSON",
+                "givenName1": "MICHAEL",
+                "givenName2": "RICHARD",
+                "givenName3": null,
+                "officerBirthDate": "05-07-1962",
+                "officerName": null,
+                "officerOrganisationNumber": null,
+                "organisationNumberHeading": null,
+                "roleType": "Director",
+                "knownInformation": [
+                    {
+                        "organisationNumber": "082145891",
+                        "detailsType": "Ceased/Former",
+                        "organisationName": "PUBLICIS SAPIENT AUSTRALIA PTY LTD",
+                        "organisationStatus": "Registered",
+                        "creditReport": {
+                            "insolvencyNotices": [],
+                            "paymentDefaults": [],
+                            "mercantileEnquiries": [],
+                            "courtJudgements": [],
+                            "loans": [],
+                            "creditEnquiries": null
+                        },
+                        "highRisk": false,
+                        "criticalAsicDocuments": []
+                    },
+                    {
+                        "organisationNumber": "600422768",
+                        "detailsType": "Current",
+                        "organisationName": "AAI GROUP HOLDINGS PTY LTD",
+                        "organisationStatus": "Registered",
+                        "creditReport": {
+                            "insolvencyNotices": [],
+                            "paymentDefaults": [],
+                            "mercantileEnquiries": [],
+                            "courtJudgements": [],
+                            "loans": [],
+                            "creditEnquiries": null
+                        },
+                        "highRisk": false,
+                        "criticalAsicDocuments": []
+                    },
+                    {
+                        "organisationNumber": "134516724",
+                        "detailsType": "Ceased/Former",
+                        "organisationName": "FUTURE ESTATE AUSTRALIAN RESIDENTIAL PROPERTY FUND",
+                        "organisationStatus": "Registered",
+                        "creditReport": {
+                            "insolvencyNotices": [],
+                            "paymentDefaults": [],
+                            "mercantileEnquiries": [],
+                            "courtJudgements": [],
+                            "loans": [],
+                            "creditEnquiries": null
+                        },
+                        "highRisk": false,
+                        "criticalAsicDocuments": []
+                    },
+                    {
+                        "organisationNumber": "644324461",
+                        "detailsType": "Current",
+                        "organisationName": "ACCOUNTABILITY GROUP HOLDINGS PTY LTD",
+                        "organisationStatus": "Registered",
+                        "creditReport": {
+                            "insolvencyNotices": [],
+                            "paymentDefaults": [],
+                            "mercantileEnquiries": [],
+                            "courtJudgements": [],
+                            "loans": [],
+                            "creditEnquiries": null
+                        },
+                        "highRisk": false,
+                        "criticalAsicDocuments": []
+                    }
+                ],
+                "isBankruptcy": false,
+                "bankruptcyLastfetched": 1623388765
+            },
+            {
+                "address2": null,
+                "appointmentDate": "30-06-2014",
+                "ceasedDate": null,
+                "australianBusinessNumber": null,
+                "birthLocation": {
+                    "countryName": null,
+                    "iSO3166CountryCode": null,
+                    "line1": null,
+                    "line2": null,
+                    "line3": null,
+                    "locality": "MELBOURNE",
+                    "postcode": null,
+                    "state": "VIC",
+                    "suburb": null
+                },
+                "address": {
+                    "countryName": "UNITED STATES",
+                    "iSO3166CountryCode": null,
+                    "line1": "9005 EDGEPARK ROAD VIENNA VIRGINIA",
+                    "line2": null,
+                    "line3": null,
+                    "locality": null,
+                    "postcode": null,
+                    "state": null,
+                    "suburb": "22182"
+                },
+                "careOf": null,
+                "detailsType": "Current",
+                "documentNumber": "2E0756989",
+                "familyName": "MCMILLAN",
+                "givenName1": "ROSLYN",
+                "givenName2": "JANE",
+                "givenName3": null,
+                "officerBirthDate": "22-12-1970",
+                "officerName": null,
+                "officerOrganisationNumber": null,
+                "organisationNumberHeading": null,
+                "roleType": "Director",
+                "knownInformation": [
+                    {
+                        "organisationNumber": "058986146",
+                        "detailsType": "Current",
+                        "organisationName": "ACCOUNTABILITY ACCESS PTY LTD",
+                        "organisationStatus": "Registered",
+                        "creditReport": {
+                            "insolvencyNotices": [],
+                            "paymentDefaults": [],
+                            "mercantileEnquiries": [],
+                            "courtJudgements": [],
+                            "loans": [],
+                            "creditEnquiries": null
+                        },
+                        "highRisk": false,
+                        "criticalAsicDocuments": []
+                    }
+                ],
+                "isBankruptcy": false,
+                "bankruptcyLastfetched": 1623388765
+            },
+            {
+                "address2": null,
+                "appointmentDate": "30-06-2014",
+                "ceasedDate": null,
+                "australianBusinessNumber": null,
+                "birthLocation": {
+                    "countryName": null,
+                    "iSO3166CountryCode": null,
+                    "line1": null,
+                    "line2": null,
+                    "line3": null,
+                    "locality": "NUMURKAH",
+                    "postcode": null,
+                    "state": "VIC",
+                    "suburb": null
+                },
+                "address": {
+                    "countryName": "UNITED STATES",
+                    "iSO3166CountryCode": null,
+                    "line1": "9005 EDGEPARK ROAD VIENNA VIRGINIA",
+                    "line2": null,
+                    "line3": null,
+                    "locality": null,
+                    "postcode": null,
+                    "state": null,
+                    "suburb": "22182"
+                },
+                "careOf": null,
+                "detailsType": "Current",
+                "documentNumber": "2E0756989",
+                "familyName": "MCMILLAN",
+                "givenName1": "TERENCE",
+                "givenName2": "GEORGE",
+                "givenName3": null,
+                "officerBirthDate": "28-09-1961",
+                "officerName": null,
+                "officerOrganisationNumber": null,
+                "organisationNumberHeading": null,
+                "roleType": "Director",
+                "knownInformation": [
+                    {
+                        "organisationNumber": "058986146",
+                        "detailsType": "Current",
+                        "organisationName": "ACCOUNTABILITY ACCESS PTY LTD",
+                        "organisationStatus": "Registered",
+                        "creditReport": {
+                            "insolvencyNotices": [],
+                            "paymentDefaults": [],
+                            "mercantileEnquiries": [],
+                            "courtJudgements": [],
+                            "loans": [],
+                            "creditEnquiries": null
+                        },
+                        "highRisk": false,
+                        "criticalAsicDocuments": []
+                    },
+                    {
+                        "organisationNumber": "644324461",
+                        "detailsType": "Current",
+                        "organisationName": "ACCOUNTABILITY GROUP HOLDINGS PTY LTD",
+                        "organisationStatus": "Registered",
+                        "creditReport": {
+                            "insolvencyNotices": [],
+                            "paymentDefaults": [],
+                            "mercantileEnquiries": [],
+                            "courtJudgements": [],
+                            "loans": [],
+                            "creditEnquiries": null
+                        },
+                        "highRisk": false,
+                        "criticalAsicDocuments": []
+                    }
+                ],
+                "isBankruptcy": false,
+                "bankruptcyLastfetched": 1623388765
+            }
+        ],
+        "contactAddresses": [
+            {
+                "addressStartDate": "23-07-2018",
+                "addressType": "Contact Address for ASIC use only",
+                "address2": "'FRESHWATER PLACE' LEVEL 13",
+                "careOf": null,
+                "city": "SOUTHBANK",
+                "country": null,
+                "detailsType": "Current",
+                "documentNumber": null,
+                "postcode": "3006",
+                "state": "VIC",
+                "street": "2 SOUTHBANK BOULEVARD",
+                "addressEndDate": null
+            }
+        ],
+        "financialReports": [],
+        "header": {
+            "clientId": "CLIENT",
+            "clientReference": "CLIENT REF",
+            "jurisdiction": "9",
+            "messageCreationDate": "17-04-2021",
+            "messageCreationTime": "20:42:52",
+            "messageTraceNumber": "4061809",
+            "messageType": "YHDASCDSCE",
+            "version": "1100"
+        },
+        "organisation": {
+            "acnc": null,
+            "australianBusinessNumber": "30600424539",
+            "governanceType": null,
+            "organisationName": "ACCOUNTABILITY ACCESS INTERNATIONAL I.P. PTY LTD",
+            "organisationNumber": "600424539",
+            "organisationNumberHeading": "Australian Company Number",
+            "organisationState": "VIC",
+            "previousStateNumber": null,
+            "registrationDate": "30-06-2014",
+            "reviewDate": "30-06-2021",
+            "historicalChanges": [
+                {
+                    "dateDeregistered": null,
+                    "detailsType": "Current",
+                    "disclosingEntity": "No",
+                    "documentNumber": "2E0697869",
+                    "documentNumberQualifier": null,
+                    "organisationClass": "Limited By Shares",
+                    "organisationName": "ACCOUNTABILITY ACCESS INTERNATIONAL I.P. PTY LTD",
+                    "organisationNameStartDate": "30-06-2014",
+                    "organisationStatus": "Registered",
+                    "organisationSubClass": "Proprietary Company",
+                    "organisationType": "Australian Proprietary Company",
+                    "reasonDeregistered": null,
+                    "schemeCategory1": null,
+                    "schemeCategory2": null,
+                    "schemeCategory3": null,
+                    "schemeCategory4": null,
+                    "startDate": "30-06-2014",
+                    "endDate": null
+                }
+            ]
+        },
+        "shareCapitalGroup": [
+            {
+                "classCode": "ORD",
+                "classTitle": "ORDINARY SHARES",
+                "detailsType": "Current",
+                "documentNumber": "7EBA03947",
+                "documentNumberQualifier": null,
+                "numberOfShares": 1097,
+                "totalAmountDueAndPayable": 0,
+                "totalAmountPaid": 944
+            }
+        ],
+        "shareInterests": [
+            {
+                "beneficiallyOwned": true,
+                "classCode": "ORD",
+                "detailsType": "Current",
+                "documentNumber": "1EUI77323",
+                "documentNumberQualifier": null,
+                "fullyPaid": true,
+                "members": [
+                    {
+                        "memberOrganisationNumber": "644324461",
+                        "organisationNumberHeading": "Australian Company Number",
+                        "memberName": "ACCOUNTABILITY GROUP HOLDINGS PTY LTD",
+                        "address2": "'FRESHWATER PLACE' LEVEL 13",
+                        "careOf": null,
+                        "city": "SOUTHBANK",
+                        "country": null,
+                        "familyName": null,
+                        "givenName1": null,
+                        "givenName2": null,
+                        "jointHolding": false,
+                        "postcode": "3006",
+                        "state": "VIC",
+                        "street": "2 SOUTHBANK BOULEVARD",
+                        "australianBusinessNumber": null
+                    }
+                ],
+                "numberHeld": "1097"
+            }
+        ],
+        "documentList": [],
+        "misc": [],
+        "issuedCapital": [],
+        "companyDetails": []
+    },
+    "paymentPredictor": {
+        "paymentPredictorStats": [],
+        "paymentPredictorHistory": [],
+        "industryPaymentPredictor": null
+    },
+    "currentDirectors": [
+        {
+            "documentNumber": "2E0697869",
+            "detailsType": "Current",
+            "roleType": "Director",
+            "appointmentDate": "30-06-2014",
+            "familyName": "COLLINSON",
+            "givenName1": "MICHAEL",
+            "officerBirthDate": "05-07-1962",
+            "birthState": "VIC",
+            "street": "47 AIRLIE AVENUE",
+            "city": "PRAHRAN",
+            "state": "VIC",
+            "postcode": "3181",
+            "acns": [
+                "082145891",
+                "600422768",
+                "644324461"
+            ],
+            "currentDirectorships": [
+                {
+                    "company": {
+                        "name": "AAI GROUP HOLDINGS PTY LTD",
+                        "acn": "600422768",
+                        "abn": null,
+                        "type": "APTY",
+                        "class": "LMSH",
+                        "subClass": "PROP",
+                        "status": "REGD",
+                        "registeredDate": "30-06-2014"
+                    },
+                    "isHighRisk": false,
+                    "acn": "600422768"
+                },
+                {
+                    "company": {
+                        "name": "ACCOUNTABILITY GROUP HOLDINGS PTY LTD",
+                        "acn": "644324461",
+                        "abn": null,
+                        "type": "APTY",
+                        "class": "LMSH",
+                        "subClass": "PROP",
+                        "status": "REGD",
+                        "registeredDate": "14-09-2020"
+                    },
+                    "isHighRisk": false,
+                    "acn": "644324461"
+                }
+            ],
+            "givenName2": "RICHARD",
+            "birthLocality": "MELBOURNE",
+            "formerDirectorships": [
+                {
+                    "company": {
+                        "name": "PUBLICIS SAPIENT AUSTRALIA PTY LTD",
+                        "acn": "082145891",
+                        "abn": "80082145891",
+                        "type": "APTY",
+                        "class": "LMSH",
+                        "subClass": "PROP",
+                        "status": "REGD",
+                        "registeredDate": "30-03-1998"
+                    },
+                    "isHighRisk": false,
+                    "acn": "082145891"
+                }
+            ],
+            "officerName": null,
+            "officerOrganisationNumber": null,
+            "givenName3": null,
+            "organisationNumberHeading": null,
+            "address2": null,
+            "australianBusinessNumber": null
+        },
+        {
+            "documentNumber": "2E0756989",
+            "detailsType": "Current",
+            "roleType": "Director",
+            "appointmentDate": "30-06-2014",
+            "familyName": "MCMILLAN",
+            "givenName1": "ROSLYN",
+            "officerBirthDate": "22-12-1970",
+            "birthState": "VIC",
+            "street": null,
+            "city": "22182",
+            "state": null,
+            "postcode": null,
+            "acns": [
+                "058986146"
+            ],
+            "currentDirectorships": [
+                {
+                    "company": {
+                        "name": "ACCOUNTABILITY ACCESS PTY LTD",
+                        "acn": "058986146",
+                        "abn": "19058986146",
+                        "type": "APTY",
+                        "class": "LMSH",
+                        "subClass": "PROP",
+                        "status": "REGD",
+                        "registeredDate": "08-02-1993"
+                    },
+                    "isHighRisk": false,
+                    "acn": "058986146"
+                }
+            ],
+            "givenName2": "JANE",
+            "birthLocality": "MELBOURNE",
+            "formerDirectorships": [],
+            "officerName": null,
+            "officerOrganisationNumber": null,
+            "givenName3": null,
+            "organisationNumberHeading": null,
+            "address2": "9005 EDGEPARK ROAD VIENNA VIRGINIA",
+            "australianBusinessNumber": null
+        },
+        {
+            "documentNumber": "2E0756989",
+            "detailsType": "Current",
+            "roleType": "Director",
+            "appointmentDate": "30-06-2014",
+            "familyName": "MCMILLAN",
+            "givenName1": "TERENCE",
+            "officerBirthDate": "28-09-1961",
+            "birthState": "VIC",
+            "street": null,
+            "city": "22182",
+            "state": null,
+            "postcode": null,
+            "acns": [
+                "058986146",
+                "644324461"
+            ],
+            "currentDirectorships": [
+                {
+                    "company": {
+                        "name": "ACCOUNTABILITY ACCESS PTY LTD",
+                        "acn": "058986146",
+                        "abn": "19058986146",
+                        "type": "APTY",
+                        "class": "LMSH",
+                        "subClass": "PROP",
+                        "status": "REGD",
+                        "registeredDate": "08-02-1993"
+                    },
+                    "isHighRisk": false,
+                    "acn": "058986146"
+                },
+                {
+                    "company": {
+                        "name": "ACCOUNTABILITY GROUP HOLDINGS PTY LTD",
+                        "acn": "644324461",
+                        "abn": null,
+                        "type": "APTY",
+                        "class": "LMSH",
+                        "subClass": "PROP",
+                        "status": "REGD",
+                        "registeredDate": "14-09-2020"
+                    },
+                    "isHighRisk": false,
+                    "acn": "644324461"
+                }
+            ],
+            "givenName2": "GEORGE",
+            "birthLocality": "NUMURKAH",
+            "formerDirectorships": [],
+            "officerName": null,
+            "officerOrganisationNumber": null,
+            "givenName3": null,
+            "organisationNumberHeading": null,
+            "address2": "9005 EDGEPARK ROAD VIENNA VIRGINIA",
+            "australianBusinessNumber": null
+        }
+    ],
+    "companyDetails": [],
+    "creditScore": {
+        "currentCreditScore": 562,
+        "creditScoreHistory": [
+            {
+                "date": "11-06-2021",
+                "score": 562
+            },
+            {
+                "date": "15-05-2021",
+                "score": 562
+            },
+            {
+                "date": "15-04-2021",
+                "score": 562
+            },
+            {
+                "date": "15-03-2021",
+                "score": 562
+            },
+            {
+                "date": "15-02-2021",
+                "score": 562
+            },
+            {
+                "date": "15-01-2021",
+                "score": 562
+            },
+            {
+                "date": "15-12-2020",
+                "score": 562
+            },
+            {
+                "date": "15-11-2020",
+                "score": 562
+            },
+            {
+                "date": "15-10-2020",
+                "score": 561
+            },
+            {
+                "date": "15-09-2020",
+                "score": 740
+            },
+            {
+                "date": "15-08-2020",
+                "score": 733
+            },
+            {
+                "date": "15-07-2020",
+                "score": 727
+            }
+        ]
+    },
+    "pdfRequestId": "950011de-ca77-11eb-8a5d-0242ac110012",
+    "abrData": {
+        "name": "ACCOUNTABILITY ACCESS INTERNATIONAL I.P. PTY LTD",
+        "abn": "30600424539",
+        "acn": "600424539",
+        "registeredDate": "30-06-2014",
+        "status": "Active",
+        "type": "PRV",
+        "typeCode": "PRV",
+        "updatedDate": "02-07-2014",
+        "description": "Australian Private Company",
+        "lastUpdated": "02-07-2014",
+        "statusEffectiveFrom": null,
+        "gst": [],
+        "addresses": [
+            {
+                "effectiveTo": null,
+                "effectiveFrom": "30-06-2014",
+                "postcode": "3181",
+                "stateCode": "VIC"
+            }
+        ],
+        "businessNames": [
+            {
+                "effectiveFrom": "30-06-2014",
+                "name": "ACCOUNTABILITY ACCESS INTERNATIONAL I.P. PTY LTD",
+                "type": "Main Name"
+            }
+        ],
+        "charityTypes": [],
+        "charityEndorsements": [],
+        "dgrEndorsements": [],
+        "historicalChanges": [
+            {
+                "entityStatus": [
+                    "The Entity Status was changed to Active"
+                ],
+                "goodsAndServicesTax": [],
+                "mainName": [
+                    "The Main Name was changed to ACCOUNTABILITY ACCESS INTERNATIONAL I.P. PTY LTD"
+                ],
+                "businessName": [],
+                "mainBusinessPhysicalAddress": [
+                    "The Main Business Physical Address was changed to VIC 3181"
+                ],
+                "mainTradingName": [],
+                "date": "30-06-2014"
+            }
+        ]
+    },
+    "statusChange": {
+        "abrChanges": [
+            {
+                "entityStatus": "Active (Current status)",
+                "date": "2014-06-30"
+            }
+        ],
+        "asicChanges": [],
+        "gstChanges": []
+    },
+    "asicData": {
+        "organisation": {
+            "australianBusinessNumber": "30600424539",
+            "name": "ACCOUNTABILITY ACCESS INTERNATIONAL I.P. PTY LTD",
+            "number": "600424539",
+            "numberType": "ACN",
+            "type": "Australian Proprietary Company",
+            "status": "Registered",
+            "address": {
+                "countryName": null,
+                "iSO3166CountryCode": null,
+                "line1": null,
+                "line2": null,
+                "line3": null,
+                "locality": null,
+                "postcode": "3006",
+                "state": "VIC",
+                "suburb": "SOUTHBANK"
+            },
+            "controllingJurisdictionExpanded": "Australian Securities & Investments Commission",
+            "controllingJurisdiction": "ASIC",
+            "numberHeading": "Australian Company Number",
+            "registrationDate": "30-06-2014",
+            "deregistrationDate": "11-06-2021",
+            "reviewDate": "30-06-2021",
+            "satisfiedChargesIndicator": "Fewer than 10 pages in Satisfied Charges Extract",
+            "class": "Limited By Shares",
+            "subclass": "Proprietary Company",
+            "typeExpanded": "Australian Proprietary Company",
+            "statusExpanded": "Registered",
+            "classExpanded": "Limited By Shares",
+            "subclassExpanded": "Proprietary Company",
+            "formattedNumber": "600 424 539",
+            "acnc": false
+        },
+        "documents": [
+            {
+                "documentQualifier": null,
+                "additionalDescriptions": [
+                    {
+                        "additionalDescription": "Change to Company Details Changes to (Members) Share Holdings",
+                        "subFormCode": "484N"
+                    }
+                ],
+                "dateProcessed": "28-10-2020",
+                "dateReceived": "28-10-2020",
+                "documentNumber": "1EUI77323",
+                "effectiveDate": "28-10-2020",
+                "formCode": "484",
+                "numberOfPages": "6",
+                "documentUnderRequisition": null
+            },
+            {
+                "documentQualifier": null,
+                "additionalDescriptions": [
+                    {
+                        "additionalDescription": "Change to Company Details",
+                        "subFormCode": "484"
+                    },
+                    {
+                        "additionalDescription": "Changes to Share Structure",
+                        "subFormCode": "484O"
+                    },
+                    {
+                        "additionalDescription": "Notification of Share Issue",
+                        "subFormCode": "484G"
+                    },
+                    {
+                        "additionalDescription": "Changes to (Members) Share Holdings",
+                        "subFormCode": "484N"
+                    }
+                ],
+                "dateProcessed": "02-09-2020",
+                "dateReceived": "02-09-2020",
+                "documentNumber": "7EBA03947",
+                "effectiveDate": "02-09-2020",
+                "formCode": "484",
+                "numberOfPages": "2",
+                "documentUnderRequisition": null
+            },
+            {
+                "documentQualifier": null,
+                "additionalDescriptions": [
+                    {
+                        "additionalDescription": "Change to Company Details",
+                        "subFormCode": "484"
+                    },
+                    {
+                        "additionalDescription": "Changes to Share Structure",
+                        "subFormCode": "484O"
+                    },
+                    {
+                        "additionalDescription": "Notification of Share Cancellation - Company Buy-Back",
+                        "subFormCode": "484J"
+                    },
+                    {
+                        "additionalDescription": "Changes to (Members) Share Holdings",
+                        "subFormCode": "484N"
+                    }
+                ],
+                "dateProcessed": "24-07-2019",
+                "dateReceived": "24-07-2019",
+                "documentNumber": "0EQU29569",
+                "effectiveDate": "24-07-2019",
+                "formCode": "484",
+                "numberOfPages": "2",
+                "documentUnderRequisition": null
+            },
+            {
+                "documentQualifier": null,
+                "additionalDescriptions": [
+                    {
+                        "additionalDescription": "Change to Company Details Changes to (Members) Share Holdings",
+                        "subFormCode": "484N"
+                    }
+                ],
+                "dateProcessed": "17-05-2019",
+                "dateReceived": "17-05-2019",
+                "documentNumber": "0ELT85458",
+                "effectiveDate": "17-05-2019",
+                "formCode": "484",
+                "numberOfPages": "3",
+                "documentUnderRequisition": null
+            },
+            {
+                "documentQualifier": null,
+                "additionalDescriptions": [
+                    {
+                        "additionalDescription": "Notice of Meeting And Documents Re Buy-Back",
+                        "subFormCode": "280"
+                    }
+                ],
+                "dateProcessed": "14-05-2019",
+                "dateReceived": "29-04-2019",
+                "documentNumber": "030543652",
+                "effectiveDate": "29-04-2019",
+                "formCode": "280",
+                "numberOfPages": "25",
+                "documentUnderRequisition": null
+            },
+            {
+                "documentQualifier": null,
+                "additionalDescriptions": [
+                    {
+                        "additionalDescription": "Change to Company Details",
+                        "subFormCode": "484"
+                    },
+                    {
+                        "additionalDescription": "Change of Registered Address",
+                        "subFormCode": "484B"
+                    },
+                    {
+                        "additionalDescription": "Change Member Name or Address",
+                        "subFormCode": "484A2"
+                    }
+                ],
+                "dateProcessed": "10-04-2019",
+                "dateReceived": "10-04-2019",
+                "documentNumber": "0EJJ09844",
+                "effectiveDate": "10-04-2019",
+                "formCode": "484",
+                "numberOfPages": "2",
+                "documentUnderRequisition": null
+            },
+            {
+                "documentQualifier": null,
+                "additionalDescriptions": [
+                    {
+                        "additionalDescription": "Change to Company Details",
+                        "subFormCode": "484"
+                    },
+                    {
+                        "additionalDescription": "Changes to Share Structure",
+                        "subFormCode": "484O"
+                    },
+                    {
+                        "additionalDescription": "Changes to (Members) Share Holdings",
+                        "subFormCode": "484N"
+                    }
+                ],
+                "dateProcessed": "08-07-2016",
+                "dateReceived": "08-07-2016",
+                "documentNumber": "2E4158522",
+                "effectiveDate": "01-07-2016",
+                "formCode": "484",
+                "numberOfPages": "3",
+                "documentUnderRequisition": null
+            },
+            {
+                "documentQualifier": null,
+                "additionalDescriptions": [
+                    {
+                        "additionalDescription": "Change to Company Details",
+                        "subFormCode": "484"
+                    },
+                    {
+                        "additionalDescription": "Changes to Share Structure",
+                        "subFormCode": "484O"
+                    },
+                    {
+                        "additionalDescription": "Changes to (Members) Share Holdings",
+                        "subFormCode": "484N"
+                    }
+                ],
+                "dateProcessed": "06-08-2015",
+                "dateReceived": "06-08-2015",
+                "documentNumber": "2E2250324",
+                "effectiveDate": "20-03-2015",
+                "formCode": "484",
+                "numberOfPages": "2",
+                "documentUnderRequisition": null
+            },
+            {
+                "documentQualifier": null,
+                "additionalDescriptions": [
+                    {
+                        "additionalDescription": "Change to Company Details",
+                        "subFormCode": "484"
+                    },
+                    {
+                        "additionalDescription": "Changes to Share Structure",
+                        "subFormCode": "484O"
+                    },
+                    {
+                        "additionalDescription": "Changes to (Members) Share Holdings",
+                        "subFormCode": "484N"
+                    }
+                ],
+                "dateProcessed": "01-08-2014",
+                "dateReceived": "01-08-2014",
+                "documentNumber": "2E0838315",
+                "effectiveDate": "04-07-2014",
+                "formCode": "484",
+                "numberOfPages": "3",
+                "documentUnderRequisition": null
+            },
+            {
+                "documentQualifier": null,
+                "additionalDescriptions": [
+                    {
+                        "additionalDescription": "Change to Company Details Change Officeholder Name Or Address",
+                        "subFormCode": "484A1"
+                    }
+                ],
+                "dateProcessed": "11-07-2014",
+                "dateReceived": "11-07-2014",
+                "documentNumber": "2E0756989",
+                "effectiveDate": "30-06-2014",
+                "formCode": "484",
+                "numberOfPages": "2",
+                "documentUnderRequisition": null
+            },
+            {
+                "documentQualifier": null,
+                "additionalDescriptions": [
+                    {
+                        "additionalDescription": "Application For Registration as a Proprietary Company",
+                        "subFormCode": "201C"
+                    }
+                ],
+                "dateProcessed": "30-06-2014",
+                "dateReceived": "30-06-2014",
+                "documentNumber": "2E0697869",
+                "effectiveDate": "30-06-2014",
+                "formCode": "201",
+                "numberOfPages": "5",
+                "documentUnderRequisition": null
+            }
+        ],
+        "endOfMessage": {
+            "endOfMessage": "YTRENDDSCD",
+            "segmentCount": 42
+        },
+        "organisationFormerName": []
+    }
+}

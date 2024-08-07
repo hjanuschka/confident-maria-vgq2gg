@@ -1,0 +1,11 @@
+window_sizes 1920 1009 375 1540 646 315
+
+diagrams
+  active  usecasediagram_ref 128016 // Administrar Casas
+    1540 646 100 A0 0 0
+end
+show_stereotypes
+selected usecaseview_ref 128016 // Administrar casas
+open
+end
+end

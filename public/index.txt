@@ -1,0 +1,58 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+// import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+// # case 1
+// const testFunction = () => {
+//   return (
+//     <div>
+//       <button>大家好</button>
+//       <h1> 我不好 </h1>
+//     </div>
+//   );
+// }
+
+// #case 2
+// const showOne = true;
+
+// const testFunction = () => {
+//   return (
+//     <h1>{(showOne==true)?1:0}</h1>
+//   );
+// }
+
+// #case 3
+// const styleArgument =  {fontSize: '100px', color: 'red'};
+
+// const testFunction = () => {
+//   return (
+//     <h1 className = 'styleArgument' > Hello, World!</h1>
+//   );
+// }
+
+// #case 4
+// const testFunction = () => {
+//   return (
+//     <h1 className = 'fontBlue' > Hello, World!</h1>
+//   );
+// }
+
+// #case 5 - multiButton
+const testFunction = () => {
+    var output=[];
+    for(let i=0;i<4;i++)
+      output.push(<button>我是第{i}個按鍵</button>)
+    return output;
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  testFunction()
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();

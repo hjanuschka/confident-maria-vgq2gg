@@ -1,0 +1,217 @@
+﻿[14.02.22 11:08:47] info: Program: Starting Squirrel Updater: --update https://dl.pstmn.io/update/WIN64/9.12.2/stable?installationId=fc7069aa-0c9f-4a9d-ae1f-83ea623ea598&userId=0&syncEnabled=false&teamPlan=&teamId=0
+[14.02.22 11:08:47] info: Program: Starting update, downloading from https://dl.pstmn.io/update/WIN64/9.12.2/stable?installationId=fc7069aa-0c9f-4a9d-ae1f-83ea623ea598&userId=0&syncEnabled=false&teamPlan=&teamId=0
+[14.02.22 11:08:47] info: Program: About to update to: C:\Users\LillithOP\AppData\Local\Postman
+[14.02.22 11:08:47] info: CheckForUpdateImpl: Using existing staging user ID: 107c1b9e-59a0-52c8-91b5-1285fa4b4cc8
+[14.02.22 11:08:47] info: CheckForUpdateImpl: Downloading RELEASES file from https://dl.pstmn.io/update/WIN64/9.12.2/stable?installationId=fc7069aa-0c9f-4a9d-ae1f-83ea623ea598&userId=0&syncEnabled=false&teamPlan=&teamId=0
+[14.02.22 11:08:47] info: FileDownloader: Downloading url: https://dl.pstmn.io/update/WIN64/9.12.2/stable/RELEASES?installationId=fc7069aa-0c9f-4a9d-ae1f-83ea623ea598&userId=0&syncEnabled=false&teamPlan=&teamId=0&id=Postman&localVersion=9.12.2&arch=amd64
+[14.02.22 11:08:48] info: FileDownloader: Downloading file: https://dl.pstmn.io/download/9.13.0/Postman-win64-9.13.0-delta.nupkg
+[14.02.22 11:09:02] info: DeltaPackageBuilder: lib\net45\chrome_100_percent.pak.diff exists unchanged, skipping
+[14.02.22 11:09:02] info: DeltaPackageBuilder: lib\net45\chrome_200_percent.pak.diff exists unchanged, skipping
+[14.02.22 11:09:02] info: DeltaPackageBuilder: Applying MSDiff to lib\net45\d3dcompiler_47.dll.diff
+[14.02.22 11:09:04] warn: Program: Failed to apply updates, falling back to full updates: System.ComponentModel.Win32Exception (0x80004005): Der Vorgang wurde erfolgreich beendet
+   bei DeltaCompressionDotNet.MsDelta.MsDeltaCompression.ApplyDelta(String deltaFilePath, String oldFilePath, String newFilePath)
+   bei Squirrel.DeltaPackageBuilder.applyDiffToFile(String deltaPath, String relativeFilePath, String workingDirectory)
+   bei Squirrel.EnumerableExtensions.ForEach[TSource](IEnumerable`1 source, Action`1 onNext)
+   bei Squirrel.DeltaPackageBuilder.ApplyDeltaPackage(ReleasePackage basePackage, ReleasePackage deltaPackage, String outputFile)
+   bei System.Threading.Tasks.Task`1.InnerInvoke()
+   bei System.Threading.Tasks.Task.Execute()
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   bei System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   bei Squirrel.UpdateManager.ApplyReleasesImpl.<createFullPackagesFromDeltas>d__8.MoveNext()
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   bei System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   bei Squirrel.UpdateManager.ApplyReleasesImpl.<ApplyReleases>d__2.MoveNext()
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   bei System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   bei Squirrel.UpdateManager.<ApplyReleases>d__9.MoveNext()
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   bei Squirrel.Update.Program.<Update>d__5.MoveNext()
+[14.02.22 11:09:04] info: CheckForUpdateImpl: Using existing staging user ID: 107c1b9e-59a0-52c8-91b5-1285fa4b4cc8
+[14.02.22 11:09:04] info: CheckForUpdateImpl: Downloading RELEASES file from https://dl.pstmn.io/update/WIN64/9.12.2/stable?installationId=fc7069aa-0c9f-4a9d-ae1f-83ea623ea598&userId=0&syncEnabled=false&teamPlan=&teamId=0
+[14.02.22 11:09:04] info: FileDownloader: Downloading url: https://dl.pstmn.io/update/WIN64/9.12.2/stable/RELEASES?installationId=fc7069aa-0c9f-4a9d-ae1f-83ea623ea598&userId=0&syncEnabled=false&teamPlan=&teamId=0&id=Postman&localVersion=9.12.2&arch=amd64
+[14.02.22 11:09:05] info: FileDownloader: Downloading file: https://dl.pstmn.io/download/9.13.0/Postman-win64-9.13.0-full.nupkg
+[14.02.22 11:10:45] info: ApplyReleasesImpl: Writing files to app directory: C:\Users\LillithOP\AppData\Local\Postman\app-9.13.0
+[14.02.22 11:10:47] info: LogHost: Rigging execution stub for Postman_ExecutionStub.exe to C:\Users\LillithOP\AppData\Local\Postman\Postman.exe
+[14.02.22 11:10:58] info: ApplyReleasesImpl: Squirrel Enabled Apps: []
+[14.02.22 11:10:58] warn: ApplyReleasesImpl: No apps are marked as Squirrel-aware! Going to run them all
+[14.02.22 11:10:58] info: ApplyReleasesImpl: About to create shortcuts for Postman.exe, rootAppDir C:\Users\LillithOP\AppData\Local\Postman\
+[14.02.22 11:10:59] info: ApplyReleasesImpl: Creating shortcut for Postman.exe => C:\Users\LillithOP\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Postman\Postman.lnk
+[14.02.22 11:10:59] info: ApplyReleasesImpl: About to save shortcut: C:\Users\LillithOP\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Postman\Postman.lnk (target C:\Users\LillithOP\AppData\Local\Postman\Postman.exe, workingDir C:\Users\LillithOP\AppData\Local\Postman\app-9.13.0, args , toastActivatorCSLID d56d0ae8-2c2a-5b45-bd3b-9973bc69da9e)
+[14.02.22 11:10:59] info: ApplyReleasesImpl: Creating shortcut for Postman.exe => C:\Users\LillithOP\Desktop\Postman.lnk
+[14.02.22 11:10:59] info: ApplyReleasesImpl: About to save shortcut: C:\Users\LillithOP\Desktop\Postman.lnk (target C:\Users\LillithOP\AppData\Local\Postman\Postman.exe, workingDir C:\Users\LillithOP\AppData\Local\Postman\app-9.13.0, args , toastActivatorCSLID d56d0ae8-2c2a-5b45-bd3b-9973bc69da9e)
+[14.02.22 11:10:59] info: ApplyReleasesImpl: Examining Pin: File Explorer.lnk
+[14.02.22 11:10:59] info: ApplyReleasesImpl: Examining Pin: Google Chrome.lnk
+[14.02.22 11:10:59] info: ApplyReleasesImpl: Examining Pin: Microsoft Edge.lnk
+[14.02.22 11:10:59] info: ApplyReleasesImpl: Examining Pin: notepad++.lnk
+[14.02.22 11:10:59] info: ApplyReleasesImpl: Starting fixPinnedExecutables
+[14.02.22 11:10:59] info: ApplyReleasesImpl: Examining Pin: File Explorer.lnk
+[14.02.22 11:10:59] info: ApplyReleasesImpl: Examining Pin: Google Chrome.lnk
+[14.02.22 11:10:59] info: ApplyReleasesImpl: Examining Pin: Microsoft Edge.lnk
+[14.02.22 11:10:59] info: ApplyReleasesImpl: Examining Pin: notepad++.lnk
+[14.02.22 11:10:59] info: ApplyReleasesImpl: Fixing up tray icons
+[14.02.22 11:10:59] info: ApplyReleasesImpl: cleanDeadVersions: checking for version 9.13.0
+[14.02.22 11:10:59] info: ApplyReleasesImpl: cleanDeadVersions: exclude current version folder app-9.12.2
+[14.02.22 11:10:59] info: ApplyReleasesImpl: cleanDeadVersions: exclude new version folder app-9.13.0
+[14.02.22 11:11:00] info: Program: Finished Squirrel Updater
+[25.05.22 22:07:56] info: Program: Starting Squirrel Updater: --update https://dl.pstmn.io/update/WIN64/9.13.0/stable?installationId=fc7069aa-0c9f-4a9d-ae1f-83ea623ea598&userId=0&syncEnabled=false&teamPlan=&teamId=0
+[25.05.22 22:07:56] info: Program: Starting update, downloading from https://dl.pstmn.io/update/WIN64/9.13.0/stable?installationId=fc7069aa-0c9f-4a9d-ae1f-83ea623ea598&userId=0&syncEnabled=false&teamPlan=&teamId=0
+[25.05.22 22:07:56] info: Program: About to update to: C:\Users\LillithOP\AppData\Local\Postman
+[25.05.22 22:07:56] info: CheckForUpdateImpl: Using existing staging user ID: 107c1b9e-59a0-52c8-91b5-1285fa4b4cc8
+[25.05.22 22:07:56] info: CheckForUpdateImpl: Downloading RELEASES file from https://dl.pstmn.io/update/WIN64/9.13.0/stable?installationId=fc7069aa-0c9f-4a9d-ae1f-83ea623ea598&userId=0&syncEnabled=false&teamPlan=&teamId=0
+[25.05.22 22:07:56] info: FileDownloader: Downloading url: https://dl.pstmn.io/update/WIN64/9.13.0/stable/RELEASES?installationId=fc7069aa-0c9f-4a9d-ae1f-83ea623ea598&userId=0&syncEnabled=false&teamPlan=&teamId=0&id=Postman-win64&localVersion=9.13.0&arch=amd64
+[25.05.22 22:07:57] info: FileDownloader: Downloading file: https://dl.pstmn.io/download/9.19.0/Postman-win64-9.19.0-delta.nupkg
+[25.05.22 22:13:59] info: DeltaPackageBuilder: Applying BSDiff to lib\net45\chrome_100_percent.pak.bsdiff
+[25.05.22 22:13:59] info: DeltaPackageBuilder: Applying BSDiff to lib\net45\chrome_200_percent.pak.bsdiff
+[25.05.22 22:13:59] info: DeltaPackageBuilder: Applying MSDiff to lib\net45\d3dcompiler_47.dll.diff
+[25.05.22 22:14:01] warn: Program: Failed to apply updates, falling back to full updates: System.ComponentModel.Win32Exception (0x80004005): Der Vorgang wurde erfolgreich beendet
+   bei DeltaCompressionDotNet.MsDelta.MsDeltaCompression.ApplyDelta(String deltaFilePath, String oldFilePath, String newFilePath)
+   bei Squirrel.DeltaPackageBuilder.applyDiffToFile(String deltaPath, String relativeFilePath, String workingDirectory)
+   bei Squirrel.EnumerableExtensions.ForEach[TSource](IEnumerable`1 source, Action`1 onNext)
+   bei Squirrel.DeltaPackageBuilder.ApplyDeltaPackage(ReleasePackage basePackage, ReleasePackage deltaPackage, String outputFile)
+   bei System.Threading.Tasks.Task`1.InnerInvoke()
+   bei System.Threading.Tasks.Task.Execute()
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   bei System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   bei Squirrel.UpdateManager.ApplyReleasesImpl.<createFullPackagesFromDeltas>d__8.MoveNext()
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   bei System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   bei Squirrel.UpdateManager.ApplyReleasesImpl.<ApplyReleases>d__2.MoveNext()
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   bei System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   bei Squirrel.UpdateManager.<ApplyReleases>d__9.MoveNext()
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   bei Squirrel.Update.Program.<Update>d__5.MoveNext()
+[25.05.22 22:14:01] info: CheckForUpdateImpl: Using existing staging user ID: 107c1b9e-59a0-52c8-91b5-1285fa4b4cc8
+[25.05.22 22:14:01] info: CheckForUpdateImpl: Downloading RELEASES file from https://dl.pstmn.io/update/WIN64/9.13.0/stable?installationId=fc7069aa-0c9f-4a9d-ae1f-83ea623ea598&userId=0&syncEnabled=false&teamPlan=&teamId=0
+[25.05.22 22:14:01] info: FileDownloader: Downloading url: https://dl.pstmn.io/update/WIN64/9.13.0/stable/RELEASES?installationId=fc7069aa-0c9f-4a9d-ae1f-83ea623ea598&userId=0&syncEnabled=false&teamPlan=&teamId=0&id=Postman-win64&localVersion=9.13.0&arch=amd64
+[25.05.22 22:14:01] info: FileDownloader: Downloading file: https://dl.pstmn.io/download/9.19.0/Postman-win64-9.19.0-full.nupkg
+[25.05.22 22:25:11] info: Program: Starting Squirrel Updater: --update https://dl.pstmn.io/update/WIN64/9.13.0/stable?installationId=fc7069aa-0c9f-4a9d-ae1f-83ea623ea598&userId=0&syncEnabled=false&teamPlan=&teamId=0
+[25.05.22 22:25:11] info: Program: Starting update, downloading from https://dl.pstmn.io/update/WIN64/9.13.0/stable?installationId=fc7069aa-0c9f-4a9d-ae1f-83ea623ea598&userId=0&syncEnabled=false&teamPlan=&teamId=0
+[25.05.22 22:25:11] info: Program: About to update to: C:\Users\LillithOP\AppData\Local\Postman
+[25.05.22 22:25:11] info: CheckForUpdateImpl: Using existing staging user ID: 107c1b9e-59a0-52c8-91b5-1285fa4b4cc8
+[25.05.22 22:25:11] info: CheckForUpdateImpl: Downloading RELEASES file from https://dl.pstmn.io/update/WIN64/9.13.0/stable?installationId=fc7069aa-0c9f-4a9d-ae1f-83ea623ea598&userId=0&syncEnabled=false&teamPlan=&teamId=0
+[25.05.22 22:25:11] info: FileDownloader: Downloading url: https://dl.pstmn.io/update/WIN64/9.13.0/stable/RELEASES?installationId=fc7069aa-0c9f-4a9d-ae1f-83ea623ea598&userId=0&syncEnabled=false&teamPlan=&teamId=0&id=Postman-win64&localVersion=9.13.0&arch=amd64
+[25.05.22 22:25:12] info: FileDownloader: Downloading file: https://dl.pstmn.io/download/9.19.0/Postman-win64-9.19.0-delta.nupkg
+[25.05.22 22:30:24] info: DeltaPackageBuilder: Applying BSDiff to lib\net45\chrome_100_percent.pak.bsdiff
+[25.05.22 22:30:24] info: DeltaPackageBuilder: Applying BSDiff to lib\net45\chrome_200_percent.pak.bsdiff
+[25.05.22 22:30:25] info: DeltaPackageBuilder: Applying MSDiff to lib\net45\d3dcompiler_47.dll.diff
+[25.05.22 22:30:25] warn: Program: Failed to apply updates, falling back to full updates: System.ComponentModel.Win32Exception (0x80004005): Der Vorgang wurde erfolgreich beendet
+   bei DeltaCompressionDotNet.MsDelta.MsDeltaCompression.ApplyDelta(String deltaFilePath, String oldFilePath, String newFilePath)
+   bei Squirrel.DeltaPackageBuilder.applyDiffToFile(String deltaPath, String relativeFilePath, String workingDirectory)
+   bei Squirrel.EnumerableExtensions.ForEach[TSource](IEnumerable`1 source, Action`1 onNext)
+   bei Squirrel.DeltaPackageBuilder.ApplyDeltaPackage(ReleasePackage basePackage, ReleasePackage deltaPackage, String outputFile)
+   bei System.Threading.Tasks.Task`1.InnerInvoke()
+   bei System.Threading.Tasks.Task.Execute()
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   bei System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   bei Squirrel.UpdateManager.ApplyReleasesImpl.<createFullPackagesFromDeltas>d__8.MoveNext()
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   bei System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   bei Squirrel.UpdateManager.ApplyReleasesImpl.<ApplyReleases>d__2.MoveNext()
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   bei System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   bei Squirrel.UpdateManager.<ApplyReleases>d__9.MoveNext()
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   bei Squirrel.Update.Program.<Update>d__5.MoveNext()
+[25.05.22 22:30:25] info: CheckForUpdateImpl: Using existing staging user ID: 107c1b9e-59a0-52c8-91b5-1285fa4b4cc8
+[25.05.22 22:30:25] info: CheckForUpdateImpl: Downloading RELEASES file from https://dl.pstmn.io/update/WIN64/9.13.0/stable?installationId=fc7069aa-0c9f-4a9d-ae1f-83ea623ea598&userId=0&syncEnabled=false&teamPlan=&teamId=0
+[25.05.22 22:30:25] info: FileDownloader: Downloading url: https://dl.pstmn.io/update/WIN64/9.13.0/stable/RELEASES?installationId=fc7069aa-0c9f-4a9d-ae1f-83ea623ea598&userId=0&syncEnabled=false&teamPlan=&teamId=0&id=Postman-win64&localVersion=9.13.0&arch=amd64
+[25.05.22 22:30:25] info: FileDownloader: Downloading file: https://dl.pstmn.io/download/9.19.0/Postman-win64-9.19.0-full.nupkg
+[25.05.22 22:45:39] info: ApplyReleasesImpl: Writing files to app directory: C:\Users\LillithOP\AppData\Local\Postman\app-9.19.0
+[25.05.22 22:45:42] info: LogHost: Rigging execution stub for Postman_ExecutionStub.exe to C:\Users\LillithOP\AppData\Local\Postman\Postman.exe
+[25.05.22 22:45:48] info: ApplyReleasesImpl: Squirrel Enabled Apps: []
+[25.05.22 22:45:48] warn: ApplyReleasesImpl: No apps are marked as Squirrel-aware! Going to run them all
+[25.05.22 22:45:48] info: ApplyReleasesImpl: About to create shortcuts for Postman.exe, rootAppDir C:\Users\LillithOP\AppData\Local\Postman\
+[25.05.22 22:45:48] info: ApplyReleasesImpl: Creating shortcut for Postman.exe => C:\Users\LillithOP\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Postman\Postman.lnk
+[25.05.22 22:45:48] info: ApplyReleasesImpl: About to save shortcut: C:\Users\LillithOP\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Postman\Postman.lnk (target C:\Users\LillithOP\AppData\Local\Postman\Postman.exe, workingDir C:\Users\LillithOP\AppData\Local\Postman\app-9.19.0, args , toastActivatorCSLID d56d0ae8-2c2a-5b45-bd3b-9973bc69da9e)
+[25.05.22 22:45:48] info: ApplyReleasesImpl: Creating shortcut for Postman.exe => C:\Users\LillithOP\Desktop\Postman.lnk
+[25.05.22 22:45:48] info: ApplyReleasesImpl: About to save shortcut: C:\Users\LillithOP\Desktop\Postman.lnk (target C:\Users\LillithOP\AppData\Local\Postman\Postman.exe, workingDir C:\Users\LillithOP\AppData\Local\Postman\app-9.19.0, args , toastActivatorCSLID d56d0ae8-2c2a-5b45-bd3b-9973bc69da9e)
+[25.05.22 22:45:48] info: ApplyReleasesImpl: Examining Pin: File Explorer.lnk
+[25.05.22 22:45:48] info: ApplyReleasesImpl: Examining Pin: Google Chrome.lnk
+[25.05.22 22:45:48] info: ApplyReleasesImpl: Examining Pin: Microsoft Edge.lnk
+[25.05.22 22:45:48] info: ApplyReleasesImpl: Examining Pin: notepad++.lnk
+[25.05.22 22:45:48] info: ApplyReleasesImpl: Examining Pin: Visual Studio Code.lnk
+[25.05.22 22:45:48] info: ApplyReleasesImpl: Starting fixPinnedExecutables
+[25.05.22 22:45:48] info: ApplyReleasesImpl: Examining Pin: File Explorer.lnk
+[25.05.22 22:45:48] info: ApplyReleasesImpl: Examining Pin: Google Chrome.lnk
+[25.05.22 22:45:48] info: ApplyReleasesImpl: Examining Pin: Microsoft Edge.lnk
+[25.05.22 22:45:48] info: ApplyReleasesImpl: Examining Pin: notepad++.lnk
+[25.05.22 22:45:48] info: ApplyReleasesImpl: Examining Pin: Visual Studio Code.lnk
+[25.05.22 22:45:48] info: ApplyReleasesImpl: Fixing up tray icons
+[25.05.22 22:45:48] info: ApplyReleasesImpl: cleanDeadVersions: checking for version 9.19.0
+[25.05.22 22:45:48] info: ApplyReleasesImpl: cleanDeadVersions: exclude current version folder app-9.13.0
+[25.05.22 22:45:48] info: ApplyReleasesImpl: cleanDeadVersions: exclude new version folder app-9.19.0
+[25.05.22 22:45:52] info: Program: Finished Squirrel Updater
+[09.08.22 12:33:17] info: Program: Starting Squirrel Updater: --update https://dl.pstmn.io/update/WIN64/9.19.0/stable?installationId=fc7069aa-0c9f-4a9d-ae1f-83ea623ea598&userId=0&syncEnabled=false&teamPlan=&teamId=0
+[09.08.22 12:33:17] info: Program: Starting update, downloading from https://dl.pstmn.io/update/WIN64/9.19.0/stable?installationId=fc7069aa-0c9f-4a9d-ae1f-83ea623ea598&userId=0&syncEnabled=false&teamPlan=&teamId=0
+[09.08.22 12:33:17] info: Program: About to update to: C:\Users\LillithOP\AppData\Local\Postman
+[09.08.22 12:33:17] info: CheckForUpdateImpl: Using existing staging user ID: 107c1b9e-59a0-52c8-91b5-1285fa4b4cc8
+[09.08.22 12:33:17] info: CheckForUpdateImpl: Downloading RELEASES file from https://dl.pstmn.io/update/WIN64/9.19.0/stable?installationId=fc7069aa-0c9f-4a9d-ae1f-83ea623ea598&userId=0&syncEnabled=false&teamPlan=&teamId=0
+[09.08.22 12:33:17] info: FileDownloader: Downloading url: https://dl.pstmn.io/update/WIN64/9.19.0/stable/RELEASES?installationId=fc7069aa-0c9f-4a9d-ae1f-83ea623ea598&userId=0&syncEnabled=false&teamPlan=&teamId=0&id=Postman-win64&localVersion=9.19.0&arch=amd64
+[09.08.22 12:33:18] info: FileDownloader: Downloading file: https://dl.pstmn.io/download/9.27.0/Postman-win64-9.27.0-delta.nupkg
+[09.08.22 12:33:40] info: DeltaPackageBuilder: lib\net45\chrome_100_percent.pak.diff exists unchanged, skipping
+[09.08.22 12:33:40] info: DeltaPackageBuilder: lib\net45\chrome_200_percent.pak.diff exists unchanged, skipping
+[09.08.22 12:33:40] info: DeltaPackageBuilder: Applying MSDiff to lib\net45\d3dcompiler_47.dll.diff
+[09.08.22 12:33:43] warn: Program: Failed to apply updates, falling back to full updates: System.ComponentModel.Win32Exception (0x80004005): Der Vorgang wurde erfolgreich beendet
+   bei DeltaCompressionDotNet.MsDelta.MsDeltaCompression.ApplyDelta(String deltaFilePath, String oldFilePath, String newFilePath)
+   bei Squirrel.DeltaPackageBuilder.applyDiffToFile(String deltaPath, String relativeFilePath, String workingDirectory)
+   bei Squirrel.EnumerableExtensions.ForEach[TSource](IEnumerable`1 source, Action`1 onNext)
+   bei Squirrel.DeltaPackageBuilder.ApplyDeltaPackage(ReleasePackage basePackage, ReleasePackage deltaPackage, String outputFile)
+   bei System.Threading.Tasks.Task`1.InnerInvoke()
+   bei System.Threading.Tasks.Task.Execute()
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   bei System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   bei Squirrel.UpdateManager.ApplyReleasesImpl.<createFullPackagesFromDeltas>d__8.MoveNext()
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   bei System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   bei Squirrel.UpdateManager.ApplyReleasesImpl.<ApplyReleases>d__2.MoveNext()
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   bei System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   bei Squirrel.UpdateManager.<ApplyReleases>d__9.MoveNext()
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   bei Squirrel.Update.Program.<Update>d__5.MoveNext()
+[09.08.22 12:33:43] info: CheckForUpdateImpl: Using existing staging user ID: 107c1b9e-59a0-52c8-91b5-1285fa4b4cc8
+[09.08.22 12:33:43] info: CheckForUpdateImpl: Downloading RELEASES file from https://dl.pstmn.io/update/WIN64/9.19.0/stable?installationId=fc7069aa-0c9f-4a9d-ae1f-83ea623ea598&userId=0&syncEnabled=false&teamPlan=&teamId=0
+[09.08.22 12:33:43] info: FileDownloader: Downloading url: https://dl.pstmn.io/update/WIN64/9.19.0/stable/RELEASES?installationId=fc7069aa-0c9f-4a9d-ae1f-83ea623ea598&userId=0&syncEnabled=false&teamPlan=&teamId=0&id=Postman-win64&localVersion=9.19.0&arch=amd64
+[09.08.22 12:33:43] info: FileDownloader: Downloading file: https://dl.pstmn.io/download/9.27.0/Postman-win64-9.27.0-full.nupkg
+[09.08.22 12:36:07] info: ApplyReleasesImpl: Writing files to app directory: C:\Users\LillithOP\AppData\Local\Postman\app-9.27.0
+[09.08.22 12:36:11] info: LogHost: Rigging execution stub for Postman_ExecutionStub.exe to C:\Users\LillithOP\AppData\Local\Postman\Postman.exe
+[09.08.22 12:36:19] info: ApplyReleasesImpl: Squirrel Enabled Apps: []
+[09.08.22 12:36:19] warn: ApplyReleasesImpl: No apps are marked as Squirrel-aware! Going to run them all
+[09.08.22 12:36:19] info: ApplyReleasesImpl: About to create shortcuts for Postman.exe, rootAppDir C:\Users\LillithOP\AppData\Local\Postman\
+[09.08.22 12:36:22] info: ApplyReleasesImpl: Creating shortcut for Postman.exe => C:\Users\LillithOP\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Postman\Postman.lnk
+[09.08.22 12:36:22] info: ApplyReleasesImpl: About to save shortcut: C:\Users\LillithOP\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Postman\Postman.lnk (target C:\Users\LillithOP\AppData\Local\Postman\Postman.exe, workingDir C:\Users\LillithOP\AppData\Local\Postman\app-9.27.0, args , toastActivatorCSLID d56d0ae8-2c2a-5b45-bd3b-9973bc69da9e)
+[09.08.22 12:36:22] info: ApplyReleasesImpl: Creating shortcut for Postman.exe => C:\Users\LillithOP\Desktop\Postman.lnk
+[09.08.22 12:36:22] info: ApplyReleasesImpl: About to save shortcut: C:\Users\LillithOP\Desktop\Postman.lnk (target C:\Users\LillithOP\AppData\Local\Postman\Postman.exe, workingDir C:\Users\LillithOP\AppData\Local\Postman\app-9.27.0, args , toastActivatorCSLID d56d0ae8-2c2a-5b45-bd3b-9973bc69da9e)
+[09.08.22 12:36:22] info: ApplyReleasesImpl: Examining Pin: File Explorer.lnk
+[09.08.22 12:36:22] info: ApplyReleasesImpl: Examining Pin: Google Chrome.lnk
+[09.08.22 12:36:22] info: ApplyReleasesImpl: Examining Pin: Microsoft Edge.lnk
+[09.08.22 12:36:23] info: ApplyReleasesImpl: Examining Pin: notepad++.lnk
+[09.08.22 12:36:23] info: ApplyReleasesImpl: Examining Pin: Visual Studio Code.lnk
+[09.08.22 12:36:23] info: ApplyReleasesImpl: Starting fixPinnedExecutables
+[09.08.22 12:36:23] info: ApplyReleasesImpl: Examining Pin: File Explorer.lnk
+[09.08.22 12:36:23] info: ApplyReleasesImpl: Examining Pin: Google Chrome.lnk
+[09.08.22 12:36:23] info: ApplyReleasesImpl: Examining Pin: Microsoft Edge.lnk
+[09.08.22 12:36:23] info: ApplyReleasesImpl: Examining Pin: notepad++.lnk
+[09.08.22 12:36:23] info: ApplyReleasesImpl: Examining Pin: Visual Studio Code.lnk
+[09.08.22 12:36:23] info: ApplyReleasesImpl: Fixing up tray icons
+[09.08.22 12:36:23] info: ApplyReleasesImpl: cleanDeadVersions: checking for version 9.27.0
+[09.08.22 12:36:23] info: ApplyReleasesImpl: cleanDeadVersions: exclude current version folder app-9.19.0
+[09.08.22 12:36:23] info: ApplyReleasesImpl: cleanDeadVersions: exclude new version folder app-9.27.0
+[09.08.22 12:36:27] info: Program: Finished Squirrel Updater

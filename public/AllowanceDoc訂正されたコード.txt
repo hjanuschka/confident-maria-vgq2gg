@@ -1,0 +1,256 @@
+訂正されたコード(Doc)
+
+
+import React, { useEffect, useState } from "react";
+import Header from "./Header";
+import { Card, CardActions, CardContent, makeStyles } from "@material-ui/core";
+import ActionButton from "./ActionButton";
+import InputTextField from "./InputTextField";
+import DateField from "./DateField";
+import axios from "axios";
+import { useHistory } from "react-router-dom";
+import InputNumberField from "./InputNumberField";
+
+
+function AllowanceDoc() {
+    // 定義
+    const history = useHistory();
+    const [mode, setMode] = useState("Browsing");
+    const [subject, setsubject] = useState("");
+    const [affiliation, setaffiliation] = useState("");
+    const [nominate, setnominate] = useState("");
+    const [createdDate, setcreatedDate] = useState(new Date());
+    const [useDate, setuseDate] = useState(new Date());
+    const [payee, setpayee] = useState("");
+    const [details, setdetails] = useState("");
+    const [amount, setamount] = useState(0);
+
+
+    // 初期ロード処理
+    function effectEvent() {
+        const effect = async () => {
+            if (!history.location.search) {
+                setMode("Inserting");
+                return;
+            }
+            const server = "http://localhost:3000/getAllowance";
+            const body = {
+                subject: decodeURIComponent(
+                    history.location.search.split("id=")[1]
+                ),
+            };
+            const res = await axios.post(server, body);
+            if (res.data.length > 0) {
+                //新規ではない
+                var e = res.data[0];
+                setsubject(e.subject);
+                setaffiliation(e.affiliation);
+                setnominate(e.nominate);
+                setcreatedDate(new Date(e.createdDate));
+                setuseDate(new Date(e.useDate));
+                setpayee(e.payee);
+                setdetails(e.details);
+                setamount(e.amount);
+            }
+        };
+        effect();
+    }
+    useEffect(effectEvent, []);
+
+    // スタイル
+    const useStyles = makeStyles({
+        root: {
+            margin: "20px",
+        },
+        actions: {
+            backgroundColor: "#eeeeee",
+        },
+        save: {
+            backgroundColor: "#ffffff",
+            margin: "0 0 0 auto",
+        },
+        edit: {
+            backgroundColor: "#ffffff",
+        },
+        delete: {
+            backgroundColor: "#ffffff",
+        },
+        text: {
+            height: "400px",
+            gridRow: "10px",
+        },
+        titleField: {
+            width: 400,
+            height: 80,
+            marginRight: 50,
+        },
+    });
+    const classes = useStyles();
+
+    // check処理
+    function check() {
+        return (
+            !subject ||
+            !affiliation ||
+            !nominate ||
+            !createdDate ||
+            !useDate ||
+            !payee ||
+            !details ||
+            !amount
+        );
+    }
+    // Bodyセット
+    function setBody() {
+        return {
+            subject: subject,
+            affiliation: affiliation,
+            nominate: nominate,
+            createdDate: createdDate,
+            useDate: useDate,
+            payee: payee,
+            details: details,
+            amount: amount,
+        };
+    }
+    // 保存処理
+    async function save() {
+        if (check()) return;
+        const server = "http://localhost:3000/updateAllowance";
+        const body = setBody();
+        await axios.post(server, body);
+        setMode("Browsing");
+    }
+    // 登録処理
+    async function create() {
+        if (check()) return;
+        const server = "http://localhost:3000/createAllowance";
+        const body = setBody();
+        await axios.post(server, body);
+        setMode("Browsing");
+    }
+    // 削除処理
+    async function docDelete() {
+        const server = "http://localhost:3000/deleteAllowance";
+        const body = {
+            subject: subject,
+        };
+        await axios.post(server, body);
+    }
+    // アクションボタン画面
+    const ActionDisp = (
+        <>
+            <CardActions className={classes.actions}>
+                <ActionButton
+                    buttonName={"保存"}
+                    onClick={save}
+                    isdisplay={mode === "Updating"}
+                    classesName={classes.save}
+                />
+                <ActionButton
+                    buttonName={"登録"}
+                    onClick={create}
+                    isdisplay={mode === "Inserting"}
+                    classesName={classes.save}
+                />
+                <ActionButton
+                    buttonName={"編集"}
+                    onClick={() => {
+                        setMode("Updating");
+                    }}
+                    isdisplay={mode === "Browsing"}
+                    classesName={classes.edit}
+                />
+                <ActionButton
+                    buttonName={"削除"}
+                    isdisplay={mode === "Browsing"}
+                    onClick={docDelete}
+                    classesName={classes.delete}
+                />
+            </CardActions>
+        </>
+    );
+    // フィールド画面
+    const FieldDisp = (
+        <>
+            <CardContent>
+                <InputTextField
+                    onChange={(e) => {
+                        setsubject(e.target.value);
+                    }}
+                    Mode={mode}
+                    label={"件名"}
+                    value={subject}
+                />
+                <InputTextField
+                    onChange={(e) => {
+                        setaffiliation(e.target.value);
+                    }}
+                    Mode={mode}
+                    label={"所属"}
+                    value={affiliation}
+                />
+                <InputTextField
+                    onChange={(e) => {
+                        setnominate(e.target.value);
+                    }}
+                    Mode={mode}
+                    label={"指名"}
+                    value={nominate}
+                />
+                <DateField
+                    onChange={(e) => {
+                        setcreatedDate(e);
+                    }}
+                    Mode={mode}
+                    label={"提出日"}
+                    value={createdDate}
+                />
+                <DateField
+                    onChange={(e) => {
+                        setuseDate(e);
+                    }}
+                    Mode={mode}
+                    label={"年月日"}
+                    value={useDate}
+                />
+                <InputTextField
+                    onChange={(e) => {
+                        setpayee(e.target.value);
+                    }}
+                    Mode={mode}
+                    label={"支払先"}
+                    value={payee}
+                />
+                <InputTextField
+                    onChange={(e) => {
+                        setdetails(e.target.value);
+                    }}
+                    Mode={mode}
+                    label={"明細"}
+                    value={details}
+                />
+                <InputNumberField
+                    onChange={(e) => {
+                        setamount(Number(e.target.value));
+                    }}
+                    Mode={mode}
+                    label={"金額"}
+                    value={amount}
+                />
+            </CardContent>
+        </>
+    );
+    // メイン画面
+
+    return (
+        <>
+            <Header />
+            <Card className={classes.root}>
+                {ActionDisp}
+                {FieldDisp}
+            </Card>
+        </>
+    );
+}
+export default AllowanceDoc;

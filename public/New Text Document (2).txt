@@ -1,0 +1,209 @@
+
+
+Controller 
+
+using eCTD.API.Core.Manager;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+
+
+
+namespace eDQR.API.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class MailServiceController : ControllerBase
+    {
+        private readonly IMailServiceManager _mailServiceManager;
+        public MailServiceController(IMailServiceManager mailServiceManager)
+        {
+            _mailServiceManager = mailServiceManager;
+        } 
+
+
+
+       [HttpPost("[action]")]
+        [AllowAnonymous]
+        public void sendmail(string mailid, IFormFile files)
+        {
+            _mailServiceManager.sendmail(mailid, files);
+        }
+    }
+}
+
+
+
+
+manager
+
+using eCTD.API.Core.Service;
+using Microsoft.AspNetCore.Http;
+using System.Net.Mail;
+
+
+
+namespace eCTD.API.Core.Manager
+{
+    public interface IMailServiceManager
+    {
+        void sendmail(string mailid, IFormFile files);
+    }
+    public class MailServiceManager : IMailServiceManager
+    {
+        private readonly IMailService _mailService;
+        public MailServiceManager(IMailService mailService)
+        {
+            _mailService = mailService;
+        } 
+
+
+
+       public void sendmail(string mailid, IFormFile files)
+        {
+            MailMessage mailService = new MailMessage()
+            {
+                Subject = "ert",
+                Body = "erty",
+                
+            };
+            
+            _mailService.sendmail(mailid,files, mailService);
+        }
+    } 
+
+
+
+}
+
+
+
+service 
+
+using eCTD.API.Core.Repositories;
+using eDQR.API.Core.Configuration;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Options;
+using System.Net.Mail;
+using System.Text;
+
+
+
+namespace eCTD.API.Core.Service
+{
+    public interface IMailService
+    {
+        void sendmail(string mailid, IFormFile files, MailMessage? mailMessage = null);
+    } 
+
+
+
+   public class MailService : IMailService
+    {
+        private readonly IHttpContextAccessor _httpContext;
+        private readonly Repository _repository;
+        private readonly IOptions<MailConfugurationSettings> _options; 
+
+
+
+       public MailService(Repository repository,
+            IHttpContextAccessor httpContext,
+            IOptions<MailConfugurationSettings> options)
+        {
+            _options = options;
+            _httpContext = httpContext;
+            _repository = repository; 
+
+
+
+       } 
+
+
+
+
+        public void sendmail(string mailid, IFormFile files, MailMessage? mailMessage = null)
+        {
+            try
+            {
+                string to = mailid.ToString();
+                var file = _httpContext.HttpContext.Request.Form.Files[0];
+                MailMessage message = new MailMessage(_options.Value.Sender,to);
+                
+                byte[] buffer = new byte[files.Length];
+                var resultInBytes = ConvertToBytes(files);
+                Stream stream = new MemoryStream(resultInBytes);
+                message.Attachments.Add(new Attachment(stream, files.FileName)); 
+
+
+
+               //mailbody
+                message.Subject = string.IsNullOrWhiteSpace(mailMessage.Subject) ? "eDQR NextGen Doc Assist Manager!" : mailMessage.Subject; 
+                message.Body = string.IsNullOrWhiteSpace(mailMessage.Body) ? " Do you need any assistance further?" : mailMessage.Body;
+                message.BodyEncoding = Encoding.UTF8;
+                message.IsBodyHtml = true;  
+
+
+
+               //mail server details
+                SmtpClient client = new SmtpClient(_options.Value.SMTPHost, _options.Value.SMTRPort); 
+                System.Net.NetworkCredential basicCredential1 = new
+                System.Net.NetworkCredential(_options.Value.Sender, _options.Value.Password); 
+                client.EnableSsl = true;
+                client.UseDefaultCredentials = false;
+                client.Credentials = basicCredential1;
+                client.Send(message);
+            }
+            catch (Exception)
+            {
+            }
+        } 
+
+
+
+       public byte[] ConvertToBytes(IFormFile files) 
+        {
+            using (var memoryStream = new MemoryStream())
+            {
+                files.OpenReadStream().CopyTo(memoryStream);
+                return memoryStream.ToArray();
+            }
+        }
+    }
+}
+
+
+
+mail configuration
+
+namespace eDQR.API.Core.Configuration
+{
+    public class MailConfugurationSettings
+    {
+        public string Sender { get; set; }
+        public string SMTPHost { get; set; }
+
+
+
+       public int SMTRPort { get; set; }  
+
+
+
+       public string Password { get; set; }
+    }
+}
+	
+app settings.json
+
+"MailSettings": {
+    "Sender": "learning@ectdglobal.com",
+    "SMTPHost": "smtp.office365.com",
+    "SMTPPort": "587",
+    "Password": "Vijay@12345"
+  }
+
+
+program .cs
+
+
+builder.Services.AddScoped(con => con.GetService<IOptions<MailConfugurationSettings>>().Value);
+builder.Services.Configure<MailConfugurationSettings>(config.GetSection("MailSettings"));

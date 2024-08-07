@@ -1,0 +1,272 @@
+{\rtf1\ansi\ansicpg1253\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 library ieee;\
+use ieee.std_logic_1164.all;\
+\
+entity exercise1_tb is\
+end entity;\
+\
+architecture exercise1_tb_arch of exercise1_tb is\
+component Exercise1 is\
+port\
+(\
+	A: in std_logic;\
+	B: in std_logic;\
+	C: in std_logic;\
+	D: in std_logic;\
+\
+	F: out std_logic;\
+\
+	com_cathode_led: out std_logic\
+);\
+end component;\
+\
+signal sigA, sigB, sigC, sigD, sigF: std_logic;\
+signal sig_com_cathode_led: std_logic;\
+begin\
+dut: Exercise1 port map\
+(\
+	A => sigA,\
+	B => sigB,\
+	C => sigC,\
+	D => sigD,\
+	F => sigF,\
+	com_cathode_led => sig_com_cathode_led\
+);\
+\
+process\
+begin\
+\
+\'97\uc0\u928 \u961 \u974 \u964 \u951  \u960 \u949 \u961 \u943 \u960 \u964 \u969 \u963 \u951 \
+sigA <= \'910\'92;\
+sigB <= \'910\'92;\
+sigC <= \'910\'92;\
+sigD <= \'910\'92;\
+\
+wait for 10 ns;\
+If sigF = \'911\'92 then\
+	report \'93Case 0000 Correct\'94;\
+else\
+	report \'93Case 0000 Error\'94;\
+end if;\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \'97\uc0\u916 \u949 \u973 \u964 \u949 \u961 \u951  \u960 \u949 \u961 \u943 \u960 \u964 \u969 \u963 \u951 \
+wait for 10 ns;\
+sigA <= \'910\'92;\
+sigB <= \'910\'92;\
+sigC <= \'910\'92;\
+sigD <= \'911\'92;\
+\
+wait for 10 ns;\
+If sigF = \'910\'92 then\
+	report \'93Case 0001 Correct\'94;\
+else\
+	report \'93Case 0001 Error\'94;\
+end if;\
+\
+\'97\uc0\u932 \u961 \u943 \u964 \u951  \u960 \u949 \u961 \u943 \u960 \u964 \u969 \u963 \u951 \
+wait for 10 ns;\
+sigA <= \'910\'92;\
+sigB <= \'910\'92;\
+sigC <= \'911\'92;\
+sigD <= \'910\'92;\
+\
+wait for 10 ns;\
+If sigF = \'910\'92 then\
+	report \'93Case 0010 Correct\'94;\
+else\
+	report \'93Case 0010 Error\'94;\
+end if;\
+\
+\'97\uc0\u932 \u941 \u964 \u945 \u961 \u964 \u951  \u960 \u949 \u961 \u943 \u960 \u964 \u969 \u963 \u951 \
+wait for 10 ns;\
+sigA <= \'910\'92;\
+sigB <= \'910\'92;\
+sigC <= \'911\'92;\
+sigD <= \'911\'92;\
+\
+wait for 10 ns;\
+If sigF = \'910\'92 then\
+	report \'93Case 0011 Correct\'94;\
+else\
+	report \'93Case 0011 Error\'94;\
+end if;\
+\
+\'97\uc0\u928 \u941 \u956 \u960 \u964 \u951  \u960 \u949 \u961 \u943 \u960 \u964 \u969 \u963 \u951 \
+wait for 10 ns;\
+sigA <= \'910\'92;\
+sigB <= \'911\'92;\
+sigC <= \'910\'92;\
+sigD <= \'910\'92;\
+\
+wait for 10 ns;\
+If sigF = \'910\'92 then\
+	report \'93Case 0100 Correct\'94;\
+else\
+	report \'93Case 0100 Error\'94;\
+end if;\
+\
+\'97\uc0\u904 \u954 \u964 \u951  \u960 \u949 \u961 \u943 \u960 \u964 \u969 \u963 \u951 \
+wait for 10 ns;\
+sigA <= \'910\'92;\
+sigB <= \'911\'92;\
+sigC <= \'910\'92;\
+sigD <= \'911\'92;\
+\
+wait for 10 ns;\
+If sigF = \'910\'92 then\
+	report \'93Case 0101 Correct\'94;\
+else\
+	report \'93Case 0101 Error\'94;\
+end if;\
+\
+\'97\uc0\u904 \u946 \u948 \u959 \u956 \u951  \u960 \u949 \u961 \u943 \u960 \u964 \u969 \u963 \u951 \
+wait for 10 ns;\
+sigA <= \'910\'92;\
+sigB <= \'911\'92;\
+sigC <= \'911\'92;\
+sigD <= \'910\'92;\
+\
+wait for 10 ns;\
+If sigF = \'910\'92 then\
+	report \'93Case 0110 Correct\'94;\
+else\
+	report \'93Case 0110 Error\'94;\
+end if;\
+\
+\'97\uc0\u908 \u947 \u948 \u959 \u951  \u960 \u949 \u961 \u943 \u960 \u964 \u969 \u963 \u951 \
+wait for 10 ns;\
+sigA <= \'910\'92;\
+sigB <= \'911\'92;\
+sigC <= \'911\'92;\
+sigD <= \'911\'92;\
+\
+wait for 10 ns;\
+If sigF = \'910\'92 then\
+	report \'93Case 0111 Correct\'94;\
+else\
+	report \'93Case 0111 Error\'94;\
+end if;\
+\
+\'97\uc0\u904 \u957 \u945 \u964 \u951  \u960 \u949 \u961 \u943 \u960 \u964 \u969 \u963 \u951 \
+wait for 10 ns;\
+sigA <= \'911\'92;\
+sigB <= \'910\'92;\
+sigC <= \'910\'92;\
+sigD <= \'910\'92;\
+\
+wait for 10 ns;\
+If sigF = \'911\'92 then\
+	report \'93Case 1000 Correct\'94;\
+else\
+	report \'93Case 1000 Error\'94;\
+end if;\
+\
+\'97\uc0\u916 \u941 \u954 \u945 \u964 \u951  \u960 \u949 \u961 \u943 \u960 \u964 \u969 \u963 \u951 \
+wait for 10 ns;\
+sigA <= \'911\'92;\
+sigB <= \'910\'92;\
+sigC <= \'910\'92;\
+sigD <= \'911\'92;\
+\
+wait for 10 ns;\
+If sigF = \'911\'92 then\
+	report \'93Case 1001 Correct\'94;\
+else\
+	report \'93Case 1001 Error\'94;\
+end if;\
+\
+\'97\uc0\u917 \u957 \u948 \u941 \u954 \u945 \u964 \u951  \u960 \u949 \u961 \u943 \u960 \u964 \u969 \u963 \u951 \
+wait for 10 ns;\
+sigA <= \'911\'92;\
+sigB <= \'910\'92;\
+sigC <= \'911\'92;\
+sigD <= \'910\'92;\
+\
+wait for 10 ns;\
+If sigF = \'910\'92 then\
+	report \'93Case 1010 Correct\'94;\
+else\
+	report \'93Case 1010 Error\'94;\
+end if;\
+\
+\'97\uc0\u916 \u969 \u948 \u941 \u954 \u945 \u964 \u951  \u960 \u949 \u961 \u943 \u960 \u964 \u969 \u963 \u951 \
+wait for 10 ns;\
+sigA <= \'911\'92;\
+sigB <= \'910\'92;\
+sigC <= \'911\'92;\
+sigD <= \'911\'92;\
+\
+wait for 10 ns;\
+If sigF = \'910\'92 then\
+	report \'93Case 1011 Correct\'94;\
+else\
+	report \'93Case 1011 Error\'94;\
+end if;\
+\
+\'97\uc0\u916 \u941 \u954 \u945 \u964 \u951  \u932 \u961 \u943 \u964 \u951  \u960 \u949 \u961 \u943 \u960 \u964 \u969 \u963 \u951 \
+wait for 10 ns;\
+sigA <= \'911\'92;\
+sigB <= \'911\'92;\
+sigC <= \'910\'92;\
+sigD <= \'910\'92;\
+\
+wait for 10 ns;\
+If sigF = \'910\'92 then\
+	report \'93Case 1100 Correct\'94;\
+else\
+	report \'93Case 1100 Error\'94;\
+end if;\
+\
+\'97\uc0\u916 \u941 \u954 \u945 \u964 \u951  \u932 \u941 \u964 \u945 \u961 \u964 \u951  \u960 \u949 \u961 \u943 \u960 \u964 \u969 \u963 \u951 \
+wait for 10 ns;\
+sigA <= \'911\'92;\
+sigB <= \'911\'92;\
+sigC <= \'910\'92;\
+sigD <= \'911\'92;\
+\
+wait for 10 ns;\
+If sigF = \'910\'92 then\
+	report \'93Case 1101 Correct\'94;\
+else\
+	report \'93Case 1101 Error\'94;\
+end if;\
+\
+\'97\uc0\u916 \u941 \u954 \u945 \u964 \u951  \u928 \u941 \u956 \u960 \u964 \u951  \u960 \u949 \u961 \u943 \u960 \u964 \u969 \u963 \u951 \
+wait for 10 ns;\
+sigA <= \'911\'92;\
+sigB <= \'911\'92;\
+sigC <= \'911\'92;\
+sigD <= \'910\'92;\
+\
+wait for 10 ns;\
+If sigF = \'910\'92 then\
+	report \'93Case 1110 Correct\'94;\
+else\
+	report \'93Case 1110 Error\'94;\
+end if;\
+\
+\'97\uc0\u916 \u941 \u954 \u945 \u964 \u951  \u904 \u954 \u964 \u951  \u960 \u949 \u961 \u943 \u960 \u964 \u969 \u963 \u951 \
+wait for 10 ns;\
+sigA <= \'911\'92;\
+sigB <= \'911\'92;\
+sigC <= \'911\'92;\
+sigD <= \'911\'92;\
+\
+wait for 10 ns;\
+If sigF = \'910\'92 then\
+	report \'93Case 1111 Correct\'94;\
+else\
+	report \'93Case 1111 Error\'94;\
+end if;\
+\
+wait for 10 ns;\
+wait;\
+end process;\
+end exercise1_tb_arch;}

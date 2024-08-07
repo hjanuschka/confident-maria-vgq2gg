@@ -1,0 +1,44 @@
+Receiving value
+===============
+Number field
+Payment fields
+
+Options in
+==========
+Number field 
+Total field
+
+Purpose
+=======
+Calculation options
+calculate with conditional logic
+calculate with discount (discount field)
+calculate with coupon -----
+
+Group concept
+=============
+create group for calculation
+inside the group any number of sub-group can be created
+those sub-groups can be calculated
+conditional logic support with main group only and only one main group is allowed
+
+
+Dropbox
+2Checkout Gateway
+HubSpot
+Emma
+EmailOctopus
+Agile CRM
+Capsule CRM
+Authorize.net
+Breeze
+CleverReach
+Campfire
+FreshBooks
+GetResponse
+Help Scout
+iContact
+Mad Mimi
+Mollie
+Pipe
+Postmark

@@ -1,0 +1,112 @@
+- Greeting
+1) Hi. I'm David Jang. It's a great pleasure to meet you.
+2) Hello. I'm David Jang. I'm looking forward to talking with you.
+3) Hi. I'm David Jang. Thank you for taking the time to speak with me today.
+I'm super happy to have a talk with you.
+
+
+- Tell me about yourself
+Well, I was born in 09/24/1992, in Singapore.
+
+I'm a senior blockchain & full stack developer with 6 years of working history and 3 years of freelancing.
+For about frontend, I've strong experience in React.js, Angular, and some experiences in Vue.js. I'm also good at HTML5, CSS, SCSS, SASS, LESS, TailwindCSS, and so on.
+About backend, Node.js, and MongoDB is my best skills. I have some experiences in PostgreSQL, MariaDB, Redis and DynamoDB. I've participated in one project that's built with PHP, Laravel.
+About Blockchain field, I'm good at solidity. I've developed some smart contracts, that's deployed and running on mainnet now. I've strong expereicnes in several blockchain network, such as Ethereum, Binance Smart Chain, and Solona, Zilionixx.
+
+My family is a little international company.
+My grand father is Spanish, father is Maltese, and my mother is Singaporean.
+I have a brother, 2 years younger than me.
+I'm not married yet.
+
+My hobby is listening to music, even though I'm not good at singing.
+My favourite sport is football and tennis.
+
+I spent my childhood in Singapore and Spain.
+But I'm not good at Spanish, and Chinese.
+I entered Nanyang Technological University, one of the fine universities in Singapore at 2009. I got bachelor's degree in computer science there.
+My GPA is 4.6, A.
+
+I'm friendly and outgoing. I love to meet new people, and making friends.
+So, my working style is to be like a family with partners, not just "EMPLOYEER" and "WORKER".
+
+I'm a highly motivated and self-driven developer, who lives for figuring things out, and holds a strong passion for exploring new technologies.
+I constantly motivate myself by the idea of learning more, and the enjoyment of the requirement of an ever-adapting mindset.
+
+
+
+After receiving your message, I've visited your company's website.
+I've realized that your company is founded in 2017, and majored in Information Technology.
+There are 37 developers in there, right?
+Can you tell me more about your company?
+
+
+
+- Why 
+Getting an stable job is really difficult, even a graduate of university.
+So, I first worked as a freelancer on Upwork for about 3 years.
+Working on Upwork, I met clients all over the world.
+One client introduced me to Teceze LTD company, and joined them.
+
+I love my role and coworkers, but I've come to a point where there are no longer growth opportunities on my team.
+Working with worldwide clients, I happen to know Slash company.
+They said to me that they are pioneers in blockchain field, and they need blockchain experts.
+At that time, I'm not an expert, but I'm researching on that.
+I really love to learn new technologies.
+I'm looking for a new challenge.
+Looking for a career growth.
+So, I left Teceze, and went Slash.
+
+Difference between USA time and Singapore time, 12 hours of difference, I work in night.
+From 04/2020, I got sick, and felt little difficult to work.
+I asked them about 2 month vocation, but my health didn't get better.
+So I had to leave Slash.
+
+After that, I moved to Malta.
+There, I entered WinWin company, and worked remotely.
+10/2021, I lost my brother, because of COVID-19.
+And also my mother got ill, so I have to take care of my family.
+I asked them about vacation, but you know Japanese...
+All they know is only profit.
+They fired me.
+After that, I take care of my father, and now, everyting get much better.
+I can work full-time, just like before.
+
+
+
+
+
+
+- About travel
+Well, I want to work remotely.
+
+
+
+
+
+
+
+- About company
+Teceze (Singapore Company)
+50
+
+Slash (Singapore Company)
+
+
+WinWin
+
+
+
+
+
+
+- About Personal Achievements
+Zilionixx Scan
+Founded Year: 2021
+
+I've participated in Zilionix from late 2020.
+
+
+
+
+
+

@@ -1,0 +1,134 @@
+### npp
+group, role, partition, replica, host, port
+onepiece, nb, 1, -, pgssk8x0546, 30100
+onepiece, ns, 1, 1, pgssk8x0560, 30200
+onepiece, ns, 1, 2, pgssk8x0561, 30200
+onepiece, ns, 1, 3, pgssk8x0562, 30200
+onepiece, nb, 2, -, pgssk8x0546, 30101
+onepiece, ns, 2, 1, pgssk8x0563, 30200
+onepiece, ns, 2, 2, pgssk8x0564, 30200
+onepiece, ns, 2, 3, pgssk8x0565, 30200
+onepiece, nb, 3, -, pgssk8x0549, 30100
+onepiece, ns, 3, 1, pgssk8x0566, 30200
+onepiece, ns, 3, 2, pgssk8x0567, 30200
+onepiece, ns, 3, 3, pgssk8x0568, 30200
+onepiece, nb, 4, -, pgssk8x0549, 30101
+onepiece, ns, 4, 1, pgssk8x0569, 30200
+onepiece, ns, 4, 2, pgssk8x0570, 30200
+onepiece, ns, 4, 3, pgssk8x0571, 30200
+onepiece, nb, 5, -, pgssk8x0552, 30100
+onepiece, ns, 5, 1, pgssk8x0572, 30200
+onepiece, ns, 5, 2, pgssk8x0573, 30200
+onepiece, ns, 5, 3, pgssk8x0574, 30200
+onepiece, nb, 6, -, pgssk8x0552, 30101
+onepiece, ns, 6, 1, pgssk8x0560, 30201
+onepiece, ns, 6, 2, pgssk8x0561, 30201
+onepiece, ns, 6, 3, pgssk8x0562, 30201
+onepiece, nb, 7, -, pgssk8x0555, 30100
+onepiece, ns, 7, 1, pgssk8x0563, 30201
+onepiece, ns, 7, 2, pgssk8x0564, 30201
+onepiece, ns, 7, 3, pgssk8x0565, 30201
+onepiece, nb, 8, -, pgssk8x0555, 30101
+onepiece, ns, 8, 1, pgssk8x0566, 30201
+onepiece, ns, 8, 2, pgssk8x0567, 30201
+onepiece, ns, 8, 3, pgssk8x0568, 30201
+onepiece, nb, 9, -, pgssk8x0558, 30100
+onepiece, ns, 9, 1, pgssk8x0569, 30201
+onepiece, ns, 9, 2, pgssk8x0570, 30201
+onepiece, ns, 9, 3, pgssk8x0571, 30201
+onepiece, nb, 10, -, pgssk8x0558, 30101
+onepiece, ns, 10, 1, pgssk8x0572, 30201
+onepiece, ns, 10, 2, pgssk8x0573, 30201
+onepiece, ns, 10, 3, pgssk8x0574, 30201
+
+### ddbs
+collection, shard, host, port
+docs, 0, pgssk8x0977, 30300
+docs, 0, pgssk8x0978, 30300
+docs, 1, pgssk8x0979, 30300
+docs, 1, pgssk8x0980, 30300
+docs, 2, pgssk8x0981, 30300
+docs, 2, pgssk8x0982, 30300
+docs, 3, pgssk8x0983, 30300
+docs, 3, pgssk8x0984, 30300
+
+### dotbutler
+host, port, monitor_port
+pgssk8x0945, 30400, 30500
+pgssk8x0946, 30400, 30500
+pgssk8x0947, 30400, 30500
+pgssk8x0948, 30400, 30500
+pgssk8x0949, 30400, 30500
+
+### ginad
+host, port
+pgssk8x0950, 30600
+pgssk8x0951, 30600
+pgssk8x0952, 30600
+pgssk8x0953, 30600
+pgssk8x0954, 30600
+
+### sas
+host, port, query_source, fixed
+pgssk8x0955, 31002, service, true
+pgssk8x0956, 31002, service, true
+pgssk8x0957, 31002, service, true
+
+### ginab
+host
+pgssk8x0958
+
+### ngs
+host, port
+pgssk8x0959, 30700
+pgssk8x0960, 30700
+pgssk8x0961, 30700
+
+### spare
+host
+pgssk8x0962
+pgssk8x0963
+pgssk8x0964
+pgssk8x0965
+pgssk8x0966
+pgssk8x0967
+pgssk8x0968
+pgssk8x0969
+pgssk8x0970
+pgssk8x0971
+pgssk8x0972
+pgssk8x0973
+pgssk8x0974
+pgssk8x0975
+pgssk8x0976
+pgssk8x0977
+pgssk8x0978
+pgssk8x0979
+pgssk8x0980
+pgssk8x0981
+pgssk8x0982
+pgssk8x0983
+pgssk8x0984
+pgssk8x0985
+pgssk8x0986
+pgssk8x0987
+pgssk8x0988
+pgssk8x0989
+pgssk8x0990
+pgssk8x0991
+pgssk8x0992
+pgssk8x0993
+pgssk8x0994
+pgssk8x0995
+pgssk8x0996
+pgssk8x0997
+pgssk8x0998
+pgssk8x0999
+pgssk8x1000
+pgssk8x1001
+pgssk8x1002
+pgssk8x1003
+pgssk8x1004
+pgssk8x1005
+pgssk8x1006
+

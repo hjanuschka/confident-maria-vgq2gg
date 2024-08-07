@@ -1,0 +1,80 @@
+[
+   {
+      "eventType": "new_order",
+      "data": {
+         "idOrder": "test-x9999",
+         "idCountry": "CH",
+         "idSalesChannel": "CH_ABAST_SAP",
+         "idStore": "J410",
+         "itemsQuantity": 4,
+         "shippingCost": 0,
+         "amountInvoiceReserved": 0,
+         "idDeliveryType": "ESTANDAR",
+         "delivery": {
+            "address": "El Llano Subercaseaux 3519  El Llano Subercaseaux 3519 ",
+            "province": "Metropolitana",
+            "city": "San Miguel",
+            "geolocation": {
+               "latitude": "-1",
+               "longitude": "-1"
+            },
+            "deliveredTo": "Juan Perez",
+            "idStoreReceiver": "O513",
+            "phone": "+56976752865"
+         },
+         "client": {
+            "name": "Juan",
+            "lastname": "Perez",
+            "phone": "+56976752865",
+            "documentType": "RUT",
+            "documentNumber": "9999999-0",
+            "email": "",
+            "isVip": false,
+            "isCencoPrime": false,
+            "isCollaborator": false
+         },
+         "detail": {
+            "items": [
+               {
+                  "image": "",
+                  "productId": "",
+                  "referenceId": "",
+                  "uniqueId": "",
+                  "ean": "24805506",
+                  "sku": "000000000000475974",
+                  "unitMultiplier": "1",
+                  "categoryId": [
+                     ""
+                  ],
+                  "categoryName": "",
+                  "brandName": "CARNICERIA",
+                  "measurementUnit": "KG",
+                  "originalQuantity": 4,
+                  "isWeight": true,
+                  "price": 0,
+                  "sellingPrice": 0,
+                  "description": "FILETE V ARGENTINA KG",
+                  "commentary": "",
+                  "weight": 4000
+               }
+            ]
+         },
+         "shippingEta": {
+            "origin": {
+               "idStore": "J410",
+               "address": "Calle ",
+               "province": "Metropolitana",
+               "city": "San Miguel",
+               "geolocation": {
+                  "latitude": -70,
+                  "longitude": -33
+               }
+            },
+            "dateShippingInitiated": "",
+            "dateShippingFinished": "",
+            "shippingEstimateDate": "2022/09/05 17:30"
+         },
+         "origin": "INTERNAL"
+      }
+   }
+]

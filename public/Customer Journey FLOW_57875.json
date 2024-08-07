@@ -1,0 +1,90 @@
+{
+  "id": "FLOW_57875",
+  "name": "Customer Journey FLOW_57875",
+  "tags": [
+    "CONVERSION",
+    "UPSELL"
+  ],
+  "nodes": [
+    {
+      "id": "N-1",
+      "type": "trigger",
+      "data": {
+        "action": "product"
+      }
+    },
+    {
+      "id": "N-2",
+      "type": "behaviour",
+      "data": {
+        "action": "addtocart",
+        "frequency": "at_least",
+        "time": 1,
+        "operator": "AND",
+        "conditions": []
+      }
+    },
+    {
+      "id": "N-3",
+      "type": "timing",
+      "data": {
+        "action": "delay",
+        "delayUnit": "days",
+        "delayValue": 7
+      }
+    },
+    {
+      "id": "N-4",
+      "type": "end",
+      "data": {}
+    },
+    {
+      "id": "N-5",
+      "type": "action",
+      "data": {
+        "module": "push",
+        "campaignType": "Bulk/Segmented",
+        "campaign": "psh_965c7ab542000"
+      }
+    },
+    {
+      "id": "N-6",
+      "type": "end",
+      "data": {}
+    }
+  ],
+  "edges": [
+    {
+      "type": "connector",
+      "id": "E-1",
+      "source": "N-1",
+      "target": "N-2"
+    },
+    {
+      "type": "connector",
+      "id": "E-2",
+      "source": "N-2",
+      "target": "N-3",
+      "sourceHandle": "yes"
+    },
+    {
+      "type": "connector",
+      "id": "E-3",
+      "source": "N-2",
+      "target": "N-4",
+      "sourceHandle": "no"
+    },
+    {
+      "type": "connector",
+      "id": "E-4",
+      "source": "N-3",
+      "target": "N-5"
+    },
+    {
+      "type": "connector",
+      "id": "E-5",
+      "source": "N-5",
+      "target": "N-6"
+    }
+  ]
+}

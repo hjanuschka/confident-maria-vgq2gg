@@ -1,0 +1,388 @@
+/*.fusion-header-v1 .con_detail{
+    float:right;
+}
+ .fusion-header-v1 .con_detail ul{
+    list-style:none;
+}
+ .fusion-header-v1 .con_detail ul li{
+    float:left;
+    margin:0px 5px;
+    font-size:13px;
+}
+ .fusion-header-v1 .con_detail ul li.ph_contact a{
+    color:#1c4f8d;
+    margin-top: 5px;
+    display: inline-block;
+}
+ .fusion-header-v1 .con_detail ul li.ph_contact a:hover{
+    text-decoration:underline;
+}
+ .fusion-header-v1 .con_detail ul li.ph_contact a .fa{
+    margin-right:4px;
+}
+ .fusion-header-v1 .con_detail ul li.book_btn{
+    background: #1c4f8d;
+    padding: 3px 10px;
+    border-radius: 3px;
+}
+ .fusion-header-v1 .con_detail ul li.book_btn:hover{
+    opacity:.9;
+}
+ .fusion-header-v1 .con_detail ul li.book_btn a{
+    color: #fff;
+}
+ .fusion-header-sticky-height{
+    height:auto !important;
+}
+ .fusion-header-backface.fusion-sticky-shadow{
+    height:auto !important;
+}
+*/
+ @media (max-width: 767px) {
+     .fusion-columns .fusion-column:not(.fusion-column-last) {
+        margin: 0 0 30px;
+    }
+}
+ @media (max-width: 480px) {
+     .fusion-logo a{
+        max-width:75%;
+    }
+     .fusion-mobile-menu-design-modern.fusion-header-v2 .fusion-header{
+        padding:0px 15px !important;
+    }
+     .fusion-mobile-menu-icons a{
+        margin-top:15px;
+    }
+}
+ .apct-testimonial-content{
+    color:#fff !important;
+}
+ .apct-testimonial-company-name-position{
+    color:#fff !important;
+}
+ .apct-testimonial-company-name{
+    color:#fff !important;
+}
+ .apct-testimonial-pub-date.date-format{
+    color:#fff !important;
+}
+ #fusion-slider-8 .fusion-title h2{
+    color: #1c4f8d !important;
+}
+ #fusion-slider-8 .fusion-title h3{
+    color: #333 !important;
+}
+ #apct-bxslider-controller{
+    display:none !important;
+}
+ #book-appoint-section h2{
+    color:#fff;
+    text-align:center;
+}
+ .fusion-button-wrapper {
+     display: block;
+     text-align: center;
+}
+ .view_testi{
+    border:solid 2px #fff;
+}
+ #d-none{
+    display:none !important;
+}
+ #faq-section ul{
+    list-style:none;
+    padding-left:0px;
+}
+ #faq-section .faq-title{
+    color: #1c4f8d;
+     font-size: 28px;
+     font-weight: 500;
+     margin-bottom: 15px;
+}
+ #faq-section .faq-hd{
+    font-size:22px;
+    line-height:32px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+ #faq-section .faq-hd .fa{
+    margin-right:5px;
+}
+ .fusion-carousel .fusion-carousel-item .fusion-image-wrapper{
+    height:60px !important;
+}
+ .blog-appointment-btn{
+    background:#1c4f8d !important
+}
+ .blog-appointment-btn:hover{
+    background:#69c8c7 !important;
+    color:#fff !important
+}
+/* 5/29 styles */
+ .fusion-body .fusion-main-menu .current_page_item > a{
+     border-bottom :3px solid #6eccc9;
+}
+ .fusion-body .fusion-main-menu .current-menu-ancestor > a, .fusion-body .fusion-main-menu .current-menu-item > a, .fusion-body .fusion-main-menu .current-menu-parent > a, .fusion-body .fusion-main-menu .current_page_item > a {
+     border-bottom :3px solid #6eccc9;
+}
+ .fusion-main-menu > ul > li > a:not(.fusion-logo-link):active{
+     border-bottom :3px solid #6eccc9;
+}
+ .fusion-main-menu > ul > li > a:not(.fusion-logo-link):active{
+     border-bottom :3px solid #6eccc9;
+}
+ body:not(.fusion-header-layout-v6).fusion-top-header .fusion-main-menu > ul > li > a.fusion-bar-highlight:active{
+     border-bottom :3px solid #6eccc9;
+}
+
+.tfs-slider .slide-content-container .slide-content .slider-tag-lines {
+    margin-top: 50px;
+}
+
+.tfs-slider .slide-content-container .slide-content .slider-tag-lines img {
+    width: 50px;
+    display: inline-block;
+}
+
+.tfs-slider .slide-content-container .slide-content .slider-tag-lines .tag-line {
+    display: inline;
+    font-size: 14px;
+}
+
+
+
+
+
+.tfs-slider .slide-content-container {
+    padding-left: 80px;
+}
+
+ .medical-wrapper,.medical-professional {
+     display: flex;
+}
+ .medical-professional img{
+     width: 50px !important;
+     object-fit: contain !important;
+     margin-right: 10px !important;
+     height: 50px !important;
+     margin-top: 12px !important;
+}
+ .medical-professional p{
+     font-size: 18px;
+     margin: 11px 14px -2px 0;
+}
+ .medical-professional span{
+     font-size: 18px;
+     margin-right:10px;
+     font-weight: bold;
+}
+ .medical-wrapper{
+     margin-top: 10px;
+}
+ .medical-professional b{
+     font-weight: normal;
+}
+ .latest-science{
+     font-weight: bold !important;
+}
+ .medical-wrapper{
+     position:relative;
+     margin-top: 10px;
+}
+ .medical-professional b{
+     font-weight: normal;
+}
+ .imp-section{
+     margin-left: 90px;
+}
+ .prescription-section span{
+     margin: 6px 0 0 0;
+     display: block;
+}
+ .prescription-section p{
+     margin: 0;
+}
+ .exp-section{
+     margin-bottom: 50px;
+}
+ .fusion-header-v1 .fusion-main-menu > ul > li > a {
+     padding: 20px 0 12px 0;
+     height: auto !important;
+}
+ #fusion-slider-8 .fusion-button#bookappointment .fusion-button-text {
+     text-transform: none!important;
+}
+ #fusion-slider-8 .fusion-button#bookappointment {
+     padding: 8px 60px !important;
+}
+
+@media (max-width: 820px) {
+    .tfs-slider .slide-content-container {
+        top: 22%;
+    }
+    
+    .tfs-slider .background-image {
+        background-repeat: no-repeat;
+        background-size: unset;
+        background-position: top center;
+    }
+}
+
+@media (max-width: 768px) {
+    .tfs-slider .slide-content-container {
+        top: 30%;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    
+    .exp-section {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    #fusion-slider-8 .fusion-button#bookappointment {
+        padding: 5px 30px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+        .exp-section {
+            margin-bottom: 0px !important;
+        }
+
+     
+        .home .tfs-slider .slide-content-container {
+            /*top: 10px;
+           */
+        }
+
+        .tfs-slider .slide-content-container .fusion-title-size-two h2 {
+            margin: 0;
+            display: block ruby !important;
+            font-size: 16px !important;
+        }
+
+        .exp-section {
+            margin-bottom: 4px !important;
+            font-size: 13px !important;
+        }
+
+        .medical-professional p {
+            font-size: 11px !important;
+            margin: 0px 0px 0 0 !important;
+        }
+
+        .medical-professional span {
+            font-size: 11px;
+            margin-right: 0px;
+            font-weight: bold;
+        }
+
+        .medical-professional img {
+            width: 40px !important;
+            object-fit: contain !important;
+            margin-right: 1px !important;
+            height: 50px !important;
+            margin-top: 12px !important;
+        }
+    }
+
+    .home .tfs-slider .slide-content-container .caption .title-heading-left {
+        margin-left: 10px !important;
+    }
+
+    .home .tfs-slider .slide-content-container .buttons {
+        margin-top: -7px !important;
+        margin-left: 10px;
+    }
+
+    .exp-section {
+        margin-bottom: 0px !important;
+    }
+
+    .home .tfs-slider .slide-content-container {
+        top: 10px;
+    }
+
+    .tfs-slider .slide-content-container .fusion-title-size-two h2 {
+        margin: 0;
+        display: block ruby !important;
+        font-size: 32px !important;
+    }
+
+    .exp-section {
+        margin-bottom: 15px !important;
+        font-size: 13px !important;
+    }
+
+    .medical-professional p {
+        font-size: 11px !important;
+        margin: 0px 5px 0 0 !important;
+    }
+
+    .medical-professional span {
+        font-size: 11px;
+        margin-right: 0px;
+        font-weight: bold;
+    }
+
+    .medical-professional img {
+        width: 25px !important;
+        object-fit: contain !important;
+        margin-right: 1px !important;
+        height: 43px !important;
+        margin-top: 0px !important;
+    }
+
+    #fusion-slider-8 .fusion-title h2 {
+        line-height: 38px !important;
+        margin-left: 10px !important;
+    }
+
+    .home .tfs-slider .slide-content-container {
+        padding-left: 8px !important;
+        padding-right: 14px !important;
+    }
+
+    .medical-professional {
+        display: flex;
+        width: 100%;
+    }
+
+    .imp-section {
+        margin-left: 0;
+    }
+
+    .home .tfs-slider .background-image {
+        height: 658px;
+        width: 100%;
+        background-size: cover;
+        background-position: 78% 50%;
+        background-position-y: 265px;
+    }
+
+    .fusion-header-v1 .con_detail {
+        margin-top: 2px;
+    }
+
+    .professional-wrapper {
+        display: flex;
+    }
+
+    .medical-wrapper {
+        display: unset;
+    }
+
+    .prescription-section span {
+        margin: 0px 0 0 0;
+        display: block;
+    }
+
+    .professional-wrapper {
+        display: flex;
+        margin-top: 14px;
+        padding-left: 10px;
+    }
+}

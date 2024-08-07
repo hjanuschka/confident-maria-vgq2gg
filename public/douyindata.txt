@@ -1,0 +1,9 @@
+#!/bin/bash
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+export PATH
+step=3
+for((i=0;i<60;i=(i+step)));do
+/usr/bin/php /www/wwwroot/ddt.admin/think douyindata>>/www/wwwroot/ddt.admin/runtime/log/douyinpost/playdata_`date -d 'today' +\%Y-\%m-\%d`.log 2>&1
+sleep $step
+done
+exit

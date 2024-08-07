@@ -1,0 +1,65 @@
+WIKI - DONE
+architecture flow
+how to install
+pages/components
+hooks/actions
+styling
+typescript/types
+utils
+plugins
+    modals
+    carousel
+    images native nextjs
+    link
+    accordion
+
+
+WIKI - MISSING
+prismic structure
+end to end
+    [INSTALLER]
+    [PAGE SETUP]
+    [MANUAL CHECKS]
+        - env
+        - state
+    [SESSION HANDLING]
+    [CMS FETCH]
+    [DATA PRINT]
+    [HTML]
+    [STYLING]
+    [GAME LAUNCH]
+        - geo
+        - game launcher
+    [ADDING PLUGINS]
+
+
+
+FEATURES - MISSING
+prismic preview [eugene]
+message tool
+deviceOS optimise
+custom dropdown [istvan]
+restriction [anton]
+    promotion restiction:
+    ---------------------------------------------
+    Unpublish Date - Done
+    logged - Done
+    unlogged - Done
+    ---------------------------------------------
+    Non Depositor - need dev
+    Recurring Depositor - need dev
+    Loyalty Linked - need dev
+    Non Loyalty Linked - need dev
+    Live Desktop - need dev
+    Live Mobile - need dev
+    Live Android App - need dev
+    Live iOS App - need dev
+    QA Desktop - need dev
+    QA Mobile - need dev
+    QA Android App - need dev
+    QA iOS App - need dev
+    Alpha Desktop - need dev
+    Alpha Mobile - need dev
+    Alpha Android App - need dev
+    Alpha iOS App - need dev
+

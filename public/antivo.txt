@@ -1,0 +1,47 @@
+        if do_novoid then
+            if on_ground() then 
+                mark = 0
+                flags = 0 
+                safe_x,safe_y,safe_z = position() 
+                if reset_timer then
+                    set_timer(1) 
+                    reset_timer = false 
+                end 
+                can_safe = true
+            end
+            if not can_safe then 
+                set_timer(1) 
+            end
+            local mx,my,mz = motion()
+            if can_safe then
+                local x,y,z = position()
+                local yaw, pitch = angles()
+                if fall_distance() - mark > 3 then
+                    send_packet_no_event(0x03, true)
+                    mark = fall_distance()
+                end
+                if over_void() and fall_distance() > 8 then
+                    if ticks_existed() % 3 == 0 then
+                        send_packet_no_event(0x06, safe_x, 256, safe_z, yaw, pitch, false)
+                    end
+                end
+                if flags >= 5 and over_void() then
+                    set_timer(0.2)
+                    reset_timer = true
+                    set_motion(mx, 0, mz)
+                    if ticks_existed() % 4 == 0 then
+                        set_motion(mx, 0.2, mz)
+                    end
+                end
+    
+                if flags >= 10 then
+                    can_safe = false
+                end
+    
+                if flags >= 8 then
+                    if packet.packet_id == 0x04 or t.packet_id == 0x06 then
+                        packet.cancel = true
+                    end
+                end
+            end
+        end

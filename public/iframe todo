@@ -1,0 +1,3 @@
+paso1: ocultar email y password
+paso2: hacer llamada a authenticate y guardar token
+paso3: hacer peticion a esave con token

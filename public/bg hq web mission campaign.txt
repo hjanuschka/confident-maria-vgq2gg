@@ -1,0 +1,6 @@
+https://g94o4zkyw7.execute-api.ap-southeast-1.amazonaws.com/prd/allmember/mission-campaign/hq/member/transaction
+2auUL36aSe5PBnIHUgUqS1qj0jgAeBb72vbGOP5y
+
+
+https://6usp4mtxn9.execute-api.ap-southeast-1.amazonaws.com/prd/allmember/mission-campaign/hq/member/transaction
+HbFXTxsGGL9naEUNVVn6T3ewBbBxeKsV8quXSsv5

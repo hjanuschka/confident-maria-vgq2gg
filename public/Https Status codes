@@ -1,0 +1,73 @@
+List of Error codes:
+1xxs 	Information codes, AKA Server thinking out loud
+2xxs	Success codes, AKA request completed and so on
+3xxs	Redirections
+4xxs	Client sided errors AKA client fucked up
+5xxs	Server sided errors AKA we fucked up
+
+
+100 = Continue 
+101 = Switching Protocols 
+102 = Preosessing
+103 = Early hints (Usefull for preloads)
+----------------------------------------------------------------------
+200 = Ok
+201 = Created (Posts And Put)
+202 = Accepted
+203 = Non autoritative response (Third Party Responses)
+204 = No content to show
+205 = Reset content
+206 = Partial content
+207 = Multi Status (Conveys information about multiple resources, for situations where multiple status codes might be appropriate.)
+208 = Already Reported (For avoiding multiple instances of the same)
+209 = IM Used (GET Fullfilled but the response has passed for some other third party hands before you) 
+----------------------------------------------------------------------
+300 = Multiple choice (for the redirect Target)
+301 = Permanent Redirect
+302 = Temporal Redirect (Found)
+303 = See other (The server sent this response to direct the client to get the requested resource at another URI with a GET request.)
+304 = Not Modified (Cache purposes, logs that it wasnt changed)
+307 = Temporary Redirect URI (same as 302 but only for get sience the resource is on manteinance, not the page)
+----------------------------------------------------------------------
+400 = Bad request (Server cant prosess the request due to a wrong input on your side)
+401 = Unauthoriced ( Unidentified in restricted area, must log in  )
+402 = Payment Required (resource locked behind paywall)
+403 = Forbidden (Registered User has not permissions to see the resource in question)
+404 = Not found 
+405 = Method Not Allowed (Method is not processable for the API like a PUT on a read only API)
+406 = Not Acceptable (used for server driven negotiations in refusal)
+407 = Proxy Autentication Required (same as 401 but login requires a proxy)
+408 = Request Timeout ( Request failed to complete on a given timeframe)
+409 = Conflict ( Request conflicts with the current server status)
+410 = Page Gone/ Deleted (Usefull for the bots)
+411 = Length Required (Content-length header is required)
+412 = Precondition Failed (A required header is missing in the request)
+413 = Payload too Large (Entity is larger than what the defined limits of what you want to process)
+414 = URI Too Long (URI the client sent is longer of what we are willing to interpret)
+415 = Unsuported Media Type (Media sent is not supported by the server, thereby Rejecting it)
+416 = Range Not satisfiable (Range header cant be fullfilled )
+417 = Expectation Failed (Expect Request header cant be met by the server so it doesnt even try)
+418 = I'm a Teapot (April's fool error for request that you dont feel like fullfilling)
+421 = Misdirected Request (Server is not the correct target for the request)
+422 = Unprocessable Entity (Request was well formed but semantic errors prevent it from being fullfilled
+423 = Locked (Resource locked)
+424 = Failed Dependency (Request failed due to a previous request)
+425 = Too Early (Server is Unwilling to process a Request might be replayed in the near future)
+426 = Upgrade Require (The server refuses to process the request using the current protocols, responds with an upgrade header)
+428 = Precondition required (Server requires that the request is conditional,usefull for any kind of dual confirmation form)
+429 = Too Many Requests (Too many request in a short amount of time, usefull for preventing DOS)
+431 = Request Header Fields Too Large (The server is unwilling to process the request because its header fields are too large. The request may be resubmitted after reducing the size of the request header fields. ) 
+451 = Unaviable for legal reasons (he user agent requested a resource that cannot legally be provided, such as a web page censored by a government.)
+----------------------------------------------------------------------
+500 = Internal server Error
+501 = Not Implemented (The request method is not sipported and cannot be handled)
+502 = Bad Gateway (Server got an error while trying to process a request for a third party)
+503 = Service Unaviable
+504 = Gateway Timeout (Third party gave a Timeout(408)
+505 = HTTP Version Not Supported 
+506 = Variant Also Negotiates (The server has an internal configuration error: the chosen variant resource is configured to engage in transparent content negotiation itself, and is therefore not a proper end point in the negotiation process.)
+507 = Insufficient Storage 
+508 = Loop Detected (Server got trapped in a infinite loop while processing the request
+510 = Not Extended (Server has to get extended to fullfill teh request)
+511 = Network Autentication Required (Server needs to autenticate to gain network access
+

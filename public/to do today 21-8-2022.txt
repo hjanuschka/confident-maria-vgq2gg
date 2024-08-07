@@ -1,0 +1,13 @@
+To do today:
+
+-fix nodejs version and package.json file
+-fix Link href to home and chat page in /componenets/warperHeader.tsx 
+-fix title and <head> tag of home page in /page/index.tsx
+-rebuild _app.js and _document.js and remove unused codes.
+-move bootstrap css/js loader to pages/_app.js file for global load files.
+-add register and login modal page
+-remove mui and react-bootstrap from project
+
+
+
+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

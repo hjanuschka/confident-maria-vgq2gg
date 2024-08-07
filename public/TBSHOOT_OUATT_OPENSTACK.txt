@@ -1,0 +1,36 @@
+/lib/nova/instances/_base/777864898866d7c2a7ae6b49bc1404de9cd561dc): checking
+2021-12-31 08:21:16.350 31236 INFO nova.virt.libvirt.imagecache [req-9b6b9aa9-f2c9-41a1-bf67-72c088be73e8 - - - - -] image 797ef4ff-057a-4a81-ba14-71b65ffb18ed at (/var/lib/nova/instances/_base/51f2502a25d498228906c1846fb903af73858375): checking
+2021-12-31 08:21:16.352 31236 INFO nova.virt.libvirt.imagecache [req-9b6b9aa9-f2c9-41a1-bf67-72c088be73e8 - - - - -] image 1c5bcbb4-6394-42f5-9b0d-4ed131054a01 at (/var/lib/nova/instances/_base/d0c340390b65662b414b00c39ab9636e57850179): checking
+2021-12-31 08:21:26.316 31236 INFO nova.virt.libvirt.imagecache [req-9b6b9aa9-f2c9-41a1-bf67-72c088be73e8 - - - - -] Active base files: /var/lib/nova/instances/_base/777864898866d7c2a7ae6b49bc1404de9cd561dc /var/lib/nova/instances/_base/51f2502a25d498228906c1846fb903af73858375 /var/lib/nova/instances/_base/d0c340390b65662b414b00c39ab9636e57850179
+2021-12-31 08:49:17.450 31236 ERROR nova.compute.manager [req-9b6b9aa9-f2c9-41a1-bf67-72c088be73e8 - - - - -] Error updating resources for node compute01.experts-ci.com.: InvalidDiskInfo: Disk info file is invalid: qemu-img failed to execute on /var/lib/nova/instances/60a1fb55-fb00-4029-b3d8-cf6afe39bdaf/disk : Unexpected error while running command.
+Command: /usr/bin/python2 -m oslo_concurrency.prlimit --as=1073741824 --cpu=30 -- env LC_ALL=C LANG=C qemu-img info /var/lib/nova/instances/60a1fb55-fb00-4029-b3d8-cf6afe39bdaf/disk --force-share
+Exit code: 127
+Stdout: u''
+Stderr: u'qemu-img: error while loading shared libraries: libceph-common.so.0: cannot map zero-fill pages: Cannot allocate memory\n'
+2021-12-31 08:49:17.450 31236 ERROR nova.compute.manager Traceback (most recent call last):
+2021-12-31 08:49:17.450 31236 ERROR nova.compute.manager   File "/usr/lib/python2.7/site-packages/nova/compute/manager.py", line 8148, in _update_available_resource_for_node
+2021-12-31 08:49:17.450 31236 ERROR nova.compute.manager     startup=startup)
+2021-12-31 08:49:17.450 31236 ERROR nova.compute.manager   File "/usr/lib/python2.7/site-packages/nova/compute/resource_tracker.py", line 732, in update_available_resource
+2021-12-31 08:49:17.450 31236 ERROR nova.compute.manager     resources = self.driver.get_available_resource(nodename)
+2021-12-31 08:49:17.450 31236 ERROR nova.compute.manager   File "/usr/lib/python2.7/site-packages/nova/virt/libvirt/driver.py", line 7117, in get_available_resource
+2021-12-31 08:49:17.450 31236 ERROR nova.compute.manager     disk_over_committed = self._get_disk_over_committed_size_total()
+2021-12-31 08:49:17.450 31236 ERROR nova.compute.manager   File "/usr/lib/python2.7/site-packages/nova/virt/libvirt/driver.py", line 8656, in _get_disk_over_committed_size_total
+2021-12-31 08:49:17.450 31236 ERROR nova.compute.manager     config, block_device_info)
+2021-12-31 08:49:17.450 31236 ERROR nova.compute.manager   File "/usr/lib/python2.7/site-packages/nova/virt/libvirt/driver.py", line 8561, in _get_instance_disk_info_from_config
+2021-12-31 08:49:17.450 31236 ERROR nova.compute.manager     backing_file = libvirt_utils.get_disk_backing_file(path)
+2021-12-31 08:49:17.450 31236 ERROR nova.compute.manager   File "/usr/lib/python2.7/site-packages/nova/virt/libvirt/utils.py", line 227, in get_disk_backing_file
+2021-12-31 08:49:17.450 31236 ERROR nova.compute.manager     backing_file = images.qemu_img_info(path, format).backing_file
+2021-12-31 08:49:17.450 31236 ERROR nova.compute.manager   File "/usr/lib/python2.7/site-packages/nova/virt/images.py", line 88, in qemu_img_info
+2021-12-31 08:49:17.450 31236 ERROR nova.compute.manager     raise exception.InvalidDiskInfo(reason=msg)
+2021-12-31 08:49:17.450 31236 ERROR nova.compute.manager InvalidDiskInfo: Disk info file is invalid: qemu-img failed to execute on /var/lib/nova/instances/60a1fb55-fb00-4029-b3d8-cf6afe39bdaf/disk : Unexpected error while running command.
+2021-12-31 08:49:17.450 31236 ERROR nova.compute.manager Command: /usr/bin/python2 -m oslo_concurrency.prlimit --as=1073741824 --cpu=30 -- env LC_ALL=C LANG=C qemu-img info /var/lib/nova/instances/60a1fb55-fb00-4029-b3d8-cf6afe39bdaf/disk --force-share
+2021-12-31 08:49:17.450 31236 ERROR nova.compute.manager Exit code: 127
+2021-12-31 08:49:17.450 31236 ERROR nova.compute.manager Stdout: u''
+2021-12-31 08:49:17.450 31236 ERROR nova.compute.manager Stderr: u'qemu-img: error while loading shared libraries: libceph-common.so.0: cannot map zero-fill pages: Cannot allocate memory\n'
+2021-12-31 08:49:17.450 31236 ERROR nova.compute.manager
+2021-12-31 08:50:28.481 31236 INFO nova.compute.manager [-] [instance: 5e3765b7-d524-40c0-9e91-c2dbb558bd84] VM Stopped (Lifecycle Event)
+2021-12-31 08:50:28.715 31236 INFO nova.compute.manager [req-cb0a583d-e5d5-40cb-b2c5-23a55cbd7a91 - - - - -] [instance: 5e3765b7-d524-40c0-9e91-c2dbb558bd84] During _sync_instance_power_state the DB power_state (1) does not match the vm_power_state from the hypervisor (4). Updating power_state in the DB to match the hypervisor.
+2021-12-31 08:50:29.880 31236 WARNING nova.compute.manager [req-cb0a583d-e5d5-40cb-b2c5-23a55cbd7a91 - - - - -] [instance: 5e3765b7-d524-40c0-9e91-c2dbb558bd84] Instance shutdown by itself. Calling the stop API. Current vm_state: active, current task_state: None, original DB power_state: 1, current VM power_state: 4
+2021-12-31 08:50:32.537 31236 INFO nova.compute.manager [req-cb0a583d-e5d5-40cb-b2c5-23a55cbd7a91 - - - - -] [instance: 5e3765b7-d524-40c0-9e91-c2dbb558bd84] Instance is already powered off in the hypervisor when stop is called.
+2021-12-31 08:50:32.879 31236 INFO nova.virt.libvirt.driver [req-cb0a583d-e5d5-40cb-b2c5-23a55cbd7a91 - - - - -] [instance: 5e3765b7-d524-40c0-9e91-c2dbb558bd84] Instance already shutdown.
+2021-12-31 08:50:32.899 31236 INFO nova.virt.libvirt.driver [-] [instance: 5e3765b7-d524-40c0-9e91-c2dbb558bd84] Instance destroyed successfully.

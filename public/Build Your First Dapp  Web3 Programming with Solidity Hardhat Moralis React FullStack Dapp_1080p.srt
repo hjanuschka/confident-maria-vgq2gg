@@ -1,0 +1,6996 @@
+1
+00:00:00,000 --> 00:00:02,000
+Hola, soy jay, tu instructor de
+
+2
+00:00:02,000 --> 00:00:04,240
+moral de la hermosa
+
+3
+00:00:04,240 --> 00:00:06,240
+finlandia. Entré en criptografía en 2020 y he estado
+
+4
+00:00:06,240 --> 00:00:08,000
+construyendo en el espacio desde entonces. En mi
+
+5
+00:00:08,000 --> 00:00:10,000
+tiempo libre, disfruto correr y ir al gimnasio,
+
+6
+00:00:10,000 --> 00:00:11,519
+y en el verano definitivamente
+
+7
+00:00:11,519 --> 00:00:13,599
+me encontrarás en el  campo de golf,
+
+8
+00:00:13,599 --> 00:00:15,280
+ahora entremos y aprendamos sobre web3
+
+9
+00:00:15,280 --> 00:00:16,280
+
+
+10
+00:00:16,280 --> 00:00:18,640
+[Music]
+
+11
+00:00:18,640 --> 00:00:20,720
+radio, así que bienvenidos al proyecto morales de esta semana,
+
+12
+00:00:20,720 --> 00:00:22,400
+que se acuñó como su primera
+
+13
+00:00:22,400 --> 00:00:24,560
+aplicación descentralizada porque en
+
+14
+00:00:24,560 --> 00:00:26,160
+este proyecto seguiremos todos los
+
+15
+00:00:26,160 --> 00:00:27,920
+pasos para crear su primer paso
+
+16
+00:00:27,920 --> 00:00:29,439
+, estamos  vamos a crear un contrato inteligente sólido
+
+17
+00:00:29,439 --> 00:00:32,238
+usando un casco para compilar,
+
+18
+00:00:32,238 --> 00:00:34,399
+implementar e incluso verificar ese
+
+19
+00:00:34,399 --> 00:00:36,320
+contrato inteligente en un explorador de bloques, luego
+
+20
+00:00:36,320 --> 00:00:37,520
+vamos a usar reaccionar para construir esta
+
+21
+00:00:37,520 --> 00:00:40,640
+hermosa pero simple interfaz y también
+
+22
+00:00:40,640 --> 00:00:42,960
+usar el kit de interfaz de usuario web3 para agregar algo de interfaz de usuario
+
+23
+00:00:42,960 --> 00:00:44,879
+elementos y especialmente los elementos de la interfaz de
+
+24
+00:00:44,879 --> 00:00:47,120
+usuario que se integran bien con web3 y luego,
+
+25
+00:00:47,120 --> 00:00:48,719
+la parte más importante es que vamos
+
+26
+00:00:48,719 --> 00:00:50,960
+a usar morales para integrar tanto su
+
+27
+00:00:50,960 --> 00:00:52,719
+contrato inteligente como su aplicación de reacción,
+
+28
+00:00:52,719 --> 00:00:54,559
+podrá escuchar su
+
+29
+00:00:54,559 --> 00:00:56,719
+aplicación de reacción  a su contrato inteligente en diferentes
+
+30
+00:00:56,719 --> 00:00:58,480
+eventos que ocurren allí y también use
+
+31
+00:00:58,480 --> 00:01:00,399
+su aplicación de reacción para llamar funciones de
+
+32
+00:01:00,399 --> 00:01:02,719
+su contrato inteligente y luego muestre toda
+
+33
+00:01:02,719 --> 00:01:04,400
+la información en esta aplicación sin
+
+34
+00:01:04,400 --> 00:01:06,159
+más preámbulos, veamos la compilación, pero
+
+35
+00:01:06,159 --> 00:01:07,600
+primero permítanme dar un gran saludo a
+
+36
+00:01:07,600 --> 00:01:09,040
+burbujas en las que me topé con el
+
+37
+00:01:09,040 --> 00:01:12,159
+sitio web en el que se basa esta compilación, así que
+
+38
+00:01:12,159 --> 00:01:15,040
+lo que es es un sentimiento básico del mercado en el
+
+39
+00:01:15,040 --> 00:01:16,560
+que el número de los diferentes
+
+40
+00:01:16,560 --> 00:01:19,119
+tickers identifica lo que las personas que
+
+41
+00:01:19,119 --> 00:01:21,040
+han votado piensan sobre el futuro del
+
+42
+00:01:21,040 --> 00:01:23,600
+precio de esta moneda, por lo que con un número más bajo
+
+43
+00:01:23,600 --> 00:01:25,040
+hay un mayor porcentaje de personas
+
+44
+00:01:25,040 --> 00:01:27,040
+que piensan que el precio de los tokens bajará
+
+45
+00:01:27,040 --> 00:01:29,200
+y con números más altos habrá un
+
+46
+00:01:29,200 --> 00:01:30,640
+mayor porcentaje de personas que han
+
+47
+00:01:30,640 --> 00:01:32,720
+votado y piensan que el precio de los tokens
+
+48
+00:01:32,720 --> 00:01:35,680
+subirá y también debajo de estos tokens
+
+49
+00:01:35,680 --> 00:01:37,840
+tenemos una pequeña sección de información donde
+
+50
+00:01:37,840 --> 00:01:40,079
+usas la api de morales web3 para obtener el
+
+51
+00:01:40,079 --> 00:01:42,560
+precio actual en dólares estadounidenses de ese proyecto
+
+52
+00:01:42,560 --> 00:01:44,960
+y una pequeña descripción si presionamos el
+
+53
+00:01:44,960 --> 00:01:46,720
+enlace aquí obtenemos lo mismo que
+
+54
+00:01:46,720 --> 00:01:48,479
+obtenemos el pr  Hielo del enlace e información
+
+55
+00:01:48,479 --> 00:01:50,799
+sobre el enlace, pero ahora sigamos adelante y
+
+56
+00:01:50,799 --> 00:01:52,000
+verifiquemos la
+
+57
+00:01:52,000 --> 00:01:54,079
+funcionalidad del contrato inteligente, por lo
+
+58
+00:01:54,079 --> 00:01:55,680
+que votar significa que solo se permite votar a las personas
+
+59
+00:01:55,680 --> 00:01:57,200
+que llaman al contrato inteligente y
+
+60
+00:01:57,200 --> 00:01:59,200
+solo se le permite votar una moneda una vez, por lo
+
+61
+00:01:59,200 --> 00:02:01,520
+que  no podemos sesgar los resultados de un token específico,
+
+62
+00:02:01,520 --> 00:02:03,759
+por lo que si intentamos y votamos en contra, recibimos
+
+63
+00:02:03,759 --> 00:02:05,439
+una notificación de que debe
+
+64
+00:02:05,439 --> 00:02:08,080
+autenticarse para votar, está bien, así que podemos usar
+
+65
+00:02:08,080 --> 00:02:10,318
+el botón de conexión de la billetera, use metamask
+
+66
+00:02:10,318 --> 00:02:12,879
+para autenticarse e iniciar sesión, así que ahora estamos
+
+67
+00:02:12,879 --> 00:02:15,920
+registrados  con esta cuenta 0xc4 y ahora
+
+68
+00:02:15,920 --> 00:02:17,360
+intente hacer esta votación, intentemos y escribimos
+
+69
+00:02:17,360 --> 00:02:19,520
+el enlace votar hacia
+
+70
+00:02:19,520 --> 00:02:22,480
+abajo aparece una metamáscara que nos pide que votemos, emitimos
+
+71
+00:02:22,480 --> 00:02:23,520
+nuestro voto
+
+72
+00:02:23,520 --> 00:02:25,599
+y, debido a que estamos usando consultas en vivo de morales
+
+73
+00:02:25,599 --> 00:02:28,160
+, obtenemos una respuesta automática que
+
+74
+00:02:28,160 --> 00:02:29,760
+cambia el porcentaje de personas que
+
+75
+00:02:29,760 --> 00:02:31,840
+hemos votado en esta moneda, por lo que ahora hay un
+
+76
+00:02:31,840 --> 00:02:33,599
+mayor porcentaje de personas que votaron
+
+77
+00:02:33,599 --> 00:02:36,239
+a favor de esta moneda que a favor de esta moneda,
+
+78
+00:02:36,239 --> 00:02:38,000
+así que ahora, si intentamos y votamos nuevamente, queremos
+
+79
+00:02:38,000 --> 00:02:40,000
+intentar y votar más a favor, obtendremos una
+
+80
+00:02:40,000 --> 00:02:41,680
+ejecución revertida.
+
+81
+00:02:41,680 --> 00:02:44,239
+notado en esta moneda lo mismo si vamos
+
+82
+00:02:44,239 --> 00:02:47,920
+y votamos por eth podemos
+
+83
+00:02:48,000 --> 00:02:49,760
+aceptar nuestra
+
+84
+00:02:49,760 --> 00:02:53,360
+transacción de metamáscara
+
+85
+00:02:53,680 --> 00:02:55,760
+y ahora la transacción pasó por nuestro
+
+86
+00:02:55,760 --> 00:02:57,920
+porcentaje de personas que piensan que cada
+
+87
+00:02:57,920 --> 00:03:00,400
+moneda subirá en el futuro ha
+
+88
+00:03:00,400 --> 00:03:02,640
+subido al 86 por ciento, lo que le da una  una
+
+89
+00:03:02,640 --> 00:03:04,800
+pequeña idea agradable de lo que la gente en el mercado
+
+90
+00:03:04,800 --> 00:03:06,879
+piensa que es el futuro de las diferentes monedas
+
+91
+00:03:06,879 --> 00:03:08,480
+y para convencerlo aún más, estoy
+
+92
+00:03:08,480 --> 00:03:10,159
+aquí en el escaneo de polígonos donde
+
+93
+00:03:10,159 --> 00:03:12,319
+se implementa nuestro contrato inteligente y cada vez que
+
+94
+00:03:12,319 --> 00:03:14,879
+hacemos una votación se emite un evento de contrato inteligente
+
+95
+00:03:14,879 --> 00:03:17,360
+llamado ticker  actualizado así que aquí
+
+96
+00:03:17,360 --> 00:03:20,879
+vemos nuestra cuenta 0xc4 actualizó el
+
+97
+00:03:20,879 --> 00:03:24,159
+token eth a seis votos a favor y un voto a favor
+
+98
+00:03:24,159 --> 00:03:26,319
+haciendo que ese porcentaje sea del 86 por ciento y
+
+99
+00:03:26,319 --> 00:03:28,560
+luego también votamos en el enlace donde xerox
+
+100
+00:03:28,560 --> 00:03:31,519
+c4c hizo el voto y ahora tiene cuatro
+
+101
+00:03:31,519 --> 00:03:34,000
+votos a favor y cinco votos a favor haciendo eso
+
+102
+00:03:34,000 --> 00:03:35,280
+44
+
+103
+00:03:35,280 --> 00:03:36,720
+para que vea, esto brinda mucha
+
+104
+00:03:36,720 --> 00:03:38,560
+transparencia, ya que cualquiera puede buscar en el
+
+105
+00:03:38,560 --> 00:03:40,480
+explorador de bloques y ver cuál es el
+
+106
+00:03:40,480 --> 00:03:43,040
+estado actual de la votación y quién votó
+
+107
+00:03:43,040 --> 00:03:45,200
+y eso no es todo, tenemos todos estos
+
+108
+00:03:45,200 --> 00:03:47,360
+contratos inteligentes e  ventilaciones
+
+109
+00:03:47,360 --> 00:03:49,200
+sincronizadas automáticamente con nuestra base de datos de morales, así que
+
+110
+00:03:49,200 --> 00:03:51,760
+aquí verá el mismo enlace de votos y ethereum,
+
+111
+00:03:51,760 --> 00:03:54,159
+los votos actuales hacia abajo aquí y los
+
+112
+00:03:54,159 --> 00:03:56,400
+votos actuales hacia arriba aquí y los
+
+113
+00:03:56,400 --> 00:03:58,239
+votantes también y esto es lo que estamos
+
+114
+00:03:58,239 --> 00:04:00,000
+usando para acceder a nuestra aplicación si usted  Estoy
+
+115
+00:04:00,000 --> 00:04:01,840
+emocionado por esta compilación, quédese atrapado y
+
+116
+00:04:01,840 --> 00:04:03,439
+recuerde que si termina la compilación, obtendrá
+
+117
+00:04:03,439 --> 00:04:06,319
+un nft genial como recompensa. También asegúrese de
+
+118
+00:04:06,319 --> 00:04:08,159
+consultar la academia de morales, donde
+
+119
+00:04:08,159 --> 00:04:09,760
+puede seguir esta lección en lecciones bien
+
+120
+00:04:09,760 --> 00:04:11,519
+estructuradas.
+
+121
+00:04:11,519 --> 00:04:13,040
+tutoriales en los que podrías
+
+122
+00:04:13,040 --> 00:04:16,160
+querer participar bien, ahora
+
+123
+00:04:16,160 --> 00:04:18,560
+vamos bien, entremos en la compilación, así que, como
+
+124
+00:04:18,560 --> 00:04:20,639
+siempre, proporcioné un repositorio de inicio
+
+125
+00:04:20,639 --> 00:04:22,720
+para ustedes llamado primer iniciador de aplicaciones
+
+126
+00:04:22,720 --> 00:04:24,479
+y pueden clonarlo desde el enlace en
+
+127
+00:04:24,479 --> 00:04:26,080
+la descripción a continuación, tendrá
+
+128
+00:04:26,080 --> 00:04:28,240
+todo  necesita para este proyecto y
+
+129
+00:04:28,240 --> 00:04:30,320
+para comenzar, construyamos nuestro
+
+130
+00:04:30,320 --> 00:04:33,360
+contrato inteligente usando un casco, por lo que desea un CD
+
+131
+00:04:33,360 --> 00:04:36,479
+en la carpeta del contrato inteligente
+
+132
+00:04:36,479 --> 00:04:38,560
+así y el repositorio de inicio
+
+133
+00:04:38,560 --> 00:04:40,240
+no tiene un casco instalado, por
+
+134
+00:04:40,240 --> 00:04:41,759
+lo que  tiene que instalarlo, siga adelante y
+
+135
+00:04:41,759 --> 00:04:43,919
+haga npm i
+
+136
+00:04:43,919 --> 00:04:46,960
+d y hard hat,
+
+137
+00:04:46,960 --> 00:04:49,520
+deje que se instale por usted y verá
+
+138
+00:04:49,520 --> 00:04:51,040
+que en nuestra carpeta de contratos inteligentes
+
+139
+00:04:51,040 --> 00:04:52,720
+aún no tenemos nada, pero podemos
+
+140
+00:04:52,720 --> 00:04:54,880
+inicializar un nuevo proyecto de hard hat
+
+141
+00:04:54,880 --> 00:04:55,720
+ejecutando
+
+142
+00:04:55,720 --> 00:04:57,520
+npx
+
+143
+00:04:57,520 --> 00:04:58,960
+hard hat
+
+144
+00:04:58,960 --> 00:05:00,639
+queremos crear un proyecto de muestra básico
+
+145
+00:05:00,639 --> 00:05:02,560
+presione enter
+
+146
+00:05:02,560 --> 00:05:05,039
+enter enter enter
+
+147
+00:05:05,039 --> 00:05:06,960
+espere a que esto se instale también
+
+148
+00:05:06,960 --> 00:05:09,280
+se crea el proyecto y también verá
+
+149
+00:05:09,280 --> 00:05:10,960
+que su carpeta de contrato inteligente está
+
+150
+00:05:10,960 --> 00:05:13,039
+llena con todo lo que necesitamos para
+
+151
+00:05:13,039 --> 00:05:14,880
+comenzar, pero primero instalemos algunos
+
+152
+00:05:14,880 --> 00:05:17,120
+dependencias que también necesitaremos, así que hagamos
+
+153
+00:05:17,120 --> 00:05:19,039
+npm i
+
+154
+00:05:19,039 --> 00:05:20,160
+d
+
+155
+00:05:20,160 --> 00:05:23,680
+dot env y npm i
+
+156
+00:05:23,680 --> 00:05:25,039
+d
+
+157
+00:05:25,039 --> 00:05:25,919
+en
+
+158
+00:05:25,919 --> 00:05:28,400
+nomic labs slash
+
+159
+00:05:28,400 --> 00:05:29,919
+hard hat
+
+160
+00:05:29,919 --> 00:05:32,639
+ether scan
+
+161
+00:05:32,639 --> 00:05:35,039
+y ahora tiene todo lo que necesita para
+
+162
+00:05:35,039 --> 00:05:36,880
+este proyecto y podemos continuar y
+
+163
+00:05:36,880 --> 00:05:39,120
+abrir esta carpeta de contratos y tenemos
+
+164
+00:05:39,120 --> 00:05:41,840
+este archivo llamado  Greeter.sol un
+
+165
+00:05:41,840 --> 00:05:44,240
+archivo inicial de Solidity por supuesto que queremos crear
+
+166
+00:05:44,240 --> 00:05:46,479
+nuestro propio contrato inteligente para analizar el
+
+167
+00:05:46,479 --> 00:05:48,240
+sentimiento del mercado para que podamos eliminar todo esto
+
+168
+00:05:48,240 --> 00:05:49,919
+.
+
+169
+00:05:49,919 --> 00:05:52,320
+
+
+170
+00:05:52,320 --> 00:05:55,280
+
+
+171
+00:05:55,280 --> 00:05:59,520
+punto de sentimiento del mercado en sol y para comenzar nuestro
+
+172
+00:05:59,520 --> 00:06:01,280
+contrato inteligente, siempre tenemos que
+
+173
+00:06:01,280 --> 00:06:02,880
+definir una licencia y la función de versión
+
+174
+00:06:02,880 --> 00:06:04,479
+que vamos a usar, así que
+
+175
+00:06:04,479 --> 00:06:06,080
+vamos a usar la licencia mit y
+
+176
+00:06:06,080 --> 00:06:07,160
+
+
+177
+00:06:07,160 --> 00:06:10,240
+solidity 0.8.7 y superior y luego podemos  cree
+
+178
+00:06:10,240 --> 00:06:12,720
+nuestro contrato ejecutando el
+
+179
+00:06:12,720 --> 00:06:14,479
+
+
+180
+00:06:14,479 --> 00:06:17,199
+sentimiento del mercado de contratos y corchetes ondulados y ahora
+
+181
+00:06:17,199 --> 00:06:18,960
+dentro de estos corchetes ondulados podemos
+
+182
+00:06:18,960 --> 00:06:21,120
+escribir nuestro código de solidez para permitir que cualquier persona
+
+183
+00:06:21,120 --> 00:06:22,960
+con una dirección de billetera criptográfica interactúe
+
+184
+00:06:22,960 --> 00:06:24,880
+con nuestro contrato inteligente y vote sobre
+
+185
+00:06:24,880 --> 00:06:26,560
+su sentimiento de diferentes
+
+186
+00:06:26,560 --> 00:06:28,800
+criptomonedas, así que antes que nada en el
+
+187
+00:06:28,800 --> 00:06:30,160
+inicio del contrato, querremos
+
+188
+00:06:30,160 --> 00:06:32,400
+definir algunas variables, definiremos la
+
+189
+00:06:32,400 --> 00:06:33,840
+dirección del propietario del
+
+190
+00:06:33,840 --> 00:06:35,919
+contrato inteligente, este será el que
+
+191
+00:06:35,919 --> 00:06:38,160
+podrá agregar nuevos tickers o criptomonedas
+
+192
+00:06:38,160 --> 00:06:40,080
+a este contrato inteligente y, por
+
+193
+00:06:40,080 --> 00:06:42,319
+supuesto, mantendremos  seguimiento de todos los tickers o
+
+194
+00:06:42,319 --> 00:06:44,240
+criptomonedas que ha configurado
+
+195
+00:06:44,240 --> 00:06:46,720
+el propietario, por lo que una serie de cadenas
+
+196
+00:06:46,720 --> 00:06:48,639
+aquí y luego, por supuesto, creamos una
+
+197
+00:06:48,639 --> 00:06:50,240
+
+
+198
+00:06:50,240 --> 00:06:51,759
+función constructora, por lo que esta es una función que se
+
+199
+00:06:51,759 --> 00:06:53,360
+ejecuta en th  En la creación del
+
+200
+00:06:53,360 --> 00:06:55,120
+contrato inteligente, no definiremos ningún
+
+201
+00:06:55,120 --> 00:06:57,599
+parámetro y todo lo que hace este constructor
+
+202
+00:06:57,599 --> 00:07:00,000
+es quien implementa este
+
+203
+00:07:00,000 --> 00:07:03,039
+contrato inteligente, al igual que el mensaje
+
+204
+00:07:03,039 --> 00:07:05,360
+. El remitente se convertirá en el propietario de este
+
+205
+00:07:05,360 --> 00:07:07,840
+contrato inteligente, digamos esto ahora aquí bajo
+
+206
+00:07:07,840 --> 00:07:10,639
+nuestro constructor, definamos  una estructura
+
+207
+00:07:10,639 --> 00:07:13,280
+que esencialmente es solo una definición
+
+208
+00:07:13,280 --> 00:07:16,080
+de cualquier indicador que crea el propietario, por lo que
+
+209
+00:07:16,080 --> 00:07:18,080
+cualquier criptomoneda que se agregue al
+
+210
+00:07:18,080 --> 00:07:20,160
+contrato inteligente seguirá esta
+
+211
+00:07:20,160 --> 00:07:22,880
+estructura, tendrá un valor booleano que se
+
+212
+00:07:22,880 --> 00:07:25,599
+establecerá en verdadero si el indicador existe, así que digamos
+
+213
+00:07:25,599 --> 00:07:28,080
+que agregamos bitcoin a este valor booleano  será cierto,
+
+214
+00:07:28,080 --> 00:07:29,840
+entonces tendremos un número
+
+215
+00:07:29,840 --> 00:07:32,000
+que es esencialmente un número que declara
+
+216
+00:07:32,000 --> 00:07:34,639
+cuántos votos hacia arriba ha recibido y, de
+
+217
+00:07:34,639 --> 00:07:38,160
+manera similar, un256 para hacia abajo, así que cuántas
+
+218
+00:07:38,160 --> 00:07:40,479
+billeteras han votado en contra por esto y, por
+
+219
+00:07:40,479 --> 00:07:42,479
+supuesto, tendrá un mapeo que realiza un
+
+220
+00:07:42,479 --> 00:07:45,039
+seguimiento de todos.  los votantes de este ticker, por
+
+221
+00:07:45,039 --> 00:07:46,479
+lo que cada dirección, estas son
+
+222
+00:07:46,479 --> 00:07:48,479
+direcciones de billetera de criptomonedas, se
+
+223
+00:07:48,479 --> 00:07:51,120
+asignan a un valor booleano, por lo que cada vez que alguien
+
+224
+00:07:51,120 --> 00:07:53,440
+vote establecerá esa
+
+225
+00:07:53,440 --> 00:07:55,280
+dirección de billetera de criptomonedas en verdadera para que tengan
+
+226
+00:07:55,280 --> 00:07:57,680
+ya votó por ese ticker específico
+
+227
+00:07:57,680 --> 00:07:59,440
+y no pueden volver a votar por él, por lo que
+
+228
+00:07:59,440 --> 00:08:01,599
+solo tiene una oportunidad de votar por su
+
+229
+00:08:01,599 --> 00:08:03,919
+opinión sobre una criptomoneda específica
+
+230
+00:08:03,919 --> 00:08:05,680
+y cuando esto se establece inicialmente,
+
+231
+00:08:05,680 --> 00:08:07,440
+la dirección de todos es falsa, por lo que cualquiera
+
+232
+00:08:07,440 --> 00:08:10,800
+puede votar por esa criptomoneda ahora siguiente
+
+233
+00:08:10,800 --> 00:08:13,360
+para  En aras de la transparencia y para que la
+
+234
+00:08:13,360 --> 00:08:15,520
+moral pueda escuchar cualquier
+
+235
+00:08:15,520 --> 00:08:17,520
+evento que suceda en el contrato inteligente,
+
+236
+00:08:17,520 --> 00:08:19,199
+se creará este evento llamado ticker
+
+237
+00:08:19,199 --> 00:08:22,000
+actualizado, de modo que cuando alguien actualice su
+
+238
+00:08:22,000 --> 00:08:23,599
+voto en cualquier ticker que
+
+239
+00:08:23,599 --> 00:08:26,160
+tenga el contrato inteligente, se emitirá este evento llamado
+
+240
+00:08:26,160 --> 00:08:28,400
+ticker actualizado.  nos dará la
+
+241
+00:08:28,400 --> 00:08:30,560
+cantidad actual de votos hacia arriba y hacia abajo del
+
+242
+00:08:30,560 --> 00:08:33,120
+votante que acaba de votar y el ticker en el que
+
+243
+00:08:33,120 --> 00:08:35,120
+votó, por lo que será muy útil para
+
+244
+00:08:35,120 --> 00:08:37,039
+nosotros cuando estemos usando morales para escuchar
+
+245
+00:08:37,039 --> 00:08:38,880
+el contrato inteligente y obtener el
+
+246
+00:08:38,880 --> 00:08:41,679
+estado actual de los votos para  nuestra base de datos morales
+
+247
+00:08:41,679 --> 00:08:44,000
+que luego podemos presentar en nuestra aplicación y,
+
+248
+00:08:44,000 --> 00:08:46,080
+finalmente, antes de seguir adelante y
+
+249
+00:08:46,080 --> 00:08:47,920
+crear nuestras primeras funciones, creemos una
+
+250
+00:08:47,920 --> 00:08:49,360
+asignación más
+
+251
+00:08:49,360 --> 00:08:52,959
+que tome una cadena y la asigne
+
+252
+00:08:52,959 --> 00:08:55,839
+dos son  estructuras de teletipo, así que marque a la derecha
+
+253
+00:08:55,839 --> 00:08:58,160
+aquí y este será un
+
+254
+00:08:58,160 --> 00:09:01,120
+mapeo privado para este contrato inteligente y
+
+255
+00:09:01,120 --> 00:09:04,160
+lo llamaremos teletipos, así que lo que
+
+256
+00:09:04,160 --> 00:09:05,839
+hace toma cualquier cadena
+
+257
+00:09:05,839 --> 00:09:09,120
+y la asigna a una estructura de teletipo, por supuesto,
+
+258
+00:09:09,120 --> 00:09:11,360
+si este teletipo no se crea el  exist
+
+259
+00:09:11,360 --> 00:09:13,680
+boolean será falso, pero cada vez que agreguemos
+
+260
+00:09:13,680 --> 00:09:15,680
+un nuevo ticker al contrato inteligente,
+
+261
+00:09:15,680 --> 00:09:18,080
+estableceremos este booleano en verdadero, así que digamos que
+
+262
+00:09:18,080 --> 00:09:21,279
+creamos un ticker con la cadena btc, establecemos
+
+263
+00:09:21,279 --> 00:09:24,000
+el booleano en verdadero y el
+
+264
+00:09:24,000 --> 00:09:26,959
+mapeo de nuestro ticker nos devolverá esta estructura para
+
+265
+00:09:26,959 --> 00:09:28,160
+btc
+
+266
+00:09:28,160 --> 00:09:30,000
+haciéndonos saber quién ha votado y la
+
+267
+00:09:30,000 --> 00:09:31,839
+dirección en la que ha votado y
+
+268
+00:09:31,839 --> 00:09:33,440
+partiendo de esto, ahora podemos crear esa
+
+269
+00:09:33,440 --> 00:09:35,760
+función para agregar tickers y, por
+
+270
+00:09:35,760 --> 00:09:37,279
+supuesto, será una función a la que solo puede
+
+271
+00:09:37,279 --> 00:09:38,880
+llamar el propietario del
+
+272
+00:09:38,880 --> 00:09:41,040
+contrato inteligente y veamos cómo  haga eso, entonces
+
+273
+00:09:41,040 --> 00:09:42,720
+creamos esta función llamada add
+
+274
+00:09:42,720 --> 00:09:45,680
+ticker, toma como parámetro una cadena
+
+275
+00:09:45,680 --> 00:09:47,600
+que establecemos cuando llamamos a esta función
+
+276
+00:09:47,600 --> 00:09:49,680
+y la llamaremos ticker de subrayado
+
+277
+00:09:49,680 --> 00:09:51,519
+y es una función pública, lo que significa que
+
+278
+00:09:51,519 --> 00:09:53,839
+cualquier usuario puede llamarla, pero en  Al
+
+279
+00:09:53,839 --> 00:09:55,360
+comienzo de esta función, crearemos una
+
+280
+00:09:55,360 --> 00:09:58,880
+declaración requerida y lo que requerimos es
+
+281
+00:09:58,880 --> 00:10:00,959
+que el mensaje. remitente
+
+282
+00:10:00,959 --> 00:10:02,959
+sea igual al propietario del
+
+283
+00:10:02,959 --> 00:10:04,720
+contrato inteligente y, si no lo es, daremos un
+
+284
+00:10:04,720 --> 00:10:08,640
+error de que solo el propietario
+
+285
+00:10:08,640 --> 00:10:10,399
+puede crear
+
+286
+00:10:10,399 --> 00:10:12,880
+tickers ahora en  esta función en sí
+
+287
+00:10:12,880 --> 00:10:15,440
+queremos crear una nueva cadena en este
+
+288
+00:10:15,440 --> 00:10:17,760
+mapeo de tickers con la cadena
+
+289
+00:10:17,760 --> 00:10:20,320
+igual al ticker que se configuró como
+
+290
+00:10:20,320 --> 00:10:22,640
+parámetro para la función de agregar ticker y
+
+291
+00:10:22,640 --> 00:10:25,360
+luego creará una estructura de ticker para nosotros
+
+292
+00:10:25,360 --> 00:10:28,000
+con detalles para ese delantero  preestablecido en
+
+293
+00:10:28,000 --> 00:10:30,560
+cero, por supuesto, para los votos y
+
+294
+00:10:30,560 --> 00:10:34,160
+estableceremos el booleano existe en verdadero, así que ahora
+
+295
+00:10:34,160 --> 00:10:36,000
+sigamos adelante y creemos este nuevo
+
+296
+00:10:36,000 --> 00:10:38,640
+ticker para que del mapeo del ticker
+
+297
+00:10:38,640 --> 00:10:40,000
+obtengamos esta
+
+298
+00:10:40,000 --> 00:10:41,920
+cadena que configuramos en la llamada de la
+
+299
+00:10:41,920 --> 00:10:44,320
+función y obtengamos un  El almacenamiento temporal de teletipos
+
+300
+00:10:44,320 --> 00:10:45,760
+para el que podemos comenzar a configurar las
+
+301
+00:10:45,760 --> 00:10:48,720
+variables para que
+
+302
+00:10:48,720 --> 00:10:50,800
+exista un nuevo teletipo
+
+303
+00:10:50,800 --> 00:10:52,560
+ahora será igual a
+
+304
+00:10:52,560 --> 00:10:55,279
+verdadero y ahora esencialmente hemos almacenado
+
+305
+00:10:55,279 --> 00:10:58,000
+en nuestro contrato el teletipo sobre el que la gente
+
+306
+00:10:58,000 --> 00:11:00,160
+puede votar, por supuesto, también podemos agregarlo
+
+307
+00:11:00,160 --> 00:11:02,000
+a nuestra matriz de teletipos para que podamos  puede tener una
+
+308
+00:11:02,000 --> 00:11:03,680
+matriz de los diferentes tickers que hemos
+
+309
+00:11:03,680 --> 00:11:06,720
+configurado, por lo que es simplemente presionar como
+
+310
+00:11:06,720 --> 00:11:10,240
+en la matriz de puntos de javascript ticker
+
+311
+00:11:10,240 --> 00:11:11,920
+y presionamos nuevamente el parámetro que se
+
+312
+00:11:11,920 --> 00:11:13,600
+configuró en la llamada de la función para
+
+313
+00:11:13,600 --> 00:11:16,800
+marcar así y esa es nuestra primera
+
+314
+00:11:16,800 --> 00:11:19,120
+función  completo, qué bueno es eso, así que
+
+315
+00:11:19,120 --> 00:11:21,519
+ahora tenemos un contrato inteligente donde
+
+316
+00:11:21,519 --> 00:11:23,519
+puede agregar un ticker si es el propietario
+
+317
+00:11:23,519 --> 00:11:26,240
+del contrato inteligente que tiene esta estructura
+
+318
+00:11:26,240 --> 00:11:28,480
+y de ahora en adelante queremos crear una
+
+319
+00:11:28,480 --> 00:11:31,200
+función donde podamos votar sobre cualquier
+
+320
+00:11:31,200 --> 00:11:33,440
+ticker creado queremos poder
+
+321
+00:11:33,440 --> 00:11:35,920
+incrementar la variable arriba o la
+
+322
+00:11:35,920 --> 00:11:38,399
+variable abajo en uno en relación con lo
+
+323
+00:11:38,399 --> 00:11:40,399
+que creemos que va a
+
+324
+00:11:40,399 --> 00:11:42,560
+hacer la criptomoneda y luego, por supuesto, estableceremos nuestro
+
+325
+00:11:42,560 --> 00:11:44,959
+estado de votación en verdadero para que
+
+326
+00:11:44,959 --> 00:11:47,040
+no podamos volver atrás y  cambiar nuestra opinión
+
+327
+00:11:47,040 --> 00:11:49,600
+nunca más ni votar varias veces sesgando
+
+328
+00:11:49,600 --> 00:11:51,680
+los resultados, pero ahora sigamos adelante y
+
+329
+00:11:51,680 --> 00:11:53,519
+creemos otra función debajo de nuestra
+
+330
+00:11:53,519 --> 00:11:56,639
+función de agregar ticker y llamemos a este bote,
+
+331
+00:11:56,639 --> 00:11:58,720
+así que esta es nuestra funcionalidad de votación
+
+332
+00:11:58,720 --> 00:12:00,959
+en la que tenemos que pasar dos parámetros, el
+
+333
+00:12:00,959 --> 00:12:03,839
+ticker  nuevamente que queremos votar y
+
+334
+00:12:03,839 --> 00:12:05,839
+booleano que se referirá a su voto
+
+335
+00:12:05,839 --> 00:12:07,839
+si configuramos el booleano en verdadero configuraremos
+
+336
+00:12:07,839 --> 00:12:09,680
+que significa que estamos votando a favor y
+
+337
+00:12:09,680 --> 00:12:11,519
+si configuramos el booleano en falso haremos que
+
+338
+00:12:11,519 --> 00:12:14,000
+eso signifique que  estamos votando hacia abajo, pero
+
+339
+00:12:14,000 --> 00:12:15,680
+nuevamente comenzando con las
+
+340
+00:12:15,680 --> 00:12:17,760
+declaraciones requeridas, tendremos que requerir dos
+
+341
+00:12:17,760 --> 00:12:20,079
+cosas primero, asegurémonos de que el
+
+342
+00:12:20,079 --> 00:12:22,320
+ticker esté realmente presente en el
+
+343
+00:12:22,320 --> 00:12:24,160
+mapeo que se ha establecido en el mapeo de este ticker,
+
+344
+00:12:24,160 --> 00:12:26,320
+buscamos ese ticker que
+
+345
+00:12:26,320 --> 00:12:28,880
+llamamos  el parámetro y siempre que
+
+346
+00:12:28,880 --> 00:12:31,200
+el booleano exista esté establecido en verdadero, podemos
+
+347
+00:12:31,200 --> 00:12:32,880
+votar por él; de lo contrario, obtendremos un error que
+
+348
+00:12:32,880 --> 00:12:35,120
+dice que no se puede votar por esta moneda.
+
+349
+00:12:35,120 --> 00:12:36,880
+
+
+350
+00:12:36,880 --> 00:12:38,399
+
+
+351
+00:12:38,399 --> 00:12:41,200
+
+
+352
+00:12:41,200 --> 00:12:43,600
+la moneda que estamos viendo, por lo que
+
+353
+00:12:43,600 --> 00:12:45,839
+cualquier ticker que hayamos configurado en el mapeo
+
+354
+00:12:45,839 --> 00:12:47,600
+aquí dentro se asegurará de que la
+
+355
+00:12:47,600 --> 00:12:50,560
+dirección que está haciendo esta llamada,
+
+356
+00:12:50,560 --> 00:12:52,800
+por lo que el remitente del mensaje
+
+357
+00:12:52,800 --> 00:12:54,399
+aún no haya
+
+358
+00:12:54,399 --> 00:12:57,200
+votado esta moneda, si lo ha hecho,
+
+359
+00:12:57,200 --> 00:12:59,519
+creará un error, por lo que esto dará  nosotros un
+
+360
+00:12:59,519 --> 00:13:01,920
+verdadero o falso  si nos da falso, que
+
+361
+00:13:01,920 --> 00:13:03,839
+queremos que sea, usamos el
+
+362
+00:13:03,839 --> 00:13:06,399
+operador de signo de exclamación para convertirlo en verdadero y
+
+363
+00:13:06,399 --> 00:13:08,160
+permitirnos continuar con la función, pero
+
+364
+00:13:08,160 --> 00:13:10,720
+si ya está configurado en verdadero
+
+365
+00:13:10,720 --> 00:13:12,800
+, no permitiremos que esta función  ser llamado
+
+366
+00:13:12,800 --> 00:13:15,279
+porque el usuario ya votó por
+
+367
+00:13:15,279 --> 00:13:17,760
+esa moneda, pero ahora para la funcionalidad
+
+368
+00:13:17,760 --> 00:13:19,360
+de esta función podemos comenzar de
+
+369
+00:13:19,360 --> 00:13:21,120
+manera similar a como lo hicimos con la
+
+370
+00:13:21,120 --> 00:13:22,720
+función de agregar selector, así que cree una
+
+371
+00:13:22,720 --> 00:13:25,120
+estructura de ticker temporal para el ticker que
+
+372
+00:13:25,120 --> 00:13:26,800
+
+
+373
+00:13:26,800 --> 00:13:29,200
+buscamos en esta variable  Tenemos una
+
+374
+00:13:29,200 --> 00:13:31,600
+estructura de ticker que representa a partir del mapeo de nuestro ticker
+
+375
+00:13:31,600 --> 00:13:33,920
+el ticker que hemos llamado
+
+376
+00:13:33,920 --> 00:13:36,639
+en nuestra llamada de función, ahora podemos configurar nuestros
+
+377
+00:13:36,639 --> 00:13:37,360
+
+
+378
+00:13:37,360 --> 00:13:39,279
+votantes de puntos t
+
+379
+00:13:39,279 --> 00:13:41,440
+, que fue el mapeo de las personas
+
+380
+00:13:41,440 --> 00:13:44,000
+que votaron por ese ticker
+
+381
+00:13:44,000 --> 00:13:46,480
+y por nuestro remitente del mensaje, que es  nuestra
+
+382
+00:13:46,480 --> 00:13:49,920
+dirección, la configuraremos como verdadera, por lo que ahora,
+
+383
+00:13:49,920 --> 00:13:52,560
+cada vez que este usuario con esta dirección que
+
+384
+00:13:52,560 --> 00:13:54,720
+tiene el remitente del mensaje intente llamar a
+
+385
+00:13:54,720 --> 00:13:56,720
+esta funcionalidad de votación nuevamente para el
+
+386
+00:13:56,720 --> 00:13:59,519
+mismo ticker, quedarán atrapados en esta
+
+387
+00:13:59,519 --> 00:14:01,279
+declaración requerida para que puedan  solo llame a
+
+388
+00:14:01,279 --> 00:14:03,519
+esta función una vez, entonces también queremos
+
+389
+00:14:03,519 --> 00:14:06,079
+configurar el voto, ya sea hacia arriba o hacia abajo, por lo
+
+390
+00:14:06,079 --> 00:14:08,160
+que tenemos que mirar nuestro voto booleano
+
+391
+00:14:08,160 --> 00:14:11,199
+aquí si el voto es verdadero,
+
+392
+00:14:11,199 --> 00:14:15,519
+por lo que podemos configurar nuestro punto t para que se
+
+393
+00:14:15,519 --> 00:14:19,360
+incremente en uno, pero si es  falso
+
+394
+00:14:19,360 --> 00:14:22,240
+, haremos que el punto hacia abajo se incremente
+
+395
+00:14:22,240 --> 00:14:25,040
+en uno, así que de esta manera almacenamos
+
+396
+00:14:25,040 --> 00:14:27,839
+en nuestra estructura de teletipo para la moneda en
+
+397
+00:14:27,839 --> 00:14:30,560
+cuestión, así que digamos que llamamos a btc para
+
+398
+00:14:30,560 --> 00:14:32,720
+que esta nueva dirección haya votado que
+
+399
+00:14:32,720 --> 00:14:35,040
+ya no pueden votar y hemos incrementado
+
+400
+00:14:35,040 --> 00:14:37,360
+el  votos a favor y en contra, respectivamente,
+
+401
+00:14:37,360 --> 00:14:40,079
+sobre cuál votaron, así que de esta manera
+
+402
+00:14:40,079 --> 00:14:42,480
+hemos votado en esta moneda y, finalmente,
+
+403
+00:14:42,480 --> 00:14:44,000
+porque queremos poder notar
+
+404
+00:14:44,000 --> 00:14:45,839
+con morales cuando se haya realizado un nuevo voto
+
+405
+00:14:45,839 --> 00:14:48,720
+, podemos llamar a este evento este evento de ticker
+
+406
+00:14:48,720 --> 00:14:50,959
+actualizado y emitir  por
+
+407
+00:14:50,959 --> 00:14:51,760
+lo que
+
+408
+00:14:51,760 --> 00:14:54,480
+debajo de esta declaración if else podemos
+
+409
+00:14:54,480 --> 00:14:58,240
+llamar al ticker de emisión actualizado,
+
+410
+00:14:58,240 --> 00:15:00,720
+así obtenemos el número actual actual
+
+411
+00:15:00,720 --> 00:15:02,959
+de votos hacia arriba el número actual de votos hacia abajo
+
+412
+00:15:02,959 --> 00:15:04,720
+porque ya se han configurado el
+
+413
+00:15:04,720 --> 00:15:06,399
+remitente del mensaje, que fue la persona que
+
+414
+00:15:06,399 --> 00:15:09,040
+hizo su última nota más reciente  llamar y cual
+
+415
+00:15:09,040 --> 00:15:11,600
+ticker votaron en el
+
+416
+00:15:11,600 --> 00:15:14,399
+enlace eth o como sea que hayan llamado, así que
+
+417
+00:15:14,399 --> 00:15:16,720
+ahora estamos básicamente listos, podemos agregar una
+
+418
+00:15:16,720 --> 00:15:19,120
+función más, de modo que si alguien en el público
+
+419
+00:15:19,120 --> 00:15:21,199
+quiere obtener los barcos para cualquier ticker en
+
+420
+00:15:21,199 --> 00:15:23,279
+cualquier momento, podemos agregar una función para eso.
+
+421
+00:15:23,279 --> 00:15:25,440
+obtener los barcos para cualquier ticker será
+
+422
+00:15:25,440 --> 00:15:27,120
+la funcionalidad de esta última función de
+
+423
+00:15:27,120 --> 00:15:29,040
+radio, así que desplacémonos un poco hacia abajo
+
+424
+00:15:29,040 --> 00:15:31,199
+y agreguemos nuestra función aquí para que el
+
+425
+00:15:31,199 --> 00:15:33,440
+nombre de la función obtenga votos,
+
+426
+00:15:33,440 --> 00:15:35,360
+también tomará el ticker como parámetro, así que
+
+427
+00:15:35,360 --> 00:15:37,360
+queremos obtener  los barcos para un
+
+428
+00:15:37,360 --> 00:15:39,759
+indicador específico y esta función es una
+
+429
+00:15:39,759 --> 00:15:41,120
+función de vista pública
+
+430
+00:15:41,120 --> 00:15:42,959
+y devuelve algo, por lo que debemos
+
+431
+00:15:42,959 --> 00:15:45,600
+proporcionar lo que devolverá, así que volveré a
+
+432
+00:15:45,600 --> 00:15:47,920
+devolver dos unidades
+
+433
+00:15:47,920 --> 00:15:50,560
+hacia arriba y hacia abajo, así que esencialmente para cualquier
+
+434
+00:15:50,560 --> 00:15:52,720
+indicador, ¿cuántos votos tiene?  y
+
+435
+00:15:52,720 --> 00:15:54,959
+cuántos votos ha bajado y luego,
+
+436
+00:15:54,959 --> 00:15:57,199
+para la funcionalidad, es más o menos
+
+437
+00:15:57,199 --> 00:15:59,040
+lo mismo que lo que ya hemos hecho, así
+
+438
+00:15:59,040 --> 00:16:01,600
+que lo pegaré aquí así,
+
+439
+00:16:01,600 --> 00:16:04,000
+así que nuevamente requerimos que el ticker que
+
+440
+00:16:04,000 --> 00:16:06,320
+estamos  la llamada realmente existe, de lo
+
+441
+00:16:06,320 --> 00:16:08,480
+contrario,  diré que no se definió tal ticker
+
+442
+00:16:08,480 --> 00:16:10,560
+y luego obtendremos esa t del mapeo de nuestro
+
+443
+00:16:10,560 --> 00:16:13,839
+ticker y devolveremos solo la
+
+444
+00:16:13,839 --> 00:16:16,160
+variable arriba y la variable abajo, que
+
+445
+00:16:16,160 --> 00:16:19,199
+son usted y dos cinco seises y que tiene
+
+446
+00:16:19,199 --> 00:16:22,320
+su contrato inteligente terminado para votar en
+
+447
+00:16:22,320 --> 00:16:24,720
+tickers específicos  que el propietario ha establecido
+
+448
+00:16:24,720 --> 00:16:26,639
+para este contrato inteligente y lo siguiente que
+
+449
+00:16:26,639 --> 00:16:29,279
+podemos hacer es usar un casco para compilar
+
+450
+00:16:29,279 --> 00:16:32,560
+este contrato y luego implementarlo en cualquier
+
+451
+00:16:32,560 --> 00:16:34,240
+red que queramos, usaremos el polígono
+
+452
+00:16:34,240 --> 00:16:36,399
+testnet mumbai en este ejemplo y
+
+453
+00:16:36,399 --> 00:16:38,959
+luego también verificaremos  el contrato inteligente
+
+454
+00:16:38,959 --> 00:16:40,399
+para que pueda llamar a diferentes
+
+455
+00:16:40,399 --> 00:16:42,639
+funciones del contrato inteligente en el
+
+456
+00:16:42,639 --> 00:16:45,360
+explorador de bloques de mumbai, así que asegúrese de
+
+457
+00:16:45,360 --> 00:16:47,440
+guardar este contrato y
+
+458
+00:16:47,440 --> 00:16:50,320
+cambiemos el nombre del contrato a capital m
+
+459
+00:16:50,320 --> 00:16:53,920
+y capital s así y guarde ahora desde
+
+460
+00:16:53,920 --> 00:16:55,759
+aquí puede moverse  en la
+
+461
+00:16:55,759 --> 00:16:57,480
+carpeta de scripts donde tiene un
+
+462
+00:16:57,480 --> 00:17:00,800
+archivo scripts.js de muestra, podemos cambiarle el nombre
+
+463
+00:17:00,800 --> 00:17:02,000
+para
+
+464
+00:17:02,000 --> 00:17:05,679
+implementar market sentiment.js
+
+465
+00:17:05,679 --> 00:17:07,839
+así y hay muchos
+
+466
+00:17:07,839 --> 00:17:10,799
+comentarios aquí, así que podemos eliminarlos
+
+467
+00:17:10,799 --> 00:17:12,160
+
+
+468
+00:17:12,160 --> 00:17:15,359
+para verlos mejor y  por aquí, por
+
+469
+00:17:15,359 --> 00:17:18,240
+supuesto, recuerda que teníamos el
+
+470
+00:17:18,240 --> 00:17:20,160
+contrato de saludo.sol aquí al principio y
+
+471
+00:17:20,160 --> 00:17:21,839
+es por eso que tenemos un saludo aquí
+
+472
+00:17:21,839 --> 00:17:23,679
+para que podamos cambiar todos los saludos, hagamos
+
+473
+00:17:23,679 --> 00:17:25,760
+que este caso sea sensible y
+
+474
+00:17:25,760 --> 00:17:29,600
+busquemos todas las palabras de saludo y cámbielas a
+
+475
+00:17:29,600 --> 00:17:32,600
+
+
+476
+00:17:33,600 --> 00:17:35,679
+mercados, cambiémoslos todos y luego hagamos lo
+
+477
+00:17:35,679 --> 00:17:39,360
+mismo solo para los saludos
+
+478
+00:17:39,360 --> 00:17:42,240
+en minúsculas y cámbielos a sentimientos de mercado en minúsculas,
+
+479
+00:17:42,240 --> 00:17:46,160
+así que ahora una cosa más
+
+480
+00:17:46,160 --> 00:17:48,400
+porque nuestra implementación de sentimiento de mercado
+
+481
+00:17:48,400 --> 00:17:50,080
+hemos pasado algunos parámetros, estos son
+
+482
+00:17:50,080 --> 00:17:52,240
+los parámetros que pasaría si  el
+
+483
+00:17:52,240 --> 00:17:54,320
+constructor tomó cualquier parámetro, pero en
+
+484
+00:17:54,320 --> 00:17:56,559
+nuestro caso, nuestro constructor no tomó
+
+485
+00:17:56,559 --> 00:17:59,360
+ningún parámetro, por lo que podemos eliminar
+
+486
+00:17:59,360 --> 00:18:02,080
+esto aquí y ahora tiene este
+
+487
+00:18:02,080 --> 00:18:05,280
+script de despliegue de sentimiento de mercado js js listo para
+
+488
+00:18:05,280 --> 00:18:07,520
+rock and roll y con esto hecho
+
+489
+00:18:07,520 --> 00:18:09,480
+podemos abrir esto
+
+490
+00:18:09,480 --> 00:18:11,919
+hardhat.config.js y, al principio
+
+491
+00:18:11,919 --> 00:18:16,320
+, empezar aquí solicitando
+
+492
+00:18:16,480 --> 00:18:18,720
+un análisis de éter de casco duro de nomiclabs que
+
+493
+00:18:18,720 --> 00:18:20,640
+nos permitirá verificar nuestro contrato
+
+494
+00:18:20,640 --> 00:18:23,919
+eventualmente y también const dot
+
+495
+00:18:23,919 --> 00:18:29,039
+y será equ  al para requerir punto n, por
+
+496
+00:18:29,039 --> 00:18:30,880
+lo que tendremos nuestras variables de entorno en
+
+497
+00:18:30,880 --> 00:18:33,679
+un archivo punto n y también configuraremos
+
+498
+00:18:33,679 --> 00:18:36,480
+nuestro archivo punto n al principio aquí
+
+499
+00:18:36,480 --> 00:18:38,000
+config
+
+500
+00:18:38,000 --> 00:18:40,799
+así, así que esto significa que podemos seguir adelante
+
+501
+00:18:40,799 --> 00:18:43,520
+y crear nuestro archivo final de punto otra vez  aquí
+
+502
+00:18:43,520 --> 00:18:46,880
+ve aquí dot env
+
+503
+00:18:46,880 --> 00:18:48,960
+crea ese archivo y aquí
+
+504
+00:18:48,960 --> 00:18:50,960
+crearemos un par de variables de entorno
+
+505
+00:18:50,960 --> 00:18:52,880
+, crearemos el punto final para nuestro
+
+506
+00:18:52,880 --> 00:18:54,720
+nodo de red de mumbai para que podamos enviar nuestro
+
+507
+00:18:54,720 --> 00:18:56,960
+contrato inteligente a la red, luego también
+
+508
+00:18:56,960 --> 00:18:59,919
+necesitaremos un  la clave privada de la billetera criptográfica, por lo
+
+509
+00:18:59,919 --> 00:19:01,520
+que será el propietario quien implemente el
+
+510
+00:19:01,520 --> 00:19:04,400
+contrato y luego también una
+
+511
+00:19:04,400 --> 00:19:06,720
+clave api de escaneo de polígonos que nos permitirá verificar
+
+512
+00:19:06,720 --> 00:19:09,280
+nuestro contrato, así que vamos a buscar aquellos que ahora
+
+513
+00:19:09,280 --> 00:19:11,200
+comienzan y se encuentran en el
+
+514
+00:19:11,200 --> 00:19:13,440
+escaneo de polígonos o si desea usar un
+
+515
+00:19:13,440 --> 00:19:16,039
+red de prueba ethereum como rinkeby, irá a
+
+516
+00:19:16,039 --> 00:19:18,880
+etherscan.com e iniciará sesión
+
+517
+00:19:18,880 --> 00:19:20,720
+en la parte superior derecha y después de iniciar
+
+518
+00:19:20,720 --> 00:19:22,480
+sesión, irá a su página de inicio donde
+
+519
+00:19:22,480 --> 00:19:25,520
+obtendrá esta pestaña de claves de API y podrá
+
+520
+00:19:25,520 --> 00:19:27,679
+continuar y crear  una nueva clave de api ya
+
+521
+00:19:27,679 --> 00:19:30,080
+tengo una, eliminaré esta
+
+522
+00:19:30,080 --> 00:19:32,480
+api  token de clave antes de que salga este video,
+
+523
+00:19:32,480 --> 00:19:34,080
+por lo que debe crear uno propio,
+
+524
+00:19:34,080 --> 00:19:36,160
+no puede usar esto, pero lo
+
+525
+00:19:36,160 --> 00:19:39,600
+copiará y volverá a su archivo env y
+
+526
+00:19:39,600 --> 00:19:42,559
+continuará y le dará un nombre api, la
+
+527
+00:19:42,559 --> 00:19:43,440
+clave de subrayado
+
+528
+00:19:43,440 --> 00:19:46,799
+será igual  entre comillas simples y coloque
+
+529
+00:19:46,799 --> 00:19:50,240
+su clave api allí, luego necesitaremos
+
+530
+00:19:50,240 --> 00:19:52,480
+nuestro punto final de nodo y para eso
+
+531
+00:19:52,480 --> 00:19:55,559
+irá a morales.io
+
+532
+00:19:55,559 --> 00:19:58,000
+radiomorales.io continúe e inicie sesión
+
+533
+00:19:58,000 --> 00:20:00,000
+en la parte superior derecha y lo llevará a
+
+534
+00:20:00,000 --> 00:20:01,919
+su panel de administración  donde tiene sus
+
+535
+00:20:01,919 --> 00:20:03,600
+servidores, no necesitaremos el servidor todavía,
+
+536
+00:20:03,600 --> 00:20:05,039
+aunque crearemos uno más adelante en
+
+537
+00:20:05,039 --> 00:20:07,200
+el video cuando creemos una aplicación de reacción, pero
+
+538
+00:20:07,200 --> 00:20:09,280
+ahora vaya aquí al nodo rápido y
+
+539
+00:20:09,280 --> 00:20:10,720
+elija la red a la que desea
+
+540
+00:20:10,720 --> 00:20:12,480
+conectarse porque usamos polígono  iremos a los
+
+541
+00:20:12,480 --> 00:20:14,559
+extremos del polígono y necesitaremos los
+
+542
+00:20:14,559 --> 00:20:17,520
+nodos rápidos de mumbai desde aquí. Este
+
+543
+00:20:17,520 --> 00:20:21,039
+es el extremo al que necesitaremos llamar para
+
+544
+00:20:21,039 --> 00:20:23,200
+hablar con la red y volver al
+
+545
+00:20:23,200 --> 00:20:25,120
+código de Visual Studio y dar un
+
+546
+00:20:25,120 --> 00:20:26,880
+nombre a la variable, digamos pop
+
+547
+00:20:26,880 --> 00:20:29,440
+polígono
+
+548
+00:20:29,440 --> 00:20:30,720
+mumbai lo
+
+549
+00:20:30,720 --> 00:20:33,360
+hará.  ser igual a comillas simples
+
+550
+00:20:33,360 --> 00:20:36,159
+y son sus morales de nodos rápidos
+
+551
+00:20:36,159 --> 00:20:38,559
+punto final y, finalmente, necesitará la
+
+552
+00:20:38,559 --> 00:20:41,039
+clave privada de sus billeteras criptográficas, así que hagamos
+
+553
+00:20:41,039 --> 00:20:43,039
+una clave privada de subrayado. No agregaré una
+
+554
+00:20:43,039 --> 00:20:44,799
+aquí solo porque es una buena práctica
+
+555
+00:20:44,799 --> 00:20:46,720
+nunca dar sus claves privadas, incluso
+
+556
+00:20:46,720 --> 00:20:49,440
+si es una billetera de muestra, pero cómo se obtiene
+
+557
+00:20:49,440 --> 00:20:51,679
+es  vaya a su navegador y donde tiene la
+
+558
+00:20:51,679 --> 00:20:54,559
+máscara meta, ábrala, presione estos tres
+
+559
+00:20:54,559 --> 00:20:57,440
+puntos, detalles de la cuenta y luego puede
+
+560
+00:20:57,440 --> 00:21:00,400
+exportar su clave privada desde aquí.
+
+561
+00:21:00,400 --> 00:21:02,000
+Esta es su clave pública, pero necesitará
+
+562
+00:21:02,000 --> 00:21:04,159
+su clave privada, así que ahí es donde la
+
+563
+00:21:04,159 --> 00:21:07,840
+obtiene.  y luego péguelo en su
+
+564
+00:21:07,840 --> 00:21:09,760
+variable de clave privada aquí, guardemos
+
+565
+00:21:09,760 --> 00:21:12,120
+esto y volvamos a nuestro
+
+566
+00:21:12,120 --> 00:21:14,640
+archivo hardhat.config.js.
+
+567
+00:21:14,640 --> 00:21:17,360
+
+
+568
+00:21:17,360 --> 00:21:20,159
+
+
+569
+00:21:20,159 --> 00:21:21,840
+ahora puede encontrar el camino
+
+570
+00:21:21,840 --> 00:21:23,760
+hasta la parte inferior de la página aquí
+
+571
+00:21:23,760 --> 00:21:25,760
+donde tenemos exportaciones de módulos, en primer
+
+572
+00:21:25,760 --> 00:21:28,720
+lugar, la versión de solidez es 0.8.7, eso es
+
+573
+00:21:28,720 --> 00:21:30,720
+lo que definimos en nuestro contrato inteligente,
+
+574
+00:21:30,720 --> 00:21:32,480
+luego creemos otro objeto llamado
+
+575
+00:21:32,480 --> 00:21:33,679
+redes,
+
+576
+00:21:33,679 --> 00:21:35,280
+así que seré objeto.
+
+577
+00:21:35,280 --> 00:21:37,520
+y dentro de este  objeto definiremos
+
+578
+00:21:37,520 --> 00:21:39,200
+mumbai cuál es la red que usarás
+
+579
+00:21:39,200 --> 00:21:40,640
+si vas a usar
+
+580
+00:21:40,640 --> 00:21:43,200
+rinkeby definirás rinkeby y luego
+
+581
+00:21:43,200 --> 00:21:46,080
+dentro de este objeto tendremos la url
+
+582
+00:21:46,080 --> 00:21:49,440
+que obtenemos del proceso punto
+
+583
+00:21:49,440 --> 00:21:52,080
+env punto  y ahora cualquier variable que establezcamos
+
+584
+00:21:52,080 --> 00:21:55,039
+en el archivo env será un
+
+585
+00:21:55,039 --> 00:21:57,600
+guión bajo de polígono mumbai y luego para las
+
+586
+00:21:57,600 --> 00:22:00,480
+cuentas será una matriz y lo mismo
+
+587
+00:22:00,480 --> 00:22:03,919
+procesará punto env y aquí la
+
+588
+00:22:03,919 --> 00:22:07,039
+clave de subrayado privada variable,
+
+589
+00:22:07,039 --> 00:22:08,960
+eliminemos esta línea vacía y agreguemos un
+
+590
+00:22:08,960 --> 00:22:11,440
+coma aquí y luego fuera del
+
+591
+00:22:11,440 --> 00:22:14,000
+objeto de redes, crearemos un
+
+592
+00:22:14,000 --> 00:22:16,559
+objeto más y se llamará etherscan
+
+593
+00:22:16,559 --> 00:22:18,640
+y esto nos permitirá verificar nuestro
+
+594
+00:22:18,640 --> 00:22:21,440
+contrato inteligente y aquí proporcionaremos
+
+595
+00:22:21,440 --> 00:22:26,000
+nuestra clave api que configuramos en proceso dot
+
+596
+00:22:26,000 --> 00:22:30,480
+env como  clave de subrayado api y luego guarde
+
+597
+00:22:30,480 --> 00:22:32,640
+esto, pero ya sabe lo que son casi 20
+
+598
+00:22:32,640 --> 00:22:34,799
+minutos de codificación de nuestro contrato inteligente y
+
+599
+00:22:34,799 --> 00:22:37,360
+configuración del casco, pero ahora deberíamos
+
+600
+00:22:37,360 --> 00:22:40,640
+poder comenzar a compilar nuestro
+
+601
+00:22:40,640 --> 00:22:43,280
+contrato inteligente, implementarlo y
+
+602
+00:22:43,280 --> 00:22:45,280
+verificarlo si hemos hecho todo correctamente.
+
+603
+00:22:45,280 --> 00:22:46,799
+y espero que estés emocionado y que
+
+604
+00:22:46,799 --> 00:22:49,360
+esto funcione, así que comencemos ingresando a
+
+605
+00:22:49,360 --> 00:22:52,640
+nuestra consola aquí y escribiendo mpx
+
+606
+00:22:52,640 --> 00:22:54,559
+hard hat
+
+607
+00:22:54,559 --> 00:22:56,880
+clean y luego mpx
+
+608
+00:22:56,880 --> 00:22:58,400
+hard hat
+
+609
+00:22:58,400 --> 00:23:00,320
+compile
+
+610
+00:23:00,320 --> 00:23:02,640
+y miremos ese archivo de solidity compilado con
+
+611
+00:23:02,640 --> 00:23:04,480
+éxito porque teníamos
+
+612
+00:23:04,480 --> 00:23:06,240
+todo configurado correctamente en nuestro
+
+613
+00:23:06,240 --> 00:23:08,720
+contrato inteligente y nuestro archivo js de implementación de sentimiento de mercado
+
+614
+00:23:08,720 --> 00:23:11,360
+ahora, para la parte real, vamos
+
+615
+00:23:11,360 --> 00:23:14,320
+a implementar este contrato inteligente
+
+616
+00:23:14,320 --> 00:23:16,880
+en la red de prueba de polígono mumbai, así que
+
+617
+00:23:16,880 --> 00:23:20,159
+lo que hacemos es seguir adelante y escribir
+
+618
+00:23:20,159 --> 00:23:25,280
+scripts de ejecución de sombrero duro npx implementar
+
+619
+00:23:25,280 --> 00:23:27,520
+sentimiento de mercado.js
+
+620
+00:23:27,520 --> 00:23:30,880
+space couple lines network y
+
+621
+00:23:30,880 --> 00:23:34,320
+mumbai ahora presione enter y nuestro
+
+622
+00:23:34,320 --> 00:23:36,559
+contrato inteligente de sentimiento de mercado acaba de
+
+623
+00:23:36,559 --> 00:23:39,600
+implementarse en esta dirección y ahora, si
+
+624
+00:23:39,600 --> 00:23:42,000
+vamos a ver el escaneo de polígonos y
+
+625
+00:23:42,000 --> 00:23:44,240
+especialmente testnet mumbai, deberíamos poder
+
+626
+00:23:44,240 --> 00:23:46,400
+ver nuestro contrato inteligente, obtengamos esta
+
+627
+00:23:46,400 --> 00:23:48,480
+dirección de  aquí, cópielo, diríjase
+
+628
+00:23:48,480 --> 00:23:50,480
+al escaneo de polígonos,
+
+629
+00:23:50,480 --> 00:23:53,039
+así que aquí en el escaneo de polígonos, asegúrese de
+
+630
+00:23:53,039 --> 00:23:55,200
+cambiar a la red de prueba, así que ahora estamos en
+
+631
+00:23:55,200 --> 00:23:57,200
+el escaneo de mumbai y pongamos nuestro
+
+632
+00:23:57,200 --> 00:23:59,440
+contrato inteligente en  aquí así
+
+633
+00:23:59,440 --> 00:24:00,480
+
+
+634
+00:24:00,480 --> 00:24:02,880
+y búsquelo y mire eso hace un minuto
+
+635
+00:24:02,880 --> 00:24:04,559
+creación de contrato
+
+636
+00:24:04,559 --> 00:24:06,799
+nuestro contrato inteligente está en vivo en la
+
+637
+00:24:06,799 --> 00:24:08,799
+red de prueba de polígono mumbai si miramos
+
+638
+00:24:08,799 --> 00:24:11,200
+nuestro contrato solo tenemos el código de bytes en
+
+639
+00:24:11,200 --> 00:24:13,360
+este momento porque no hemos verificado
+
+640
+00:24:13,360 --> 00:24:15,279
+nuestro contrato inteligente  contrato, pero también podemos hacerlo
+
+641
+00:24:15,279 --> 00:24:18,240
+en nuestra terminal de código vs, así que
+
+642
+00:24:18,240 --> 00:24:19,440
+volviendo aquí,
+
+643
+00:24:19,440 --> 00:24:21,600
+sigamos adelante y escribamos un último comando
+
+644
+00:24:21,600 --> 00:24:25,200
+que será mpx hard hat verificar luego
+
+645
+00:24:25,200 --> 00:24:27,200
+nuestro contrato inteligente y nuevamente unir
+
+646
+00:24:27,200 --> 00:24:30,880
+líneas de red y mumbai y eso funcionó
+
+647
+00:24:30,880 --> 00:24:33,840
+por un tiempo pero
+
+648
+00:24:33,840 --> 00:24:36,640
+sentimiento del mercado de contratos verificado con éxito en el escaneo de éter,
+
+649
+00:24:36,640 --> 00:24:38,720
+pero en realidad significa escaneo de polígonos si
+
+650
+00:24:38,720 --> 00:24:41,760
+regresamos y revisamos nuestro contrato inteligente
+
+651
+00:24:41,760 --> 00:24:43,840
+estamos aquí en el escaneo de polígonos si
+
+652
+00:24:43,840 --> 00:24:46,320
+continuamos y actualizamos la página y miramos
+
+653
+00:24:46,320 --> 00:24:48,960
+el contrato tenemos una
+
+654
+00:24:48,960 --> 00:24:51,279
+marca verde verificada  contrato donde tenemos el
+
+655
+00:24:51,279 --> 00:24:54,640
+contrato de sentimiento del mercado que escribimos en este
+
+656
+00:24:54,640 --> 00:24:56,799
+tutorial, qué bueno es eso y la
+
+657
+00:24:56,799 --> 00:24:59,039
+mejor parte es que tenemos
+
+658
+00:24:59,039 --> 00:25:01,600
+la funcionalidad de contrato de lectura y la
+
+659
+00:25:01,600 --> 00:25:03,360
+funcionalidad de contrato correcta para que el
+
+660
+00:25:03,360 --> 00:25:05,279
+propietario de  el contrato inteligente esta dirección
+
+661
+00:25:05,279 --> 00:25:07,039
+que le mostré al principio aquí
+
+662
+00:25:07,039 --> 00:25:09,320
+es 0xf03
+
+663
+00:25:09,320 --> 00:25:12,480
+0xf03 y, por supuesto, aún no tenemos ningún
+
+664
+00:25:12,480 --> 00:25:15,039
+selector, así que podemos continuar y escribir
+
+665
+00:25:15,039 --> 00:25:17,440
+en nuestro contrato inteligente para agregar un
+
+666
+00:25:17,440 --> 00:25:19,200
+ticker, primero le mostraremos que si  intente usar
+
+667
+00:25:19,200 --> 00:25:21,360
+otra cuenta, vayamos a la cuenta
+
+668
+00:25:21,360 --> 00:25:23,440
+3 aquí, que no es el
+
+669
+00:25:23,440 --> 00:25:26,240
+propietario del contrato inteligente e intente escribir un ticker, diga btc,
+
+670
+00:25:26,240 --> 00:25:28,240
+asegúrese de conectarse a su web3 usando
+
+671
+00:25:28,240 --> 00:25:29,520
+metamask,
+
+672
+00:25:29,520 --> 00:25:31,520
+está bien y este no es el propietario del contrato,
+
+673
+00:25:31,520 --> 00:25:34,080
+así que si intenta escribir
+
+674
+00:25:34,080 --> 00:25:36,400
+esto muestra que obtendremos un error si
+
+675
+00:25:36,400 --> 00:25:39,039
+tratamos de escribir en este contrato, así que
+
+676
+00:25:39,039 --> 00:25:41,279
+rechacemos eso y sigamos adelante y cambiemos nuestra
+
+677
+00:25:41,279 --> 00:25:43,679
+cuenta, así que seguí adelante y
+
+678
+00:25:43,679 --> 00:25:45,679
+recargué la página, conéctate a web3 meta
+
+679
+00:25:45,679 --> 00:25:48,000
+mask, está bien y estamos en el
+
+680
+00:25:48,000 --> 00:25:50,400
+contrato inteligente  propietario en este momento y si intentamos
+
+681
+00:25:50,400 --> 00:25:52,000
+y agregamos un ticker
+
+682
+00:25:52,000 --> 00:25:54,640
+btc,
+
+683
+00:25:54,640 --> 00:25:56,640
+escribimos que no obtendremos un error esta vez y
+
+684
+00:25:56,640 --> 00:26:00,640
+podemos agregar la etiqueta si confirmamos que la
+
+685
+00:26:00,640 --> 00:26:02,640
+funcionalidad de agregar ticker está pendiente y
+
+686
+00:26:02,640 --> 00:26:04,880
+hemos agregado pat ticker a este
+
+687
+00:26:04,880 --> 00:26:06,559
+contrato inteligente ahora si  seguimos adelante y leemos el
+
+688
+00:26:06,559 --> 00:26:08,799
+contrato, podemos intentar obtener la
+
+689
+00:26:08,799 --> 00:26:10,320
+matriz de ticker de la matriz de ticker, digamos que la
+
+690
+00:26:10,320 --> 00:26:12,240
+primera consulta de índice
+
+691
+00:26:12,240 --> 00:26:14,799
+es btc, no hemos agregado
+
+692
+00:26:14,799 --> 00:26:16,080
+nada más, por lo que en la matriz
+
+693
+00:26:16,080 --> 00:26:17,679
+no debería haber ningún otro
+
+694
+00:26:17,679 --> 00:26:19,919
+error devuelto como este y también podemos obtener  los
+
+695
+00:26:19,919 --> 00:26:22,400
+votos actualmente para btc, así que si consultamos
+
+696
+00:26:22,400 --> 00:26:24,799
+esto, los votos para arriba son cero y los
+
+697
+00:26:24,799 --> 00:26:27,120
+votos para abajo son cero, podemos seguir adelante
+
+698
+00:26:27,120 --> 00:26:29,520
+y votar.
+
+699
+00:26:29,520 --> 00:26:33,039
+
+
+700
+00:26:33,039 --> 00:26:36,559
+esa
+
+701
+00:26:36,559 --> 00:26:39,679
+metamáscara aparece, confirmemos que
+
+702
+00:26:39,679 --> 00:26:41,600
+estamos esperando a que pase nuestra función de votación
+
+703
+00:26:41,600 --> 00:26:43,520
+que pasó déjame
+
+704
+00:26:43,520 --> 00:26:45,520
+mostrarte si lo intenté y votar nuevamente para
+
+705
+00:26:45,520 --> 00:26:47,039
+agregar otro voto
+
+706
+00:26:47,039 --> 00:26:49,200
+correcto nuevamente nos muestra que obtendremos
+
+707
+00:26:49,200 --> 00:26:50,799
+un error si  intente hacer eso porque
+
+708
+00:26:50,799 --> 00:26:52,240
+no aprobamos la declaración requerida
+
+709
+00:26:52,240 --> 00:26:54,559
+porque ya votamos esta moneda
+
+710
+00:26:54,559 --> 00:26:57,200
+una vez, así que rechace eso y sigamos adelante y
+
+711
+00:26:57,200 --> 00:26:59,200
+leamos nuestro contrato, así que intentaremos consultar
+
+712
+00:26:59,200 --> 00:27:00,880
+btc una vez más
+
+713
+00:27:00,880 --> 00:27:03,760
+y veremos que tenemos  un voto arriba y
+
+714
+00:27:03,760 --> 00:27:06,480
+en los eventos mira esto 43 segundos
+
+715
+00:27:06,480 --> 00:27:08,159
+al  vaya, hubo un voto,
+
+716
+00:27:08,159 --> 00:27:10,159
+así que ahora cambié todos estos a
+
+717
+00:27:10,159 --> 00:27:12,320
+formatos legibles, así que vemos que nuestro total de
+
+718
+00:27:12,320 --> 00:27:14,240
+votos positivos para btc es uno, nuestro total de
+
+719
+00:27:14,240 --> 00:27:17,760
+votos negativos es cero y el último votante
+
+720
+00:27:17,760 --> 00:27:18,480
+fuimos
+
+721
+00:27:18,480 --> 00:27:21,600
+nosotros mismos, así que qué bueno es que
+
+722
+00:27:21,600 --> 00:27:23,600
+nosotros  De hecho, hice un contrato inteligente
+
+723
+00:27:23,600 --> 00:27:25,840
+en el que puede votar sobre los teletipos que el
+
+724
+00:27:25,840 --> 00:27:27,919
+propietario del contrato inteligente realmente ha establecido en
+
+725
+00:27:27,919 --> 00:27:29,840
+el contrato inteligente. De hecho, podemos seguir
+
+726
+00:27:29,840 --> 00:27:31,919
+adelante y agregar un par de selectores aquí
+
+727
+00:27:31,919 --> 00:27:34,720
+también, así que escribamos el contrato, agreguemos
+
+728
+00:27:34,720 --> 00:27:36,240
+eth
+
+729
+00:27:36,240 --> 00:27:38,399
+ahora, así que ahora está creado y  sigamos adelante
+
+730
+00:27:38,399 --> 00:27:40,880
+y agreguemos el enlace también escríbalo así que
+
+731
+00:27:40,880 --> 00:27:42,640
+ahora los enlaces creados acabo de revisar
+
+732
+00:27:42,640 --> 00:27:44,480
+eso muy rápido hagamos un voto por
+
+733
+00:27:44,480 --> 00:27:46,720
+eth votemos por
+
+734
+00:27:46,720 --> 00:27:49,679
+pulso para que no seamos muy optimistas con eth
+
+735
+00:27:49,679 --> 00:27:52,320
+y luego lo mismo para enlace enlace
+
+736
+00:27:52,320 --> 00:27:54,799
+pero vamos  vote verdadero por eso
+
+737
+00:27:54,799 --> 00:27:56,159
+y vamos a verificar que todo
+
+738
+00:27:56,159 --> 00:27:59,039
+funcionó correctamente, así que vamos a ver nuestro
+
+739
+00:27:59,039 --> 00:28:01,200
+ticker, digamos que btc
+
+740
+00:28:01,200 --> 00:28:03,919
+consulta ese voto positivo eth
+
+741
+00:28:03,919 --> 00:28:07,679
+consulta ese voto negativo y enlace
+
+742
+00:28:07,679 --> 00:28:08,880
+consulta
+
+743
+00:28:08,880 --> 00:28:10,880
+ese voto positivo y luego podemos cambiar
+
+744
+00:28:10,880 --> 00:28:13,200
+cuentas para incrementar estos  votar  s aún
+
+745
+00:28:13,200 --> 00:28:14,159
+más,
+
+746
+00:28:14,159 --> 00:28:16,960
+así que la radio es cómo hacemos un
+
+747
+00:28:16,960 --> 00:28:20,080
+contrato inteligente con un casco, lo compilamos, lo
+
+748
+00:28:20,080 --> 00:28:22,080
+implementamos e incluso lo verificamos y luego podemos
+
+749
+00:28:22,080 --> 00:28:23,919
+interactuar con él en el explorador de bloques,
+
+750
+00:28:23,919 --> 00:28:25,840
+pero a continuación queremos crear esa
+
+751
+00:28:25,840 --> 00:28:27,360
+aplicación de reacción para que podamos interactuar con esto.  contrato inteligente a
+
+752
+00:28:27,360 --> 00:28:29,919
+través de una interfaz web agradable
+
+753
+00:28:29,919 --> 00:28:32,080
+y haga esas burbujas agradables que nos muestran
+
+754
+00:28:32,080 --> 00:28:33,760
+el sentimiento actual del mercado para
+
+755
+00:28:33,760 --> 00:28:36,240
+diferentes tokens cuando una gran cantidad de personas
+
+756
+00:28:36,240 --> 00:28:37,919
+comiencen a votar por este contrato inteligente,
+
+757
+00:28:37,919 --> 00:28:40,720
+comencemos a crear esa aplicación de reacción
+
+758
+00:28:40,720 --> 00:28:42,480
+para que cuando regrese a su ide tengamos un
+
+759
+00:28:42,480 --> 00:28:44,320
+están sucediendo muchas cosas, pero podemos cerrar la
+
+760
+00:28:44,320 --> 00:28:45,440
+mayor parte de esto porque ya
+
+761
+00:28:45,440 --> 00:28:47,039
+implementamos nuestros contratos inteligentes, por lo que ya no
+
+762
+00:28:47,039 --> 00:28:49,520
+los necesitamos y nuestra consola
+
+763
+00:28:49,520 --> 00:28:51,120
+podemos borrarla
+
+764
+00:28:51,120 --> 00:28:54,640
+y luego veremos el paso anterior para
+
+765
+00:28:54,640 --> 00:28:56,799
+ir a nuestro  la primera carpeta de inicio de la aplicación
+
+766
+00:28:56,799 --> 00:28:59,039
+así que estamos en esta carpeta
+
+767
+00:28:59,039 --> 00:29:01,679
+y es una carpeta creada con la
+
+768
+00:29:01,679 --> 00:29:03,919
+aplicación Create React para que pueda ejecutar yarn para obtener todas
+
+769
+00:29:03,919 --> 00:29:05,840
+las dependencias que necesitaremos
+
+770
+00:29:05,840 --> 00:29:07,440
+y luego, si miramos la carpeta de origen
+
+771
+00:29:07,440 --> 00:29:09,200
+aquí, verá  que tenemos este
+
+772
+00:29:09,200 --> 00:29:11,919
+yo  ndex.js que muestra que es una aplicación de reacción
+
+773
+00:29:11,919 --> 00:29:13,120
+que se envuelve alrededor del
+
+774
+00:29:13,120 --> 00:29:14,720
+proveedor de morales más adelante en el video,
+
+775
+00:29:14,720 --> 00:29:17,120
+proporcionaremos una identificación de la aplicación y una URL del servidor para
+
+776
+00:29:17,120 --> 00:29:20,159
+integrar los elementos web3, pero todo
+
+777
+00:29:20,159 --> 00:29:22,240
+se ejecuta en el componente de la aplicación, por lo
+
+778
+00:29:22,240 --> 00:29:24,640
+que si observa  app.js es un archivo vacío que no contiene
+
+779
+00:29:24,640 --> 00:29:27,360
+nada, así que si vamos y verificamos el
+
+780
+00:29:27,360 --> 00:29:30,240
+inicio de hilo, deberíamos obtener solo una
+
+781
+00:29:30,240 --> 00:29:34,080
+página web vacía ejecutándose en el host local 3000
+
+782
+00:29:34,080 --> 00:29:36,320
+y eso es exactamente lo que obtenemos, es un
+
+783
+00:29:36,320 --> 00:29:38,559
+tema oscuro que he configurado para usted  muchachos para
+
+784
+00:29:38,559 --> 00:29:40,159
+ayudarnos, pero solo para asegurarnos de que
+
+785
+00:29:40,159 --> 00:29:41,760
+todo funcione antes de
+
+786
+00:29:41,760 --> 00:29:43,520
+seguir adelante y comenzar a trabajar en esto, avancemos
+
+787
+00:29:43,520 --> 00:29:45,600
+y entremos en modo de pantalla dividida y aquí,
+
+788
+00:29:45,600 --> 00:29:47,520
+en nuestro componente de aplicación, creemos un
+
+789
+00:29:47,520 --> 00:29:49,679
+div simple
+
+790
+00:29:49,679 --> 00:29:53,039
+y rellénelo con decir hola
+
+791
+00:29:53,039 --> 00:29:54,880
+y eso  es muy oscuro, pero aquí puede
+
+792
+00:29:54,880 --> 00:29:57,039
+ver que aparece el saludo aquí, así que
+
+793
+00:29:57,039 --> 00:29:59,279
+sigamos adelante y comencemos a crear esta
+
+794
+00:29:59,279 --> 00:30:02,320
+aplicación simple de una página agregando un encabezado
+
+795
+00:30:02,320 --> 00:30:03,919
+para el encabezado. Necesitamos importar dos
+
+796
+00:30:03,919 --> 00:30:05,840
+componentes. Querremos el logotipo de morales
+
+797
+00:30:05,840 --> 00:30:07,520
+en  la parte superior izquierda y luego querremos un
+
+798
+00:30:07,520 --> 00:30:10,000
+web3 auténtico  mecanismo de activación en la parte superior
+
+799
+00:30:10,000 --> 00:30:12,799
+derecha, lo traeremos del kit web3 ui, así
+
+800
+00:30:12,799 --> 00:30:14,480
+que primero traigamos las importaciones, así
+
+801
+00:30:14,480 --> 00:30:15,679
+que traeremos el botón de
+
+802
+00:30:15,679 --> 00:30:18,480
+conexión del kit web3ui y luego en su carpeta
+
+803
+00:30:18,480 --> 00:30:21,520
+tiene una carpeta de imágenes con un morales.png
+
+804
+00:30:21,520 --> 00:30:23,440
+que nosotros  llamaré al logotipo, luego podemos llamar a
+
+805
+00:30:23,440 --> 00:30:25,760
+este div con un nombre de clase
+
+806
+00:30:25,760 --> 00:30:27,600
+igual al
+
+807
+00:30:27,600 --> 00:30:29,679
+encabezado y le mostraré rápidamente
+
+808
+00:30:29,679 --> 00:30:32,000
+que en nuestro directorio de archivos tenemos
+
+809
+00:30:32,000 --> 00:30:33,520
+app.css
+
+810
+00:30:33,520 --> 00:30:36,320
+donde tenemos todo el estilo css para
+
+811
+00:30:36,320 --> 00:30:38,240
+este proyecto, por lo que no lo haremos  revíselo
+
+812
+00:30:38,240 --> 00:30:39,760
+ahora si lo desea, si está realmente
+
+813
+00:30:39,760 --> 00:30:41,520
+interesado en él, puede ir a ver de
+
+814
+00:30:41,520 --> 00:30:43,039
+dónde proviene su estilo,
+
+815
+00:30:43,039 --> 00:30:45,360
+pero es solo CSS simple que puede comprender,
+
+816
+00:30:45,360 --> 00:30:47,520
+luego, después de esto,
+
+817
+00:30:47,520 --> 00:30:49,440
+creemos otro div
+
+818
+00:30:49,440 --> 00:30:52,480
+y para esto  div, le daremos un nombre
+
+819
+00:30:52,480 --> 00:30:53,840
+de clase igual a
+
+820
+00:30:53,840 --> 00:30:56,240
+logo y dentro de este div pondremos nuestro
+
+821
+00:30:56,240 --> 00:30:58,880
+logotipo de imagen que trajimos aquí
+
+822
+00:30:58,880 --> 00:31:00,960
+al principio, abramos esto un
+
+823
+00:31:00,960 --> 00:31:02,399
+poco para que pueda ver todo
+
+824
+00:31:02,399 --> 00:31:05,120
+correctamente, así que  agregue una imagen y la
+
+825
+00:31:05,120 --> 00:31:07,440
+fuente será igual
+
+826
+00:31:07,440 --> 00:31:09,519
+al logotipo
+
+827
+00:31:09,519 --> 00:31:10,799
+el logotipo
+
+828
+00:31:10,799 --> 00:31:13,760
+y todo bien podemos  solo diga el
+
+829
+00:31:13,760 --> 00:31:16,080
+logotipo
+
+830
+00:31:16,080 --> 00:31:18,320
+así y luego también podemos agregar un
+
+831
+00:31:18,320 --> 00:31:20,640
+pequeño texto de sentimiento para que se vea más
+
+832
+00:31:20,640 --> 00:31:23,039
+elegante, excepto que parece que nuestro
+
+833
+00:31:23,039 --> 00:31:25,279
+logotipo de morales es enorme, así que solo agreguemos una
+
+834
+00:31:25,279 --> 00:31:28,399
+altura de 50 píxeles para
+
+835
+00:31:28,399 --> 00:31:30,240
+eso debería
+
+836
+00:31:30,240 --> 00:31:34,320
+cerrar que escribimos mal la altura
+
+837
+00:31:34,320 --> 00:31:36,320
+y ahora eso  está muy bien allí, el
+
+838
+00:31:36,320 --> 00:31:38,720
+sentimiento moral y el botón de conexión
+
+839
+00:31:38,720 --> 00:31:42,480
+es aún más fácil, simplemente agregue el
+
+840
+00:31:42,480 --> 00:31:45,519
+botón de conexión así
+
+841
+00:31:45,519 --> 00:31:48,399
+y tenemos un botón de billetera de conexión
+
+842
+00:31:48,399 --> 00:31:50,080
+aquí, nuestro encabezado está terminado, qué rápido
+
+843
+00:31:50,080 --> 00:31:51,760
+y fácil fue que les digo que esto
+
+844
+00:31:51,760 --> 00:31:54,159
+es muy básico simple  proyecto
+
+845
+00:31:54,159 --> 00:31:56,080
+muy perfecto primera aplicación ahora debajo de
+
+846
+00:31:56,080 --> 00:31:57,600
+nuestro encabezado podemos agregar un pequeño
+
+847
+00:31:57,600 --> 00:32:00,000
+título de instrucciones agregando otro div
+
+848
+00:32:00,000 --> 00:32:02,159
+dándole un nombre de clase
+
+849
+00:32:02,159 --> 00:32:03,279
+igual a
+
+850
+00:32:03,279 --> 00:32:04,880
+instrucciones
+
+851
+00:32:04,880 --> 00:32:07,679
+y luego, como el texto simplemente pondrá dónde
+
+852
+00:32:07,679 --> 00:32:09,279
+crees que estos tokens están subiendo
+
+853
+00:32:09,279 --> 00:32:11,200
+o bajando simple como  eso
+
+854
+00:32:11,200 --> 00:32:13,519
+y ahora tenemos un buen encabezado y luego
+
+855
+00:32:13,519 --> 00:32:15,760
+este título de instrucciones y debajo de esto
+
+856
+00:32:15,760 --> 00:32:18,640
+podemos agregar nuestras diferentes burbujas de tokens
+
+857
+00:32:18,640 --> 00:32:21,120
+y la opción de elegir hacia arriba o hacia abajo
+
+858
+00:32:21,120 --> 00:32:24,000
+y luego un cuadro de información también más adelante en bu
+
+859
+00:32:24,000 --> 00:32:26,720
+Ahora vamos a seguir adelante y crear esas
+
+860
+00:32:26,720 --> 00:32:28,720
+burbujas de monedas, lo que haremos es crear
+
+861
+00:32:28,720 --> 00:32:30,720
+componentes para ellas mismas, así que
+
+862
+00:32:30,720 --> 00:32:33,919
+agregaremos una moneda aquí
+
+863
+00:32:33,919 --> 00:32:36,799
+así y tomará algunos accesorios, así
+
+864
+00:32:36,799 --> 00:32:38,720
+que estableceremos el porcentaje en  ser igual a
+
+865
+00:32:38,720 --> 00:32:40,480
+algo, estableceremos establecer el
+
+866
+00:32:40,480 --> 00:32:42,640
+porcentaje en algo y luego
+
+867
+00:32:42,640 --> 00:32:45,440
+estableceremos el token y el token primero
+
+868
+00:32:45,440 --> 00:32:48,559
+primero será solo btc, por lo que
+
+869
+00:32:48,559 --> 00:32:50,480
+establecer el porcentaje
+
+870
+00:32:50,480 --> 00:32:54,480
+establecer btc y el porcentaje será
+
+871
+00:32:54,480 --> 00:32:57,360
+btc, por lo que estas son variables de estado que
+
+872
+00:32:57,360 --> 00:32:59,120
+tenemos que establecer que estamos trayendo su estado
+
+873
+00:32:59,120 --> 00:33:01,120
+desde reaccionar, por lo que podemos crear esa
+
+874
+00:33:01,120 --> 00:33:03,360
+variable de estado aquí const
+
+875
+00:33:03,360 --> 00:33:06,399
+corchetes btc y establecer
+
+876
+00:33:06,399 --> 00:33:09,760
+btc es igual a uso
+
+877
+00:33:09,760 --> 00:33:12,880
+y podemos configurarlo en 50 para comenzar,
+
+878
+00:33:12,880 --> 00:33:15,279
+así que ahora estamos creando este
+
+879
+00:33:15,279 --> 00:33:18,080
+componente de monedas y  lo estamos pasando como accesorios
+
+880
+00:33:18,080 --> 00:33:20,320
+el porcentaje que es en
+
+881
+00:33:20,320 --> 00:33:22,080
+este momento usaremos la
+
+882
+00:33:22,080 --> 00:33:24,240
+base de datos de morales para obtener el porcentaje
+
+883
+00:33:24,240 --> 00:33:26,000
+más adelante, pero ahora lo estableceremos en
+
+884
+00:33:26,000 --> 00:33:28,880
+50 y también podemos cambiar el porcentaje
+
+885
+00:33:28,880 --> 00:33:30,640
+y  también estamos pasando el nombre del
+
+886
+00:33:30,640 --> 00:33:32,720
+token que estamos configurando  g solo asegúrese de
+
+887
+00:33:32,720 --> 00:33:37,840
+importar también el componente de la moneda del componente de
+
+888
+00:33:37,840 --> 00:33:40,240
+la barra inclinada del punto barra
+
+889
+00:33:40,240 --> 00:33:43,840
+inclinada de la moneda así, si guardamos eso
+
+890
+00:33:43,840 --> 00:33:46,240
+y revisamos nuestra estructura de archivos,
+
+891
+00:33:46,240 --> 00:33:48,320
+tenemos esta carpeta de componentes con un
+
+892
+00:33:48,320 --> 00:33:50,960
+archivo coin.js que está vacío y si
+
+893
+00:33:50,960 --> 00:33:54,080
+agregamos otro hola  aquí div
+
+894
+00:33:54,080 --> 00:33:56,320
+y agregue un
+
+895
+00:33:56,320 --> 00:33:58,480
+hola, verá que nuestro hola aparece aquí
+
+896
+00:33:58,480 --> 00:34:01,120
+porque es el componente de la moneda representado en nuestro
+
+897
+00:34:01,120 --> 00:34:04,000
+componente app.js, así que saltemos a nuestro
+
+898
+00:34:04,000 --> 00:34:05,919
+componente de cono y comencemos pasando nuestros
+
+899
+00:34:05,919 --> 00:34:07,840
+accesorios aquí, entonces, ¿qué tenemos
+
+900
+00:34:07,840 --> 00:34:10,399
+porcentaje establecido porcentaje
+
+901
+00:34:10,399 --> 00:34:12,560
+y  luego, el token en minúsculas,
+
+902
+00:34:12,560 --> 00:34:14,320
+excepto que ahora con estos accesorios
+
+903
+00:34:14,320 --> 00:34:17,520
+incorporados, podemos crear nuestro primer div de representación,
+
+904
+00:34:17,520 --> 00:34:20,320
+por lo que lo llamamos classname
+
+905
+00:34:20,320 --> 00:34:22,239
+es igual a token
+
+906
+00:34:22,239 --> 00:34:24,960
+y lo adivinaron por dentro, solo representamos
+
+907
+00:34:24,960 --> 00:34:26,800
+el nombre del token que se presionó como accesorios,
+
+908
+00:34:26,800 --> 00:34:29,199
+así que ahora obtenemos btc aquí qué genial  es
+
+909
+00:34:29,199 --> 00:34:31,839
+que después de eso podemos crear nuestro círculo,
+
+910
+00:34:31,839 --> 00:34:33,599
+así que vamos a crear otro otro div,
+
+911
+00:34:33,599 --> 00:34:35,839
+asígnele un nombre
+
+912
+00:34:35,839 --> 00:34:38,639
+de clase igual al círculo dentro del cual
+
+913
+00:34:38,639 --> 00:34:40,719
+tendremos otro div,
+
+914
+00:34:40,719 --> 00:34:43,440
+este llamado nombre de clase
+
+915
+00:34:43,440 --> 00:34:45,440
+wave, esto nos dará ese bonito
+
+916
+00:34:45,440 --> 00:34:47,119
+efecto de onda que viste al comienzo del
+
+917
+00:34:47,119 --> 00:34:49,119
+video, simplemente pongámoslos en la misma
+
+918
+00:34:49,119 --> 00:34:52,239
+línea y luego aquí tendremos nuestro
+
+919
+00:34:52,239 --> 00:34:56,719
+último elemento, que es un nombre
+
+920
+00:34:56,719 --> 00:34:58,119
+de clase de igual a
+
+921
+00:34:58,119 --> 00:34:59,760
+porcentaje
+
+922
+00:34:59,760 --> 00:35:02,640
+y en eso lo adivinaste, tendremos
+
+923
+00:35:02,640 --> 00:35:05,359
+nuestro  el porcentaje de apoyo ingresa, así que si guardamos
+
+924
+00:35:05,359 --> 00:35:07,359
+que no parece mucho todavía, pero
+
+925
+00:35:07,359 --> 00:35:10,240
+tenemos nuestro 50 aquí, asegúrese de
+
+926
+00:35:10,240 --> 00:35:12,560
+volver a su componente app.js y envuelva
+
+927
+00:35:12,560 --> 00:35:14,720
+todas sus monedas, agregaremos algunas más más
+
+928
+00:35:14,720 --> 00:35:17,680
+adelante dentro de  div
+
+929
+00:35:17,680 --> 00:35:20,400
+y llamaremos a este div
+
+930
+00:35:20,400 --> 00:35:24,320
+un nombre de clase de lista nombre de
+
+931
+00:35:24,320 --> 00:35:27,200
+clase es igual a lista esto
+
+932
+00:35:27,200 --> 00:35:29,280
+hará que todo se vea muy bien formatee
+
+933
+00:35:29,280 --> 00:35:31,280
+este documento muy bien, así que ahora están
+
+934
+00:35:31,280 --> 00:35:33,359
+alineados muy bien podemos pasar
+
+935
+00:35:33,359 --> 00:35:36,720
+de app.js a la moneda  .js y
+
+936
+00:35:36,720 --> 00:35:38,320
+ahora probablemente se esté preguntando cómo obtener
+
+937
+00:35:38,320 --> 00:35:40,560
+ese bonito elemento de onda aquí y, para
+
+938
+00:35:40,560 --> 00:35:42,720
+hacerlo, primero déjeme pegarlo
+
+939
+00:35:42,720 --> 00:35:44,560
+aquí, así que proporcionaremos un
+
+940
+00:35:44,560 --> 00:35:46,720
+estilo en línea con un margen superior
+
+941
+00:35:46,720 --> 00:35:49,280
+que será cien menos lo que sea.
+
+942
+00:35:49,280 --> 00:35:51,520
+el porcentaje porcentual nos está dando
+
+943
+00:35:51,520 --> 00:35:54,800
+la altura correcta para la ola y luego un
+
+944
+00:35:54,800 --> 00:35:57,280
+box shadow preestablecemos el color en
+
+945
+00:35:57,280 --> 00:35:59,599
+verde aquí, pronto haremos un cálculo
+
+946
+00:35:59,599 --> 00:36:01,599
+para determinar si es verde o rojo
+
+947
+00:36:01,599 --> 00:36:03,359
+y luego un color de fondo verde
+
+948
+00:36:03,359 --> 00:36:05,680
+también, así que si
+
+949
+00:36:05,680 --> 00:36:08,000
+guardamos esa mirada, tendremos esa ola
+
+950
+00:36:08,000 --> 00:36:10,000
+flotando allí nuevamente  todo está
+
+951
+00:36:10,000 --> 00:36:12,720
+en los archivos css si tiene mucha
+
+952
+00:36:12,720 --> 00:36:14,960
+curiosidad sobre cómo crear la
+
+953
+00:36:14,960 --> 00:36:17,359
+animación css está aquí, es una
+
+954
+00:36:17,359 --> 00:36:19,920
+animación giratoria que simplemente gira
+
+955
+00:36:19,920 --> 00:36:21,760
+y obtiene ese elemento agradable porque
+
+956
+00:36:21,760 --> 00:36:24,079
+tenemos radios de borde de varios
+
+957
+00:36:24,079 --> 00:36:27,040
+porcentajes aquí pero  de vuelta a nuestro
+
+958
+00:36:27,040 --> 00:36:30,079
+archivo coin.js, también tenemos que proporcionar
+
+959
+00:36:30,079 --> 00:36:32,800
+esta copia de estilo de sombra de cuadro que está
+
+960
+00:36:32,800 --> 00:36:36,000
+aquí en el círculo com div, así que hacemos un
+
+961
+00:36:36,000 --> 00:36:37,119
+estilo
+
+962
+00:36:37,119 --> 00:36:39,599
+igual a un par de corchetes ondulados
+
+963
+00:36:39,599 --> 00:36:41,920
+y agregamos eso allí, creo que tenemos una
+
+964
+00:36:41,920 --> 00:36:45,359
+comilla doble adicional allí.
+
+965
+00:36:45,359 --> 00:36:49,119
+y ahora se ve hermoso así, pero
+
+966
+00:36:49,119 --> 00:36:50,960
+como queremos generar automáticamente
+
+967
+00:36:50,960 --> 00:36:52,640
+el color, tenemos que hacer una
+
+968
+00:36:52,640 --> 00:36:54,960
+variable de estado aquí que calcule
+
+969
+00:36:54,960 --> 00:36:57,599
+si el porcentaje es 50 o superior o
+
+970
+00:36:57,599 --> 00:37:00,160
+inferior y de esa manera establece estos colores t  o
+
+971
+00:37:00,160 --> 00:37:02,480
+verde o rojo, así que hagámoslo a continuación
+
+972
+00:37:02,480 --> 00:37:04,400
+al principio aquí podemos agregar nuestra
+
+973
+00:37:04,400 --> 00:37:06,560
+variable de estado llamada color y luego crear un
+
+974
+00:37:06,560 --> 00:37:08,560
+efecto de uso que también traemos de
+
+975
+00:37:08,560 --> 00:37:11,599
+reaccionar y esto establecerá nuestro color en un
+
+976
+00:37:11,599 --> 00:37:13,599
+bonito naranja este es un bonito naranja  color
+
+977
+00:37:13,599 --> 00:37:15,920
+si el porcentaje es inferior a 50 pero
+
+978
+00:37:15,920 --> 00:37:18,240
+si es superior a 50 obtendremos este bonito
+
+979
+00:37:18,240 --> 00:37:20,480
+color verde que ya tenemos todo lo que tenemos
+
+980
+00:37:20,480 --> 00:37:23,599
+que hacer ahora es configurar color aquí
+
+981
+00:37:23,599 --> 00:37:24,560
+color
+
+982
+00:37:24,560 --> 00:37:26,480
+y luego en nuestra plantilla literal
+
+983
+00:37:26,480 --> 00:37:28,160
+aquí solo tenemos que hacer  seguro que ponemos un
+
+984
+00:37:28,160 --> 00:37:30,400
+signo de dólar nuestros corchetes ondulados y
+
+985
+00:37:30,400 --> 00:37:31,920
+luego nuestro color
+
+986
+00:37:31,920 --> 00:37:33,839
+y podemos copiar eso
+
+987
+00:37:33,839 --> 00:37:36,640
+y pegarlo aquí también en el
+
+988
+00:37:36,640 --> 00:37:38,160
+círculo div
+
+989
+00:37:38,160 --> 00:37:40,320
+así que guarde eso
+
+990
+00:37:40,320 --> 00:37:41,920
+y ahora eso es hermoso si vamos a
+
+991
+00:37:41,920 --> 00:37:44,880
+nuestro archivo app.js y cambiamos  nuestro
+
+992
+00:37:44,880 --> 00:37:46,640
+porcentaje de btc
+
+993
+00:37:46,640 --> 00:37:49,359
+a 38
+
+994
+00:37:49,359 --> 00:37:52,400
+nuestra ola no solo cae sino que también
+
+995
+00:37:52,400 --> 00:37:54,720
+cambia a un color rojo podemos cambiarlo
+
+996
+00:37:54,720 --> 00:37:56,320
+a 80 aquí
+
+997
+00:37:56,320 --> 00:37:59,119
+guarde eso y ahora sube y esto
+
+998
+00:37:59,119 --> 00:38:00,720
+será genial cuando tengamos
+
+999
+00:38:00,720 --> 00:38:02,480
+consultas en vivo de la base de datos de morales cuando
+
+1000
+00:38:02,480 --> 00:38:04,079
+la gente realmente hace una llamada al
+
+1001
+00:38:04,079 --> 00:38:06,720
+contrato inteligente t  o vote, esto se mostrará automáticamente
+
+1002
+00:38:06,720 --> 00:38:08,880
+a la altura correcta en función de
+
+1003
+00:38:08,880 --> 00:38:11,280
+la proporción de votos actuales. Una última
+
+1004
+00:38:11,280 --> 00:38:13,599
+cosa que podemos agregar después de nuestro porcentaje.
+
+1005
+00:38:13,599 --> 00:38:16,000
+Podemos agregar un signo de porcentaje así. Solo
+
+1006
+00:38:16,000 --> 00:38:18,720
+hace que se vea mucho mejor.
+
+1007
+00:38:18,720 --> 00:38:20,720
+esos
+
+1008
+00:38:20,720 --> 00:38:22,800
+botones aquí, un botón arriba y un
+
+1009
+00:38:22,800 --> 00:38:25,440
+botón abajo, así que cuando votemos, nuestro
+
+1010
+00:38:25,440 --> 00:38:27,599
+porcentaje cambiará porque ahora
+
+1011
+00:38:27,599 --> 00:38:30,000
+tenemos más votos para arriba o más votos para
+
+1012
+00:38:30,000 --> 00:38:34,079
+abajo, así que aquí debajo de nuestro
+
+1013
+00:38:34,079 --> 00:38:36,400
+penúltimo dib crearemos un nuevo
+
+1014
+00:38:36,400 --> 00:38:40,079
+div y  le daremos un nombre
+
+1015
+00:38:40,079 --> 00:38:41,680
+de clase igual a los
+
+1016
+00:38:41,680 --> 00:38:44,400
+votos y aquí hagámoslo un
+
+1017
+00:38:44,400 --> 00:38:47,760
+poco más agradable y agreguemos
+
+1018
+00:38:47,760 --> 00:38:50,160
+aquí, necesitaremos agregar un botón del
+
+1019
+00:38:50,160 --> 00:38:53,280
+kit de interfaz de usuario web3, así que en la parte superior continuamos
+
+1020
+00:38:53,280 --> 00:38:55,599
+e importamos
+
+1021
+00:38:55,599 --> 00:38:59,839
+botón es una b mayúscula del
+
+1022
+00:38:59,839 --> 00:39:03,760
+kit de interfaz de usuario así y luego podemos continuar
+
+1023
+00:39:03,760 --> 00:39:06,800
+y agregar el botón aquí así
+
+1024
+00:39:06,800 --> 00:39:09,040
+ahora tenemos un botón que aún no hemos
+
+1025
+00:39:09,040 --> 00:39:11,200
+determinado nuestro evento de clic, pero
+
+1026
+00:39:11,200 --> 00:39:13,280
+el texto estará arriba, será  un
+
+1027
+00:39:13,280 --> 00:39:15,440
+color primario y el tipo sera boton si
+
+1028
+00:39:15,440 --> 00:39:16,880
+guardamos eso
+
+1029
+00:39:16,880 --> 00:39:19,359
+ahora lo tenemos  nuestro botón arriba aquí,
+
+1030
+00:39:19,359 --> 00:39:22,160
+podemos agregar otro botón para nuestra
+
+1031
+00:39:22,160 --> 00:39:24,640
+opción abajo, agregándolo aquí,
+
+1032
+00:39:24,640 --> 00:39:26,640
+hagamos que todo se vea ordenado, así que ahora
+
+1033
+00:39:26,640 --> 00:39:28,560
+todo se ve limpio y ordenado, así que este
+
+1034
+00:39:28,560 --> 00:39:30,480
+es básicamente un botón de parte similar, pero
+
+1035
+00:39:30,480 --> 00:39:32,720
+solo el tema está coloreado y nosotros  configure el
+
+1036
+00:39:32,720 --> 00:39:35,359
+color en rojo, guárdelo
+
+1037
+00:39:35,359 --> 00:39:37,839
+y ahora tenemos un botón hacia arriba y hacia abajo.
+
+1038
+00:39:37,839 --> 00:39:41,520
+Lo último que tenemos que hacer es usar nuestro
+
+1039
+00:39:41,520 --> 00:39:44,079
+porcentaje establecido aquí para incrementar
+
+1040
+00:39:44,079 --> 00:39:46,320
+nuestro porcentaje hacia arriba o hacia abajo según el
+
+1041
+00:39:46,320 --> 00:39:48,560
+botón que presione, lo que significa que aquí
+
+1042
+00:39:48,560 --> 00:39:51,599
+en el botón hacia arriba tenemos  puede configurar
+
+1043
+00:39:51,599 --> 00:39:53,680
+monedero para que sea igual a
+
+1044
+00:39:53,680 --> 00:39:54,640
+monedero
+
+1045
+00:39:54,640 --> 00:39:58,079
+más uno y luego exactamente lo mismo
+
+1046
+00:39:58,079 --> 00:39:59,200
+en nuestro
+
+1047
+00:39:59,200 --> 00:40:01,280
+botón hacia abajo, pero haremos
+
+1048
+00:40:01,280 --> 00:40:05,040
+menos uno en lugar de más uno y ahora
+
+1049
+00:40:05,040 --> 00:40:08,800
+deberíamos tener un prototipo funcional
+
+1050
+00:40:08,800 --> 00:40:10,160
+listo aquí, pero para que la página sea
+
+1051
+00:40:10,160 --> 00:40:11,760
+interactiva tenemos que inicializar
+
+1052
+00:40:11,760 --> 00:40:13,520
+morales así que regrese a su
+
+1053
+00:40:13,520 --> 00:40:15,440
+tablero de morales adam y cree un nuevo servidor
+
+1054
+00:40:15,440 --> 00:40:17,680
+crearemos un servidor de red de prueba
+
+1055
+00:40:17,680 --> 00:40:19,680
+llamémoslo mi primera aplicación seleccione la región
+
+1056
+00:40:19,680 --> 00:40:21,440
+más cercana a usted
+
+1057
+00:40:21,440 --> 00:40:24,240
+y elija polígono mumbai aquí agregue
+
+1058
+00:40:24,240 --> 00:40:25,920
+instancia
+
+1059
+00:40:25,920 --> 00:40:27,040
+y ahora
+
+1060
+00:40:27,040 --> 00:40:29,920
+mi  primera aplicación aquí, podemos seguir adelante
+
+1061
+00:40:29,920 --> 00:40:32,240
+y obtener la URL del servidor y la
+
+1062
+00:40:32,240 --> 00:40:35,520
+identificación de la aplicación, copiar la URL del servidor primero y en su
+
+1063
+00:40:35,520 --> 00:40:39,119
+directorio de archivos encontrar el archivo index.js
+
+1064
+00:40:39,119 --> 00:40:41,920
+y en la URL de su servidor pegar esa
+
+1065
+00:40:41,920 --> 00:40:44,720
+URL del servidor y lo mismo para la identificación de su aplicación copiar
+
+1066
+00:40:44,720 --> 00:40:48,079
+eso  desde allí y péguelo aquí y
+
+1067
+00:40:48,079 --> 00:40:49,280
+ahora
+
+1068
+00:40:49,280 --> 00:40:51,920
+vendremos y usaremos nuestro servidor de moral un
+
+1069
+00:40:51,920 --> 00:40:54,480
+poco más tarde, pero ahora nuestra aplicación de reacción debería
+
+1070
+00:40:54,480 --> 00:40:56,880
+estar lista para funcionar si actualizamos la página
+
+1071
+00:40:56,880 --> 00:40:59,359
+y comenzamos a presionar hacia arriba, observe que es
+
+1072
+00:40:59,359 --> 00:41:01,839
+muy interactivo,
+
+1073
+00:41:01,839 --> 00:41:03,839
+está bien, aceleré  suba el video para obtener 50
+
+1074
+00:41:03,839 --> 00:41:05,520
+y vea si bajamos uno más,
+
+1075
+00:41:05,520 --> 00:41:07,680
+automáticamente cambia nuestro color a 49.
+
+1076
+00:41:07,680 --> 00:41:10,480
+qué genial es eso, así que ahora tenemos una
+
+1077
+00:41:10,480 --> 00:41:12,720
+burbuja de sentimiento que funciona, aunque
+
+1078
+00:41:12,720 --> 00:41:14,960
+solo se ajusta manualmente en esta página,
+
+1079
+00:41:14,960 --> 00:41:17,040
+pronto podemos continuar y adjuntarlo  a nuestro
+
+1080
+00:41:17,040 --> 00:41:19,200
+contrato inteligente, pero antes de hacerlo
+
+1081
+00:41:19,200 --> 00:41:21,040
+, terminemos los elementos de la interfaz de usuario, así que
+
+1082
+00:41:21,040 --> 00:41:23,359
+agregue un botón de información aquí que
+
+1083
+00:41:23,359 --> 00:41:25,839
+nos muestra un modal que nos muestra
+
+1084
+00:41:25,839 --> 00:41:28,640
+información sobre este token btc y
+
+1085
+00:41:28,640 --> 00:41:31,599
+también el precio actual de este token
+
+1086
+00:41:31,599 --> 00:41:34,000
+usando las morales  api web3 y  d entonces, por
+
+1087
+00:41:34,000 --> 00:41:35,760
+supuesto, podemos agregar algunos otros tokens como el
+
+1088
+00:41:35,760 --> 00:41:37,839
+enlace ethern que ya agregamos al
+
+1089
+00:41:37,839 --> 00:41:39,839
+contrato inteligente cuando estábamos trabajando en el
+
+1090
+00:41:39,839 --> 00:41:42,400
+escaneo de polígonos, por lo que al agregar ese modal
+
+1091
+00:41:42,400 --> 00:41:44,960
+queremos volver a nuestro archivo app.js y
+
+1092
+00:41:44,960 --> 00:41:47,359
+asegurarnos de que desde el kit web3ui  también importamos
+
+1093
+00:41:47,359 --> 00:41:48,400
+
+
+1094
+00:41:48,400 --> 00:41:51,200
+modal así y luego, en la parte inferior de
+
+1095
+00:41:51,200 --> 00:41:53,839
+la página aquí, simplemente agreguemos un
+
+1096
+00:41:53,839 --> 00:41:56,160
+modal y notará que se necesitan algunos
+
+1097
+00:41:56,160 --> 00:41:58,400
+parámetros que configuramos para que sean visibles en un
+
+1098
+00:41:58,400 --> 00:42:00,319
+estado visible y luego, cuando
+
+1099
+00:42:00,319 --> 00:42:02,720
+se presiona el botón Cerrar, configuramos visible para
+
+1100
+00:42:02,720 --> 00:42:05,440
+falso y luego el título de nuestro modal se
+
+1101
+00:42:05,440 --> 00:42:07,280
+establece en una variable de estado llamada token modal,
+
+1102
+00:42:07,280 --> 00:42:09,200
+por lo que tenemos que configurar esas pocas
+
+1103
+00:42:09,200 --> 00:42:10,960
+variables de estado token modal
+
+1104
+00:42:10,960 --> 00:42:13,520
+y visible, hagámoslo aquí
+
+1105
+00:42:13,520 --> 00:42:18,000
+debajo de nuestro pvtc, así que ahora tenemos un
+
+1106
+00:42:18,000 --> 00:42:20,480
+estado inicial de visible falso  y luego
+
+1107
+00:42:20,480 --> 00:42:22,960
+nuestro token modal no está configurado al principio
+
+1108
+00:42:22,960 --> 00:42:25,119
+y lo que realmente queremos hacer es que
+
+1109
+00:42:25,119 --> 00:42:27,359
+queremos crear en nuestro componente de moneda
+
+1110
+00:42:27,359 --> 00:42:30,000
+un botón que cambie este token modal
+
+1111
+00:42:30,000 --> 00:42:32,079
+para que pasemos ese token modal al
+
+1112
+00:42:32,079 --> 00:42:35,200
+componente de moneda como accesorio también  y entorno
+
+1113
+00:42:35,200 --> 00:42:37,839
+la visibilidad, ya que también queremos que sea
+
+1114
+00:42:37,839 --> 00:42:40,079
+visible cuando se presiona el botón ahora en
+
+1115
+00:42:40,079 --> 00:42:41,520
+lugar de que yo simplemente divague, déjame
+
+1116
+00:42:41,520 --> 00:42:43,040
+mostrarte lo que vamos a hacer, así que
+
+1117
+00:42:43,040 --> 00:42:45,359
+pongamos este componente de moneda en un formato más agradable
+
+1118
+00:42:45,359 --> 00:42:48,079
+y luego pasemos los accesorios
+
+1119
+00:42:48,079 --> 00:42:50,800
+que le acabo de decir, configure el token modal
+
+1120
+00:42:50,800 --> 00:42:53,920
+y póngalo visible ahora guárdelo y
+
+1121
+00:42:53,920 --> 00:42:56,400
+regrese a nuestro componente coin.js
+
+1122
+00:42:56,400 --> 00:42:59,520
+y aquí, más allá de esos accesorios,
+
+1123
+00:42:59,520 --> 00:43:01,760
+configure el
+
+1124
+00:43:01,760 --> 00:43:03,720
+token modal y póngalo
+
+1125
+00:43:03,720 --> 00:43:06,960
+visible con una v mayúscula, por supuesto,
+
+1126
+00:43:06,960 --> 00:43:09,680
+guárdelo y ahora cree un botón más  en
+
+1127
+00:43:09,680 --> 00:43:11,440
+la parte inferior aquí, así que tenemos nuestros
+
+1128
+00:43:11,440 --> 00:43:13,680
+votos para arriba y para abajo, pero creemos
+
+1129
+00:43:13,680 --> 00:43:15,920
+otro div llamado votos, pero solo tenemos un
+
+1130
+00:43:15,920 --> 00:43:17,839
+botón de información allí, así que
+
+1131
+00:43:17,839 --> 00:43:19,520
+esencialmente creamos otro div para que
+
+1132
+00:43:19,520 --> 00:43:22,400
+vaya debajo de estos botones y luego
+
+1133
+00:43:22,400 --> 00:43:24,560
+al hacer clic en este botón  configuramos el
+
+1134
+00:43:24,560 --> 00:43:27,200
+token modal a la moneda que se selecciona
+
+1135
+00:43:27,200 --> 00:43:29,599
+y configuramos el modal en verdadero para que lo veamos
+
+1136
+00:43:29,599 --> 00:43:31,760
+y el texto es solo información, así que si solo
+
+1137
+00:43:31,760 --> 00:43:33,520
+guardamos esto y vemos qué sucede
+
+1138
+00:43:33,520 --> 00:43:35,520
+, obtendremos ese hermoso botón de información
+
+1139
+00:43:35,520 --> 00:43:37,280
+y debería  ser funcional por lo que si
+
+1140
+00:43:37,280 --> 00:43:40,079
+ref  Vuelve a cargar la página y
+
+1141
+00:43:40,079 --> 00:43:44,000
+presiónalo. Obtenemos este bonito modal de información de btc así y una
+
+1142
+00:43:44,000 --> 00:43:46,079
+cosa genial que podemos hacer ahora es
+
+1143
+00:43:46,079 --> 00:43:48,240
+intentar agregar un par de tokens más Ethan
+
+1144
+00:43:48,240 --> 00:43:50,000
+Link y deberíamos obtener la misma
+
+1145
+00:43:50,000 --> 00:43:51,839
+funcionalidad para todos ellos, así que
+
+1146
+00:43:51,839 --> 00:43:54,319
+regresa a tu  app.js y obtenga este
+
+1147
+00:43:54,319 --> 00:43:56,720
+componente de monedas de aquí
+
+1148
+00:43:56,720 --> 00:43:59,760
+y copiémoslo un par de veces
+
+1149
+00:43:59,760 --> 00:44:02,160
+y cámbielos a ether y
+
+1150
+00:44:02,160 --> 00:44:04,160
+vincúlelo así ahora hemos agregado las
+
+1151
+00:44:04,160 --> 00:44:07,119
+respectivas variables de estado eth y
+
+1152
+00:44:07,119 --> 00:44:08,880
+link aquí, así que tenemos que  también introdúzcalos
+
+1153
+00:44:08,880 --> 00:44:11,440
+al principio aquí
+
+1154
+00:44:11,440 --> 00:44:14,480
+así y ahora, si guardamos la página,
+
+1155
+00:44:14,480 --> 00:44:16,640
+ya ve que eve aparece aquí, pero si
+
+1156
+00:44:16,640 --> 00:44:18,880
+entramos en modo de pantalla completa
+
+1157
+00:44:18,880 --> 00:44:21,119
+, obtenemos todas nuestras diferentes monedas aquí
+
+1158
+00:44:21,119 --> 00:44:24,079
+btc eth y enlace si actualizamos a  hacer que
+
+1159
+00:44:24,079 --> 00:44:25,680
+la funcionalidad funcione si presionamos
+
+1160
+00:44:25,680 --> 00:44:28,800
+info obtenemos este para abrir eth lo mismo
+
+1161
+00:44:28,800 --> 00:44:30,880
+para esto esto debería abrir un enlace y
+
+1162
+00:44:30,880 --> 00:44:34,240
+luego esto debería abrirse con btc ahora lo último
+
+1163
+00:44:34,240 --> 00:44:36,319
+que tenemos que hacer en este modal es usar
+
+1164
+00:44:36,319 --> 00:44:39,440
+la api web3 morales para obtener el  precio actual del
+
+1165
+00:44:39,440 --> 00:44:41,839
+token para btc ethern link y luego
+
+1166
+00:44:41,839 --> 00:44:44,000
+tengo un archivo en nuestro repositorio donde
+
+1167
+00:44:44,000 --> 00:44:45,440
+tengo un poco de información sobre cada una de
+
+1168
+00:44:45,440 --> 00:44:47,839
+estas monedas, así que podemos presentarlo
+
+1169
+00:44:47,839 --> 00:44:50,240
+en este modelo también para llenarlo y
+
+1170
+00:44:50,240 --> 00:44:52,400
+hacer que se vea hermoso, así que tal vez
+
+1171
+00:44:52,400 --> 00:44:54,319
+podamos comenzar agregando ese texto sobre  cada
+
+1172
+00:44:54,319 --> 00:44:56,720
+moneda, que es la parte más simple, así que
+
+1173
+00:44:56,720 --> 00:44:58,960
+vayamos al modo de pantalla dividida nuevamente y aquí
+
+1174
+00:44:58,960 --> 00:45:00,720
+en nuestro directorio de archivos, le mostraré que
+
+1175
+00:45:00,720 --> 00:45:03,599
+tenemos este archivo llamado about.js
+
+1176
+00:45:03,599 --> 00:45:06,880
+y todo esto tiene una serie de tokens,
+
+1177
+00:45:06,880 --> 00:45:10,400
+así que tenemos nuestro btc eth y  enlace y luego
+
+1178
+00:45:10,400 --> 00:45:12,560
+tenemos la dirección de bitcoin hemos envuelto
+
+1179
+00:45:12,560 --> 00:45:14,720
+bitcoin y para ethereum hemos
+
+1180
+00:45:14,720 --> 00:45:16,400
+envuelto ethereum porque eso nos ayudará
+
+1181
+00:45:16,400 --> 00:45:18,960
+a obtener el precio del token ya que no tenemos
+
+1182
+00:45:18,960 --> 00:45:21,440
+bitcoin en la cadena ethereum y
+
+1183
+00:45:21,440 --> 00:45:23,680
+ethereum es el token nativo para
+
+1184
+00:45:23,680 --> 00:45:25,520
+ether ethereum  cadena, por lo que solo usaremos
+
+1185
+00:45:25,520 --> 00:45:27,359
+las versiones envueltas, pero para el enlace de la cadena
+
+1186
+00:45:27,359 --> 00:45:29,359
+tenemos la dirección real para el
+
+1187
+00:45:29,359 --> 00:45:31,280
+token del enlace de la cadena y luego tenemos un pequeño
+
+1188
+00:45:31,280 --> 00:45:33,920
+texto de información que se copia de
+
+1189
+00:45:33,920 --> 00:45:37,200
+la capitalización de mercado de monedas almacenada en la clave acerca de
+
+1190
+00:45:37,200 --> 00:45:39,520
+lo que podemos  hacer es podemos importar esto
+
+1191
+00:45:39,520 --> 00:45:42,800
+que  le about array en nuestro archivo app.js
+
+1192
+00:45:42,800 --> 00:45:45,119
+y lo hacemos aquí importando
+
+1193
+00:45:45,119 --> 00:45:48,079
+about entre corchetes ondulados
+
+1194
+00:45:48,079 --> 00:45:49,119
+desde
+
+1195
+00:45:49,119 --> 00:45:49,920
+punto
+
+1196
+00:45:49,920 --> 00:45:50,880
+slash
+
+1197
+00:45:50,880 --> 00:45:54,160
+about it es tan fácil como eso y ahora
+
+1198
+00:45:54,160 --> 00:45:57,359
+podemos usar this about array para llenar nuestros
+
+1199
+00:45:57,359 --> 00:45:59,200
+modales con el texto correcto y cómo
+
+1200
+00:45:59,200 --> 00:46:02,640
+hacer eso es desplazarnos hasta la parte inferior
+
+1201
+00:46:02,640 --> 00:46:04,560
+donde tenemos nuestro modal y dentro de nuestro
+
+1202
+00:46:04,560 --> 00:46:06,560
+modal creamos un div, abramos esto en
+
+1203
+00:46:06,560 --> 00:46:07,920
+pantalla completa por un tiempo para que vea
+
+1204
+00:46:07,920 --> 00:46:09,119
+lo que está pasando
+
+1205
+00:46:09,119 --> 00:46:11,359
+y esencialmente qué es este div,
+
+1206
+00:46:11,359 --> 00:46:13,359
+primero tenemos un lapso que solo  dice about y
+
+1207
+00:46:13,359 --> 00:46:14,880
+el color se establece en blanco solo para
+
+1208
+00:46:14,880 --> 00:46:16,800
+que sobresalga y luego tenemos
+
+1209
+00:46:16,800 --> 00:46:19,440
+debajo otro div, siempre que tengamos un
+
+1210
+00:46:19,440 --> 00:46:23,119
+token modal, buscaremos en la matriz about
+
+1211
+00:46:23,119 --> 00:46:25,760
+y encontraremos el índice de nuestro token modal
+
+1212
+00:46:25,760 --> 00:46:28,000
+y presentaremos el  about text para eso
+
+1213
+00:46:28,000 --> 00:46:30,319
+parece que usamos about not about, así
+
+1214
+00:46:30,319 --> 00:46:32,480
+que cambiemos eso a about
+
+1215
+00:46:32,480 --> 00:46:35,119
+aquí y ahora, si guardamos esto,
+
+1216
+00:46:35,119 --> 00:46:37,680
+vaya a nuestra página, verá que nuestro bitcoin
+
+1217
+00:46:37,680 --> 00:46:39,839
+ya está poblado bitcoin es una
+
+1218
+00:46:39,839 --> 00:46:41,599
+criptomoneda descentralizada
+
+1219
+00:46:41,599 --> 00:46:44,720
+descrita originalmente en un libro blanco de 2008  etc  y
+
+1220
+00:46:44,720 --> 00:46:46,319
+lo hermoso es que cuando vamos a
+
+1221
+00:46:46,319 --> 00:46:49,040
+ethereum obtenemos el texto de ethereum y
+
+1222
+00:46:49,040 --> 00:46:50,800
+cuando vamos a la
+
+1223
+00:46:50,800 --> 00:46:52,880
+página del enlace se bloquea, pero eso es bueno, sabemos que
+
+1224
+00:46:52,880 --> 00:46:54,880
+algo anda mal si regresamos,
+
+1225
+00:46:54,880 --> 00:46:57,359
+parece que tenemos un enlace en minúsculas, así
+
+1226
+00:46:57,359 --> 00:47:00,319
+que cambiemos eso a mayúsculas  enlace en
+
+1227
+00:47:00,319 --> 00:47:02,880
+nuestro componente de moneda aquí
+
+1228
+00:47:02,880 --> 00:47:04,800
+enlace así, por lo que tienen que coincidir
+
+1229
+00:47:04,800 --> 00:47:08,160
+exactamente con lo que tenemos en nuestro
+
+1230
+00:47:08,160 --> 00:47:11,920
+archivo about.js, así que aquí actualice si nos desplazamos
+
+1231
+00:47:11,920 --> 00:47:14,880
+hacia abajo para vincular y presione información ahora obtenemos
+
+1232
+00:47:14,880 --> 00:47:16,480
+la descripción del enlace
+
+1233
+00:47:16,480 --> 00:47:18,720
+ahora arriba de esto sobre vamos a
+
+1234
+00:47:18,720 --> 00:47:21,119
+hacer  nuestro precio y no creerás lo
+
+1235
+00:47:21,119 --> 00:47:23,200
+simple que es esto con morales, así que
+
+1236
+00:47:23,200 --> 00:47:25,680
+cerremos nuestro modelo aquí, suba
+
+1237
+00:47:25,680 --> 00:47:28,960
+aquí e importe la API morales web3
+
+1238
+00:47:28,960 --> 00:47:32,079
+de reaccionar morales, guarde eso y luego creemos
+
+1239
+00:47:32,079 --> 00:47:34,800
+una variable de estado para realizar un seguimiento
+
+1240
+00:47:34,800 --> 00:47:36,800
+del precio para presentar  en el modal,
+
+1241
+00:47:36,800 --> 00:47:39,200
+llamémoslo precio móvil, ahora
+
+1242
+00:47:39,200 --> 00:47:40,800
+tenemos una variable de estado para almacenar nuestro
+
+1243
+00:47:40,800 --> 00:47:43,280
+precio y luego para llamar a nuestra API web3,
+
+1244
+00:47:43,280 --> 00:47:46,079
+tenemos que obtener la API web3 de la API morales web3,
+
+1245
+00:47:46,079 --> 00:47:48,319
+ahora todo lo que tenemos que hacer es crear un
+
+1246
+00:47:48,319 --> 00:47:50,640
+efecto de uso que  corre cada vez  e este
+
+1247
+00:47:50,640 --> 00:47:52,480
+token modal cambia, así que cada vez que
+
+1248
+00:47:52,480 --> 00:47:54,720
+abrimos un cuadro de información para un token diferente
+
+1249
+00:47:54,720 --> 00:47:58,000
+y luego obtenemos el precio de nuestro token para ese
+
+1250
+00:47:58,000 --> 00:48:00,160
+token, así que vamos a crear eso aquí
+
+1251
+00:48:00,160 --> 00:48:02,319
+boom shakalaka, así que ahora tenemos un
+
+1252
+00:48:02,319 --> 00:48:04,240
+efecto de uso que se ejecuta cada vez que
+
+1253
+00:48:04,240 --> 00:48:06,880
+cambia el token modal y  lo que queremos
+
+1254
+00:48:06,880 --> 00:48:08,880
+crear aquí es una función asíncrona que
+
+1255
+00:48:08,880 --> 00:48:11,119
+obtiene el precio del token usando nuestra
+
+1256
+00:48:11,119 --> 00:48:14,000
+API web3. Permítanme pegarlo aquí, así
+
+1257
+00:48:14,000 --> 00:48:15,520
+que abramos esta pantalla completa para que vean
+
+1258
+00:48:15,520 --> 00:48:17,200
+lo que está pasando, así que tenemos esta
+
+1259
+00:48:17,200 --> 00:48:18,960
+función síncrona llamada fetch token.
+
+1260
+00:48:18,960 --> 00:48:21,839
+precio, la única opción que tenemos que configurar es
+
+1261
+00:48:21,839 --> 00:48:24,000
+la dirección del token porque estamos
+
+1262
+00:48:24,000 --> 00:48:26,319
+usando los tokens de las redes ethereum y
+
+1263
+00:48:26,319 --> 00:48:28,880
+la dirección del token que obtenemos es
+
+1264
+00:48:28,880 --> 00:48:31,119
+el token modal que hemos abierto, así que
+
+1265
+00:48:31,119 --> 00:48:34,000
+btc ether link y estamos usando nuestro  sobre la
+
+1266
+00:48:34,000 --> 00:48:36,480
+matriz para obtener la dirección de ese token
+
+1267
+00:48:36,480 --> 00:48:38,960
+y luego obtenemos este objeto de precio
+
+1268
+00:48:38,960 --> 00:48:41,440
+esperando nuestra API web3 usando la propiedad del token
+
+1269
+00:48:41,440 --> 00:48:43,440
+para obtener el precio del token usando
+
+1270
+00:48:43,440 --> 00:48:45,280
+nuestras opciones, que es la dirección del
+
+1271
+00:48:45,280 --> 00:48:47,280
+token, puede registrar este precio en la consola  e pero
+
+1272
+00:48:47,280 --> 00:48:48,800
+esto le da un objeto
+
+1273
+00:48:48,800 --> 00:48:50,559
+con una de las claves que es el
+
+1274
+00:48:50,559 --> 00:48:53,599
+precio en dólares estadounidenses dos puntos decimales usando dos fijos
+
+1275
+00:48:53,599 --> 00:48:56,400
+y establecemos nuestro precio modelo a eso y una
+
+1276
+00:48:56,400 --> 00:48:58,000
+última cosa porque solo estamos creando
+
+1277
+00:48:58,000 --> 00:48:59,760
+esta función asíncrona es en este
+
+1278
+00:48:59,760 --> 00:49:02,240
+efecto de uso también tenemos que  llámelo,
+
+1279
+00:49:02,240 --> 00:49:05,599
+busquemos el precio del token aquí, pero
+
+1280
+00:49:05,599 --> 00:49:07,599
+solo hacemos esto si
+
+1281
+00:49:07,599 --> 00:49:10,160
+tenemos un token modal,
+
+1282
+00:49:10,160 --> 00:49:12,240
+si no tenemos un token modal, no
+
+1283
+00:49:12,240 --> 00:49:15,440
+seguiremos adelante y ejecutaremos nuestra API web3, así que si
+
+1284
+00:49:15,440 --> 00:49:18,240
+guardamos eso ahora deberíamos tener un
+
+1285
+00:49:18,240 --> 00:49:20,960
+precio del token de trabajo, pero no estamos presentando el
+
+1286
+00:49:20,960 --> 00:49:22,559
+precio de nuestro modelo en ninguna parte, así que
+
+1287
+00:49:22,559 --> 00:49:25,119
+avancemos hasta la parte inferior de la página donde
+
+1288
+00:49:25,119 --> 00:49:27,920
+tenemos nuestro modal, agreguemos un div arriba
+
+1289
+00:49:27,920 --> 00:49:31,599
+aquí que presentará nuestro precio para
+
+1290
+00:49:31,599 --> 00:49:34,720
+cada token tan simple como ese div
+
+1291
+00:49:34,720 --> 00:49:37,599
+con  un lapso de color blanco y diciendo
+
+1292
+00:49:37,599 --> 00:49:39,520
+precio y luego junto a él solo
+
+1293
+00:49:39,520 --> 00:49:41,760
+tendremos la variable de estado de precio modal
+
+1294
+00:49:41,760 --> 00:49:44,160
+que cambia cada vez que abrimos un nuevo
+
+1295
+00:49:44,160 --> 00:49:46,480
+modal y luego un signo de dólar después
+
+1296
+00:49:46,480 --> 00:49:48,480
+si guardamos eso y vamos a ver nuestra
+
+1297
+00:49:48,480 --> 00:49:52,720
+página ahora aquí  intentemos abrir btc
+
+1298
+00:49:52,720 --> 00:49:55,040
+y se ejecuta y g  ets nuestro precio de bitcoin
+
+1299
+00:49:55,040 --> 00:49:57,599
+que es de aproximadamente 39 000 en el momento de
+
+1300
+00:49:57,599 --> 00:49:59,599
+filmar este video y lo mismo
+
+1301
+00:49:59,599 --> 00:50:01,200
+para ethereum
+
+1302
+00:50:01,200 --> 00:50:04,559
+veinte novecientos dólares y para el
+
+1303
+00:50:04,559 --> 00:50:06,160
+enlace debería estar alrededor de once
+
+1304
+00:50:06,160 --> 00:50:08,880
+doce dólares sí once punto nueve
+
+1305
+00:50:08,880 --> 00:50:10,640
+cinco dólares con suerte estos números
+
+1306
+00:50:10,640 --> 00:50:13,680
+suben en el  futuro, pero nuestra api web3 está
+
+1307
+00:50:13,680 --> 00:50:15,119
+funcionando, que es lo más
+
+1308
+00:50:15,119 --> 00:50:17,920
+importante y también tiene precios de token en vivo para
+
+1309
+00:50:17,920 --> 00:50:20,240
+sus monedas y ahora lo último que
+
+1310
+00:50:20,240 --> 00:50:22,640
+tenemos que hacer es conectar nuestro dap al
+
+1311
+00:50:22,640 --> 00:50:24,400
+contrato inteligente y lo haremos
+
+1312
+00:50:24,400 --> 00:50:27,119
+usando morales primero  para sincronizar eventos que
+
+1313
+00:50:27,119 --> 00:50:28,880
+ocurren en el contrato inteligente almacenarlos
+
+1314
+00:50:28,880 --> 00:50:31,440
+en nuestra base de datos de pantano y luego obtener los
+
+1315
+00:50:31,440 --> 00:50:33,760
+votos actuales en nuestra aplicación calcular la
+
+1316
+00:50:33,760 --> 00:50:36,240
+proporción de votos hacia arriba y hacia abajo y
+
+1317
+00:50:36,240 --> 00:50:38,319
+presentarlos en estas burbujas espero que estés
+
+1318
+00:50:38,319 --> 00:50:40,240
+emocionado vamos a quedarnos atrapados para poder  para
+
+1319
+00:50:40,240 --> 00:50:42,160
+hacer esto, primero abramos este navegador
+
+1320
+00:50:42,160 --> 00:50:44,000
+a pantalla completa y vayamos a nuestro
+
+1321
+00:50:44,000 --> 00:50:46,720
+panel de administración en nuestro primer servidor de aplicaciones,
+
+1322
+00:50:46,720 --> 00:50:48,720
+veamos los detalles y vayamos a nuestros
+
+1323
+00:50:48,720 --> 00:50:50,559
+eventos de sincronización, así que queremos crear un nuevo
+
+1324
+00:50:50,559 --> 00:50:53,200
+evento de sincronización para sincronizar un  todos los eventos que
+
+1325
+00:50:53,200 --> 00:50:55,599
+emite nuestro contrato inteligente de nuevos votos que
+
+1326
+00:50:55,599 --> 00:50:57,280
+se realizan en el contrato inteligente, así
+
+1327
+00:50:57,280 --> 00:50:59,520
+que agreguemos una nueva sincronización de eventos de sincronización y
+
+1328
+00:50:59,520 --> 00:51:01,359
+veamos eventos de contrato, por supuesto, estamos en
+
+1329
+00:51:01,359 --> 00:51:03,040
+el polígono mumbai testnet, que es
+
+1330
+00:51:03,040 --> 00:51:04,800
+una descripción perfecta,
+
+1331
+00:51:04,800 --> 00:51:07,040
+nuevo voto y querremos  para sincronizar nuestra
+
+1332
+00:51:07,040 --> 00:51:08,800
+opción histórica también porque
+
+1333
+00:51:08,800 --> 00:51:10,319
+ya hicimos tres votos al comienzo
+
+1334
+00:51:10,319 --> 00:51:12,240
+del video, ahora nuestro tema será el
+
+1335
+00:51:12,240 --> 00:51:14,400
+nombre del evento con todos los tipos de variables
+
+1336
+00:51:14,400 --> 00:51:16,160
+que emite, así que vayamos a nuestro
+
+1337
+00:51:16,160 --> 00:51:18,319
+contrato en el escaneo de polígonos aquí y
+
+1338
+00:51:18,319 --> 00:51:19,760
+tenemos nuestro
+
+1339
+00:51:19,760 --> 00:51:22,160
+ticker actualizó el evento aquí para que podamos
+
+1340
+00:51:22,160 --> 00:51:23,359
+copiarlo.
+
+1341
+00:51:23,359 --> 00:51:24,800
+Vea qué tan bueno es que tenemos nuestro
+
+1342
+00:51:24,800 --> 00:51:27,680
+contrato inteligente verificado en el escaneo de polígonos.
+
+1343
+00:51:27,680 --> 00:51:30,559
+Vuelva a nuestro evento de sincronización y
+
+1344
+00:51:30,559 --> 00:51:32,960
+péguelo aquí. Así tenemos nuestro
+
+1345
+00:51:32,960 --> 00:51:35,200
+nombre de evento y solo el tipo de variable.
+
+1346
+00:51:35,200 --> 00:51:37,440
+recuerde eliminar también los nombres de las variables
+
+1347
+00:51:37,440 --> 00:51:40,480
+para que tengamos untwo five six union256
+
+1348
+00:51:40,480 --> 00:51:42,720
+dirección y cadena luego para la
+
+1349
+00:51:42,720 --> 00:51:45,200
+interfaz binaria de la aplicación esto
+
+1350
+00:51:45,200 --> 00:51:48,000
+también se nos presenta en el escaneo de polígonos para
+
+1351
+00:51:48,000 --> 00:51:50,160
+contratos verificados así que vayamos a nuestro
+
+1352
+00:51:50,160 --> 00:51:52,400
+cont  ract en el escaneo de polígonos aquí y
+
+1353
+00:51:52,400 --> 00:51:53,920
+desplácese hasta la parte inferior donde tenemos nuestra
+
+1354
+00:51:53,920 --> 00:51:56,000
+API de contrato, no tenemos que copiar
+
+1355
+00:51:56,000 --> 00:51:58,000
+todo, todo lo que tiene que hacer es encontrar este
+
+1356
+00:51:58,000 --> 00:52:00,880
+evento actualizado de ticker y copiarlo para que
+
+1357
+00:52:00,880 --> 00:52:04,240
+vaya desde aquí hasta  aquí,
+
+1358
+00:52:04,240 --> 00:52:06,000
+copie ese encabezado de regreso a su
+
+1359
+00:52:06,000 --> 00:52:08,880
+panel de administración, péguelo en su campo de API
+
+1360
+00:52:08,880 --> 00:52:11,119
+aquí, desplácese hacia abajo, luego necesitamos
+
+1361
+00:52:11,119 --> 00:52:13,440
+obtener la dirección del contrato, obtener eso del
+
+1362
+00:52:13,440 --> 00:52:14,960
+escaneo de polígonos,
+
+1363
+00:52:14,960 --> 00:52:17,040
+copiar eso desde allí,
+
+1364
+00:52:17,040 --> 00:52:18,640
+pegarlo allí
+
+1365
+00:52:18,640 --> 00:52:20,559
+, no tendremos ningún filtro para  esto y
+
+1366
+00:52:20,559 --> 00:52:23,520
+luego dar un nombre de tabla podemos decir votos
+
+1367
+00:52:23,520 --> 00:52:25,839
+y luego confirmar
+
+1368
+00:52:25,839 --> 00:52:28,480
+y ahora nuestro servidor de moral está sincronizando cualquier
+
+1369
+00:52:28,480 --> 00:52:30,240
+evento que haya ocurrido en la
+
+1370
+00:52:30,240 --> 00:52:32,640
+cadena de bloques en nuestra base de datos y
+
+1371
+00:52:32,640 --> 00:52:34,559
+constantemente sigue
+
+1372
+00:52:34,559 --> 00:52:36,480
+mirando nuestro contrato inteligente para ver si
+
+1373
+00:52:36,480 --> 00:52:38,240
+ocurre algún evento nuevo y luego
+
+1374
+00:52:38,240 --> 00:52:40,640
+Actualizaremos nuestra base de datos en consecuencia, así que
+
+1375
+00:52:40,640 --> 00:52:42,640
+vamos a revisar nuestra base de datos. Primero, vaya
+
+1376
+00:52:42,640 --> 00:52:45,359
+aquí, presione el tablero y tendrá esta
+
+1377
+00:52:45,359 --> 00:52:47,680
+clase de votos. Es posible que los
+
+1378
+00:52:47,680 --> 00:52:50,160
+eventos de sincronización históricos tarden un poco en registrarse,
+
+1379
+00:52:50,160 --> 00:52:51,920
+pero actualicemos la
+
+1380
+00:52:51,920 --> 00:52:54,960
+página.  mira que nuestros votos están arriba, entonces
+
+1381
+00:52:54,960 --> 00:52:57,119
+vemos que tenemos tres votos que se
+
+1382
+00:52:57,119 --> 00:52:59,119
+han producido y eso es lo que hicimos
+
+1383
+00:52:59,119 --> 00:53:00,640
+al principio cuando estábamos jugando
+
+1384
+00:53:00,640 --> 00:53:03,440
+con el escaneo de polígonos, tenemos uno para btc,
+
+1385
+00:53:03,440 --> 00:53:05,920
+uno para eth y otro para link y vemos
+
+1386
+00:53:05,920 --> 00:53:07,920
+el votante  dirección y vemos cuál era el
+
+1387
+00:53:07,920 --> 00:53:10,559
+estado de votación en ese momento, así que para
+
+1388
+00:53:10,559 --> 00:53:12,960
+btc votamos a favor, por lo que se incrementó
+
+1389
+00:53:12,960 --> 00:53:15,359
+en uno si votamos en contra, se
+
+1390
+00:53:15,359 --> 00:53:18,079
+incrementó en uno y el enlace votamos a favor, por
+
+1391
+00:53:18,079 --> 00:53:20,880
+lo que se incrementó en uno ahora lo
+
+1392
+00:53:20,880 --> 00:53:23,440
+bueno es si  hacemos un nuevo voto con
+
+1393
+00:53:23,440 --> 00:53:25,599
+una cuenta diferente, esta tabla se
+
+1394
+00:53:25,599 --> 00:53:28,559
+actualizará con el nuevo voto para cualquier
+
+1395
+00:53:28,559 --> 00:53:31,200
+ticker en el que se votó y los nuevos recuentos
+
+1396
+00:53:31,200 --> 00:53:33,040
+para arriba y abajo, así que intentemos hacer eso
+
+1397
+00:53:33,040 --> 00:53:34,960
+, vayamos al escaneo de polígonos y aquí en nuestra
+
+1398
+00:53:34,960 --> 00:53:37,040
+página de contrato vamos a  vaya y escriba nuestro
+
+1399
+00:53:37,040 --> 00:53:39,359
+contrato, conéctese a web3 primero, pero esta
+
+1400
+00:53:39,359 --> 00:53:40,640
+vez con una cuenta diferente que
+
+1401
+00:53:40,640 --> 00:53:43,520
+hicimos los votos antes,
+
+1402
+00:53:43,520 --> 00:53:47,520
+así que ahora 0x4c está conectado a
+
+1403
+00:53:47,520 --> 00:53:50,000
+polyscan y sigamos adelante
+
+1404
+00:53:50,000 --> 00:53:52,720
+y votemos por, digamos, ethereum y aunque nuestro
+
+1405
+00:53:52,720 --> 00:53:54,960
+primer votante dijo que no.  mi  thereum, digamos que es
+
+1406
+00:53:54,960 --> 00:53:57,839
+cierto para este votante, cierto, escribamos
+
+1407
+00:53:57,839 --> 00:53:58,880
+que
+
+1408
+00:53:58,880 --> 00:54:02,400
+aparece la metamáscara, déjenos votar para confirmar
+
+1409
+00:54:02,400 --> 00:54:05,440
+, esperemos a que pase por
+
+1410
+00:54:05,440 --> 00:54:07,839
+nuestro bote
+
+1411
+00:54:07,839 --> 00:54:10,240
+y ahora, si revisamos nuestra
+
+1412
+00:54:10,240 --> 00:54:12,960
+base de datos de morales sin hacer nada y
+
+1413
+00:54:12,960 --> 00:54:15,839
+actualizamos nuestra clase de votos
+
+1414
+00:54:15,839 --> 00:54:18,640
+.  de repente, tenemos cuatro votos en
+
+1415
+00:54:18,640 --> 00:54:21,200
+lugar de los tres que teníamos antes y
+
+1416
+00:54:21,200 --> 00:54:23,200
+el último, aunque aquí, obtenemos
+
+1417
+00:54:23,200 --> 00:54:25,280
+los bloques por el tiempo en que se votó
+
+1418
+00:54:25,280 --> 00:54:27,280
+y obtenemos el estado actual de la votación, así que
+
+1419
+00:54:27,280 --> 00:54:29,680
+antes para eth teníamos un voto hacia abajo y
+
+1420
+00:54:29,680 --> 00:54:31,839
+cero votos hacia arriba, pero  ahora, con el último
+
+1421
+00:54:31,839 --> 00:54:34,640
+votante cero x4c, tenemos un voto a favor y
+
+1422
+00:54:34,640 --> 00:54:37,760
+un voto a favor, qué bueno es eso, así que ahora
+
+1423
+00:54:37,760 --> 00:54:40,319
+lo que podemos hacer es usar nuestra aplicación de reacción para
+
+1424
+00:54:40,319 --> 00:54:42,799
+extraer datos de esta clase de votos en nuestra
+
+1425
+00:54:42,799 --> 00:54:44,960
+base de datos de morales para obtener el
+
+1426
+00:54:44,960 --> 00:54:48,000
+estado actual de los votos y  presente los
+
+1427
+00:54:48,000 --> 00:54:50,559
+porcentajes correctos en estas burbujas en lugar de los
+
+1428
+00:54:50,559 --> 00:54:52,319
+porcentajes preestablecidos que tenemos
+
+1429
+00:54:52,319 --> 00:54:54,000
+actualmente, así que sigamos adelante y hagamos eso
+
+1430
+00:54:54,000 --> 00:54:56,480
+ahora ponga esto en modo de pantalla dividida
+
+1431
+00:54:56,480 --> 00:54:58,240
+y diríjase a nuestro repositorio el
+
+1432
+00:54:58,240 --> 00:55:01,359
+archivo app.js donde en agregar  Para usar
+
+1433
+00:55:01,359 --> 00:55:04,799
+morale swep3 api, también incorporaremos use
+
+1434
+00:55:04,799 --> 00:55:06,400
+morales, que es una funcionalidad básica de
+
+1435
+00:55:06,400 --> 00:55:08,720
+morales y podemos destruir
+
+1436
+00:55:08,720 --> 00:55:11,680
+moralistas y se inicializa a partir de morales usadas,
+
+1437
+00:55:11,680 --> 00:55:13,760
+por lo que esto solo significa que podemos
+
+1438
+00:55:13,760 --> 00:55:15,680
+usar una funcionalidad diferente de nuestras
+
+1439
+00:55:15,680 --> 00:55:17,920
+morales y nos aseguramos de que las
+
+1440
+00:55:17,920 --> 00:55:20,799
+morales  El proveedor inicializa
+
+1441
+00:55:20,799 --> 00:55:22,720
+morales antes de que usemos cualquiera de estas
+
+1442
+00:55:22,720 --> 00:55:24,720
+funciones y ahora creemos nuestra
+
+1443
+00:55:24,720 --> 00:55:28,319
+función para obtener una proporción de votos para cualquier
+
+1444
+00:55:28,319 --> 00:55:30,559
+token que solicitemos, así que creemos una
+
+1445
+00:55:30,559 --> 00:55:33,839
+función asíncrona llamada obtener proporción
+
+1446
+00:55:33,839 --> 00:55:35,760
+y toma como parámetros
+
+1447
+00:55:35,760 --> 00:55:38,160
+el ticker y establece el
+
+1448
+00:55:38,160 --> 00:55:40,480
+porcentaje para que podamos establecer  el
+
+1449
+00:55:40,480 --> 00:55:43,119
+porcentaje actual de cualquiera de nuestras burbujas y
+
+1450
+00:55:43,119 --> 00:55:45,440
+luego la funcionalidad irá dentro de
+
+1451
+00:55:45,440 --> 00:55:47,680
+aquí ahora, en primer lugar, extendemos la
+
+1452
+00:55:47,680 --> 00:55:49,920
+clase de votos de nuestra base de datos de morales
+
+1453
+00:55:49,920 --> 00:55:52,240
+y hacemos una consulta a esta clase de votos,
+
+1454
+00:55:52,240 --> 00:55:55,520
+luego nos aseguramos de que la clave de cotización en
+
+1455
+00:55:55,520 --> 00:55:57,839
+nuestra clase de votos  es igual a la marca que
+
+1456
+00:55:57,839 --> 00:55:59,920
+establecimos cuando llamamos a la función de relación de obtención
+
+1457
+00:55:59,920 --> 00:56:02,799
+y configuramos la consulta para que esté en
+
+1458
+00:56:02,799 --> 00:56:04,880
+orden descendente de la funcionalidad del anuncio creado, esto
+
+1459
+00:56:04,880 --> 00:56:07,680
+le permitirá  s para obtener el primer elemento,
+
+1460
+00:56:07,680 --> 00:56:10,559
+por lo que el voto creado más recientemente
+
+1461
+00:56:10,559 --> 00:56:12,799
+después de eso podemos obtener el número de
+
+1462
+00:56:12,799 --> 00:56:15,200
+votos hacia arriba y el número de votos hacia abajo
+
+1463
+00:56:15,200 --> 00:56:17,280
+mirando los atributos de nuestros objetos de resultados
+
+1464
+00:56:17,280 --> 00:56:20,160
+y obteniendo la tecla arriba y
+
+1465
+00:56:20,160 --> 00:56:22,319
+la tecla abajo y convirtiéndolos en
+
+1466
+00:56:22,319 --> 00:56:23,920
+números, así que ahora  tenemos el número de
+
+1467
+00:56:23,920 --> 00:56:25,680
+votos hacia arriba y el número de votos hacia abajo y
+
+1468
+00:56:25,680 --> 00:56:27,839
+luego calcular la proporción es simple,
+
+1469
+00:56:27,839 --> 00:56:29,359
+solo calcula el número de votos hacia arriba,
+
+1470
+00:56:29,359 --> 00:56:31,520
+divide eso por el número total de votos
+
+1471
+00:56:31,520 --> 00:56:33,599
+y multiplica por 100 y luego también
+
+1472
+00:56:33,599 --> 00:56:36,240
+redondeamos a números completos y luego  podemos
+
+1473
+00:56:36,240 --> 00:56:38,720
+usar el porcentaje establecido para establecer nuestro nuevo
+
+1474
+00:56:38,720 --> 00:56:41,359
+porcentaje en cualquiera que sea esta relación,
+
+1475
+00:56:41,359 --> 00:56:44,400
+por lo que ahora tenemos una función
+
+1476
+00:56:44,400 --> 00:56:46,880
+siempre que llamemos a un ticker y una de
+
+1477
+00:56:46,880 --> 00:56:49,599
+estas configuraciones de variables de estado podemos
+
+1478
+00:56:49,599 --> 00:56:52,160
+obtener el porcentaje actual de votos para
+
+1479
+00:56:52,160 --> 00:56:55,280
+cualquiera de nuestros  tickers, entonces lo que tenemos que hacer
+
+1480
+00:56:55,280 --> 00:56:57,839
+es crear un efecto de uso que se activa
+
+1481
+00:56:57,839 --> 00:57:00,400
+cada vez que se inicializa morales para
+
+1482
+00:57:00,400 --> 00:57:02,480
+obtener de nuestra base de datos de morales el
+
+1483
+00:57:02,480 --> 00:57:04,640
+número actual de votos sin más
+
+1484
+00:57:04,640 --> 00:57:06,319
+preámbulos, simplemente creemos ese efecto de uso
+
+1485
+00:57:06,319 --> 00:57:08,079
+a continuación aquí
+
+1486
+00:57:08,079 --> 00:57:10,480
+tan simple como eso, así que cada vez que se
+
+1487
+00:57:10,480 --> 00:57:12,640
+inicializa el estado cambia, así que cuando esta
+
+1488
+00:57:12,640 --> 00:57:15,280
+aplicación se ejecuta por primera vez, verificamos si
+
+1489
+00:57:15,280 --> 00:57:16,880
+tenemos el estado inicializado y luego
+
+1490
+00:57:16,880 --> 00:57:20,079
+obtenemos la proporción para btc, establecemos el
+
+1491
+00:57:20,079 --> 00:57:22,079
+porcentaje de bitcoin, hacemos lo mismo para ethereum,
+
+1492
+00:57:22,079 --> 00:57:23,680
+establecemos el  el porcentaje de ethereum y hacemos
+
+1493
+00:57:23,680 --> 00:57:25,359
+lo mismo para el enlace y establecemos el porcentaje del enlace
+
+1494
+00:57:25,359 --> 00:57:28,240
+ahora, si guardamos esto, deberíamos
+
+1495
+00:57:28,240 --> 00:57:30,559
+obtener un porcentaje de cien para el enlace
+
+1496
+00:57:30,559 --> 00:57:33,200
+y bitcoin y un porcentaje de 50 para
+
+1497
+00:57:33,200 --> 00:57:35,280
+ethereum, así que intentemos guardar eso, vaya
+
+1498
+00:57:35,280 --> 00:57:37,599
+a nuestra aplicación y mire  en eso,
+
+1499
+00:57:37,599 --> 00:57:39,200
+parecía que funcionó, abrimos esta
+
+1500
+00:57:39,200 --> 00:57:41,119
+pantalla completa y bitcoin es un cien
+
+1501
+00:57:41,119 --> 00:57:43,280
+por ciento completo ethereum es cincuenta por ciento y el
+
+1502
+00:57:43,280 --> 00:57:45,680
+enlace es cien por ciento cuán dulce es
+
+1503
+00:57:45,680 --> 00:57:47,599
+que son datos de la cadena de bloques
+
+1504
+00:57:47,599 --> 00:57:49,200
+que almacené en la base de datos inalámbrica ahora
+
+1505
+00:57:49,200 --> 00:57:51,200
+presentados en nuestro dap qué  lo que podemos
+
+1506
+00:57:51,200 --> 00:57:53,760
+hacer es crear una consulta en vivo para
+
+1507
+00:57:53,760 --> 00:57:55,599
+asegurarnos de que cada vez que se actualice algo
+
+1508
+00:57:55,599 --> 00:57:58,400
+en nuestra base de datos, nuestra aplicación de reacción
+
+1509
+00:57:58,400 --> 00:58:00,400
+responda inmediatamente, así que creemos esa
+
+1510
+00:58:00,400 --> 00:58:01,920
+consulta en vivo y le mostraremos cómo
+
+1511
+00:58:01,920 --> 00:58:03,839
+funciona.  Vayamos al modo de pantalla dividida
+
+1512
+00:58:03,839 --> 00:58:06,000
+y dentro de nuestro efecto de uso donde verificamos
+
+1513
+00:58:06,000 --> 00:58:08,960
+si está inicializado, también creemos una
+
+1514
+00:58:08,960 --> 00:58:11,200
+función asíncrona llamada crear
+
+1515
+00:58:11,200 --> 00:58:13,040
+consulta en vivo, así que lo que estamos haciendo es
+
+1516
+00:58:13,040 --> 00:58:15,520
+hacer una nueva consulta de morales a la
+
+1517
+00:58:15,520 --> 00:58:18,799
+clase de votos y estamos creando un
+
+1518
+00:58:18,799 --> 00:58:21,280
+suscripción haciendo una consulta de peso. suscríbase
+
+1519
+00:58:21,280 --> 00:58:23,920
+y ahora llamando a la suscripción y
+
+1520
+00:58:23,920 --> 00:58:26,640
+usando el comando de actualización, siempre obtenemos
+
+1521
+00:58:26,640 --> 00:58:29,040
+un objeto cuando cualquiera de nuestras filas en nuestra
+
+1522
+00:58:29,040 --> 00:58:31,520
+base de datos morales aquí en la clase bose
+
+1523
+00:58:31,520 --> 00:58:32,880
+se actualiza,
+
+1524
+00:58:32,880 --> 00:58:34,960
+por lo que obtenemos ese objeto o esa fila y
+
+1525
+00:58:34,960 --> 00:58:36,960
+luego  aquí podemos escribir la lógica
+
+1526
+00:58:36,960 --> 00:58:38,799
+donde simplemente verificamos que si el
+
+1527
+00:58:38,799 --> 00:58:40,960
+ticker del objeto está vinculado, obtenemos la
+
+1528
+00:58:40,960 --> 00:58:43,040
+proporción, hacemos la misma
+
+1529
+00:58:43,040 --> 00:58:45,839
+funcionalidad de obtención de proporción para el enlace, lo mismo para eth,
+
+1530
+00:58:45,839 --> 00:58:48,720
+hacemos la proporción de obtención para eth y si es btc
+
+1531
+00:58:48,720 --> 00:58:51,119
+, obtenemos la proporción.  para btc y luego,
+
+1532
+00:58:51,119 --> 00:58:52,960
+debido a que todos nuevamente estamos creando
+
+1533
+00:58:52,960 --> 00:58:55,599
+esa consulta en vivo, también tenemos que llamar a
+
+1534
+00:58:55,599 --> 00:58:58,559
+esa función crear consulta en vivo dentro de
+
+1535
+00:58:58,559 --> 00:59:00,960
+nuestro efecto de uso y ahora deberíamos tener
+
+1536
+00:59:00,960 --> 00:59:02,480
+consultas en vivo configuradas, así que en la primera
+
+1537
+00:59:02,480 --> 00:59:05,040
+inicialización solo obtenemos el cur  el
+
+1538
+00:59:05,040 --> 00:59:07,760
+estado de alquiler de nuestra base de datos de morales y, después de
+
+1539
+00:59:07,760 --> 00:59:10,400
+eso, consultamos constantemente nuestra
+
+1540
+00:59:10,400 --> 00:59:12,400
+base de datos de morales para ver si alguien
+
+1541
+00:59:12,400 --> 00:59:14,799
+vota en nuestro contrato inteligente y nuestra
+
+1542
+00:59:14,799 --> 00:59:17,200
+clase de votos se actualiza, luego obtenemos la
+
+1543
+00:59:17,200 --> 00:59:19,680
+nueva proporción automáticamente para nuestra
+
+1544
+00:59:19,680 --> 00:59:21,359
+aplicación de reacción, veamos cómo funciona esto  Entonces, si
+
+1545
+00:59:21,359 --> 00:59:23,839
+guardamos esto y abrimos nuestra base de datos
+
+1546
+00:59:23,839 --> 00:59:26,160
+junto con nuestra aplicación, así que está un
+
+1547
+00:59:26,160 --> 00:59:28,240
+poco aplastado, pero entiendes que
+
+1548
+00:59:28,240 --> 00:59:30,400
+tenemos esta fila para nuestro voto btc y decimos
+
+1549
+00:59:30,400 --> 00:59:33,599
+que acabamos de actualizar los votos negativos btc a
+
+1550
+00:59:33,599 --> 00:59:35,440
+tres
+
+1551
+00:59:35,440 --> 00:59:37,520
+mira nuestra reacción  la aplicación automáticamente se
+
+1552
+00:59:37,520 --> 00:59:39,440
+mantiene en 25
+
+1553
+00:59:39,440 --> 00:59:41,760
+porque ahora tenemos un voto a favor y tres
+
+1554
+00:59:41,760 --> 00:59:44,640
+descargas que dan como resultado un
+
+1555
+00:59:44,640 --> 00:59:46,880
+sentimiento de 25 en el token de bitcoin para
+
+1556
+00:59:46,880 --> 00:59:48,720
+subir lo mismo que podemos hacer, así que
+
+1557
+00:59:48,720 --> 00:59:54,160
+vamos a decir enlace, hagamos un dos aquí
+
+1558
+00:59:54,160 --> 00:59:56,400
+ahora cambia a 33  por ciento porque
+
+1559
+00:59:56,400 --> 00:59:58,880
+tenemos un voto a favor y dos votos a favor, qué
+
+1560
+00:59:58,880 --> 01:00:00,400
+bueno es eso, cambiémoslos de nuevo a
+
+1561
+01:00:00,400 --> 01:00:02,559
+lo que eran cero
+
+1562
+01:00:02,559 --> 01:00:03,760
+y
+
+1563
+01:00:03,760 --> 01:00:06,720
+cero y ahora, con todo esto funcionando,
+
+1564
+01:00:06,720 --> 01:00:08,880
+lo último que queda por hacer es hacer
+
+1565
+01:00:08,880 --> 01:00:11,119
+esto para que podamos votar en nuestro inteligente
+
+1566
+01:00:11,119 --> 01:00:13,520
+contrate usando estos dos botones
+
+1567
+01:00:13,520 --> 01:00:16,640
+y activando nuestra metamáscara emergente
+
+1568
+01:00:16,640 --> 01:00:18,960
+para hacer los votos y luego automáticamente
+
+1569
+01:00:18,960 --> 01:00:20,720
+nuestra base de datos de morales actualizará los nuevos
+
+1570
+01:00:20,720 --> 01:00:23,119
+votos y nuestra aplicación reaccionar también actualizará los
+
+1571
+01:00:23,119 --> 01:00:25,119
+votos en la pantalla, qué bueno es
+
+1572
+01:00:25,119 --> 01:00:27,040
+eso, así que sigamos adelante y ejecutemos  nuestros
+
+1573
+01:00:27,040 --> 01:00:29,200
+contratos inteligentes en nuestra aplicación de reacción a continuación a la
+
+1574
+01:00:29,200 --> 01:00:30,880
+derecha para que pueda abrir su repositorio
+
+1575
+01:00:30,880 --> 01:00:33,200
+nuevamente e ir a su componente coin.js
+
+1576
+01:00:33,200 --> 01:00:35,200
+aquí es donde construiremos nuestra
+
+1577
+01:00:35,200 --> 01:00:36,880
+funcionalidad de contrato inteligente de ejecución porque
+
+1578
+01:00:36,880 --> 01:00:39,200
+tendremos acceso al token que
+
+1579
+01:00:39,200 --> 01:00:41,680
+queremos votar  en y luego importemos
+
+1580
+01:00:41,680 --> 01:00:43,599
+desde reaccionar morales
+
+1581
+01:00:43,599 --> 01:00:46,559
+use la función de ejecución web3 y use
+
+1582
+01:00:46,559 --> 01:00:49,359
+morales que luego podemos destruir para
+
+1583
+01:00:49,359 --> 01:00:51,599
+poder usar en nuestro código para que podamos llamar a
+
+1584
+01:00:51,599 --> 01:00:53,359
+nuestro procesador de contrato de función de ejecución web3
+
+1585
+01:00:53,359 --> 01:00:55,520
+y para morales obtendremos
+
+1586
+01:00:55,520 --> 01:00:57,520
+el estado autenticado  para asegurarnos de
+
+1587
+01:00:57,520 --> 01:00:59,440
+que los usuarios estén autenticados,
+
+1588
+01:00:59,440 --> 01:01:01,440
+no pueden votar si no están
+
+1589
+01:01:01,440 --> 01:01:03,200
+autenticados, así que solo les avisaremos
+
+1590
+01:01:03,200 --> 01:01:04,640
+que deben conectar su billetera
+
+1591
+01:01:04,640 --> 01:01:06,640
+para poder autenticarse pero movi  ng
+
+1592
+01:01:06,640 --> 01:01:08,720
+adelante, podemos seguir adelante y crear
+
+1593
+01:01:08,720 --> 01:01:12,640
+nuestra función asíncrona asíncrona
+
+1594
+01:01:12,640 --> 01:01:15,440
+llamada voto y todo lo que tenemos que tomar
+
+1595
+01:01:15,440 --> 01:01:18,559
+como parámetro es si votamos hacia arriba o hacia abajo
+
+1596
+01:01:18,559 --> 01:01:20,319
+y luego colocamos nuestra
+
+1597
+01:01:20,319 --> 01:01:22,480
+funcionalidad de contrato inteligente aquí para que nuestro
+
+1598
+01:01:22,480 --> 01:01:24,480
+procesador de contrato pueda  manejar
+
+1599
+01:01:24,480 --> 01:01:26,240
+nuestra solicitud, tenemos que proporcionar algunas
+
+1600
+01:01:26,240 --> 01:01:28,799
+opciones, que son la dirección del contrato,
+
+1601
+01:01:28,799 --> 01:01:31,760
+el nombre de la función, la API nuevamente de la
+
+1602
+01:01:31,760 --> 01:01:33,680
+llamada a la función que estamos viendo y luego
+
+1603
+01:01:33,680 --> 01:01:36,559
+los parámetros que toma esta función
+
+1604
+01:01:36,559 --> 01:01:38,400
+para que la dirección del contrato nuevamente simplemente obtenga
+
+1605
+01:01:38,400 --> 01:01:40,880
+toda esta información de su
+
+1606
+01:01:40,880 --> 01:01:43,760
+escaneo de polígonos vaya al código del contrato
+
+1607
+01:01:43,760 --> 01:01:45,119
+puede obtener las baterías del contrato desde
+
+1608
+01:01:45,119 --> 01:01:46,480
+aquí
+
+1609
+01:01:46,480 --> 01:01:48,559
+agregue eso allí luego para nuestro
+
+1610
+01:01:48,559 --> 01:01:51,359
+nombre de función estamos buscando procesar la
+
+1611
+01:01:51,359 --> 01:01:54,000
+función de voto así que solo llamamos vote
+
+1612
+01:01:54,000 --> 01:01:56,319
+aquí y luego para la API vaya al
+
+1613
+01:01:56,319 --> 01:01:57,920
+final nuevamente donde  encuentra la api del contrato
+
+1614
+01:01:57,920 --> 01:02:01,280
+busca la función de voto que
+
+1615
+01:02:01,280 --> 01:02:03,920
+está aquí y puede copiarla
+
+1616
+01:02:03,920 --> 01:02:07,200
+así y pegarla en su avi, que
+
+1617
+01:02:07,200 --> 01:02:09,839
+tiene que ser una matriz así, ahora
+
+1618
+01:02:09,839 --> 01:02:11,680
+tenemos nuestra
+
+1619
+01:02:11,680 --> 01:02:13,920
+api y  finalmente, necesitamos los parámetros
+
+1620
+01:02:13,920 --> 01:02:15,119
+que vamos a pasar a la
+
+1621
+01:02:15,119 --> 01:02:18,079
+función de voto para que sea un objeto con un
+
+1622
+01:02:18,079 --> 01:02:20,160
+grosor primero que podemos usar
+
+1623
+01:02:20,160 --> 01:02:22,880
+el token de este componente y luego
+
+1624
+01:02:22,880 --> 01:02:25,520
+el voto que tiene que ser un valor booleano
+
+1625
+01:02:25,520 --> 01:02:27,599
+que establecemos al llamar  esta
+
+1626
+01:02:27,599 --> 01:02:30,640
+función asincrónica vote y podemos configurarla para que
+
+1627
+01:02:30,640 --> 01:02:31,440
+suba y
+
+1628
+01:02:31,440 --> 01:02:34,720
+baje así y ahora nuestras opciones están configuradas
+
+1629
+01:02:34,720 --> 01:02:37,119
+y podemos seguir adelante y usar estas
+
+1630
+01:02:37,119 --> 01:02:39,200
+opciones para hacer una llamada a nuestra función,
+
+1631
+01:02:39,200 --> 01:02:41,680
+cómo lo hacemos es simplemente esperar a que
+
+1632
+01:02:41,680 --> 01:02:43,440
+nuestro procesador de contacto busque
+
+1633
+01:02:43,440 --> 01:02:45,520
+parámetros usando las opciones que acabamos de configurar
+
+1634
+01:02:45,520 --> 01:02:48,160
+arriba y si tuviéramos éxito, el
+
+1635
+01:02:48,160 --> 01:02:49,680
+éxito llegará tan pronto como el voto sea
+
+1636
+01:02:49,680 --> 01:02:52,240
+exitoso y, si hay algún
+
+1637
+01:02:52,240 --> 01:02:54,640
+error, solo alertaremos al usuario de que hubo
+
+1638
+01:02:54,640 --> 01:02:56,640
+un error, por ejemplo, si ya
+
+1639
+01:02:56,640 --> 01:02:58,640
+votó.  un token, debería recibir un error de
+
+1640
+01:02:58,640 --> 01:03:01,039
+que ya votó por un token,
+
+1641
+01:03:01,039 --> 01:03:03,119
+así de simple es ejecutar
+
+1642
+01:03:03,119 --> 01:03:05,119
+funciones de contrato inteligente con morales en una
+
+1643
+01:03:05,119 --> 01:03:06,960
+aplicación de reacción, lo último que queremos
+
+1644
+01:03:06,960 --> 01:03:08,799
+hacer es asegurarnos de que en nuestros botones
+
+1645
+01:03:08,799 --> 01:03:10,480
+aquí  en lugar de establecer t  El precio
+
+1646
+01:03:10,480 --> 01:03:13,359
+manualmente podemos verificar si el usuario está
+
+1647
+01:03:13,359 --> 01:03:15,200
+autenticado si está autenticado
+
+1648
+01:03:15,200 --> 01:03:16,960
+y podemos ejecutar nuestra
+
+1649
+01:03:16,960 --> 01:03:19,119
+función de voto asincrónico con verdadero si presionamos el botón hacia arriba
+
+1650
+01:03:19,119 --> 01:03:21,599
+y, de lo contrario, alertaremos al
+
+1651
+01:03:21,599 --> 01:03:24,079
+usuario de que debe autenticarse para
+
+1652
+01:03:24,079 --> 01:03:26,480
+votar lo mismo.  podemos hacer aquí
+
+1653
+01:03:26,480 --> 01:03:29,039
+con nuestro botón de abajo en lugar de configurar
+
+1654
+01:03:29,039 --> 01:03:31,760
+nuestro porcentaje manualmente podemos llamar a la
+
+1655
+01:03:31,760 --> 01:03:34,720
+función de voto pero con falso esta vez
+
+1656
+01:03:34,720 --> 01:03:36,319
+porque estamos votando hacia abajo si estamos
+
+1657
+01:03:36,319 --> 01:03:38,079
+autenticados pero de lo contrario alertaremos
+
+1658
+01:03:38,079 --> 01:03:40,240
+al usuario que necesita autenticarse
+
+1659
+01:03:40,240 --> 01:03:42,160
+para  vote y si hemos hecho todo
+
+1660
+01:03:42,160 --> 01:03:44,079
+correctamente, esta debería ser la compilación completa,
+
+1661
+01:03:44,079 --> 01:03:46,079
+qué bueno es eso, guarde eso,
+
+1662
+01:03:46,079 --> 01:03:49,359
+vayamos a nuestra aplicación de reacción aquí, ábrala en
+
+1663
+01:03:49,359 --> 01:03:51,440
+pantalla completa para ustedes, y ahora es el
+
+1664
+01:03:51,440 --> 01:03:53,680
+momento de la verdad, pruébela ahora mismo,
+
+1665
+01:03:53,680 --> 01:03:55,680
+así que  aquí en nuestra página, si presionamos los
+
+1666
+01:03:55,680 --> 01:03:57,359
+botones de información, están funcionando, obtenemos
+
+1667
+01:03:57,359 --> 01:03:59,440
+el precio y la descripción del
+
+1668
+01:03:59,440 --> 01:04:01,839
+token, pero ahora, si presionamos hacia arriba o hacia abajo,
+
+1669
+01:04:01,839 --> 01:04:04,000
+debería ejecutar nuestra función, pero
+
+1670
+01:04:04,000 --> 01:04:06,480
+primero recibimos una alerta que autentica
+
+1671
+01:04:06,480 --> 01:04:07,680
+a  vote solo las personas que se han
+
+1672
+01:04:07,680 --> 01:04:09,520
+autenticado pueden votar para que podamos usar nuestro
+
+1673
+01:04:09,520 --> 01:04:11,599
+botón de billetera conectada use metamask para
+
+1674
+01:04:11,599 --> 01:04:12,559
+
+
+1675
+01:04:12,559 --> 01:04:15,839
+autenticarse usemos nuestra cuenta tres señal de conexión
+
+1676
+01:04:15,839 --> 01:04:19,359
+y ahora 0x4c se ha conectado a este
+
+1677
+01:04:19,359 --> 01:04:20,960
+dap recuerda que ya votamos por
+
+1678
+01:04:20,960 --> 01:04:22,480
+eth, así que no deberíamos poder  para votar por
+
+1679
+01:04:22,480 --> 01:04:24,000
+eth, pero deberíamos poder votar por
+
+1680
+01:04:24,000 --> 01:04:26,319
+btc, así que ahora, si seguimos adelante y votamos por
+
+1681
+01:04:26,319 --> 01:04:27,440
+abajo,
+
+1682
+01:04:27,440 --> 01:04:29,920
+aparece la metamáscara, tenemos la capacidad de
+
+1683
+01:04:29,920 --> 01:04:31,599
+llamar a la función de arco en nuestro
+
+1684
+01:04:31,599 --> 01:04:34,720
+contrato inteligente, confirmamos
+
+1685
+01:04:34,720 --> 01:04:36,160
+y
+
+1686
+01:04:36,160 --> 01:04:39,119
+hacemos sonar nuestro ritmo. El sentimiento de bitcoin ha disminuido.
+
+1687
+01:04:39,119 --> 01:04:40,960
+la mitad porque ahora tenemos dos votos,
+
+1688
+01:04:40,960 --> 01:04:42,720
+uno que votó a favor y otro que votó en
+
+1689
+01:04:42,720 --> 01:04:45,359
+contra si revisamos nuestra metamáscara, nuestro
+
+1690
+01:04:45,359 --> 01:04:47,440
+voto acaba de pasar qué genial es que
+
+1691
+01:04:47,440 --> 01:04:49,760
+incluso podemos revisar nuestra base de datos, así que aquí
+
+1692
+01:04:49,760 --> 01:04:52,160
+tenemos la clase de voto si actualizamos lo que
+
+1693
+01:04:52,160 --> 01:04:55,599
+acabamos de hacer  un voto negativo y fue para
+
+1694
+01:04:55,599 --> 01:04:59,280
+bitcoin y nuestro votante 0x4c,
+
+1695
+01:04:59,280 --> 01:05:01,200
+por lo que todo funciona a la perfección ahora
+
+1696
+01:05:01,200 --> 01:05:03,200
+intentemos votar por la
+
+1697
+01:05:03,200 --> 01:05:04,880
+ejecución de eth revertida ya ha
+
+1698
+01:05:04,880 --> 01:05:06,799
+votado por esta moneda, por lo que no
+
+1699
+01:05:06,799 --> 01:05:08,960
+nos permite votar por monedas dos veces m  Siendo esta una
+
+1700
+01:05:08,960 --> 01:05:11,119
+aplicación muy buena, cada billetera tiene solo un
+
+1701
+01:05:11,119 --> 01:05:12,880
+voto y no puede ser distorsionada por un
+
+1702
+01:05:12,880 --> 01:05:15,119
+votante malicioso, pero sigamos adelante
+
+1703
+01:05:15,119 --> 01:05:17,119
+e intentemos cambiar nuestra cuenta para conectar la
+
+1704
+01:05:17,119 --> 01:05:18,880
+meta máscara de la billetera,
+
+1705
+01:05:18,880 --> 01:05:21,359
+hagamos la cuenta 2 aquí, firme,
+
+1706
+01:05:21,359 --> 01:05:23,680
+así que ahora
+
+1707
+01:05:23,680 --> 01:05:25,119
+0x5d va a votar  y votemos por
+
+1708
+01:05:25,119 --> 01:05:27,119
+bitcoin nuevamente, votemos a favor
+
+1709
+01:05:27,119 --> 01:05:31,599
+, obtenemos otro voto emergente, confirmamos
+
+1710
+01:05:31,599 --> 01:05:34,400
+y observamos que nuestro sentimiento de votación
+
+1711
+01:05:34,400 --> 01:05:37,280
+ahora es 33 porque tenemos dos votos a favor
+
+1712
+01:05:37,280 --> 01:05:40,319
+y uno a favor y nuestra base de datos
+
+1713
+01:05:40,319 --> 01:05:42,079
+ya está actualizada
+
+1714
+01:05:42,079 --> 01:05:43,839
+dos votos a favor
+
+1715
+01:05:43,839 --> 01:05:47,359
+últimos votantes cero  cero x cinco d y
+
+1716
+01:05:47,359 --> 01:05:49,839
+votamos por bitcoin, este usuario también puede votar por
+
+1717
+01:05:49,839 --> 01:05:51,599
+ethereum, así que vamos a votar por
+
+1718
+01:05:51,599 --> 01:05:53,680
+ethereum,
+
+1719
+01:05:53,680 --> 01:05:55,760
+vaya y
+
+1720
+01:05:55,760 --> 01:05:58,160
+confirme
+
+1721
+01:05:58,160 --> 01:06:01,039
+y automáticamente nuestro ethereum
+
+1722
+01:06:01,039 --> 01:06:04,079
+sube a 67, tenemos dos votos hacia arriba y un
+
+1723
+01:06:04,079 --> 01:06:06,400
+voto hacia abajo, qué bueno es eso.  Hemos
+
+1724
+01:06:06,400 --> 01:06:08,799
+completado toda la compilación. Recapitulemos
+
+1725
+01:06:08,799 --> 01:06:10,559
+lo que hemos hecho. Creamos nuestro propio
+
+1726
+01:06:10,559 --> 01:06:12,480
+contrato inteligente usando Solidity y
+
+1727
+01:06:12,480 --> 01:06:14,720
+compilándolo. Desplegándolo y
+
+1728
+01:06:14,720 --> 01:06:16,960
+verificándolo usando un casco. Luego creaste esta
+
+1729
+01:06:16,960 --> 01:06:19,039
+hermosa aplicación de reacción y luego
+
+1730
+01:06:19,039 --> 01:06:21,680
+usaste morales.  o integre su aplicación de reacción y su
+
+1731
+01:06:21,680 --> 01:06:23,839
+contrato inteligente juntos para
+
+1732
+01:06:23,839 --> 01:06:26,240
+poder votar en su contrato inteligente, pero
+
+1733
+01:06:26,240 --> 01:06:28,000
+no solo votar, sino también leer lo que
+
+1734
+01:06:28,000 --> 01:06:29,520
+sucede en el contrato inteligente y
+
+1735
+01:06:29,520 --> 01:06:31,440
+mostrar la información en su
+
+1736
+01:06:31,440 --> 01:06:34,160
+aplicación de reacción, así que ahora ha creado su primera  dap,
+
+1737
+01:06:34,160 --> 01:06:36,240
+qué genial es que puedas seguir adelante y
+
+1738
+01:06:36,240 --> 01:06:38,319
+construir esto aún más y un gran
+
+1739
+01:06:38,319 --> 01:06:40,559
+saludo al sitio web de bobble también en el que
+
+1740
+01:06:40,559 --> 01:06:43,039
+se basó este dap espero que realmente hayas
+
+1741
+01:06:43,039 --> 01:06:44,799
+disfrutado esta construcción asegúrate de publicar tus
+
+1742
+01:06:44,799 --> 01:06:47,039
+resultados en discord y twitter y nuestra
+
+1743
+01:06:47,039 --> 01:06:48,559
+ingeniería comunitaria  los equipos lo
+
+1744
+01:06:48,559 --> 01:06:50,640
+conectarán con un nft genial después de que termine
+
+1745
+01:06:50,640 --> 01:06:52,559
+esto, realmente espero que esto aliente su
+
+1746
+01:06:52,559 --> 01:06:54,400
+viaje de desarrollo de adaptación y siga
+
+1747
+01:06:54,400 --> 01:06:56,079
+adelante y construya proyectos morales en el
+
+1748
+01:06:56,079 --> 01:06:58,400
+futuro también gracias y nos vemos la
+
+1749
+01:06:58,400 --> 01:07:01,599
+próxima vez
+

@@ -1,0 +1,70 @@
+Home - Cotação
+Post /quotation
+
+Faça uma Cotação
+Post /quotation
+
+Solicite uma coleta 
+POST
+/collect/withoutQuotation
+
+rastreamento
+/POST     /tracking/cnpj
+
+seja um representante
+POST
+/mail/partner
+
+agencia
+Aguardando toras
+
+perguntas frequentes
+GET
+/faqGroup
+
+para sua empresa
+POST
+/client/preRegister
+
+dados da empresa
+TOKEN
+GET
+/client
+PUT
+/client
+DELETE
+/client
+
+
+Destinatários favoritos
+GET
+/receiver
+
+POST
+/receiver
+
+PUT
+/receiver/{id}
+
+DELETE
+/receiver/{id}
+
+
+
+
+
+envios-recebimentos
+POST
+/tracking/receiver
+POST
+/tracking/sender
+POST
+/tracking/next-histories
+
+
+
+Histórico de Cotações
+GET
+/quotation
+GET
+/quotation/{id}

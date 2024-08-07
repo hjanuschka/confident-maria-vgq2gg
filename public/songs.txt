@@ -1,0 +1,31 @@
+https://www.youtube.com/watch?v=uQ5l5VWvNdc
+https://www.youtube.com/watch?v=3KbWbT7P-Dw
+https://www.youtube.com/watch?v=IdDaf8Rr33E
+https://www.youtube.com/watch?v=DE7wF8KfWy8
+https://www.youtube.com/watch?v=ZaYEi3ihc2A
+https://www.youtube.com/watch?v=QmHX0whk6Rg
+https://www.youtube.com/watch?v=pChpUej0-_s
+https://www.youtube.com/watch?v=Py_Q2IfAD5U
+https://www.youtube.com/watch?v=vA_GGf-x6hc
+https://www.youtube.com/watch?v=dvYI7LaMKyQ
+https://www.youtube.com/watch?v=ZWg0rEQXHn0
+https://www.youtube.com/watch?v=S_Ttnb35iYQ
+
+meetingSegment.component.ts   177
+
+this.agendaData.length === 1 && this.mtSegmentModel.MTS_workPackage.length > 0 ? this.mtSegmentModel.MTS_agendaItem = [...this.agendaData] : this.mtSegmentModel.MTS_agendaItem = [];
+
+
+
+if (this.returnUrl) {
+        location.replace(this.returnUrl);
+        this.returnUrl = "";
+      } else if (
+        window.location.href.includes("?code=") &&
+        window.location.href.includes("&state=")
+      ) {
+        location.replace("/meeting");
+      }
+
+
+docs[0] &&  docs[0]?.DD_lookupLable !== undefined  ? docs[0].DD_lookupLable : ''

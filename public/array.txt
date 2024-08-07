@@ -1,0 +1,1743 @@
+Merge pull request #805 from eco/buildTimeWarnings
+
+[SA-1273] fix minor warnings,Merge pull request #803 from eco/stories-centered-media-layout/SA-1168
+
+Add stories centered media layout,Merge branch 'next' into stories-centered-media-layout/SA-1168,Merge pull request #800 from eco/push-notification-tests/SA-1183
+
+Push notification tests/sa 1183,Merge pull request #804 from eco/mandatory-kyc-fix
+
+[SA-1272] Fix crash after completing cognito from mandatoryKYC state,Add check for mandatory KYC feature flag before launching user in PostRegistration KYC flow,fix typo,fix minor warnings,Consolidate screen size flags, remove inline constants,Fix crash after completing cognito from mandatoryKYC state
+
+- Add check for empty string when checking for shouldShowBankSignIn
+- Add environmentObjects to mandatoryKYC flow
+- Remove call to update user's registration state to home
+    - This allowed users to circumvent mandatory KYC by signing in as another user,Add file to tests target,Add stories centered media layout
+
+Rename StoryView -> StoryPlayerView, remove padding from StoryPlayerView and move into the viewfactories, add model structure for Story object,Merge pull request #791 from eco/onboardingFeatureFlag
+
+[SA-1233] [SA-1234] [SA-1235] 2 step onboarding,Two step onboarding copy updates,fix schedule icons,Fix post registration state after killing app during cognito KYC,Merge pull request #801 from eco/verification-pending-regression
+
+[SA-1269] Remove close button from PostRegistrationVerificationPendingView,Fix IdentityVerificationPendingView preview,Remove close button from PostRegistrationVerificationPendingView,Resolve conflicts,Fix layout on single feature gate view, update illustrations,Update icons and fonts for two step onboarding, add missing navigation link to schedule onboarding view,Merge pull request #799 from eco/onboardBugFix
+
+[SA-1207] Go back from zip code screen,Merge pull request #798 from eco/prAddition
+
+[SA-1156] added PR to states,Merge pull request #796 from eco/push-notifications/SA-1149
+
+Push notifications/sa 1149,Merge pull request #797 from eco/feature-gate-illu-2
+
+[SA-1259] update feature gate illustration,fixed,Add notification toggle test for system denied state,updated so you can go back,Resolve conflicts,added PR to states,Merge branch 'next' into onboardingFeatureFlag,quick changes,update stroke,update feature gate illustration,Add feature flag to notification settings,Move notifications toggle logic into NotificationsToggleViewModel, add NotificationsToggleViewModel unit tests,Opt users in to provisional notifications when tapping X icon the push notification primer view,Fix merge resolution errors,Merge branch 'next' into push-notifications/SA-1149,Merge pull request #794 from eco/push-notifications-prompt-feature-flag/SA-1229
+
+Feature flag for push notifications primer view,Merge pull request #793 from eco/push-notification-deeplinking/SA-1181
+
+Push notification deeplinking/sa 1181,Remove DeeplinkHandler and UniversalLinkHandler, remove unnecessary environment object, fix oauth typo,whoops,updated for tests,Merge pull request #790 from eco/mandatoryKYC
+
+[SA-1230] mandatory kyc behind feature flag,should be good..needs a tiny TLC,getting there,Add deeplink UI tests,Remove toggle animation when updating system authorization status,Merge pull request #767 from eco/SA-711
+
+2FA Text Message Flow,hide from release,Merge remote-tracking branch 'origin/next' into SA-711,needs testing and a tiny TLC,Add feature flag for push notifications primer view,Clean up DeeplinkRoute,Handle deeplinks from terminated state,Merge pull request #792 from eco/disable_tests_until_reliable
+
+[SA-1237] Disable tests until they are running reliably,Disable tests until they are running reliably,Remove unused file,Add logic for handling deeplinks from push notifications,feature flag,mandatory kyc behind feature flag,Resolve conflicts, add required and optional terms to startup service,Merge pull request #789 from eco/zh-terms-header
+
+[SA-1228] update ZH terms header to use new icon, very minor UI adjust,Merge pull request #788 from eco/push-notifications-primer-view/SA-1182
+
+Push notifications primer view/sa 1182,format,update ZH terms header to use new icon, very minor UI adjust,Update comment,Update push notifications primer illustration for dark mode,Merge remote-tracking branch 'origin/next' into SA-711,pr feedback removing do-catch blocks where we dont need them,Merge pull request #781 from eco/add_merchants_tests
+
+[SA-1185] Adding Merchant page tests and a bunch of a11y ID's,Merge pull request #787 from eco/analyticsChange
+
+[SA-1203] updated lifecycle events,Merge pull request #785 from eco/fixZipCode
+
+[SA-1136] fixed zip code issue when using from a different country,Merge branch 'next' of https://github.com/eco/ecoSwiftUI into fixZipCode,Show open settings alert on PushNotificationsPrimerView if user has denied system permissions,Ensure user has not accepted push notification permissions before showing primer view,Fix merge conflict boo boo,Merge branch 'next' of https://github.com/eco/ecoSwiftUI into add_merchants_tests,Add PushNotificationsPrimerView to request permissions when necessary, add basic startup service for handling modals on login / authenticated app launch,Merge pull request #784 from eco/ant/sa-1189
+
+SA-1189 Updating Fastlane, refactor build numbers, add dsym for staging,Merge pull request #786 from eco/notification-settings/SA-1186
+
+Notification settings/sa 1186,Tests working now,Remove local state for pushAuthorizationStatus, rename user defaults key for local push setting, add TODOs,Updated test user, removed debug from ci,updated lifecycle events,Updating config to save all files. may be a bad idea, tbd,surface context pr feedback,Remove unnecessary check for EmptyView, remove unused var,rename dictionary extension per pr feedback,testing,Resolve conflicts,Merge pull request #782 from eco/braze-sdk-setup/SA-1180
+
+Braze sdk setup/sa 1180,Update console log to analytics event,fixed issue,Updating tests, fixing run scheme,Show alert if notifications are disabled in device settings,Add NotificationSettingsView and NotificationsToggle, restructure PushNotificationClient (move UNUserNotificationCenterDelegate to AppDelegate), move identify check to UserViewModel so that users are identified on each login, change AppKeys from enum to struct to simplify callsite,Updating dsym upload step,
+Update staging scheme for running tests,Remove debug, clean up fastfile, make this thing actually work,Another day, another build script,Forgot the quotes, idiot,Updating dsym location,touchup,fixed location issue,SA-1189 Updating Fastlane, refactor build numbers,Refactor AccountView to reuse row component,temp commit; have to get back to the states to test flow;,Remove circleci dsym upload,removing specified test result path due to permission issues,Updated launch environment, removed accidentally committed tests,More CI tinkering,Adding some waits for tests that only fail in CI,Fix comment,Setup Braze swift SDK,remove unused sections of code called out in pr feedback;,updating CI and signin page tests,Merge branch 'next' of https://github.com/eco/ecoSwiftUI into add_merchants_tests,mfaInput pr feedback,Merge pull request #775 from eco/zhTerms
+
+[SA-1140] Zh terms,Merge branch 'next' of https://github.com/eco/ecoSwiftUI into zhTerms,Merge remote-tracking branch 'origin/next' into SA-711,updating Fastlane to build staging... shouldn't break anything,Merge branch 'next' of https://github.com/eco/ecoSwiftUI into add_merchants_tests,Merge pull request #779 from eco/primer-view-updates
+
+Billpay primer view + status bar fixes,Merge pull request #780 from eco/zhTermsLD
+
+[SA-1142] New Terms popup ready to go,Adding Merchant page tests and a bunch of a11y ID's,remove unused recovery view;,updated, ready for launch,rename mfa preview provider mock object; store last four of associated phone number given by auth0; avoid confusion with last four of user provided number,name changes for consistency,updated logging,ios14 update,changes,rebased,Merge branch 'next' into zhTerms,Move preview object to mock objects, update pinwheel primer view background image,Fixed spacing between primer view items, fix papaya web view background color on dark mode,more clean up,Add reusable PrimerView, use BillPayPrimerView in bill pay flow, update status bar inside navigationBarStyle modifier (fixes statusBar for primer views),fix issue where you could go back to password screen,start cleaning up,show password feature,fixed issue with view popping after loading; renamed view;,Merge pull request #778 from eco/add_homepage_tests
+
+[SA-1178] Adding home page tests and some identifiers,Merge branch 'next' of https://github.com/eco/ecoSwiftUI into add_homepage_tests,Merge pull request #771 from eco/scroll-with-footer
+
+[SA-1153] add scroll with footer modifier,a bunch of work,Merge branch 'next' of https://github.com/eco/ecoSwiftUI into add_homepage_tests,Merge pull request #777 from eco/payroll-deposit-activity-item/SA-1102
+
+Payroll deposit activity item updates,Merge branch 'next' of github.com:eco/ecoSwiftUI into scroll-with-footer,Merge pull request #776 from eco/withdrawals-locked-analytics-event/SA-1155
+
+Add analytics event for withdrawals locked error,Fix background color on ChangePasswordView,Merge branch 'next' of https://github.com/eco/ecoSwiftUI into withdrawals-locked-analytics-event/SA-1155,Merge pull request #774 from eco/feature-gate-updates/SA-1154
+
+Feature gate updates/sa 1154,Adding home page tests and some identifiers,patch usermetadata; whole text-message mfa flow is working now!,Right align description text in TransactionDetailsView,Remove text scaling for activity cells, add description row for payroll deposits in transaction details,Update description copy for kyc more data feature gate item,Use @ViewBuilder for footerContent, remove introspect in favor of .clipped(),Merge branch 'next' of github.com:eco/ecoSwiftUI into scroll-with-footer,Add analytics event for withdrawals locked error,Resolve conflicts,fix user defaults issue,pop to root on success; store mfa status in userDefaults; delete authenticator wip; added ui for mfa login flow when attempting to delete authenticator,added analytics event,addressing comments,Merge branch 'next' into zhTerms,Merge pull request #770 from eco/cardDetailsRefactor
+
+[SA-1138] Refactored Card details implementation,rebased,fixed,updated default fallback terms,Add kyc failed state, fix breaking hyphen for bank account re-link titles,updated test targets,rebased,rebased,fixed loop,fixed navigation loop,udpated navigation,updated dependency injection,Implement feature gate for card, billpay, and paycheck,Add ability to require specific kyc states,removed old view,update,new url,updated urls,update,cleanup,looking good,almost there,Refactor feature gate implementation, update UI to match designs, restructure project by adding a folder for action views,wip dynamic terms sheet,Merge pull request #772 from eco/testing-infra-environment-switch/SA-1087
+
+[1/2] Testing infra - Environment switch,add loading states; move verify credentials to before twoFactorView so we can know if you have it enabled or not by making a login call and seeing the response,Remove unused parameter,Prevent firebase initialization on debug builds,Merge pull request #773 from eco/testing-infra-tests-configuration/SA-920
+
+[2/2] Testing Infra - Authenticated UI Tests,
+extract mfa login logic out of login method in loginViewModel,rename files to be consistent; remove methods that can be done via Auth0SDK,remove auth0 rest call to verify OTP; instead use SDK's login method,clean up,extract strings,move DTOs and Responses to their own files,login flow,network calls for adding sms 2fa,Update Shaym's graphQL nrgok url,Fix comment,Improve LaunchEnvironment interface, remove unused default values,clean up,extract MFA input view component from VerifyPhoneNumberView to be shared with LoginMFAView;,Clean up comments,Add example for authenticated UI Test,Add TestsConfiguration, setup LaunchEnvironment, add TestsManager util,Clean up whitespace,Refactor build configuration and build environments, add debug settings sheet to allow in app environment switching, restructure files,add scroll with footer modifier,added error resolver,updates,minor cleanup to completion view,fix set up button,rebased,udpated,add focused state,Merge pull request #769 from eco/withdraw-lockup-sheet/SA-1030
+
+Withdraw lockup sheet/sa 1030,Merge branch 'SA-711' of https://github.com/eco/ecoSwiftUI into SA-711,some minor ui cleanup to code entry view,change flow to live in sheet,update style of number input view, calculate width,Merge remote-tracking branch 'origin/next' into SA-711,Merge pull request #766 from eco/feature-gate-illu
+
+[SA-1134] Add illustrations to feature gate view,Merge branch 'next' of https://github.com/eco/ecoSwiftUI into feature-gate-illu,Merge pull request #768 from eco/helix1
+
+[SA-1135] Added a few more tests to helix creator,Merge pull request #763 from eco/fix-card-application-kyc-pending/SA-1129
+
+Use KYC_PASSED as gate for card application,Reset LocalConfiguration,Remove unnecessary unwrap,Add withdraw lockup sheet, update EcoServiceException,Merge pull request #760 from eco/kyc-pending-feature-gate/SA-1014
+
+Add KYC Pending view after cognito flow from FeatureGate / Card,Merge pull request #724 from eco/SA-856_2
+
+Papaya Dark Mode!,few more tests,Remove unnecessary safeArea call,Use cognitoSheet modifier on notifications view, fix bug causing cognito sheet to be disabled from alert,connect recovery codes view,recover code ui,clean up,Recovery Code View,Phone Number Verified View,Verify Phone Number View,fix preview,fix for relink,Merge branch 'next' into feature-gate-illu,Enter Phone Number View,pr feedback,Resolve merge resolution bug,Merge pull request #765 from eco/helix1
+
+[SA-1123] [1/x] Implement client side helix creator,Merge remote-tracking branch 'origin/next' into SA-856_2,temp,Merge pull request #762 from eco/weekly-deposit-limit-copy/SA-1126
+
+Fix weekly deposit limit error copy,remove image,add illustrations to feature gate view,Merge pull request #761 from eco/max-withdraw-sheet/SA-848
+
+Add maximum withdrawal sheet to withdraw view,Merge pull request #764 from eco/eco-brandmark-icon
+
+[SA-1133] update eco brandmark icon to use actual icon asset and size,Resolve conflicts, move FeatureGateViewModel to separate file,updates,Merge pull request #751 from eco/plaidRelink
+
+[SA-1098] [1/x] adding plaid relink and refactoring how plaid link is displayed,test update,few more throws,more tests,added earl grey tests and updated broken test,new helix creator and tests,update eco brandmark icon to use actual icon asset and size,Ensure user is KYC_PASSED before allowing navigation to card application,Update error title phrasing to match deposit limit,Fix weekly deposit limit error copy,Add maximum withdrawal sheet to withdraw view,fix2,fix,Remove debug value,Add CognitoSheetModifier to encapsulate success/failure logic and push an IdentityVerificationPendingView onto navigation stack, add overLight surfaceContext since cognito uses a white background regardless of colorScheme,update,fixed feature gate,create ui for twofactor / twoFactorTextMessage views,Merge branch 'plaidRelink' of github.com:eco/ecoSwiftUI into plaidRelink,fixed relink request,Merge pull request #759 from eco/relink-style
+
+[SA-1112] Relink style,fix for crash,rebased,reverse,update style for re-link view,Merge pull request #756 from eco/update-firebase-tester-list
+
+[SA-1110] Adding Tyler and Stephanie to the distro list,Merge pull request #758 from eco/console-warnings/SA-915
+
+Console warnings clean up,And a few more,Fix several console warnings,Merge pull request #753 from eco/featureGateRelink
+
+[SA-1097] refactor of feature gate view and notification view navigation,Merge pull request #757 from eco/accountPlaidRelink
+
+[SA-1082] Account plaid relink,Adding Tyler and Stephanie to the distro list,removed unneccesary call,relink from account view,
+Merge pull request #755 from eco/SA-999
+
+add page view events to locked screen,Limit console warnings for statusBarStyle deprecation,remove whitespace,use root view model instead of user view model,Resolve console warnings,remove redundant identifier,track page view,Merge pull request #754 from eco/add-segment-logs-to-error-resolver/SA-1108
+
+Add analytics logs to error resolver,Add analytics logs to error resolver, add error messages for all errors,Merge pull request #752 from eco/error-handling-setup/SA-1100
+
+Error handling setup/sa 1100,updated color logic,Merge branch 'next' of github.com:eco/ecoSwiftUI into error-handling-setup/SA-1100,Merge pull request #742 from eco/SA-795
+
+Add necessary analytics events for Pinwheel,Merge pull request #750 from eco/updateTransferModel
+
+[SA-1093] refactored transfer api code,refactor of feature gate view and notification view navigation,Remove old graphQL schema.json,Implement response resolver for authenticated requests (SA-1101),Create server error, setup custom response validation, reorganize utilities folder,move functions to bottom; address onSuccess dispatch delay feedback,final pr feedback,pr feedback,added new method to network protocol,adding plaid relink and refactoring how plaid link is displayed,Merge pull request #749 from eco/papaya-upload-photo-fix/SA-1094
+
+Fix Papaya Web View Unexpected Reload,Merge branch 'next' into updateTransferModel,some updates,refactored transfer api code,Refactor BillPayView to only load the papaya url once, refactor PapayaWebView to load url request on view creation rather than view  update,Merge pull request #748 from eco/main
+
+[SA-1091] Merging main back into master to continue with 10.0,pr feedback,Merge pull request #747 from eco/accountRelink
+
+[SA-1090] [TBD] showing relinking error,showing relinking error,Merge remote-tracking branch 'origin/next' into SA-795,Merge pull request #741 from eco/SA-1077
+
+Bug: Failed withdrawals are displaying as "deposit failed" notifications,Merge pull request #744 from eco/firebase-distro
+
+[SA-1080] Adding ability to upload develop builds to Firebase app distribution,Merge pull request #745 from eco/unlink-sheet
+
+[SA-1081] minor cleanup to unlink sheet + font,Merge pull request #743 from eco/SA-1016
+
+Copy change: "Let's go" edit to "Sign-up" to be more clear, we got user feedback on this,minor cleanup to unlink sheet + font,remove hyphen,Remove debug/test stuff,change lets go to 'sign-up' on landing page,Testing workspace persist,add lifecycle events for payroll flow,add success analytics call,Adding ability to distribute a build to firebase,make sure transfer failed notification types handle both deposits and withdrawals,Merge pull request #716 from eco/SA-794
+
+Implement Pinwheel Native SDK,clean up,Merge pull request #740 from eco/SA-1051
+
+add missing data to mixpanel.identify api call (requested by compliance),cleanup,more pr feedback,Merge pull request #739 from eco/activateCard
+
+[SA-1067] fixed legacy users card issues on activation,add missing info as traits on mixpanel.identify call so compliance can use use the users profile to see accurate user info,pr feedback,Merge remote-tracking branch 'origin/next' into SA-794,Merge pull request #738 from eco/transactionDateFix
+
+[SA-1026] fixed date parsing issue,Merge branch 'next' of https://github.com/eco/ecoSwiftUI into activateCard,Merge branch 'next' of https://github.com/eco/ecoSwiftUI into transactionDateFix,fixed legacy users card issues on activation,Merge pull request #737 from eco/revert-640-SA-368
+
+Revert "Forgot Username",fixed date parsing issue,Revert "Forgot Username",Merge pull request #640 from eco/SA-368
+
+Forgot Username,cleanup,fix CI / animation,removed extra payrollView; added onDismiss callback to PinwheelView,Merge remote-tracking branch 'origin/next' into SA-794,Merge pull request #736 from eco/giftCardFix
+
+[SA-1064] fixed gift card formatting issue,fixed gift card formatting issue,Merge pull request #734 from eco/rewatch-narrative/SA-366
+
+Add watch eco's story to account view,Merge pull request #730 from eco/kyc-alerts/SA-909
+
+Kyc alerts/sa 909,Merge pull request #735 from eco/analyticsPostRegistration
+
+add a few analytics events,add a few analytics events,Merge pull request #733 from eco/prereqFix
+
+[SA-1050] removed kyc requirement from deposit action,Merge pull request #732 from eco/card-html-parsing-error/SA-760
+
+Log errors to segment for card HTML parsing,Merge pull request #720 from eco/recurringFix1
+
+[SA-1006] remove checks for recurring deposits,Revert HomeView.swift,Add watch eco's story to account view, small refactors to reuse onboarding narrative,removed kyc from deposit wall,Log analytics errors with log.error() for console logs,Log errors to segment for card HTML parsing,quick fix,Merge pull request #731 from eco/cognito-webview-ui-bugs/SA-904
+
+Prevent keyboard from resizing view during post registration Cognito flow,Merge pull request #729 from eco/deviceLock
+
+[SA-1017] locking devices when a user is locked,Prevent keyboard from resizing view during post registration Cognito flow,Remove whitespace,Correctly map KYC alerts to notification,Update kyc alerts copy,update,handle locked user in same session,locking devices when a user is locked,Update KYC alerts and feed items for new kyc flow,Merge pull request #728 from eco/num-pad-story
+
+fix numpad color in onboarding story,fix numpad color in onboarding story,Merge pull request #726 from eco/input-confirm-style
+
+[SA-1023] minor ui updates to input confirm UI,Merge pull request #727 from eco/post-registration-bug/SA-1020
+
+Force users to home screen if KYC passed,Force users to home if KYC passed,minor ui updates to input confirm UI,Merge pull request #725 from eco/add_slack_alerts_workflow
+
+[SA-1021] Adding slack alerts on comments and reviews,Merge remote-tracking branch 'origin/next' into recurringFix1,
+Adding slack alerts on comments and reviews,Merge remote-tracking branch 'origin/next' into SA-856_2,Merge pull request #723 from eco/kyc-pending-screen-post-reg/SA-981
+
+Kyc pending screen post reg/sa 981,clean up,missed file on last commit,add accessibility labels, comment out tests until anthony can help me debug running earl gray locally,update Earl Gray tests,final clean up,make changes to hit rest endpoint (that no longer returns a body),Merge pull request #714 from eco/SA-957
+
+add feature flag to enable testing max deposit amount remaining logic,pass isDarkMode bool to query,hit REST endpoint directly to get papaya token,pr feedback,call endpoint (WIP),Merge remote-tracking branch 'origin/next' into SA-368,clean up,pr feedback,Merge pull request #713 from eco/sa-808-endless-onboard-loop
+
+SA-808: Fixes infinite onboarding loop on iOS 14 devices due to SwiftUI nav bug,Merge pull request #715 from eco/SA-997
+
+Update Terms URL (from _may_2020 to regular terms url),Merge pull request #722 from eco/suggested-pills
+
+[SA-1008] move suggested amounts to model, change for instacart,Merge pull request #721 from eco/safari-updates
+
+[SA-1007] minor style updates to safari view,Merge pull request #718 from eco/jsonEncodable
+
+[SA-985] updated decoding logic,Update description copy,Resolve conflicts,Merge pull request #711 from eco/cognito-sharable-url-alert/SA-871
+
+Show alert if cognito KYC sharable URL request fails,Merge pull request #708 from eco/helix-animation-crash-fix/SA-972
+
+Fix crash after swiping during helix success animations,Show loading indicator after selfie check completes,Abstract bank sign in navigation flag,Merge branch 'next' of github.com:eco/ecoSwiftUI into kyc-pending-screen-post-reg/SA-981,Fix cognito webview selfie playback, decode cognito flow messages as objects,move suggested amounts to model, change for instacart,Merge remote-tracking branch 'origin/next' into helix-animation-crash-fix/SA-972,Merge pull request #719 from eco/billpay-primer
+
+[SA-1005] add billpay primer view,minor style updates to safari view,Merge pull request #717 from eco/fixAuthGQL
+
+[SA-1002] add network headers to unauthed gql,remove checks for recurring deposits,address feedback,temp,add billpay primer view,updated decoding logic,protocolize app session network,refactored gql and rest clients and created app session network abstraction,Reorder user interatction  logic,Prevent user interaction from enabling during helix animation,extract components; connect continue button with view that would open Pinwheel SDK,connect pinwheel primer view to action menu; extract strings,Merge remote-tracking branch 'origin/next' into SA-794,update urls (eco_terms and eco_terms_may_2022 have been updated to match so we don't have to specify the may_2022 ones anymore),add feature flag to enable testing max deposit amount remaining logic,Merge pull request #712 from eco/SA-952
+
+update help center url,add network headers to unauthed gql,Fixes infinite onboarding loop on iOS 14 devices due to SwiftUI nav bug,update help center url,added network call to forgotUsername endpoint,Merge pull request #694 from eco/SA-774_2
+
+bring over stoyans fix to a new branch (recurring deposits fix),Flip showErrorAlert default value to false,Show alert if cognito KYC sharable URL request fails,Merge pull request #709 from eco/kyc-passed-notification/SA-899
+
+Correctly handle KYC_PASSED feed items,Merge pull request #695 from eco/zero-hash-logo
+
+[SA-964] [DES-10] add zero hash logo to number pad, adjust number pad to only show continue button if entry is present,Merge pull request #710 from eco/pinwheel-primer
+
+[SA-1001] add pinwheel primer view,Create IdentityVerificationPendingView, adjust cognito webview callback,add pinwheel primer view,temp,Merge remote-tracking branch 'origin/next' into SA-368,connect action with placeholder screen; awaiting backend endpoint to connect SDK,move to computed var,fix padding,padding update,Merge branch 'next' into zero-hash-logo,put behind feature flag,Remove guard that checks for payload in feed items (payload is optional or some feed items),Disable user interaction on all scroll views during helix success animations,Merge pull request #705 from eco/cognito-webview-size-2
+
+Make cognito view take up near full screen, add "secure" title, try 2,Merge branch 'next' into cognito-webview-size-2,Merge pull request #701 from eco/helix-memory-crash-onboarding/SA-825
+
+Fix helix memory crash,Merge pull request #702 from eco/statusBar
+
+[SA-106] status bar fixes,Merge pull request #706 from eco/icon-update-2
+
+[SA-982] add eco brandmark outlined icon, update shield icon,Merge pull request #678 from eco/biometricsUpdates
+
+[SA-754] Biometrics updates,Rebased, added accessibility label to toggle, fixed test,Merge branch 'next' of https://github.com/eco/ecoSwiftUI into biometricsUpdates,Merge branch 'next' of github.com:eco/ecoSwiftUI into helix-memory-crash-onboarding/SA-825,remove view title,fix skip button,rebased,Merge pull request #707 from eco/decodingFix
+
+[SA-976] fixed decoding issue,Merge pull request #700 from eco/SA-960
+
+Clean up Transfer Error Enums,rebased,rebased,Merge pull request #690 from eco/deposit-story-refactor/SA-828
+
+Deposit story refactor/sa 828,Merge branch 'next' into deposit-story-refactor/SA-828,Merge pull request #696 from eco/lockedUsers
+
+[SA-955] Locked users,small change,fixed decoding issue,add eco brandmark outlined icon, update shield icon,second try making cognito near full screen. fix safe area which was causing overlap,Merge pull request #704 from eco/SA-804
+
+Create Feature Flag for Paycheck Action Button,updated test targets,color fixes,small update,uddates,
+Fix edit amount button not updating when amount is changed, rename DepositConfirmView to ConfirmInitialDepositView,Merge pull request #691 from eco/SA-359-auto-focus_2
+
+auto focus inputs on registration (same as stoyans pr just resolving merge conflict hell),Remove unused file,Simplify helixScene in swiftUI to avoid memory issues, only create helix once when view appears,Retain initial deposit amount when skipping recurring deposit in DepositStoryView,fetch Payroll feature flag from launch darkly; have this control whether or not to show the action; add identify method to feature flag provider; identify user with User Id not bearer token,Merge pull request #703 from eco/username-email
+
+[SA-971] change login username field to explicitly support email as well,hopefully final changes,change login username field to explicitly support email as well,remove invalidate in resetContext,Merge branch 'next' into biometricsUpdates,pr feedback,fixed race condition on startup,add introspect to test target,rebased,fixed home view,few changes,status bar fixes,Fix helix memory crash caused by helixScene not retaining state,Merge branch 'next' into deposit-story-refactor/SA-828,Merge pull request #699 from eco/refer-cleanup-2
+
+[SA-967] minor cleanup to refer view,Merge pull request #698 from eco/refer-link-display
+
+[SA-966] drop https from display of refer link,Merge pull request #697 from eco/transactionsFix
+
+[SA-954] Updated pagination logic,fix CI issue; address QA concern;,clean up,remove redundant published vars in transfer view models (with withdraw error / deposit error / activeAction overlap); clean up some methods in transfer view model by using existing guards. remove alerts / handleAsyncTask since we are using our custom sheet to show error labels,minor cleanup to refer view,drop https from display of refer link,Merge pull request #693 from eco/update_github_webhook_logic
+
+[SA-959] Added labeled trigger to GH action, removed slack from webhook,updated pagination logic,add bottom padding for small devices,updates,added background,add zero hash logo to number pad, adjust number pad to only show continue button if entry is present,Use selected bank account first, otherwise first account,bring over stoyans fix to a new branch,Added labeled trigger to GH action, removed slack from webhook,locking out locked users,small change,udpated startup logic,Merge pull request #692 from eco/paycheck-menu-item
+
+add paycheck menu item + icon, hide behind flag,almost another total refactor,add paycheck menu item + icon, hide behind boolean,auto focus inputs on registration (same as stoyans pr just fixing the merge conflict hell),updated logic,Fix textField tappable on DepositStoryAmountView,Remove unused popupSheet,Rename _StoryTimer -> StoryTimer, use correct analytics client in Deposit Story,Resolve conflicts,Add files to tests target,Remove unused files, clean up file locations,Rename startingStory to postRegistration, refactor post registration views to use postRegistrationViewModel,Merge pull request #689 from eco/cardDetailsCrash
+
+[SA-940] fixed card details crash on bad response,Merge pull request #688 from eco/update_bank_link_language
+
+[SA-943] Updating language for initial deposit confirmation,fixed card details crash on bad response,Merge branch 'next' into biometricsUpdates,update,Updating language for initial deposit confirmation,finished migration + refactor,Merge pull request #687 from eco/SA-850
+
+add line breaks to transaction contact support email,remove comma,add line breaks to transaction contact support email,Revert RootView.swift,Create BaseStoryActFactory, add factories for deposit story, update onboarding factories to use new base factory,Merge pull request #685 from eco/fix-cancel-recurring-deposit-dismiss/SA-933
+
+Fix cancel recurring deposit dismiss/sa 933,Merge pull request #686 from eco/cognito-error-analytics-crash
+
+[SA-936] Fix cognito crash caused when logging error to segment,Fix cognito crash caused when logging error to segment,Resolve merge conflicts,Merge pull request #682 from eco/update-helix-after-recurring-deposit/SA-796
+
+Update helix after recurring deposit changes,Update recurring deposit view to only dismiss popupSheet after cancelling deposit,Fix deposit success animation,Fix helix animation for recurring deposits,Merge pull request #684 from eco/fix_workflow_urls
+
+[SA-932] Fixing type in GH action workflow,Merge pull request #670 from eco/SA-753
+
+Add Feature Flag for deep linking into Merchant apps,Fixing type in GH action workflow,Merge remote-tracking branch 'origin/next' into SA-753,API / Schema updated on its own. fixed issue where terms was showing up for users with 5 terms accepted,Merge pull request #683 from eco/update_gh_workflow
+
+[SA-928] Updating workflow to use env vars,minor update,Updating workflow to use env vars,Add logic to refresh helix bar widths on data model changes, refactor helix scene lazy vars into functions, move models to separate files,Merge pull request #679 from eco/fullSheetCoverFix
+
+[SA-765] fixed ios14 crash,updated logic,added period,Merge pull request #681 from eco/SA-792-pinwheel-sdk
+
+-add pinwheel sdk,Merge pull request #680 from eco/animationFix
+
+[SA-323] animation fixes,Merge pull request #676 from eco/SA-818-nav-refactor
+
+Sa 818 nav refactor,-add pinwheel sdk,animation changes,fixed ios14 crash,update migration logic,removed 2nd faceID key,refactored foregrounding logic,wip,Merge pull request #668 from eco/depositMessages
+
+[SA-457] updated deposit messaging,-update to xcode 13.3.1,rebased and resolved conflicts,log giftcard id,fix rookie mistake,wip on auth,
+Merge branch 'next' into SA-818-nav-refactor,-add package back in,refactoring post registration flow to use navigation modifier,Merge pull request #675 from eco/fix-circleci-fastlane
+
+[SA-916] Add fastlane deps to upload symbols job,Add fastlane deps to upload symbols job,Merge pull request #674 from eco/onboarding-narrative-text-wrapping-ios-14/SA-723
+
+Onboarding narrative text wrapping ios 14/sa 723,Merge pull request #673 from eco/enable_landing_page_tests
+
+[SA-893] Enabling and adding landing page tests,Merge remote-tracking branch 'origin/next' into SA-368,add analytics logging,don't throw if launch darkly flags are missing, instead return default values; address pr feedback,erase commented code; move all logic into view model;,Fix onboarding surfaceContext in act 5,Enabling and adding landing page tests,Fix iOS 14 text padding in onboarding narrative,Merge pull request #672 from eco/revert-664-cognito-webview-size
+
+Revert "increase size of cognito webview, add "secure" title",move logic out of view into click handler in vm; make flag a json object instead of a bool,Revert "increase size of cognito webview, add "secure" title",Merge pull request #671 from eco/implement-story-refactor/SA-678
+
+Implement story refactor/sa 678,Merge pull request #669 from eco/SA-378_x
+
+eco points on referral view,Fix story timer unit tests,pr feedback,Fix migrating user navigation,Merge pull request #660 from eco/newTerms2
+
+[SA-381] Terms migration,Rename story act <-> scene,fixed prime URL,Revert LocalConfiguration.swift,Add stack navigation style to MigratingUserView,Merge pull request #667 from eco/add-lastPageView-to-lifecycle-events/SA-815
+
+Add last page view to lifecycle events/sa 815,Merge pull request #666 from eco/fix-terms-sheet-crash-ios14/SA-797
+
+Fix terms sheet crash on iOS 14,Replace existing onboaring story with OnboardingNarrativeView using StoryView,Merge pull request #659 from eco/story-timer-unit-tests/SA-745
+
+Story timer unit tests/sa 745,Merge pull request #658 from eco/refactor-story-analytics/SA-743
+
+Refactor story analytics/sa 743,Include all info from pageViewEvent in lifecycle events,move vm to own file,ui cleanup,updated deposit messaging,Merge pull request #663 from eco/ant/QA-9_EarlGreyAgain
+
+[SA-819] QA-9 Adding EarlGrey with submodule,temp,Merge pull request #664 from eco/cognito-webview-size
+
+increase size of cognito webview, add "secure" title,reset,Merge branch 'next' of https://github.com/eco/ecoSwiftUI into cognito-webview-size,Merge pull request #656 from eco/deposit-keypad
+
+use eco custom keypad in deposit story,Add missing pageView events on deposit and withdraw views,Add lastPageView to lifecycle analytics events, move DebugAnalyticsClient to separate file, share analyticsClient between appSession and userSessionService,Fix error flagging,Merge branch 'next' of github.com:eco/ecoSwiftUI into story-timer-unit-tests/SA-745,Fix terms sheet crash on iOS 14,Updating CI for real,Merge pull request #665 from eco/kyc-pending
+
+add kyc pending as a feature gate,Merge pull request #662 from eco/fix-kyc-refresh-after-background/SA-810
+
+Prevent cognito webview from reloading after backgrounding app,add kyc pending as a feature gate,remove helper view,increase size of cognito webview, add title,Fixing CI,QA-9 Adding Earlgrey hopefully for the last time,reset,updating object,Remove whitespace,Remove debug delay,Prevent cognito webview from reloading after backgrounding app,terms migration changes,temp,Add story timer unit tests, enable code coverage for dev scheme,wip on terms,Update comment on storyDidEndEvent,Integrate analytics events into StoryView,Merge pull request #655 from eco/update-onboarding-scenes/SA-745
+
+Update onboarding scenes/sa 745,Merge pull request #654 from eco/ant/update-ci-for-release-workflow
+
+[SA-803] Fixed dsym upload step not appearing in release pipeline,Merge pull request #647 from eco/upgrade-xcode-and-alamofire/SA-777
+
+Upgrade xcode and alamofire/sa 777,center faceID toggle,Merge branch 'next' of https://github.com/eco/ecoSwiftUI into deposit-keypad,Merge pull request #657 from eco/SA-573
+
+Toggle Whitelist via Launch Darkly,use feature flag when determining whether to enforce whitelist,Revert LandingView.swift,wip,use eco custom keypad in deposit story,Reset Package.resolved,Fixing CI hopefully,Tweak layout to onboarding narrative story,Merge pull request #650 from eco/helix-aa
+
+[SA-782] enable antialiasing for helix scene,Convert SceneContext to enum, fix layout issues,Merge pull request #649 from eco/SA-781
+
+protocolize userSessionNetwork,Merge pull request #652 from eco/home-and-action-menu-accessibility
+
+Add accessibility labels to action menu and home view,Merge pull request #651 from eco/SA-670-terms
+
+Revert terms remove,Address copy feedback,-adding analytics,Add accessibility labels to action menu and home view,Convert remaining onboarding scenes for use in factories,Merge pull request #634 from eco/request-biometrics-on-foreground/SA-705
+
+Request biometrics on foreground/sa 705,fix ci (again?),rename files to fix CI,Revert "remove terms sheet full screen cover (will introduce again post launch)"
+
+This reverts commit 89b5ffdedddb17dba2b6ccd0d78e3f781f2c0cd6.,Add _Neighbors scene for new story view, small tweaks on story view,Fix onboarding text not centering properly, simplify frame logic,move protocols to separate files,enable antialiasing for helix scene,Clean up biometrics on foreground modifier,Add splash overlay when returning to landing from biometrics failure,Merge pull request #646 from eco/concurrency-crash-get-user/SA-776
+
+Fix concurrency crash on launch,Merge pull request #648 from eco/appSessionFeatureFlags
+
+[SA-757] new app based feature flag provider,
+Merge pull request #642 from eco/SA-429_2
+
+small accessibility fixes,pr feedback,protocolize userSessionNetwork,PR feedback,new app based feature flag provider,Update circleci to build on Xcode 13.3.1,Update package schema to version 2, update alamofire to 5.6.0,Merge pull request #639 from eco/ant/SA-763
+
+SA-763 Fix Google plist, update slack alert, add manual symbol upload step,Merge pull request #645 from eco/missing_events
+
+[SA-775] add missing events,Merge pull request #644 from eco/app-version
+
+[SA-773] minor style update to app version string,Fix incorrect variable reference,Rename variable,Make getUser a synchronous request to fix concurrency crash on launch, call segment identify once after successful user load,Fix helix animation stutter on foreground after biometrics, fix biometrics and blurview timing, ignore biometrics system cancelled error,Merge pull request #643 from eco/feedItemDecodingFix
+
+[SA-772] hopefully fixed feed item decoding issue,add missing events,minor style update to app version string,hopefully fixed feed item decoding issue,Fix biometrics showing when disabled in settings,Fixed param,Merge branch 'next' of github.com:eco/ecoSwiftUI into request-biometrics-on-foreground/SA-705,Update biometrics on foreground background to blur view,Merge branch 'next' of https://github.com/eco/ecoSwiftUI into ant/SA-763,Merge pull request #641 from eco/withdrawal-invalid-copy
+
+update invalid withdrawal copy,add accessibility labels in loginView / numberAmountTextView,Merge pull request #620 from eco/try_again
+
+same as the other transfer view model clean up PR (seeing if this builds for anthony),Merge remote-tracking branch 'origin/next' into try_again,add back empty stub for deposit error,update invalid withdrawal copy,Merge pull request #638 from eco/threeDecimals
+
+[SA-594] Changed to 3 decimals,Merge pull request #637 from eco/inputShakeFix
+
+[SA-679] fixed shaking edge cases,Merge pull request #636 from eco/missingMerchantCode
+
+[SA-752] updated backup merchant code if deeplink unavailable,Merge pull request #635 from eco/info-contact
+
+update personal info disclaimer, add support for sending email,Merge pull request #633 from eco/merchantSpendLabel
+
+[SA-755] fixed sizing on merchant spend, removed unused view,Get CI working,added reset username view + viewmodel; awaiting new endpoint to finish viewmodel,SA-763 Fix Google plist, update slack alert, add manual symbol upload step,changed to 3 decimals,fixed shaking edge cases,updated to handle default values sizing,updated backup merchant code if deeplink unavailble,update personal info disclaimer, add support for sending email,Fix biometrics requested after return to login, cleanup,Add biometrics prompt when returning from background,Update README.md
+
+13.2.1,Merge pull request #632 from eco/SA-483
+
+add min height to card details screen,Merge remote-tracking branch 'origin/next' into try_again,fixed sizing on merchant spend, removed unused view,Merge pull request #631 from eco/SA-707
+
+remove help center and instead link to intercom,Merge pull request #630 from eco/small-screen-onboarding
+
+minor narrative updates for small screens,Merge pull request #625 from eco/stories-refactor-pt2/SA-678
+
+Stories refactor pt2/sa 678,add min height to card details screen,remove native help center; link to intercom instead,minor updates for small screens for narrative,Merge pull request #624 from eco/native-schema
+
+[SA-740] use native app schema for merchant spend link,Merge pull request #629 from eco/row-shape
+
+[SA-749] add contentShape to row component,Merge pull request #628 from eco/addUnitTestToAppVersionLogic
+
+[SA-748] Add unit test to app version logic,add contentShape to row component,Merge pull request #626 from eco/update-existing-scenes-for-new-story-view/SA-745
+
+Add scene factories for onboarding story, update YourMoneyUsedToWorkF…,Merge pull request #627 from eco/fix-transaction-details-amount-color/SA-747
+
+Fix transaction details amount color,add unit tests for invalid server version format,Remove low_opacity color for zero dollar/point transactions,Use double rather than int for transaction details amount color calculation,Add files to tests target,Add files to tests target,Add scene factories for onboarding story, update YourMoneyUsedToWorkForYou view, add OnboardingStoryView,Fix previous scene visible when navigating back to landing,Convert story timer to state object, add defaultPageInterval, only render current and neighboring scenes,use native schema if available,clean up code,fix issue with lhs comparison method erroneously returning false,add extension for bundle to get app version; add unit test to appVersion logic,fix version number to handle different formats,Merge pull request #615 from eco/card-terms-crash-fix/SA-722
+
+Card terms crash fix/sa 722,Merge pull request #619 from eco/SA-734
+
+Update gift card redemption instructions (specifically amazons),Merge branch 'next' of https://github.com/eco/ecoSwiftUI into card-terms-crash-fix/SA-722,Merge pull request #621 from eco/acitivity-cell-touch-effect
+
+[SA-737] add touch effect to activity cell,Merge pull request #618 from eco/font-fix
+
+[SA-736] update ecofont to not translate autolayout constraints,Merge pull request #617 from eco/kycFields
+
+[SA-735] making kyc fields all optional,remove,add touch effect to activity cell,Merge pull request #616 from eco/cardAddressFix
+
+[SA-724] fixed zip code issue,take two,clean up,padding adjust,Merge pull request #611 from eco/story-refactors/SA-678
+
+Story refactors/sa 678,Update gift card redemption instructions (specifically amazons),clean up,Merge pull request #614 from eco/migrate-pull-request-action
+
+[SA-730] Reference pull request github action from eco repo,update ecofont to not translate auotlayout constraints,making kyc fields all optional,fixed zip code issue,Add comment to remove flag after raising minimum version or upgrading to Xcode 13.3,Add compiler flag to potentially fix card terms crash,Fix act reference for future scenes,Reference pull request github action from eco repo,Add scene-based timing to StoryView,Merge pull request #613 from eco/kycFix
+
+[SA-727] fixed KYC nuking,fixed KYC nuking,Feedback and comment clean up,
+Add files to tests target,Comment clean up,Remove test story,Add new story components to project,Merge pull request #610 from eco/spend-screen-offset
+
+[SA-710] Spend success animation offset,Merge pull request #608 from eco/cardActivationFix5
+
+[SA-708] fixed apple pay in card activation,Merge pull request #607 from eco/login-registration-tap-events/SA-677
+
+Add tap events to login and registration,Merge pull request #606 from eco/notif-colors-3
+
+[SA-703] update important notif button colors,reset,reset,use correct screen offset,possibly fixed dismiss issue,fixed apple pay in card activation,Add tap events to login and registration,update important notif button colors,Merge pull request #605 from eco/finishing_touches
+
+[SA-701] alertPlaidRelinkRequired typo,alertPlaidRelinkRequired typo,Merge pull request #602 from eco/merchant-success/SA-696
+
+Trigger success animation on successful merchant spend,Merge pull request #604 from eco/points-banner-update
+
+[SA-700] Points banner update,Revert Package.resolved,Merge pull request #603 from eco/SA-666,fix,Merge branch 'next' into merchant-success/SA-696,Merge pull request #599 from eco/opacityDuringAnimation
+
+[SA-693] Opacity during animation,reset,minor update to points banner,use purple for points particles for now, which is the same color we use on the dashbaord,update cash particle end position,Merge pull request #601 from eco/SA-692
+
+FAQ content scrub,copy scrub,Merge branch 'next' into SA-692,Merge pull request #600 from eco/SA-691
+
+remove hiring FAQ,Trigger success animation on successful merchant spend,FAQ content scrub,Merge pull request #597 from eco/SA-687
+
+fix eco points case,remove hiring FAQ,Merge pull request #595 from eco/SA-686
+
+Manage Card title case corrections,Merge pull request #598 from eco/helix-withdraw-animation/SA-681
+
+Add helix withdraw animation to successful withdraw,Merge pull request #596 from eco/success-anim-spend
+
+[SA-688] Success anim spend,Merge pull request #510 from eco/helix-updates-2
+
+[SA-563] Helix display / timescale updates,rebased,revert local config,fixed opacity issue,fix typos,Remove unused var,Add helix withdraw animation to successful withdraw,adjust timing curve,fix eco points case,reset,reset,add spend success anim,Merge pull request #594 from eco/SA-685_2
+
+rename earnings -> APY Reward,Merge pull request #593 from eco/SA-680
+
+fix cashback copy,Merge pull request #592 from eco/card-terms-links/SA-659
+
+Card Terms Links,Merge pull request #591 from eco/cardAppChanges
+
+[SA-676] Few tweaks on card application flow,extract strings from body; fix title case inconsistencies,rename earnings to APY reward,fix cashback copy,Merge branch 'next' into card-terms-links/SA-659,Merge pull request #590 from eco/login-registration-pageviews/SA-581
+
+Login registration pageviews/sa 581,Merge pull request #589 from eco/migrationFix
+
+[SA-448] fixed migration,Add selection pop up to card terms text, underline links,Merge pull request #588 from eco/splash-error
+
+update splash error view,Few tweaks on card application flow,Merge branch 'next' of github.com:eco/ecoSwiftUI into login-registration-pageviews/SA-581,Add ability to enable/disable logs separately,Add login and registration page view events,Merge pull request #587 from eco/onboarding-story-time
+
+[SA-675] revert onboarding story timing to 3s per slide,Merge pull request #586 from eco/withdrawal-success-anim
+
+[SA-674] create withdrawal success anim, still needs to be hooked up,Merge pull request #584 from eco/remove_terms_sheet
+
+remove terms sheet full screen cover (will introduce again post launch),Merge pull request #582 from eco/throw_on_400
+
+throw errors on error response,fixed migration,Merge pull request #583 from eco/newCardState
+
+[SA-660] Handing flow for physical card only, unactivated,update splash error view,revert onboarding story timing to 3s per slide,reset,create withdrawal success anim, still needs to be hooked up,Merge pull request #585 from eco/migrationFix
+
+[SA-448] updated keychain logic,updated keychain logic,Merge pull request #579 from eco/SA-605_2
+
+call analytics.identify on user data did load,remove terms sheet full screen cover (will introduce again post launch),Merge branch 'next' of github.com:eco/ecoSwiftUI into login-registration-pageviews/SA-581,whoops,added state for physical card unactivated only,Merge pull request #580 from eco/SA-665
+
+remove biometrics check every 3 min,Merge pull request #581 from eco/encryptPinChanges
+
+[SA-266] Fixed reset pin (encryption changes),Merge pull request #577 from eco/login-face-id/SA-661
+
+Remove unneeded Task block, reset LA context after biometrics response,validate remaining AF.request calls,reverted local config changes,throw errors on error response,removed apollo dependency,Fix biometrics bug where user is logged in after failing biometrics and tapping return to login,removed unused extension,removed logging,reset pin working,remove biometrics check every 3 min,call analytics.identify on user data did load,Merge pull request #576 from eco/fix-get-started-button/SA-662
+
+Fix get started button not tappable,Merge pull request #578 from eco/cardFix7
+
+[SA-664] Apple Pay Logging,Merge pull request #572 from eco/alert-notification-actions/SA-442
+
+Alert notification actions/sa 442,
+added logging to figure out apple pay view not dismissing,Remove unneeded Task block, reset LA context after biometrics response,Fix get started button not tappable,Refactor analytics event structure,Merge pull request #575 from eco/sign-in-icons
+
+[SA-663] update icons for bank sign in view,Resolve conflicts,wip,update icons for bank sign in view,Merge pull request #574 from eco/SA-552-story-return
+
+SA-552 -fix merge err,-fix merge err,Merge pull request #573 from eco/revert-567-SA-552-story-return
+
+Revert "Sa 552 story return",Revert "Sa 552 story return",Merge pull request #567 from eco/SA-552-story-return
+
+Sa 552 story return,Merge branch 'next' into SA-552-story-return
+
+# Conflicts:
+#	Shared/Core/Components/Carousel/EcoCarousel.swift
+#	Shared/Core/Unauthenticed/Registration/Views/FullNameView.swift,Merge pull request #571 from eco/pw-bold-input
+
+[SA-658] use bold input for password field,reset,Merge pull request #570 from eco/sheet-terms-checkboxes/SA-657
+
+Fix terms sheet checkboxes on home view (iOS 14),Merge pull request #569 from eco/SA-656-terms-accepted
+
+-fixing tos check,Merge pull request #568 from eco/reg-copy
+
+Registration copy updates from content team,Merge pull request #545 from eco/SA-177-biometrics-app-foreground
+
+Sa 177 biometrics app foreground,Resolve conflicts,Merge pull request #562 from eco/card-kyc-flow/SA-558
+
+Card kyc flow/sa 558,use bold input for password field,revert local config,small tweak,Fix terms sheet checkboxes on home view,-fixing tos check,Merge branch 'next' into card-kyc-flow/SA-558,Merge branch 'next' into SA-177-biometrics-app-foreground
+
+# Conflicts:
+#	Shared/Core/Components/Carousel/EcoCarousel.swift
+#	Shared/Core/Root/ViewModels/RootViewModel.swift
+#	Shared/Core/Root/Views/AppLoadingView.swift
+#	Shared/Core/Unauthenticed/Landing/Views/NarrativeScenes/EcoFeatures.swift,reset,another change,initial tweaks to registration copy,-pass authClient to BiometricsAuthView,Merge pull request #566 from eco/onboarding-story-analytics/SA-612
+
+Onboarding story analytics/sa 612,Merge pull request #559 from eco/SA-622_2
+
+App Upgrade Blocking Screen,-revert bad merge,-fixing the pause toggle for carousel with ultra transperancy,Remove unused var,Clean up files,Resolve conflicts,-temp fix to navigate back to landing,Fix act references,Add analytics events for onboarding story,Merge branch 'next' into SA-552-story-return,-fixing the pause toggle for carousel with ultra transperancy,Merge branch 'next' into SA-177-biometrics-app-foreground,Merge pull request #556 from eco/card_address_capitalized
+
+[SA-643] capitalize user address/ remove deactivate account button,Merge pull request #563 from eco/fix_another_type_error
+
+[SA-652] Fixing another type error in fastfile,Merge pull request #553 from eco/physicalCardFix
+
+[SA-641] fix for card crash,Merge pull request #564 from eco/fix_conflict
+
+[SA-653] fix conflict,fix conflict,Merge pull request #560 from eco/contribs
+
+[SA-648] Add contributors easter egg view,Merge branch 'next' of https://github.com/eco/ecoSwiftUI into contribs,Merge pull request #555 from eco/SA-640
+
+track transaction details page view,Merge pull request #554 from eco/SA-639
+
+page view tracking for feature gate view,Merge remote-tracking branch 'origin/next' into SA-639,Merge remote-tracking branch 'origin/next' into SA-640,Fix type error.. again,Merge pull request #557 from eco/monospace-card-numbers
+
+[SA-644] use monospace font for card numbers, date, cvv,Merge pull request #552 from eco/stringFormatFix
+
+[SA-638] small format fix,Merge pull request #551 from eco/illu-card-screen
+
+[SA-637] update illustrations for not-available card screen,Merge pull request #550 from eco/SA-628_3
+
+add page view tracking events to card flow,Merge pull request #549 from eco/track-lifecycle-events/SA-606
+
+Add app lifecycle event tracking,-adding pause toggle back to carousel,remove capitalization on copy address,Merge pull request #561 from eco/touch-id-login-crash/SA-646
+
+Fix TouchID login crash,-merge and refactor variables into homeviewmodel,Merge branch 'next' into SA-177-biometrics-app-foreground
+
+# Conflicts:
+#	Shared/Core/Home/Views/HomeView.swift,rebase + new formula,Merge branch 'next' into SA-177-biometrics-app-foreground,Merge pull request #532 from eco/SA-527-unaccepted-tos
+
+Sa 527 unaccepted tos,Fix TouchID login crash,add missing page view events to card flow,Merge remote-tracking branch 'origin/next' into SA-628_3,remove unnecessary .environmentObject(userViewModel) (already in the env),reset,reset,fix iphone 8,add logic / ui for blocking app if app version does not meet minimum supported version,Merge branch 'next' into contribs,more progress,Merge branch 'next' into SA-527-unaccepted-tos
+
+# Conflicts:
+#	Shared/Core/Components/Checkbox/TermsCheckbox.swift
+#	Shared/Core/Home/Views/HomeView.swift,format address in model object instead of views,reset,use monospace font for card numbers, date, cvv,capitalize user address/ remove deactivate account button,track transaction details page view,Merge pull request #546 from eco/helixEmptyState
+
+[SA-632] finished empty state view,page view tracking for feature gate view,fix for card crash,small format fix,small change,fixed empty state 0 response from server,clean up,no fudging,minor cleanup,reset,update illustrations for not-available card screen,add page view tracking events to card flow,Fix typo,
+Add app lifecycle event tracking,WIP commit to play with,Merge pull request #526 from eco/cardFix5
+
+[SA-599] [SA -443] fix card activation stuck navigation,Merge pull request #548 from eco/disableFirebasePerformance
+
+[SA-636] updated p list,Merge pull request #547 from eco/SA-572-gql-headers
+
+Headers for gql and http,Merge branch 'next' into helix-updates-2,updated p list,Fix flag for card KYC,Update images in card flow, fix layout issue,Add card image assets,-insert instead of append, dont know y this is a thing,fixed crash,Add alert notification actions for KYC and Plaid relink,Merge branch 'next' into cardFix5,quick fix,correct rebase,-pulled out all the headers for http and gql
+-added all headers to the apollo and http clients
+-refactored to use authToken name for vars,addressed changes, not compiling after rebase,rebased,finished empty state view,-define seconds in comments,Merge branch 'next' into SA-177-biometrics-app-foreground,-added logout to the failed launch view
+-refactored the network error and biometrics error to use the same components,Update card KYC flow,Merge pull request #538 from eco/cardTerms
+
+[SA-619] added card terms,Merge branch 'next' into cardTerms,-generalizing AppLoadingSplash,Merge pull request #541 from eco/SA-615
+
+authenticated analytics events,Merge remote-tracking branch 'origin/next' into SA-615,-checking for biometrics before updating if we need to force reauth
+-updated keychain policy to allow for device passcode fallback
+-todo rootviewmodel.handleStartup throws user into landing if they cancel auth, but doesnt clear keys or do any logout-> create ticket
+-todo need add a "return to login" button to the AppLoadingSplash view on user cancel or failure -> create ticket,Merge pull request #544 from eco/ios-14-4-published-bug/SA-603
+
+Fix Terms buttons on iOS 14.4 and earlier,Merge pull request #539 from eco/revert-helix-animations/SA-569
+
+Revert helix animations/sa 569,Revert "removed unnecessary user default"
+
+This reverts commit 06163b120da95b8212e12185c82dd7383f3b6dfb.
+
+fixing the  case where user can auto log in due to persistent keychain,-updating naming,Merge pull request #531 from eco/SA-592
+
+remove dead code; increase tap area for TransferSuggestionPillButtons,remove server requests,remove backend event; add event for transfer suggestion amount pill taps,-made reauth into a full cover sheet
+-work now, need to fix cancel on auth for first open and add back to login
+-todo reintroduce the loggedin user default,Merge pull request #543 from eco/more-narrative
+
+[SA-627] More narrative changes from Andy,Merge pull request #542 from eco/fix_fastlane_slack_alert
+
+[SA-623] Fixing broken type in slack alert,Merge branch 'next' into SA-177-biometrics-app-foreground
+
+# Conflicts:
+#	GoogleService-Info.plist
+#	Shared/Config/LocalConfiguration.swift,-adding AuthSceneModifier.swift,Merge remote-tracking branch 'origin/next' into SA-592,Merge pull request #537 from eco/cardFix6
+
+[SA-616] small card changes,apply content shape to content of button, not button itself,Merge pull request #536 from eco/SA-591
+
+Change tap targets on ToS agreement (from Andy),Add iOS14SafePublished property wrapper, update all subclass viewmodels to use wrapper,Merge pull request #533 from eco/SA-539-tos-back-disable
+
+-hidding back navigation once user accepts TOS,Merge branch 'next' into SA-539-tos-back-disable,reset some files,final tweaks,Fixing broken type in slack alert,authenticated analytics events,Merge pull request #540 from eco/fix_fastlane_typo
+
+[SA-621] Fix fastlane typo,fix typo and argument in fastlane, update cci,Merge pull request #530 from eco/SA-556_2
+
+add transaction id and user id to email copy,Show helix animation for deposit, not withdraw,Remove helix animations for deposit and merchant spend,added card terms,small card changes,Merge branch 'next' into SA-556_2,Merge pull request #525 from eco/analytics-events/SA-586
+
+AnalyticsEvents structure / naming,Merge branch 'analytics-events/SA-586' of https://github.com/eco/ecoSwiftUI into analytics-events/SA-586,Merge remote-tracking branch 'origin/next' into analytics-events/SA-586,Merge branch 'next' of https://github.com/eco/ecoSwiftUI into analytics-events/SA-586,Merge pull request #517 from eco/points-info-updates
+
+update points info view based on feedback,Merge pull request #535 from eco/ApplePayTest2
+
+[SA-613] Apple Pay,make entire row clickable to check the terms box; make only the terms name clickable for hyperlink,apple pay entitlements and navigation changes,Merge pull request #534 from eco/stateMemoryLeak
+
+[SA-607] fixed memory leak,Merge pull request #520 from eco/TaskBlocks
+
+[SA-596] Task audit, slight keychain refactor,removed unknown state,reverted local change to test,fixed memory leak,-hidding back navigation once user accepts TOS,-restore normal config,Merge branch 'next' into SA-527-unaccepted-tos,-updating click on TermsCheckbox.swift
+-adding full modal view for terms on home
+-removing sheet logic since its not working on some older devices,more narrative work to address feedback,Merge pull request #514 from eco/SA-566
+
+add dismiss button to card details view,Merge branch 'next' into SA-566,pr feedback,Merge pull request #524 from eco/cardAddress
+
+[SA-588] fixed change card address state issues,remove dead code; increase tap area for TransferSuggestionPillButtons,Merge pull request #527 from eco/bad-card-state-error/SA-600
+
+Throw error for unhandled eligible cards,Merge pull request #529 from eco/ant/SA-602
+
+SA-602 Re-add next to CI build-and-test-develop workflow,add transaction id and username to email copy,Fix typos,remove tsan,pushed more fixes,Merge pull request #521 from eco/lithic_card
+
+[SA-597] Remove Lithic from Transaction Details view,Merge branch 'next' of https://github.com/eco/ecoSwiftUI into ant/SA-602,Merge pull request #518 from eco/ant/SA-550
+
+SA-550 Updating fastlane for prod build lane,Merge pull request #518 from eco/ant/SA-550
+
+SA-550 Updating fastlane for prod build lane,Merge pull request #523 from eco/cardNavigation
+
+[SA-595] fixed card navigation issue for those in legacy state,Merge pull request #522 from eco/avatar-hair
+
+[SA-598] based on feedback, update default profile pictures to have hair to be less gendered,Merge branch 'next' into lithic_card,Merge pull request #519 from eco/loading-ivew
+
+remove placeholder text, add gradient fade,Throw error for unhandled elligible cards,fix card activation stuck navigation,
+Merge pull request #516 from eco/fix-activity-cell-date-format/SA-587
+
+Fix short date formatter function not using time parameter,Merge pull request #512 from eco/cardFix
+
+[SA-565] fixed paused card issue,Separate analytics events into individual enums, create trackPageView modifier,Fixed address,fixed change card address state issues,fixed card issue for those in legacy state,fixed switch,based on feedback, update default profile pictures to have hair to be less obviously male,renome lithic from name for returns / rewards / clawbacks,updated changes,Task audit, slight keychain refactor,remove placeholder text, add gradient fade,SA-550 Updating fastlane for prod build lane,reset,update points info view based on feedback,Merge pull request #515 from eco/notification-date/SA-471
+
+Display notification date information,Merge pull request #513 from eco/login-fullname
+
+add login link from full name view,-adding terms modal to the home screen,Fix short date formatter function not using time parameter,Display notification date information,reset,add dismiss button to card details view;,add login link from full name view,Merge pull request #511 from eco/initial-deposit-placeholder/SA-467
+
+Show placeholder text on appear for onboarding initial deposit screen,initial progress on contributors view,fixed paused card issue,Show placeholder text on appear for onboarding initial deposit screen,reset,Merge pull request #509 from eco/txn-details-color
+
+[SA-560] fix eco logo color in txn view,fix eco logo color in txn view,Merge pull request #508 from eco/Analytics
+
+[SA-559] emit events that match existing events for Deposit / Withdraw / Purchase / Recurring Deposits,Merge pull request #507 from eco/onboarding-story-navigation-ios-14/SA-545
+
+Onboarding story navigation ios 14/sa 545,minor fixes,update contributions/interest,Merge pull request #505 from eco/helix-layout-model-minmax
+
+[SA-557] Helix layout model minmax,Merge pull request #506 from eco/SA-526_3
+
+[Regression] Failed : Reset password from log in screen,Merge branch 'next' into SA-526_3,Cleanup PagerIndicatorNavigationModifier,add max current bar function, smoothing function,emit events that match existing events for Deposit / Withdraw / Purchase / Recurring Deposits,Merge pull request #501 from eco/entitlements
+
+[SA-549] apple pay entitlements,Fix navigation bar style in onboarding story after returning from UsernameView,Merge pull request #502 from eco/biWeekly
+
+[SA-551] clean up bi-monthly label,Merge pull request #500 from eco/refreshToken
+
+[SA-479] Refresh credentials on startup if necessary,fix remaining observed / state object mismatches,fix forgot password bug,Fix back button styling in onboarding story,Fix onboarding navigation bar layout and skip button on iOS 14,move bar min/max to layout model,Merge branch 'next' of https://github.com/eco/ecoSwiftUI into next,Merge pull request #504 from eco/ant/SA-555
+
+SA-555 Fix typo in invite/APY screen,SA-555 Fix typo,Merge pull request #489 from eco/onboarding-fixes
+
+[SA-536] Onboarding narrative updates + fixes,clean up bi-monthly label,Adding dev entitlements file, updating paths,Run all SCNTransactions on main thread, refactor helix transaction functions, add helix debug logs,apple pay entitlements,Refreshed tokens if necessary on startup, abstracted away bridge from auth client callers,Merge pull request #490 from eco/tosPost
+
+[SA-537] updating tos for migrating users,Merge branch 'next' into tosPost,Merge pull request #493 from eco/SA-453-3
+
+log bridging errors to segment,Merge pull request #499 from eco/block_bill_pay
+
+[SA-548] block access to bill pay if not KYC passed,Merge pull request #498 from eco/SA-547
+
+fix issues with cognito crashing when skip is pressed,Merge pull request #497 from eco/inputFix
+
+[SA-546] Fix input not updating character if in same position and matching character but different character type,Merge pull request #496 from eco/SA-446
+
+Rename Interest to APY Reward,Merge pull request #495 from eco/SA-533_2
+
+show merchant name in transaction details view for Giftcard, bill pay, and lithic transactions,Merge pull request #494 from eco/waitlist-button-dark-mode/SA-540
+
+Fix waitlist sign in button color on dark mode,block access to bill pay if not KYC passed,Merge remote-tracking branch 'origin/next' into SA-453-3,fix issues with cognito crashing when skip is pressed,Resolve conflicts,add generic error type,Merge pull request #488 from eco/fix-action-menu-ios-14_4/SA-520
+
+Fix action menu iOS 14.4,Merge branch 'next' into fix-action-menu-ios-14_4/SA-520,Merge branch 'next' of https://github.com/eco/ecoSwiftUI into next,Merge pull request #486 from eco/navbar-style-fixes/SA-525
+
+Navbar style fixes/sa 525,fix input not updating character,Merge pull request #491 from eco/helix_scale_fix
+
+[SA-544] Cap past helix bars to 2/3rds of screen width,Use default foreground color for waitlist secondary button,Rename Interest to APY Reward,Merge branch 'next' into helix_scale_fix,show merchant name in transaction details view for Giftcard, bill pay, and lithic transactions,Merge branch 'next' of https://github.com/eco/ecoSwiftUI into next,Fix username view navigation bar on iOS 14,Merge pull request #492 from eco/SA-535_2
+
+rename interest to APY reward in transaction details view,Fix waitlist sign in button color on dark mode,Merge branch 'next' into navbar-style-fixes/SA-525,Fix manage button styles on iOS 14,Add minimum bar width,log bridging errors to segment,Merge pull request #480 from eco/authRefactor
+
+[SA-521] refactored auth, added in migration,rename interest to APY reward in transaction details view,Fix for realized helix balance being too wide,Merge branch 'next' of https://github.com/eco/ecoSwiftUI into next,fix duration,updating tos for migrating users,Merge pull request #482 from eco/SA-530
+
+Make Eco Point transactions show eco point values in the number field instead of in the table,Merge pull request #483 from eco/SA-531
+
+Rename Lithic Debit Card to Eco Debit Card,Merge pull request #484 from eco/SA-532
+
+If the Transaction has no ID, dont include the transaction ID row in the table,Merge pull request #485 from eco/SA-534
+
+Rename Deposit to Bank Deposit,
+remove comments,fix opacity animation,reset,cleanup,removed unnecessary user default,initial fixes,updated PR,Merge pull request #460 from eco/SA-441
+
+Waitlist Logic + UI,Update comment,Fix sheets and fullscreen covers on iOS 14.4,finished migrated flow,pr feedback,Fix scrollEdgeAppearance issues on iOS 14,rename deposit -> Bank Deposit,hide transaction id row if transaction does not have valid transaction id (i.e. pending transfers),Add navigation bar background to card views,Update navigation styles for iOS 14, remove scroll view from SecurityView, clean up,add formatted type for Lithic Debit Card transaction types,remove eco points from table view in transactionDetailsView; show eco points as main label if transaction type is eco.,Merge branch 'next' of https://github.com/eco/ecoSwiftUI into next,Merge pull request #478 from eco/fix-registration-helix-bar-scaling/SA-507
+
+Fix DepositStoryHelixView bar scaling,Merge pull request #453 from eco/SA-486
+
+connect kyc buttons in feature gate view with cognito wizard,rebased and addressed conflicts,Reset Package.resolved,Merge pull request #481 from eco/tosFix
+
+[SA-524] fixed tos optionality,Merge pull request #479 from eco/ant/SA-518
+
+SA-518 Fix type sent in fastfile,handles migrating users,Add ability to configure the current UINavigationController, remove global appearances, add navigationBarStyle modifier,Merge remote-tracking branch 'origin/next' into SA-441,Merge branch 'next' into tosFix,updated,update,fixed tos optionality,wip on migrating view,refactor Cognito web view to take success handler,refactored auth, added in migration,SA-518 Fix type sent in fastfile,Remove unnecessary init,Fix DepositStoryHelixView bar scaling,Merge remote-tracking branch 'origin/next' into SA-486,Merge pull request #467 from eco/log-out-navigation-bug/SA-487
+
+Log out navigation bug/sa 487,Merge pull request #474 from eco/SA-496-no-initial-dep
+
+Sa 496 no initial dep,Merge branch 'next' into SA-496-no-initial-dep
+
+# Conflicts:
+#	Shared/Models/StorageModel/RegistrationSectionModel.swift,Merge pull request #477 from eco/remove-terms-nav
+
+[SA-517] remove tos based nav,Merge pull request #473 from eco/massageDateLabels
+
+[SA-512] loosened rules for top label,add onDismiss callback to plaid widget;,Merge branch 'next' of https://github.com/eco/ecoSwiftUI into next,Merge remote-tracking branch 'origin/next' into SA-486,Merge pull request #466 from eco/SA-504-app-version
+
+-adding the headers,Merge pull request #475 from eco/refresh-token
+
+[SA-513] Refresh token,-set default userdefault to onboarding and home for unauth and auth respectively
+-remove tos based nav,Merge branch 'next' of github.com:eco/ecoSwiftUI into log-out-navigation-bug/SA-487,Merge pull request #469 from eco/helix-callback
+
+[SA-506] add appear callback to helix,Merge pull request #470 from eco/ant/SA-503
+
+SA-503 Removing redundant binary upload step, refactor fastlane config,Merge pull request #471 from eco/flipHelix
+
+[SA-510] flipped helix in the correct direction,Merge pull request #472 from eco/sign-in-concurrency-crash-ios-15-4/SA-511
+
+Fix sign in crash on iOS 15.4,-add scope to the auth0 session to get refresh tokens,-refactoring navigation constants
+-adding a skip to the initial deposit if no transfer amount selected or user skips that section,loosened rules for top label,Make getUser requests synchronous to fix sign in crash on iOS 15.4, add parameter titles to bridge method,flipped helix in the correct direction,Merge branch 'next' into SA-496-no-initial-dep
+
+# Conflicts:
+#	Shared/Models/ClientModel/User.swift,Merge branch 'next' into SA-504-app-version,-adding default for device id,Updating bundle and build info for dSYM upload,Merge branch 'next' of https://github.com/eco/ecoSwiftUI into next,Merge pull request #468 from eco/fix_tos
+
+[SA-505] fix issue with ToS,fix padding issue,fix zero scale,add callback to helix,clean up,fix issue with ToS,Resolve conflicts,Merge pull request #465 from eco/newHelix
+
+[SA-334] Helix Implementation,Add RootNavigationState.swift to tests target,Move AnimatedTextView animation state into view, add 0.25s delay to animation,-adding the headers,Dismiss account view when logging out, add opacity transition when changing the root navigationState,-updating carousel to take skip function,SA-503 Removing dSYM upload from build step in favor of fastlane,Merge pull request #457 from eco/large_deposits
+
+Fix bug related to deposits >= 1000,rebased,Merge remote-tracking branch 'origin/next' into SA-486,cleaned up prints,implementing helix,Merge pull request #464 from eco/helix-entrance-fade
+
+[SA-497] add layout prop to fade in helix bars after positioning them,Merge pull request #461 from eco/insufficient_funds_dismiss
+
+Fix issue dismissing insufficient funds sheet,Merge pull request #462 from eco/SA-425-initial-deposit-edge-case
+
+Sa 425 initial deposit edge case,Merge pull request #456 from eco/SA-189-returning-user-dropping-point
+
+Sa 189 returning user dropping point,add commaStripped to safeParameterValue,Merge pull request #458 from eco/TRANSFER_INITIATION_FAILED
+
+show initiation failed transactions as failed,-updated casting to double,Merge branch 'next' into SA-425-initial-deposit-edge-case,Merge branch 'next' into TRANSFER_INITIATION_FAILED,Merge pull request #459 from eco/SA-362
+
+remove tax documents and account statements from account view,Merge pull request #455 from eco/fix_pending_deposits
+
+[SA-493] show queued transactions as pending,Merge pull request #452 from eco/dismiss_keyboard
+
+[SA-491] hide keyboard on post registration flow,-removde apploadingviewmodel as no longer needed
+-fix postTerms call to accept no response body
+-clean up,Merge branch 'next' into SA-189-returning-user-dropping-point,-removde apploadingviewmodel as no longer needed
+-fix postTerms call to accept no response body,
+update styles,add layout prop to fade in helix bars after positioning them,-add error toast,Merge branch 'next' into SA-425-initial-deposit-edge-case,-fix some edge cases,fix bug,clean up,add alreadyonWaitlistView and JoinWaitlistView; add typeform URL to config;,Merge pull request #451 from eco/deposit-sheet
+
+[SA-489] minor ui adjustments to deposit error sheet,remove tax documents and account statements from account view,clean up,show initiation failed deposits,-refactoring deposit max into TransferConstants.MAX_DEPOSIT
+-added error notice text to story and confirm,apply change in edit recurring deposit,apply fix in spend view model,-update terms url path,fixed large deposits,-fixing flow for pasword submit,-refactoring the flow of the TermsView.swift to preceed the verify kyc view
+-refactoring some things into viewmodels
+-using the pill button syntax in more places,show queued transactions,Merge branch 'next' into SA-189-returning-user-dropping-point
+
+# Conflicts:
+#	GoogleService-Info.plist
+#	Shared/Utilities/UserSessionNetworkingClient.swift,-adding TermsViewModel
+-refactoring TermsView
+-updating loadUserData to check user's terms acceptance before nav,wip,-adding providers to the terms
+-checking the TOS before navigating the user to home
+-adding tosAcceptances to UserModel
+-adding /users/acceptTOS post call and TermsParameters model,hide keyboard on post registration flow,Merge pull request #449 from eco/fix-object-fit
+
+fix object fit scenekit function,minor ui adjustments to deposit error sheet,Merge branch 'next' into fix-object-fit,Merge pull request #436 from eco/SA-455_2
+
+Actions - Card - Details WebView,Merge remote-tracking branch 'origin/next' into SA-455_2,Merge pull request #447 from eco/ant/SA-480
+
+SA-480 Remove dSYM generation from debug builds, gitignore GoogleService-Info.plist,Merge branch 'next' of https://github.com/eco/ecoSwiftUI into ant/SA-480,Merge pull request #448 from eco/fix_access_token
+
+[SA-481] Fix access token,Merge pull request #443 from eco/cardAdjustments
+
+[SA-477] New card states / few card fixes,add error label for failed request for embedRequest,Merge branch 'next' into SA-189-returning-user-dropping-point
+
+# Conflicts:
+#	Shared/Core/Root/ViewModels/RootViewModel.swift,fix object fit scenekit function,Merge pull request #442 from eco/newInputFix
+
+[SA-475] added zero check to handler,dont throw expection if access token is expired,finished new card flow,replaced copy label with copy icon,set failure state if parsed data doesn't match expectations,rename cardDetailsView; refetch data on error,Merge branch 'ant/SA-480' of https://github.com/eco/ecoSwiftUI into ant/SA-480,-refactoring app flow to use RegistrationSectionModel
+-todo figure out how terms are supposed to be enforced in this flow,Merge branch 'main' of https://github.com/eco/ecoSwiftUI into ant/SA-480,SA-480 Remove dSYM generation from debug builds, gitignore GoogleService-Info.plist,Merge pull request #441 from eco/merchant-confirm-source
+
+[SA-474] add source to merchant confirm sheet,Merge pull request #439 from eco/merchant-confirm
+
+polish to merchant spend success view,Merge pull request #445 from eco/roundDown
+
+[SA-375] fixed rounding issue on total balance,Merge pull request #440 from eco/fractional-display
+
+update fractional display for amount view,shrink some UI for smaller screens,Merge pull request #446 from eco/connected-accounts-cleanup
+
+[SA-478] cleanup to connected accounts view,Merge pull request #434 from eco/particle-origin
+
+[SA-468] move particle origin offscreen, add example particle file,cleanup to connected accounts view,fixed rounding issue on total balance,Merge pull request #414 from eco/SA-320_2
+
+use feature gating view for missing pre-req's,Merge pull request #433 from eco/2fa-refactor
+
+[SA-464] 2FA refactor,finished new card adjustments, just need new endpoint to apply fo rphysical card,Merge branch 'next' into cardAdjustments,wip,added zero check to handler,Merge pull request #437 from eco/pendingLabels
+
+[SA-264] fixed pending label issue,Merge pull request #432 from eco/cardFixes
+
+[SA-462] fixed card response parsing,reset,add source to merchant confirm sheet,dont hide navbar,account for zoom out,add aspect ratio,Merge branch 'next' into particle-origin,Merge pull request #438 from eco/helix-narrative
+
+[SA-473] update camera fit function, pause helix rotation in narrative,calculate offset,update fractional display for amount view,polish to merchant spend success view,reset,fix bgd color,update camera fit function, pause helix rotation in narrative,Merge remote-tracking branch 'origin/next' into SA-455_2,add billing address,Merge branch 'next' into cardFixes,Merge pull request #435 from eco/xcode_editor
+
+[SA-469] -adding editor settings,reverted local config,Merge pull request #430 from eco/inputFix2
+
+[SA-459] Withdraw and Deposit Refactor,fixed pending label issue,Merge branch 'next' into inputFix2,make button work for case where you have multiple requirements,addressed comments,add swiftSoup to test target,-adding UserDefaults protocol and set/get functions
+-adding UserRegistrationModel.swift to track progress of participant,format card number; add ability to copy to clipboard,use swiftSoup to parse HTML response for embedRequest call,Merge branch 'next' into cardFixes,-adding editor settings,Merge pull request #425 from eco/SA-192-signup-flow
+
+onboarding flow nav,move particle origin offscreen, add example particle file,Merge pull request #431 from eco/eco-features-sequence
+
+[SA-461] Eco features/value props sequence,Merge pull request #426 from eco/haptics-keypad-menu
+
+[SA-452] add haptics to keypad + action menu items,-refactoring 2FA code to merge all paths into 1 function in the VM
+-fixing nav to not display the same view on multiple calls from a deeplink,Revert "-refactoring 2FA code to merge all paths into 1 function in the VM"
+
+This reverts commit b206322cb2610126bd1ffb607adfff52ef2780b1.,-refactoring 2FA code to merge all paths into 1 function in the VM
+-fixing nav to not display the same view on multiple calls from a deeplink,
+fixed card response parsing,Release 0.4.1,fix helix getting chopped off,more progress,finished deposits and withdrawals,start sequence,Merge pull request #428 from eco/card-dm
+
+[SA-458] update card image for darkmode,Merge remote-tracking branch 'origin/next' into SA-192-signup-flow,Merge branch 'main' into SA-192-signup-flow,reset,update card image for darkmode,Merge pull request #424 from eco/SA-440-init_dep_bug
+
+-set eng object to the parent of carousel and not on forEach,add haptics to keypad + action menu items,Merge pull request #417 from eco/SA-426-username-nav
+
+-add nav view to usernameview,Merge pull request #423 from eco/usernameTakenToast
+
+[SA-439] Registration deeplink fix,Merge pull request #421 from eco/reg-polish
+
+[SA-437] Deposit flow registration polish,Merge pull request #416 from eco/github-action-fix/SA-419
+
+Add event to trigger pr triage on review dismiss,Merge pull request #413 from eco/project-cleanup/SA-419
+
+Project files clean up,-refactoring UserDefaults.swift to allow some state to persist past clear for starup calls
+-user will now only go through onboarding story once unless the login/logout or uninstall the app,Merge branch 'main' into inputFix2,wip on deposit,Merge pull request #405 from eco/updateAfterMerchantSpend
+
+[SA-411] merchant updates model on purchase...still have race condition,-set eng object to the parent of carousel and not on forEach
+-clean up some dev code,-set back to signout,-replace EcoText with at styled Text,Merge branch 'main' into inputFix2,wip,Merge pull request #420 from eco/spend-input-fixes
+
+[SA-434] fix confirm state for spend view,fix banner copy paste issue,fix issue where env obj was missing,email view,reset,reset root view,zip code view,reset a few files,fix confirm state for spend view,-package,-add nav view to usernameview,updates to deposit flow polish,Merge pull request #408 from eco/SA-201-194-recuring-deposit-complete
+
+Sa 201 194 recuring deposit complete,Merge pull request #415 from eco/merchantFix
+
+[SA-427] removed unnecessary empty view,Add trigger to pr triage on review dismiss,removed unnecessary empty view,Merge pull request #412 from eco/fade-text
+
+[SA-423] Minor animation adjustments in narrative,Revert to Package.resolved schema 1 until upgrade to Xcode 13.3,fix anim,Trigger Build,use feature gating view for missing pre-req's,Merge branch 'main' of https://github.com/eco/ecoSwiftUI into SA-201-194-recuring-deposit-complete,Remove duplicate modifier folder,Set all packages to exact versions, update dependencies,Merge pull request #411 from eco/fix-toasts-not-showing-over-sheets/SA-409
+
+Fix toasts not showing over sheets/sa 409,-fix navigation stack bug introduced in merging main b1d8497866f5fcaeb6841d10066257db928b57e9,-clean up,Merge branch 'main' into SA-201-194-recuring-deposit-complete
+
+# Conflicts:
+#	Shared/Core/Root/Views/RootView.swift,Fix failing tests,Remove SimpleToast import,Move ToastViewModel into Toast folder, remove SimpleToast dependency,add delays,Add to void sequence as well,Merge branch 'main' into fade-text,fade text in narrative better,Merge pull request #403 from eco/SA-335
+
+Fetch EcoPointsPerAction from Launch Darkly,Merge pull request #407 from eco/narrative-void-to-eco
+
+add "void to eco" narrative sequence,Merge branch 'main' into narrative-void-to-eco,remove modified package.resolved file,Fix toast on iOS 14,Merge remote-tracking branch 'origin/main' into SA-335,Resolve conflicts,Merge pull request #404 from eco/refactor-root-navigation-view/SA-401
+
+Refactor root navigation structure,Merge pull request #410 from eco/points-info-description
+
+[SA-418] add description to points info screen,Resolve conflicts,Merge pull request #399 from eco/cash-avail
+
+[SA-399] show cash available as a distinct unit in spend, error if insufficient funds,Refactor toasts to show over sheets,Merge pull request #409 from eco/dm-background
+
+[SA-417] reduce blue mix in dark mode bgd,add description to points info screen,reduce blue mix in dark mode bgd,-update,Merge branch 'main' into SA-201-194-recuring-deposit-complete
+
+# Conflicts:
+#	Shared/Core/Components/Carousel/EcoCarousel.swift
+#	Shared/Core/PostRegistration/Views/DepositStory.swift
+#	Shared/Core/Root/Views/RootView.swift
+#	Shared/Core/Unauthenticed/Landing/ViewModels/CarouselViewModel.swift,-fixing StoryTimer.swift reset
+-adding deposit button to end of flow,Merge branch 'main' into cash-avail,Merge branch 'main' into narrative-void-to-eco,Merge pull request #395 from eco/SA-380
+
+Login / Registration Flow Clean up,go to deposit view from cta,-fixing reset of depositstory during sheet navigation,removing remaining env object instances of rootViewModel,Merge branch 'main' of https://github.com/eco/ecoSwiftUI into narrative-void-to-eco,move min/max label, update error presentation,Merge remote-tracking branch 'origin/main' into SA-335,Merge remote-tracking branch 'origin/main' into SA-380,add void to eco narrative sequence,rename view model,pr feedback,pr feedback cleanup,remove env obj's per PR request,Merge pull request #400 from eco/giftCardViewRefactor
+
+[SA-402] Gift card view refactor,merchant updates model on purchase...still have race condition,Fix isiOS14 logic,Merge branch 'main' into SA-201-194-recuring-deposit-complete,-adding conditional modifier to EcoCarousel.swift
+-updated the storyhelix to work with index offsetting,
+Merge pull request #396 from eco/bugfix-no-payroll-notifications/SA-258
+
+Bugfix no payroll notifications,Move root NavigationView into individual views if needed so that we can better control environment objects,Merge remote-tracking branch 'origin/main' into SA-335,Merge pull request #397 from eco/eco-points-banner
+
+add banner for eco points info view,clean up,add bridging logic from LD flag to EcoPoints; get LD flag / Eco points on PointsInfo did load; clean up PointsInfoView to extract strings / components for a clean body,Merge pull request #398 from eco/add-clear-all-notifications-button/SA-351
+
+Add clear all notifications button,Merge remote-tracking branch 'origin/main' into SA-335,Merge pull request #402 from eco/ant/SA-404
+
+SA-404 Fixing swiftui previews,Delete ActionViewBase.swift,Merge remote-tracking branch 'origin/main' into SA-380,SA-404 Fixing previews,-creating EcoCarouselToolbarBackModifier and extracting code to it
+-refactoring CarouselViewModel.swift to include narrative and handler
+-refactoring DepositStory.swift to support new CarouselViewModel.swift
+-splitting up stories to DepositStory.swift
+-refactor deposit helix to support offsetting on index
+-updated EcoFont.swift to support binding of the text that allow for the text to actually update,Merge pull request #401 from eco/merchantCleanup
+
+cleaned up old merchant code,cleaned up old merchant code,removed local error messages,Merge pull request #375 from eco/encryptPin
+
+encryption for pin,few updates,show cash available as a distinct unit in spend, error if insufficient funds,clean up,hide skip on last carousel view,cleaned up,refactored gift card view into reusable view,clean up; fix issue with newly registered users not having some fields of the UserAddress struct.,more work to clean up unAuthenticated flow's. almost there,Add clear all notifications button, refactor PillButtonStyle to use configuration.label,add banner for eco points info view,Merge pull request #391 from eco/merchant4
+
+[SA-397] Merchant Refactor + success animations,addressed comment,rebased,Merge branch 'main' into SA-201-194-recuring-deposit-complete,Merge pull request #390 from eco/refactor-action-view-base/SA-330
+
+Refactor action view base/sa 330,Handle PAYROLL_DEPOSITED, OPENING_BONUS, and TRANSFER_REVERSED notification types,added to test target,refactored,moved vms to own file,Merge branch 'main' of github.com:eco/ecoSwiftUI into refactor-action-view-base/SA-330,Merge branch 'main' into SA-201-194-recuring-deposit-complete
+
+# Conflicts:
+#	Shared/Core/PostRegistration/Views/ZipCodeView.swift,Merge pull request #386 from eco/username-cleanup
+
+cleanup to username view,Merge pull request #327 from eco/SAN-200-cognito
+
+San 200 cognito,addressed comments,-refactoring DepositStory.swift view model throughout the post registration flow,finished success animation and gift card pop up,Merge branch 'main' into SA-201-194-recuring-deposit-complete
+
+# Conflicts:
+#	Shared/Core/PostRegistration/Views/DepositStory.swift
+#	Shared/Core/PostRegistration/Views/StoryDepositPages.swift,Include NavigationView in modalPresentationStyle modifier,Use ModalPresentationStyle modifier for gift card and card details sheets,reorganize files,getting there with success animation,clean up login screens; extract components; extract strings; use view models; use env objects instead of passing around view models;,create SessionCredentials client model object; store just the sessionCredentials object in the keychain instead of the two separate tokens;,begin refactoring login screens. extract logic out of login view into loginViewModel;,wip,changes made, need to add success animation and then pop up,added shake and fixed formatting issue on suggested,finished merchant view, need to do success animation and pop up,Remove ActionViewBase,Refactor ActionViewBase into ModalPresentationStyleModifier,Merge pull request #385 from eco/narrative-sequence-4
+
+4th sequence (explosion/cells) to the narrative,Merge pull request #389 from eco/SA-179_2
+
+profile pics,wip,wip still,Merge branch 'main' into narrative-sequence-4,Merge pull request #387 from eco/txn-details-cleanup
+
+minor cleanup to transaction details, make txn ID fully visible,wip,wip,fixing merge,Merge branch 'main' into SAN-200-cognito,-fixing navigation with use of topic,-adding parse for cognito action,Merge pull request #384 from eco/post-registration-helix/SA-350
+
+Add helix scene to post registration deposit story,profile pics minus the package.resolved file,Merge remote-tracking branch 'origin/main' into SA-335,Merge pull request #388 from eco/ant/sa-360
+
+SA-360 Re-adding GoogleService-Info.plist,SA-360 Re-adding GoogleService-Info.plist to directory,SA-360 Re-adding GoogleService-Info.plist because app won't build without it (even though it's copied during build steps),minor cleanup to transaction details, make txn ID fully visible,reset,cleanup to username view,darken bang explosion,Merge pull request #373 from eco/SA-337
+
+Hard coded "Face ID" text when logging in on device using biometrics on Touch ID device (iPhone SE),fix merge conflict mistake,Merge branch 'main' into SA-337,-adding skip nav toolbar modifier
+-building out cognitoview
+-fixing cognito url and parsing,use computed var,Merge pull request #382 from eco/reg-cleanup-start
+
+start registration cleanup on first few views,add the 4th sequence (explosion/cells) to the narrative,Clean up DepositStoryHelixView,wip,-updating cognito flow with new viewmodel,Merge branch 'main' into SAN-200-cognito
+
+# Conflicts:
+#	Shared/Core/PostRegistration/Views/ZipCodeView.swift
+#	Shared/Core/Root/ViewModels/RootViewModel.swift
+#	Shared/Utilities/UserSessionNetworkingClient.swift,Fix file references for fastlane build,Fix file references,Revert Package.resolved,Add helix scene to post registration deposit story,Merge pull request #383 from eco/update-autolabel-action/QA-13,remove "faceID" part of authentication prompt message,rename faceIDtoggle component -> BiometricsToggle,remove biometrics.swift file; have all biometrics logic live in biometrics client,-refactoring  deposit perioid and deposit type into one to reuse deposit code,Update action name,
+Update autolabel action, remove configs, rename workflow to PR Triage,start registration cleanup on first few views,Merge pull request #365 from eco/SA-195-plaid-registration
+
+Sa 195 plaid registration,Merge pull request #381 from eco/narrative-wallet
+
+"empty bag" narrative sequence,Merge pull request #380 from eco/referral-formatting
+
+adjust formatting for complementary upgrade label,Merge pull request #379 from eco/navbar-appearance-surface
+
+adjust navbar appearance in navbar header modifier,-refactoring  DepositSourceSheet.swift to allow for reuse,sequence 3,adjust formatting for complementary upgrade label,update to reset on disappear,Merge pull request #377 from eco/correct-card-handler-bridge
+
+Return nil rather than throwing an error when user has no card data,adjust navbar appearance in navbar header modifier,Merge pull request #378 from eco/ant/qa-13
+
+QA-13 Fixing github action labels, adding slack alert,Forgot a workflow,Adding Synchronize action,Testing more workflow changes,Return nil rather than throwing an error when user has no card data,Merge pull request #372 from eco/narrative-h1
+
+first two sequences of narrative h1,Updating autolabel titles,Merge pull request #370 from eco/SA-348
+
+fix issue where adhoc APY upgrades were not shown if user had no referrals,Merge branch 'main' into encryptPin,encryption for pin,QA-13 Adding QA slack webhook action,Merge pull request #367 from eco/lazyLoadAsync
+
+Added lazyLoad async view model,Merge pull request #350 from eco/ant/sa-328
+
+SA-328 Testing CI changes,update copy per PR conversation with Pete,begin work on removing dup. biometrics logic,Merge pull request #369 from eco/account-view-scroll-edge-appearance/SA-339
+
+Prevent account view scrollEdgeAppearance showing unexpectedly,Abstract ignoresScrollEdgeAppearance logic into modifier,first two sequences of h1,Merge pull request #366 from eco/amount-scaling-animation/SA-333
+
+Amount scaling animation/sa 333,-updated RadioCheckbox.swift to support binding so we can pass on the selection
+-added more fields to the PostRegistrationViewModel.swift to keep track of recurring deposit
+-building out DepositConfirmView.swift view
+-,Merge pull request #368 from eco/autolabel-github-action/QA-12
+
+Add autolabel github action for labeling pull requests,Fix typo,fix issue where adhoc APY upgrades were not shown if user had no referrals,Prevent account view scrollEdgeAppearance showing unexpectedly,Add autolabel github action for labeling pull requests,Adjust offset magnitude,Added lazyLoad async view model,Merge branch 'main' into SA-195-plaid-registration,Remove unused var,Add AnimatedFontModifier, correctly animate font size changes,Re-adding GoogleServiceInfo.plist to compile sources,Remove animation from font scaling,Merge pull request #364 from eco/account-vstack
+
+use vstack in account with zero spacing,Merge branch 'main' of https://github.com/eco/ecoSwiftUI into ant/sa-328,Updating location of GoogleService-Info.plist, adding to .gitignore, fixing FastFile location,-remove hook to banksignin,Merge branch 'main' into SA-195-plaid-registration,use vstack in account with zero spacing,Merge pull request #362 from eco/cardDetails2
+
+added conditional reset pin,Merge pull request #361 from eco/popup-sheet-cleanup
+
+Popup Sheet clean up,Merge pull request #360 from eco/amount-entry-text-scaling/SA-333
+
+Amount entry text scaling/sa 333,added conditional reset pin,Fixing quotes, standardizing DSYM across builds,Remove unused files, correct variable and folder names, remove unused binding in SuccessOverlayModifier, rename overlaySuccess -> successOverlay,Refactor NumberPadAmountTextView to reduce number of calculations, fix baseline offset,Clean up NumberPadAmountTextView,Add frame aware font scaling to NumberPadAmountTextView,Merge pull request #359 from eco/cardUIFix
+
+fix ui issue,Merge pull request #358 from eco/rename-action-sheet-to-partial-sheet/SA-332
+
+Rename ActionSheet -> PopupSheet,Resolve conflicts,Merge pull request #343 from eco/SA-285
+
+Bug related to unlinking bank account,Rename PartialSheet -> PopupSheet,Merge pull request #348 from eco/keyboardEntry
+
+New input view phase 1,fix ui issue,Rename ActionSheet -> PartialSheet,Merge pull request #357 from eco/keyboardEntry2
+
+cleaned up,cleaned up,Merge pull request #356 from eco/keyboardEntry2
+
+cleaned up a bit..added matched geometry effect to button. animation …,cleaned up a bit..added matched geometry effect to button. animation looks smoother,Merge pull request #355 from eco/refactor-card-sheets/SA-329
+
+Refactor cancel card sheet to use actionSheet,Merge pull request #354 from eco/refactor-successful-spend-sheet/SA-312
+
+Refactor successful spend sheet to use actionSheet,Merge branch 'main' into refactor-successful-spend-sheet/SA-312,Merge pull request #353 from eco/refresh-user-data-on-return-to-foreground/SA-324
+
+Refresh user data and dashboard on return to foreground,Refactor cancel card sheet to use actionSheet,Refactor successful spend sheet to use actionSheet,Clean up ConfirmWidrawSheet success logic,Add missing refresh after successful deposit / withdraw,Refresh user data and dashboard on return to foreground,Merge pull request #352 from eco/keyboardEntry2
+
+Keyboard entry2,removed from actions view,unhijacked account view,Merge pull request #351 from eco/keyboardEntry2
+
+next phase - added composable confirmation view,added composable confirmation view,fix issue where unlinking bank was not updating user model,Merge remote-tracking branch 'origin/main' into SA-285,fixed formatter, added context view,fixed issue breaking existing screen,use AsyncTaskViewModel; remove redacted placeholder,Merge pull request #349 from eco/refactor-account-sheets/SA-310
+
+Refactor account sheets to use actionSheet,Merge pull request #347 from eco/revert-merge-issues
+
+Revert "reset",fix to not screw up existing,SA-328 Testing CI changes,rebase and some padding fixes,error text,fixed text color,fixed action view back to normal,Refactor account sheets to use actionSheet,finished this version of input view,
+Revert "reset"
+
+This reverts commit d93c8ecad532a2d51186987a4db45fc6084ae839.,finished entry handler,Merge pull request #345 from eco/fix_entitlements,Merge pull request #344 from eco/ant/sa-326
+
+SA-326 Accidentally a hyphen,fix entitlements,SA-326 Accidentally a hyphen,Merge pull request #341 from eco/amount-view-small-screen
+
+Fix amount / error display on small screens,Merge pull request #339 from eco/sheet-anim-2
+
+fix sheet exit animation,Merge pull request #338 from eco/number-weight
+
+adjust number weight for amount view,wip on keyboardEntry,Merge pull request #340 from eco/refactor-merchant-sheets/SA-309
+
+Refactor merchant sheet, add completion handler to success overlay,Merge pull request #337 from eco/fix-device-builds
+
+Remove entitlements from code signing for now - fixes device builds,Merge pull request #342 from eco/fix-deposit-date-sheet/SA-276
+
+Fix UI bug with deposit date sheet,Merge pull request #335 from eco/ant/sa-281
+
+[SA-281] Refactor CI Config, update Fastfile to upload_symbols,Update deposit date sheet to use action sheet,Re-add deleted error message on confirm spend view,Reinforcing CL binary path,clean up,reset,fix amount view + error display on small screens,Revert entitlements, fix typo,Refactor merchant sheet, add completion handler to success overlay,fix sheet exit animation,adjust number weight for amount view,Remove entitlements from code signing for now - fixes device builds,-refactoring viewmodel for post registration flow
+-adding DepositConfirmView.swift,Merge pull request #330 from eco/SAN-28_2
+
+Merchant Spend Details,fix issues where bank accounts / recurring deposits methods threw exceptions if either were empty. empty bank accounts and recurring deposits are valid;,Merge remote-tracking branch 'origin/main' into SAN-28_2,copy redemption code to clipboard,-show plaid sdk view open before linkPlaidInstitution executes to speed up ux
+-refactor terms to use modifiers for paddings
+-update skip post registration flow to take user to home
+-add plaid setup view
+-,Merge pull request #334 from eco/newPlaid
+
+updated plaid link to a view modifier,Merge pull request #333 from eco/action-sheet-tweaks/SA-276
+
+Action sheet tweaks,Merge pull request #332 from eco/galaxy-rotation
+
+reverse galaxy rotation,Merge pull request #331 from eco/prod-icon
+
+update prod icon images,Upadting fastfile and CI config,use passed in merchants instead of fetching merchants on load,updated plaid link to a view modifier,move logic to view model,SA-281 Update config,fetch gift card details on transaction details view load,Fix sheet exit animation,Fix content tappable before sheet animation is complete,reverse galaxy rotation,Merge pull request #270 from eco/helix-anim-in-onboarding
+
+Draft: add methods to adjust helix, add to onboarding,update prod icon images,Merge branch 'main' into helix-anim-in-onboarding,Merge pull request #325 from eco/success-anim
+
+Start success animation [draft],show gift card code and redemption instructions in native sheet,Merge pull request #329 from eco/fix-unlink-bank-sheet-alignment/SA-282
+
+Fix for unlink bank account sheet misalignment,Temporary fix for unlink bank account misalignment,reset root view,add timing curves, slight bounce to helix,Merge remote-tracking branch 'origin/main' into SAN-28_2,add gift card sheet to transaction details view,Merge pull request #316 from eco/refresh-user-data-after-action/SA-31
+
+Reload user data after completing an action flow, separate user data …,add zoom out, delay helper,remove playground,move var local,duration change,rename,Refresh user data after bill pay,remove unused,better camera functions,Resolve merge conflicts,rename existing giftcard (spend) REST query (from 'giftcard' to 'spend') to avoid ambiguity when new 'getGiftcardTransactions' query type is added,function to get / apply actions,Merge pull request #328 from eco/edit_r_d_amount_fix
+
+Bug 🐞: Edit Recurring Deposit - Enforce Minimum Amount,Merge pull request #323 from eco/applePay
+
+Apple pay,Merge pull request #326 from eco/fs-sheets
+
+Progress on ActionSheets refactor,cleanup, add helpers,Merge pull request #315 from eco/SAN-186-registration-nav
+
+San 186 registration nav,Merge pull request #324 from eco/refer_fix
+
+fix alignment issue in Refer View for users with multiple adhoc apy upgrades,Merge branch 'main' into refresh-user-data-after-action/SA-31,-remove loading check for kyc state, that should be handled elsewhere,fix issues with commas,Merge pull request #319 from eco/animate-notification-dismiss/SA-62
+
+Animate notification dismiss/sa 62,Merge branch 'main' into SAN-186-registration-nav
+
+# Conflicts:
+#	Shared/Core/PostRegistration/Views/VerifyKYCInstructionsView.swift
+#	Shared/Core/PostRegistration/Views/ZipCodeView.swift,Merge branch 'main' into SAN-200-cognito,-adding CognitoView.swift and CognitoWebView.swift
+-adding calls for sharable url from the backend to display cognito html
+-todo test against backend once endpoint is live,Merge branch 'fs-sheets' of github.com:eco/ecoSwiftUI into fs-sheets,Use ActionSheet for withdraw flow,added apple pay throughout, cleaned up and finished activation flow,Merge branch 'main' into fs-sheets,Progress on ActionSheet refactors,Merge pull request #320 from eco/change-helix-direction
+
+Update helix spin direction to move up,Merge pull request #318 from eco/menu-anims
+
+update some progress mappers for action menu opacity,lots of progress on success animation,fix alignment issue,rebased,udpated background on not available view,added to card lost or stolen,added entitlements flag,added apple pay,Merge branch 'main' into SAN-200-cognito,Merge pull request #314 from eco/SA-178-zip
+
+Sa 178 zip,Merge branch 'main' into SAN-200-cognito,Merge branch 'main' into SA-178-zip,-adding network call for cognito,Merge branch 'main' of github.com:eco/ecoSwiftUI into refresh-user-data-after-action/SA-31,
+Refresh user data after successful merchant spend,Merge branch 'main' into helix-anim-in-onboarding,...,fix sheet in unlink flow; fix background in edit recurring deposit amount;,Change helix constant rotation direction  vs. initial rotation,Merge pull request #317 from eco/notif-button
+
+Add UI for notif button with 0 notifs,fix issue with taps not registering,Update helix spin direction to move up,Update notification dismiss transition,Animate notification dismiss,Resolve conflicts and cleanup,update some animation curves for menu opacity,typo,add no notif icon style,Reload user data after completing an action flow, separate user data into UserViewModel, add homeViewModel and userViewModel as environmentObjects,start full screen sheets,-fix ci,Merge branch 'main' into SAN-186-registration-nav,-clear creds,-adding userdefault for skipping deposit story
+-fixing navigation to switch on kycstatus
+-adding kyc status call to account statuses and merging into user struct,Merge pull request #312 from eco/eco-points-info
+
+start eco points info / rewards summary view,Merge pull request #313 from eco/feature-gate
+
+Start feature gate UI,Merge branch 'main' into SA-178-zip,-fix key color and restore default navigation for pr,-adding flow for invalid error code,initial UI for feature gate view,add ability to show sheets from home, use sheet for points info instead,better color name,minor adjust,allow for navbar theming on appear/disappear,simplify if statment,start eco points info view,-adding ZipUnsupportedView.swift
+-adding KycView.swift placeholder
+-adding CoreLocation to get state of zip
+-adding network calls for unsupported states
+
+-todo get the error code from CoreLocation to display a toast with more info,Merge pull request #308 from eco/account-view-ui-cleanup/SA-301
+
+Update AccountView UI, add FrameObserver,Fix build errors from merge,Merge branch 'main' of github.com:eco/ecoSwiftUI into account-view-ui-cleanup/SA-301,Merge branch 'main' into SA-178-zip,Merge pull request #310 from eco/SA-184-terms
+
+Sa 184 terms,Merge pull request #305 from eco/activity-scroll-to-top
+
+add functionality for scrolling to top from activity view via action button,Merge pull request #309 from eco/galaxy-update
+
+update galaxy texture and position a bit,Merge pull request #311 from eco/av-dm
+
+update avatar placeholder for dark mode,-adding ZipCodeView.swift
+-adding RegistrationLayoutModifier.swift
+-refactoring some views,Update AccountViewModel.swift
+
+Fix merge artifact in AccountViewModel,Merge pull request #301 from eco/SA-293
+
+Bug 🐞: Pending Deposits Aren't Visible,Merge branch 'main' into account-view-ui-cleanup/SA-301,Merge pull request #280 from eco/SA-248
+
+Make Biometrics Toggle in Account Settings Functional,Merge pull request #303 from eco/SA-265
+
+Fix Keyboard on smaller devices,Merge branch 'main' into SA-293,Merge remote-tracking branch 'origin/main' into SA-265,Add missing foregroundColor to profile name,Additional AccountView UI tweaks,Merge pull request #304 from eco/title-with-image
+
+update title with image navbar modifier,update avatar placeholder for dark mode,AccountView UI tweaks and cleanup,Merge branch 'main' into SA-293,Merge branch 'main' into galaxy-update,Merge branch 'main' into activity-scroll-to-top,Merge branch 'main' into title-with-image,Merge pull request #297 from eco/number-animations
+
+add transitions to numbers in number amount view,Merge branch 'main' into activity-scroll-to-top,Merge branch 'main' into title-with-image,Merge branch 'main' into number-animations,-adding url paths for terms,Merge branch 'main' into SA-265,remove unused change,Merge branch 'main' into SA-184-terms,Merge pull request #293 from eco/kyc-start
+
+Kyc start,Merge branch 'main' into title-with-image,Merge branch 'main' into galaxy-update,Merge branch 'main' into SA-265,Merge branch 'main' into SA-293,Merge pull request #307 from eco/ant/SA-304_2
+
+SA-304 Re-add main to branch filter,Merge branch 'main' into kyc-start,-adding url open,minor helix updates,Update AccountView UI, add FrameObserver,SA-304 Re-add main to branch filter,Merge pull request #300 from eco/ant/SA-304
+
+SA-304 Add manual approval step for TestFlight builds,update galaxy texture and position a bit,Merge branch 'main' into number-animations,Merge branch 'main' into title-with-image,Merge branch 'main' into SA-293,Merge branch 'main' into ant/SA-304,variable rename,typo,typo,add check so we don't try to transition more than needed,add functionality for scrolling to top from activity view,add title with image navbar modifier,Merge branch 'main' into SA-265,Merge pull request #302 from eco/SA-268
+
+Sheet Dividers Cleanup,Merge branch 'main' into number-animations,fix issue with smaller devices,add hasBottomDivider param to RadioOptionListItem Component,standardize sheet dividers,Merge branch 'main' into SA-293,clean up,fetch usd transactions not just usdc transactions to get pending transactions,Remove branch filter from master - can only have branch OR tag. Oops,SA-304 Add manual approval step for TestFlight builds,
+Merge branch 'main' into kyc-start,Merge pull request #299 from eco/SA-211_2
+
+Deep link into merchant apps / websites,Merge branch 'main' into kyc-start,Merge branch 'main' into SA-184-terms,clean up KYC view,Merge branch 'main' into SA-211_2,-adding TermsView.swift,Merge pull request #298 from eco/surface-bridge-errors
+
+Surface errors from ServerClientModelBridge,Merge branch 'number-animations' of https://github.com/eco/ecoSwiftUI into number-animations,move to state so we're not re-creating the array on every render,deep link to merchants apps / websites,Merge branch 'main' into surface-bridge-errors,Merge pull request #296 from eco/SA-294
+
+Bug 🐞: Deposit / Withdraw's api call cannot accept commas in transfer amount,Surface errors from ServerClientModelBridge,Merge branch 'main' into number-animations,Merge branch 'main' into SA-248,Merge branch 'main' into kyc-start,Merge branch 'main' into SA-294,clean up loginView,add biometrics client to root view model,Merge pull request #286 from eco/ant/SA-291
+
+SA-291 Adding JIRA orb, linking JIRA to CCI,Merge remote-tracking branch 'origin/main' into SA-248,spacing fix, clean up some error language,add transitions to numbers in number amount view,don't pass commas in api call when making deposits,Merge pull request #295 from eco/fix_build
+
+Bug 🐞: fix issue with satish's account,optional param,Merge pull request #292 from eco/improve-debug-logging/SA-289
+
+Add LogUtil for more detailed logging,Merge pull request #294 from eco/fix-failed-to-bridge-error-preventing-app-launch
+
+Fix failedToBridge error preventing app launch,Merge branch 'main' into improve-debug-logging/SA-289,Merge branch 'main' into fix-failed-to-bridge-error-preventing-app-launch,Fix failedToBridge error preventing app launch,-remove x from VerifyKYCInstructionsView.swift
+-get rid of navigating to zipcode view,-revert rootview hack,Merge branch 'main' into kyc-start,Merge pull request #290 from eco/SA-249-tier-selection
+
+Sa 249 tier selection,-adding VerifyKYCInstructionsView.swift,-adding VerifyKYCInstructionsView.swift
+-adding ZipCodeView.swift,-merge main
+-update from pr,Merge branch 'main' into SA-249-tier-selection
+
+# Conflicts:
+#	Shared/Core/Root/ViewModels/RootViewModel.swift,Revert "-adding VerifyKYCInstructionsView.swift"
+
+This reverts commit fcd958e082b3de2d90f1f289c4edb615c47e905b.,-adding VerifyKYCInstructionsView.swift
+-adding ZipCodeView.swift,Add LogUtil for more detailed logging,Merge pull request #291 from eco/refer-share-sheet-fix/SA-297
+
+Bug 🐞: Fix refer share sheet,Merge pull request #283 from eco/SA-258
+
+Bug 🐞: Editing a recurring deposit amount starts with $0 rather than current amount,nest sheet content in a navigation view; add back button;,SA-291 Update job names,Merge pull request #289 from eco/use-users-default-mail-app/SA-257
+
+Use users default mail app/sa 257,Merge pull request #288 from eco/refactor-server-client-model-bridge/SA-288
+
+Move ServerClientModelBridge into UserSessionNetwork, small refactors…,Fix refer share sheet,-revert normal flow in loading,Merge branch 'main' into SA-249-tier-selection,-adding skip and continue navigation after the DepositStory.swift,-fleshing out the RadioCheckbox.swift and SquareCheckbox.swift views
+-adding them to the carousel
+-updating EcoFont to take changes on the foregroundColor,Add isSimulator flag, log email failed case for simulator,Send support email to user's default mail app,add editRecurringDepositAmountView and no longer use TransferAmountView for two different use cases.,Move ServerClientModelBridge into UserSessionNetwork, small refactors in ServerClientModelBridge,-adding checks with colors,Merge pull request #284 from eco/SA-251
+
+Bug 🐞: fix issue where referral view is popped onto stack twice + adhoc APY increments solution,-adding checks,-adding the last recurring carousel item for deposit,label changes as requested in standup.,Merge pull request #287 from eco/navigation-bar-refactors/SA-292
+
+Navigation bar refactors/sa 292,Merge pull request #277 from eco/SA-228
+
+Update Merchant Flow Header to include Merchant Logo,fix broken ci,SA-291 Adding JIRA orb, linking JIRA to CCI,PR Feedback,Remove back button context menu,Move UINavigationBar appearance settings to app launch,Merge pull request #285 from eco/refactor-currency
+
+Refactor currency logic into Currency enum,Refactor currency logic into Currency enum,make changes to refer view to account for adhoc APY increments,Merge pull request #279 from eco/helixNavBugFix
+
+fixed navigation bug,-adding the rest of the deposit carousel views along with modifiers
+-some refactoring of the carousel classes and structs,fix double refer view bug,default recurring amount edit screen with existing amount,Merge pull request #282 from eco/ant/SA-266
+
+SA-266 Adding dSYM upload script to build step,optional param,Merge pull request #281 from eco/SA-240
+
+Bug 🐞: "Link another account" in source sheet doesn't navigate anywhere,SA-266 Adding dSYM upload script to build step,whoops,-adding code for pausing/starting carousel halfway,update observed objects to state objects,remove Link Another Account button from sheets and from connected account view;,remove link another account option from source sheets,begin work on cleaning up biometrics and connecting toggle state on login with state within Account > Security;
+generalize things to not be specific to faceID but also apply to TouchID;
+clean up login by extracting strings and components;
+TODO: remove duplicate BiometricsClient and Biometrics Struct,fixed navigation bug,Merge pull request #278 from eco/sotomaque-patch-1
+
+added pr template,Merge pull request #276 from eco/SA-254
+
+add app version to app security view,-adding DepositStory.swift and its views,Merge pull request #272 from eco/frozen-card-toggle
+
+add loading state to frozen card toggle, update toggle color,added pr template,add merchant logo to nav header for merchant spend view and merchant confirm spend view,-refactoring existing EcoCarousel.swift
+-moving files around for post registration depositcarousel,Update README.md
+
+add confluence link,Update README.md
+
+added deployment notes,-updating ecocarousel to toggle instead of clear on disappear,remove target=swift file,add app version to app security view,
+Merge pull request #271 from eco/frozen-card
+
+update frozen card UI,Merge pull request #275 from eco/biometrics_fix
+
+-fix faceidenbled bool so that id doesnt disable itself,-update PasswordView.swift registration to store auth token in keychain and proceed to next flow
+-adding InitialDepositCarousel.swift,-fix faceidenbled bool so that id doesnt disable itself,Merge pull request #274 from eco/authfix
+
+fixed startup path for dev env,fixed startup path for dev env,Merge pull request #273 from eco/amount-suggestions
+
+some cleanup to amount suggestion pills,some cleanup to amount suggestion pills:,Merge pull request #269 from eco/fix_bill_pay
+
+fix bill pay,add loading state to frozen card toggle,update frozen card UI,Merge pull request #268 from eco/install_fastlane_dep
+
+Install fastlane dep,...,add config urls to base.xcconfig,reset,add methods to adjust helix, add to onboarding,remove force unwrapping of URL,-restoring build,-add require,-test build,-add bundle install step,Merge pull request #256 from eco/SA-222
+
+Bill Pay (Papaya Web View),Merge remote-tracking branch 'origin/main' into SA-222,-update jobs,-clean up config,Merge pull request #263 from eco/SA-234-carousel-navigation
+
+Sa 234 carousel navigation,add progress view,-fixing nav bar on landing,Merge pull request #262 from eco/speedUpStartup
+
+Optimized start up network calls,Merge remote-tracking branch 'origin/main' into SA-222,Merge pull request #267 from eco/cardDetails
+
+temporary card details solution,removed local config change,rebased,Merge branch 'main' into SA-234-carousel-navigation,Merge pull request #261 from eco/confirm_sheet_cleanup
+
+Confirm sheet cleanup,Merge pull request #266 from eco/network_account
+
+-removing createdAt from account to fix network calls to production,copy redemption code on press,temporary card details solution,Merge pull request #265 from eco/SA-250-user-defaults-clearing
+
+Clean up userdefaults,add missing bottom padding,-removing createdAt from account to fix network calls to production,Merge pull request #264 from eco/dark-mode-fixes
+
+Dark mode fixes,-moving userdefaults clearing to where we navigate to Landing.swift,Add PreviewAllColorSchemes modifier to reduce preview size, fix dark mode on a couple views,-fix going back animation,-adding CarouselViewModel.swift
+-enabling skip and get started to proceed to the fullnameview,Fix dark mode on account views,Merge branch 'main' into SA-234-carousel-navigation,Optimized start up network calls,Merge pull request #259 from eco/userAccountFix
+
+fixed user account issue,apply change to confirm withdraw sheet,add missing bottom divider to confirm deposit sheet,Merge pull request #260 from eco/CardDarkMode
+
+cleaned up card dark mode,cleaned up card dark mode,fixed user account issue,Merge pull request #254 from eco/SA-243-beta-build
+
+Sa 243 beta build,Merge pull request #258 from eco/dateUpdates
+
+fixed date fix ha,fixed date fix ha,-disable circle deploys on push
+-make fastlane on tags only,Merge pull request #257 from eco/dateUpdates
+
+updated date logic,-set schema icon to testflight,Merge branch 'main' into SA-243-beta-build,-re add the iconset,updated date logic,-remove appicon.testflight,-test deletion of appicon.testflight,Merge pull request #255 from eco/SA-227
+
+update next deposit date based on selected deposit frequency,-restore auto builds,-fix bundle ids,Merge pull request #252 from eco/card3
+
+Finished with Card except for Apple Pay + T+C + cognito,first pass at bill pay web view; added web view component; added papaya config stuff to info.plist; fetch papaya token on load; use papaya token to generate request for papaya web view; display papaya web view in bill pay action,fixed rebase issue,-set gym configuration,-fix bundle ids,-update the output filename,-fix bundle ids,fixed build issue,Merge branch 'main' into card3,fixed view modifier,finished with card except for apple pay and t+c,Merge pull request #253 from eco/merchant-view-model-refactor
+
+Merchant view model refactor,finished networking,Merge pull request #244 from eco/SA-229
+
+added transfer suggestion pill buttons,-remove tag checks,update next deposit date based on selected deposit frequency,-updating fastlane profiles
+-fixing bundle id for betsa,Remove spendAmount from merchantViewModel to fix state persisting across merchants,-adding beta configs
+-adding beta build
+-updating Firebase-info-beta.plist
+-adding beta scheme
+-updating the app icons and product name,Refactor merchantViewModel as StateObject,-adding skip button to carousel nav
+-addnig back to landing on fullnameview
+-need to get carousel button "get started" to pass through the nav controls,Merge pull request #251 from eco/transfer-view-model-refactor
+
+Transfer view model refactor,Add missing onSuccess handler call,finished with mock requests,Refactor transferViewModel as StateObject,Merge pull request #241 from eco/biometrics-fix
+
+Biometrics not set up on device,-fix auto loggout when restarting app
+-remove merge artifact HomeViewModelHandling
+-clean up userdefaults calls
+-clean up logging,Merge branch 'main' into biometrics-fix,updated,added some networking,Merge branch 'main' into SA-229,
+Merge pull request #250 from eco/fix-state-account-view-model
+
+Refactor accountViewModel as @StateObject,move component to separate file; allow custom configuration for transfer suggestion amounts; fix color issue on dark mode,Refactor accountViewModel as @StateObject,Merge pull request #249 from eco/testflight-icon
+
+add testflight icon,Merge pull request #248 from eco/SA-226
+
+Link From Manage Recurring Deposits (Empty State) to Deposits,add testflight icon,Merge pull request #239 from eco/toast-upgrade
+
+Toast upgrade,Merge pull request #245 from eco/galaxy-node
+
+Add Galaxy image as a node in scene rather than UIImage,Merge branch 'main' into galaxy-node,Merge branch 'main' into toast-upgrade,link to deposit flow from Account > Recurring Deposits,Merge pull request #247 from eco/fix-state-reset-on-background
+
+Refactor HelpCenterViewModel to fix state reset on background,Merge pull request #240 from eco/sign-in-cleanup
+
+minor cleanup to sign in view, add scrollview,Merge branch 'main' into toast-upgrade,Merge pull request #220 from eco/merchant_spend
+
+merchant flow,Refactor HelpCenterViewModel to fix state reset on background,Merge remote-tracking branch 'origin/main' into merchant_spend,redact merchant row items if merchant view model is loading,pr feedback; lowercase string comparison; clean up print statements;,Merge pull request #246 from eco/card2
+
+added button completion animation and completion,added button completion animation and completion,remove unused,move galaxy image to node in scene,Merge pull request #242 from eco/fixMerchangeImages
+
+fixed merchant icon,Merge branch 'main' into fixMerchangeImages,Merge pull request #243 from eco/cardNetworking
+
+More Card Progress,added transfer suggestion pill buttons,rebased,finally finished with navigation,updated local config,fixed merchant icon,major navigation changes,Merge branch 'main' into biometrics-fix,-fixing biometrics for devices that dont have them set up
+-refactoring login error codes,link package to test target,minor cleanup to sign in view, add scrollview,remove old packages,update toast lib,Merge pull request #223 from eco/transaction-details
+
+Transaction details,Fix merge resolution errors,Merge branch 'main' into transaction-details,Merge pull request #238 from eco/cap-digits
+
+cap the amount of digits (before the decimal) allowed in the number entry view,Merge pull request #236 from eco/SA-233-circle-tag-builds
+
+Build and deploy testflight on tags only,cap the amount of digits (before the decimal) allowed in the number entry view (currently set to 5),Merge pull request #233 from eco/keypad-delete-decimal
+
+add our own delete + decimal icons,Merge pull request #235 from eco/SA-98-auth-token
+
+Sa 98 auth token,Merge pull request #234 from eco/fix-refer-view-reset-on-background
+
+Fix ReferView reset after background,Merge pull request #237 from eco/withdrawal-confirm
+
+show success state in sheet on withdrawal success,fix merge,show success state in sheet on withdrawal success,Merge pull request #231 from eco/card-rows
+
+use row component for manage card,Merge pull request #232 from eco/card-image
+
+update card graphic, add subtle floating effect,Merge branch 'main' into keypad-delete-decimal,Refactor viewModel name and fix floating point precision issue,-installing sematic gem for tag versioning
+-disabling builds except for tags,clean up storage,Merge branch 'main' into SA-98-auth-token,-refactor ask for Biometrics.swift,-comment out token refresh code,-creating extension UserDefaults.swift to handle clearing all storage on logout
+-adding biometrics code to PasswordView.swift
+-refactoring Biometrics.swift,-added logout to the loading retry screen
+-refactored AuthenticationClient.swift,Merge branch 'main' into transaction-details,Merge pull request #230 from eco/number-pad-tweaks
+
+Add NumberPadTap for cleaner input handling,Fix ReferView reset after background,validate user input; new success sheet,fix error width,adjust color of special keys,add our own delete + decimal icons,Merge pull request #222 from eco/success-state-sheet
+
+add success state for sheets, apply to deposit sheet,fix secondary button foreground color,remove file,update card graphic, add subtle floating effect,remove spacing,use row component for manage card,Add NumberPadTap to for cleaner input handling,Merge pull request #229 from eco/cardContinued
+
+getting there on card, flows and navigational done except for after success, networking next,-figured out how to intercept the faceid permissions failures
+-added checks to Login.swift
+-moved checks for faceid permissions to before we use them rather than when we need them to give user context
+-created alert that takes us to the app settings
+-todo: check why we fail on startup when we are logged in due to biometrics and include alert into the flow,update eco sheet to handle safe areas nicer,getting there on card, flows and navigation all done, networking next,Add transactions to MockObjects struct, rename viewModel parameter to transactionDetailsViewModel,Merge pull request #228 from eco/refer_toast
+
+Referrals minor changes,clean up,fix warning about ui pasteboard by using url type instead of string type,moved intent functions to view model; added loading state when fetching referrals,Merge pull request #227 from eco/cardContinued
+
+reorg,Remove default case from actionViewBuilder,Remove default case from actionViewTitleForAction,Refactor transactionDetails to its own delegate function,Merge pull request #226 from eco/clean_up
+
+clean up random things i caught in a full walk through,Merge branch 'main' of github.com:eco/ecoSwiftUI into transaction-details,reorg,Merge pull request #224 from eco/deposit-frequency-sheet
+
+minor cleanup to deposit frequency sheet,clean up random things i caught in a full walk through,Merge pull request #225 from eco/cardContinued
+
+rebased other PR, huge vc issues,Merge branch 'main' into transaction-details,Make design and UX tweaks for TransactionDetailView,rebased other PR, huge vc issues,Merge pull request #212 from eco/rd_amount_edit
+
+edit recurring deposit amount,update recurring deposits in view model after making a recurring deposit,Control + i,
+make edit recurring deposit amount work with number entry view,minor cleanup to deposit frequency sheet,minor adjust to animation curve, fix checmark image,temp,Resolve merge conflicts,Add TransactionDetailsView,Fix EcoPointsCell background color on dark mode,Add NavigationView to RootView,-setting biometrics working
+-todo handle case where user refuses biometrics prompt
+-todo delete the token if on new install,Merge remote-tracking branch 'origin/main' into merchant_spend,add success state for sheets, apply to deposit sheet,Merge pull request #217 from eco/refer-fixed-width
+
+Restore fixed width for referral timeline sections to improve alignment,Merge pull request #219 from eco/merchant-rows
+
+add new merchant logos, update merchant rows,Merge pull request #203 from eco/cancel_recurring_deposits_on_unlink
+
+cancel RD's on bank unlink;,Merge pull request #192 from eco/SA-177-deeplinks
+
+Sa 177 deeplinks,Merge branch 'SA-177-deeplinks' into SA-98-auth-token,-removing path,Merge branch 'SA-177-deeplinks' into SA-98-auth-token,fix file pathing,-handling login with new interface,Merge branch 'SA-177-deeplinks' into SA-98-auth-token,-moving logout interface to RootViewModel.swift,-fixing reference for file,-logout working, needs to nav,Merge branch 'SA-177-deeplinks' into SA-98-auth-token
+
+# Conflicts:
+#	Shared/Core/Onboarding/Views/Landing.swift,-resolve pr comments,-fix merge,Merge branch 'main' into SA-177-deeplinks
+
+# Conflicts:
+#	Shared/Core/Card/CardAddressView.swift
+#	Shared/Core/Onboarding/Views/Landing.swift
+#	Shared/Core/Registration/Views/FullNameView.swift
+#	Shared/Utilities/UserSessionNetwork.swift,-fix merge,Add Section struct to DashboardVC for readability,Merge pull request #218 from eco/add-pin-mode-to-number-pad
+
+Add NumberPadStyle, refactor NumberPadView naming for consistency,merchant flow,Fix diagonal refer lines,-adding KeychainAccess lib
+-adding face id useage info plist
+-updating the AuthenticationClient.swift to support keychain access,remove ecoText component for now,remove padding,add new merchant logos, update merchant rows,Resolve merge conflicts,Add NumberPadStyle, refactor NumberPadView naming for consistency,Merge pull request #215 from eco/deposit-abstraction
+
+abstract deposit/transfer view to use global keyboard amount entry view,Merge pull request #199 from eco/button-color-refactor
+
+Button color refactor: take surface context into account,reset,Merge pull request #216 from eco/refactor-number-pad
+
+Refactor EcoNumberPadView,move padding,add fixed width back to refer view to help with alignment,Merge branch 'main' into button-color-refactor,Remove unused image parameter in KeypadButton init,Add KeyboardTap.swift to tests target,Merge pull request #214 from eco/cardFinalApplication
+
+fixed layout issues in dashboard,Merge pull request #201 from eco/SA-217-circle-ci-fastlane-release
+
+fix ci,Merge pull request #197 from eco/recurring_view
+
+Empty State view for Recurring Deposits,Merge remote-tracking branch 'origin/main' into recurring_view,Refactor EcoNumberPadView,Merge pull request #213 from eco/cleanupRefer
+
+more refer cleanup,wip on card,Merge pull request #210 from eco/notif-titles
+
+minor adjustments to notif titles,Merge pull request #206 from eco/refer-link
+
+fix referral link,Merge branch 'main' into refer-link,abstract deposit/transfer view to use global keyboard amount entry view,Merge branch 'main' into SA-98-auth-token
+
+# Conflicts:
+#	Shared/Config/LocalConfiguration.swift,fixed layout issues in dashboard,more refer cleanup,Merge pull request #209 from eco/cleanupRefer
+
+clean up refer view,Merge branch 'main' into cleanupRefer,Merge pull request #208 from eco/cardApplication
+
+Added back in eco points cell,Merge pull request #211 from eco/fix_previews
+
+Fix SwiftUI previews,edit recurring deposit amount,Fix previews,typo,minor adjustments to notif titles,clean up refer view,Merge pull request #207 from eco/anim-text-view-height
+
+animated text view: remove height, use ecoText,quick fix,Added back in eco points cell,reset,remove height, use ecoText,fix referral link,-fixing merge error,adding faceid view to login,Merge pull request #205 from eco/notif-icons
+
+add notification icons,minor adjust to spend icon,Merge branch 'main' into SA-177-deeplinks,minor adjust to spend icon,-fixing merge,-add resolved tpm,Merge pull request #202 from eco/activity-cleanup
+
+Activity cleanup,Merge branch 'main' into SA-177-deeplinks
+
+# Conflicts:
+#	Shared/Core/Root/ViewModels/RootViewModel.swift
+#	Shared/Core/Root/Views/SplashView.swift
+#	Shared/Services/Auth/AuthenticationClient.swift
+#	Shared/Utilities/UserSessionNetwork.swift
+#	Shared/Utilities/UserSessionNetworkingClient.swift,-add resolved tpm,Merge branch 'main' into SA-217-circle-ci-fastlane-release,building only on main branch,-remove plugin update step,Merge pull request #204 from eco/removeiOS15
+
+Removed all non necessary @available ios15 and if #available,Merge branch 'main' into SA-177-deeplinks
+
+# Conflicts:
+#	Shared/Core/Card/CardAddressChangeView.swift
+#	Shared/Core/Card/CardAddressView.swift
+#	Shared/Core/Card/CardApplicationViewModel.swift
+#	Shared/Core/Root/ViewModels/RootViewModel.swift
+#	Shared/Extensions/PreviewProvider.swift
+#	Shared/Models/Bridge/ServerClientModelBridge.swift
+#	Shared/Models/ClientModel/User.swift
+#	Shared/Protocols/AsyncGQLHandler.swift,Merge branch 'main' into activity-cleanup,add notification icons,update Gemfile,update Gemfile,Merge branch 'main' into removeiOS15,removed all old ios 15 things,update Gemfile,
+-update circle config,-remove bad references for gql,Merge pull request #187 from eco/cardFunctionality
+
+everything but network call,-updating circle build step,Merge branch 'main' into SA-177-deeplinks,-adding plugin install step,rebased with main,updated ios15 issues,trying without gem plugin,-adding versioning Pluginfile,Merge pull request #200 from eco/touch-effect-summary
+
+Add touch effect to summary view (within home),cancel RD's on bank unlink;,-enable auto signing,Merge branch 'main' into touch-effect-summary,Merge pull request #198 from eco/onboarding-fix
+
+minor adjustments to landing view,fix tap handler,some cleanup to activity view,Merge pull request #196 from eco/recurring-cleanup
+
+minor recurring deposits view cleanup,-disable auto signing,-update aps,-update aps,-update aps,-fixing merge,-fixing first line of merge conflicts,Merge branch 'main' into SA-177-deeplinks
+
+# Conflicts:
+#	EcoSwiftUI (iOS).entitlements
+#	Shared/Core/Components/Navigation/Modifiers/PagerIndicatorNavigationModifier.swift
+#	Shared/Core/Components/StoryPager/EcoCarousel.swift
+#	Shared/Core/Onboarding/Views/OnboardingStory.swift
+#	Shared/Core/Root/ViewModels/RootViewModel.swift
+#	Shared/Extensions/PreviewProvider.swift
+#	Shared/Extensions/View.swift
+#	Shared/Utilities/UserSessionNetwork.swift,fix transition,hack for alignment,add touch effect to summary view within home. minor home cleanup,minor naming adjust,minor adjustments to landing view,switch buttons from using their own named color spaces to inferring colors based on surface context,empty state view,remove unused color,reset,minor recurring deposits view cleanup,Merge pull request #184 from eco/carousel-start
+
+update carousel to support scenes with sub-acts, start work on onboarding carousel,Merge branch 'main' into carousel-start,fix explosion,fix timer,-update version to 1.0.2,Merge pull request #195 from eco/SA-217-circle-ci-fastlane-release
+
+Sa 217 circle ci fastlane release,Merge branch 'main' into SA-217-circle-ci-fastlane-release,anim fix,-adding push entitlement,fix dots,removed ios 15,Merge pull request #173 from eco/recurring-deposits
+
+Entire Transfers Flow,fixed issue,Merge pull request #193 from eco/SA-217-circle-ci-fastlane-release
+
+Sa 217 circle ci fastlane release,-restore options for circle,merge and fixes,-return all local to automatic
+-add code signing settings to the fastlane file for upload_testflight,fix icon,add second half of slides,-disable auto code sign,update args for gym,Merge remote-tracking branch 'origin/main' into recurring-deposits,clear local recurring deposits on cancel of existing R.D.,-test disable auto on dev builds,-testing release on another branch,-fixing project test build phase,-fixing project test build phase,-reset appstorage fields on Landing.swift appear
+-add todos for next stage once registration works on the backend,-adding gql mutation for registration,Merge pull request #191 from eco/graphQLMutation
+
+updated nav bar,updated nav bar,Merge pull request #190 from eco/graphQLMutation
+
+updated card order flow,updated card order flow,Merge branch 'main' into SA-177-deeplinks,transfer amount polish,min scale factor to transfer amount label; don't let users proceed to confirmation page if they desire to deposit an amount > deposit limit,remove change,more pr feedback cleanup,clean up useless methods,PR Feedback, block deposit view if you don't have a bank account; in transferViewModel bankAccounts are no longer optional; remove selectors in view model,Merge branch 'main' into cardFunctionality,Merge pull request #189 from eco/graphQLMutation
+
+fixed protocol issue,fixed protocol issue,-made publisher in StoryTimer.swift public
+-refactored the NarrativeBlock to use a NarrativeBlockViewModel.swift
+-added a hook onReceive to the NarrativeBlock to control updates
+
+-todo remove the logs i placed there for information,Merge pull request #188 from eco/graphQLMutation
+
+added mutation,Merge remote-tracking branch 'origin/graphQLMutation' into SA-177-deeplinks
+
+# Conflicts:
+#	Shared/Config/LocalConfiguration.swift
+#	Shared/Protocols/AsyncGQLHandler.swift
+#	Shared/Utilities/UserSessionNetwork.swift,added mutation,quick update,-remove gitignore of artifact from apollo
+-refactoring the AppStorage keys into an enum
+-adding PasswordView.swift,Merge pull request #185 from eco/card
+
+views and navigation,update explosion image,Merge pull request #186 from eco/gql-code-gen
+
+Gql code gen,update explosion image,Merge branch 'main' into card,everything but network call,fix content,only render slide if its +/- 1 index from the current index,-restoring build after gql patch fix,Merge branch 'gql-code-gen' into SA-177-deeplinks
+
+# Conflicts:
+#	Shared/Core/Onboarding/Views/Landing.swift
+#	Shared/Core/Registration/Views/EmailView.swift,-fixing after merge,Merge branch 'main' into gql-code-gen,Merge branch 'gql-code-gen' into SA-177-deeplinks
+
+# Conflicts:
+#	Shared/Utilities/UserSessionNetwork.swift,Merge branch 'main' into SA-177-deeplinks
+
+# Conflicts:
+#	Shared/Core/Onboarding/Views/Landing.swift,Merge pull request #175 from eco/SA-176-registration-get-started
+
+Sa 176 registration get started,Merge branch 'main' into SA-176-registration-get-started
+
+# Conflicts:
+#	Shared/Core/Onboarding/Views/Landing.swift,
+more small changes,-fixing apollo build script to correctly download the schema.json from the staging server and then generate code based on it back in the project,minor adjustments,-fixing the codegen build script for apollo
+-fixing the graphql mutations/queries/fragments to be current to the rn implementations,add more slides,-saving before gql work,views and navigation,Merge pull request #183 from eco/carousel-fix
+
+move touch down gesture to content to content is tappable,more cleanup,-updating the skip button
+-moving toast modifier to the RootView.swift
+-adding appstorage for registration flow
+-building out UsernameView.swift,-updating the skip button
+-moving toast modifier to the RootView.swift
+-adding appstorage for registration flow
+-building out UsernameView.swift,Merge remote-tracking branch 'origin/main' into recurring-deposits,final clean up before rebasing,pr clean up,fixed redacted stuff,clean up + add warnings for missing work,edit recurring deposits api call,finished recurring deposit frequency / source / confirmation sheets,editing source of recurring deposit sheet; confirming changes to recurring deposit sheet;  updateRecurringDeposit api call + click handler;,update carousel to support scenes with sub-acts, start work on intial carousel,more clean up,clean up,Merge pull request #180 from eco/account-cleanup
+
+lots of cleanup to account view,Merge pull request #182 from eco/small-segment
+
+minor updates to small segmented picker,move touch down gesture to content,Merge branch 'SA-176-registration-get-started' into SA-177-deeplinks
+
+# Conflicts:
+#	Shared/Core/Registration/Views/UsernameView.swift
+#	Shared/Services/Auth/AuthenticationClient.swift,-review comments,Merge branch 'main' into SA-176-registration-get-started
+
+# Conflicts:
+#	Shared/Config/LocalConfiguration.swift
+#	Shared/Services/Auth/AuthenticationClient.swift,-review comments,reset,minor updates to small segmented picker,bring back deposit and withdraw logic; add api call (fetch user accounts) necessary to make withdraw; functioning withdraw flow;,some minor adjustments to account home,Merge pull request #181 from eco/enableTestflight
+
+updated circle yaml and set to prod for testflight,update3,udpate2,update,updated circle yaml and set to prod for testflight,Merge pull request #179 from eco/activityFinishingTouches
+
+added loading and empty state to activity,reset,lots of cleanup to account view,added shimmer to test project,updated segment view,-fixing runtime error from AnimatedTextView,added loading and empty state to activity,Merge pull request #177 from eco/abstract-keypad
+
+abstract keypad/number view,cleanup,empty spaces,Merge branch 'main' into SA-177-deeplinks
+
+# Conflicts:
+#	Shared/Config/LocalConfiguration.swift
+#	Shared/Services/Auth/AuthenticationClient.swift
+#	Shared/Utilities/UserSessionNetwork.swift,-adding networking and startup logic for deeplink,Merge pull request #178 from eco/activityUpgrade
+
+fixed summary view,work on confirm withdraw sheet;,confirm withdraw sheet,withdraw source sheet logic,squash deposit and withdraw; add unlink account logic to transferVM; rename deposit vm to transfer vm; rename deposit amount view to transfer amount view; remove withdraw and deposit actions and replace with just transfer action;,added createRecurringDeposit api logic,added label to deposit frequency,added cancelRecurringDepositSheet; fixed UserBankAccount nullable bug;,page titles,added unlink deposit sheet to manage deposit view,move logic into components extension to keep body clean,begin working on recurringDepsitView,rename recurringDeposits to getRecurringDeposits network action; createRecurringDeposit network action created; move model definitions into separate files; only show one time deposit frequency option if user already has a recurring deposit,Merge remote-tracking branch 'origin/main' into recurring-deposits,Merge pull request #164 from eco/account_fix_2
+
+Account Changes,Merge remote-tracking branch 'origin/main' into account_fix_2,pr feedback;,fixed summary view,-adding modifier EcoLinkModifier.swift
+-adding method for navigating on deeplink,Merge pull request #176 from eco/activityUpgrade
+
+udpated transaction segments / animations,move to own file,abstract keypad/number view,fixed helix issue for now,rebased,finished with infinite scrolling,-adding the apple-app-site-association.txt
+-adding modifier  for UniversalLinkModifier.swift,pr feedback,temp,fix plaid integration,-fix merge,Merge branch 'main' into SA-176-registration-get-started
+
+# Conflicts:
+#	Shared/Core/Components/Buttons/PillButton.swift
+#	Shared/Core/Onboarding/Views/Landing.swift,Merge pull request #174 from eco/referral-cleanup
+
+more cleanup to referral view for alignment, add new profile picture placeholder,Merge pull request #172 from eco/carousel-polish
+
+Polishing the new carousel onboarding experience,remove profile pic fetching from PR will be done in follow up pr,Merge remote-tracking branch 'origin/main' into recurring-deposits,-clean up for pr,udpated transaction segments / animations,-passwordless login works now
+-emails get sent from auth0 now,fix image names,more cleanup to referral view for alignment, add new profile picture placeholdedr,create manage deposits view; add api logic for fetching recurring deposits;,formatting,fix animated text view height,Merge branch 'main' into SA-176-registration-get-started,-adding the details to the registration flow pre passwordless auth
+-need to fix magiclink in client since its failing
+-need to add code login to client since its missing,Merge pull request #167 from eco/plaid
+
+Plaid,lots of carousel polish,rebased,Merge pull request #159 from eco/activity
+
+Work on activity, created views and updated config to work with prod,removed file messing up build,
+update schemes,rebased,updated url encoding,pr worthy,almost there,finished segment view,Merge branch 'main' into SA-176-registration-get-started
+
+# Conflicts:
+#	Shared/Core/Components/Buttons/PillButton.swift,Merge pull request #169 from eco/SA-156-carousel-placeholders
+
+Sa 156 carousel placeholders,fixing merge,Merge branch 'main' into SA-156-carousel-placeholders
+
+# Conflicts:
+#	Shared/Config/LocalConfiguration.swift
+#	Shared/Core/Components/Buttons/PillButton.swift,-moving enum specific switchs to its definition and out of other structs,Merge branch 'main' into SA-176-registration-get-started
+
+# Conflicts:
+#	Shared/Config/LocalConfiguration.swift
+#	Shared/Core/Components/Buttons/PillButton.swift,-adding registration skeleton,Merge pull request #168 from eco/refer-icons
+
+minor updates to refer view, add icons,Merge pull request #170 from eco/onboarding-field-divider
+
+update divider to be thicker when focused, add anim curve,Merge pull request #171 from eco/small-button
+
+add small button type,final clean up,add support email address to email helper; add param to eco sheet api letting users choose whether to disable dismissing the sheet when loading is true; final clean up,use eco fonts when possible; use const sizes; fill in FAQs,finishing touches; add comments; delete dead code; add guard statements to properly unwrap vars; store things in VM when possible,add small button type,udpate divider to be thicker when focused, add anim curve,-remove commented out code,fixing merge conflict,Merge branch 'main' into SA-156-carousel-placeholders
+
+# Conflicts:
+#	Shared/Config/LocalConfiguration.swift
+#	Shared/Core/UIKit/Shared/UIColor+Eco.swift,clean up,added faqs; began cleaning up,minor updates to refer view, add icons,-adding a clear reset to the carousel,-clean up story files,-buttons and clicks work for navigation in carousel
+-updating the PillButton.swift to have a new type
+-modified the timer to restart on advance
+-modified the timer to end at the last index,resolved conflicts,updated callback in app delegate,quick update,remove bank data service,removed commented networking code,plaid integration,reset password api call; add app session to home view model; add animation on help center,-refactoring slidehelix to pull out views to other files,Merge pull request #166 from eco/shake-error
+
+shake on error on deposit view, add haptics,-fixing OnTouchDownUpGestureModifier.swift for bug where its toggle failed outside the view drag,- the text views for StoryHelixSlide.swift work in offset animations and text alignment,-adding OnTouchDownUpGestureModifier.swift so we can pause the StoryTimer.swift,clean up,fetch Auth0 User Profile Information,standardize rows for account view,clean up account view; remove list; use row component instead; styling still WIP,clean up + sample faq's added,restrict to 1 line,fix keypad hit area,use haptic manager from home view model,wip on plaid integration,add helpCenterView,make homeViewModel a @ObservedObject in account view to respond to its changes,add bank data service to account view model,shake on error on deposit view, add haptics,add bankDataService to fetch data and update homeViewModel on bank account unlink (TODO: how can use combine here instead); handle loading / errors when unlinking; make bank account in HomeViewModel a published obj;,add unlink api logic,added connect an account / connected account views,make eco sheet block UI on loading,Merge pull request #165 from eco/confirm-deposit-cleanup
+
+add shake animation, row cleanup to confirm deposit view,-animation for first 2 stories working,-working text slide,clear errors when switching bank accounts,add shake animation, row cleanup to confirm deposit view',-fixing storypager folder
+-adding images for story onboarding
+-adding transition effects,updated currencies,account skeleton flow,Merge pull request #163 from eco/ecoSheet
+
+Eco sheet,added eco sheet component; replaced all other sheet instances with component;,Merge branch 'main' of https://github.com/eco/ecoSwiftUI,Merge pull request #162 from eco/deposit-confirm-sheet
+
+clean up to deposit confirm sheet,wip got transactions in there...need to do paging and coming back from background and tidy up colors and design,clean up optionals,dont allow loading button to fire an action,clean up to deposit confirm sheet,Merge pull request #156 from eco/images-navbar
+
+lots of cleanup to icons/images, some navbar fixes,Merge branch 'main' of https://github.com/eco/ecoSwiftUI into images-navbar,Merge pull request #160 from eco/SA-31-onboarding-pagination-indicator
+
+Sa 31 onboarding pagination indicator,Merge pull request #161 from eco/SA-31-indicator-taps
+
+Sa 31 indicator taps,-increasing the frequency on the timer,-clean up animation ending,add back in sheets,Merge branch 'main' into SA-31-onboarding-pagination-indicator
+
+# Conflicts:
+#	Shared/Config/LocalConfiguration.swift,-adding callback for navigation,Merge branch 'main' of https://github.com/eco/ecoSwiftUI into images-navbar,Merge branch 'main' of https://github.com/eco/ecoSwiftUI,Merge pull request #157 from eco/merchants_api
+
+Merchants API,only show bgd when scrolled, fix refer view,add redacted skeleton view on load of merchants,move haptic manager from singleton to member of UserSession,Merge remote-tracking branch 'origin/main' into merchants_api,Merge branch 'main' of https://github.com/eco/ecoSwiftUI,Merge pull request #149 from eco/deposit_network_calls
+
+Deposit API Call + Confirm Deposit Sheet + Deposit Error Handling,Merge remote-tracking branch 'origin/main' into deposit_network_calls,Merge branch 'main' of https://github.com/eco/ecoSwiftUI,Merge pull request #144 from eco/referral_api_call
+
+Referrals API,Merge pull request #155 from eco/notif-upodate
+
+minor updates to notif layout, use icon view,Merge pull request #154 from eco/ecofont-fix
+
+fix eco font measurement,simplify a bit,
+-adding tap gesture for navigating back an forth for the onboardingstory view,fix login view,-update comments,comments, move extension,resovled conflict,-remove debug assets,Merge branch 'main' into SA-31-onboarding-pagination-indicator
+
+# Conflicts:
+#	Shared/Core/Onboarding/Views/Landing.swift,-updating animations for PageIndicatorAnim.swift
+-adding comments,WIP on activity, created views and updated config to work with prod,fetch referrals on referral view did appear,load merchants on merchant view load,match figma design,add api call fetching all merchants; add server model; add mock object for response;,added haptic manager to test target,Merge branch 'main' of https://github.com/eco/ecoSwiftUI,fix login views,abstract the action view more,fix copy / share board bugs,temp sizing fix,Merge remote-tracking branch 'origin/main' into referral_api_call,remove some unused vars,lots of cleanup to icons/images, some navbar fixes,minor updates to notif layout, use icon view,Merge pull request #153 from eco/sign-in-button
+
+fix sign in button,Merge branch 'main' into sign-in-button,fix eco font measurment,added ability to fetch user profile via REST,Merge branch 'main' of https://github.com/eco/ecoSwiftUI,Merge pull request #152 from eco/pill-button-updates
+
+updates to pill button, move navigation link to pill button,fix sign in button,PR Feedback: unwrap instead of !; set is loading to false in guards,Merge remote-tracking branch 'origin/main' into deposit_network_calls,Merge branch 'main' of https://github.com/eco/ecoSwiftUI,PR Feedback - min height on error text + fix typo + network fixes,Merge pull request #148 from eco/sheet-anim
+
+add custom animation to sheets, update for main menu,Merge pull request #150 from eco/launch
+
+add launch view/animation,updates to pill button, move navigation link to pill button,Merge pull request #146 from eco/notificationPriority
+
+update home on model change,fix missing fonts,clean up,disable submit button if deposit error has not been addressed; persist / remove deposit error when changing bank selection if new bank selection has enough balances to proceed with deposit;,clean up,only show confirm deposit sheet if deposit passes validation criteria,clean up deposit view model + limit 2 chars after period for keyboard input,Merge pull request #147 from eco/row-component
+
+lots of updates to row component, add to views,alignment fix on deposit date sheet,fix broken build,display selected bank account info in confirm deposit sheet,add launch view/animation,temp,remove constant,add custom animation to sheets, update for main menu,-pulling out PagerIndicatorNavigationModifier.swift and NavigationItems.swift
+-updatind OnboardingStory.swift with new EcoCarousel.swift view
+-condensing index into StoryTimer.swift,-moving logic of pager into its own modifier and extension,Merge pull request #145 from eco/notif-empty-state
+
+update style for notif empty state/button,allow you to disable touch effect,-animation work correctly,fix keypad button without border,fix keypad button bgd color,remove unused state vars,more subtlerrr,add scale effect,fix icon component to respect intrinsic size,wrap with button if action is present,cleanup,lots of updates to row component, add to views,-dot indicator spreading for index and no other,-adding placeholder indicator and timer,Merge branch 'main' into SA-31-onboarding-pagination-indicator,Merge pull request #143 from eco/case-sensitive
+
+Case sensitive,update home on model change,update style for notif empty state/button,api call for fetching user's referrals,-re-add fonts and fix case insensitive font folder,fixing gitignore and removing apollo artifacts?,-removed fonts,remove duplicate casenewss,-addning folder,Merge pull request #141 from eco/rename_user_service
+
+rename UserSession to UserSessionService,Merge pull request #140 from eco/notificationNavigation
+
+updated notification handling,rebased to main,updated to handle unknown properties json structure,rename UserSession to UserSessionService,Merge pull request #127 from eco/deposit_vm_changes
+
+Deposit / Deposit View Model changes,add accidentally deleted comment,Merge remote-tracking branch 'origin/main' into deposit_vm_changes,PR Feedback: remove enumerated forEach and just use a regualar forEach; force unwrap bank account within DepositViewModel,PR Feedback: make entire row clickable using .contentShape(Rectangle()),PR Feedback: remove enum caseIterable logic and repalce with a private var array holding all types in view,removed root window?,added empty state view, fixed few things on dashboard,Merge pull request #137 from eco/purple
+
+Add purple color,Merge pull request #134 from eco/notif-colors-2
+
+some color fixes, system fixes for notif items and list,conflict on deposit view,Merge remote-tracking branch 'origin/main' into deposit_vm_changes,PR Feedback: rename vm to a more descriptive var name,Merge branch 'main' into notif-colors-2,Merge pull request #136 from eco/touch-event-action
+
+Disable touch event delay on action menu,Merge pull request #135 from eco/icons
+
+start icon component, add to action menu,Merge pull request #138 from eco/keypad-updates
+
+Keypad button/layout updates,
+delete target--swift,fix: merge error,Merge remote-tracking branch 'origin/main' into deposit_vm_changes,updated network, should be good, need to test,add depositSheet to test target,add Row.swift to test target,updated notification handling,Merge pull request #125 from eco/SA-131-login-session
+
+Sa 131 login session,Merge pull request #131 from eco/SA-142-textfield-focus-cta
+
+Sa 142 textfield focus cta,-clean up,add missing row file,clean up,add swifui wrapper,logic for determining selected sub account based on json response primary key,fix navbar font,reset project,clean up button style a bit,update keypad presentation, add touch down effects,add purple color,reset,reset project,don't delay touch events for action menu,iteratively display list items in deposit frequency sheet,withSheetTitleStyles modifier,remove weird file,add rest of changed files,start icon component, add to action menu,Merge pull request #132 from eco/refer-cleanup
+
+some cleanup to refer views,dynamic account labels,address feedback,iterate through linked sub accounts in deposit source sheet,some color fixes, system fixes for notif items and list,removed target thing,Merge pull request #133 from eco/navUpdates
+
+fixed navigation issues,fixed navigation issues,some cleanup to refer views,pill button style for transfer flow,Merge remote-tracking branch 'origin/main' into deposit_vm_changes,Merge branch 'main' into SA-142-textfield-focus-cta,-fix merge,Merge branch 'main' into SA-131-login-session
+
+# Conflicts:
+#	Shared/Core/Root/ViewModels/RootViewModel.swift,-passing through the keyboard and text content types for the textfields,new button type;,Merge pull request #126 from eco/notificationAdjustments
+
+Notification adjustments,-updating auto indent,Merge pull request #128 from eco/notif-colors
+
+Notif button colors + animations,Merge pull request #129 from eco/numpad-color-cleanup
+
+Numpad color/variables cleanup,Merge pull request #124 from eco/account_profile
+
+Account profile,remove gql,updated parsing a tiny,organized to clean up bridge file,remove system applied setting,removed gql target,fixed conflict,-adding auto focus next field to the  onboardingtextfield,remove weird file,move num to var,lots more cleanup...,more cleanup,clean up a lot of colors/values for the keypad,deposit date sheet colors + consts clean up,deposit source sheet dark mode + clean up,deposit frequency dark mode ✅,add notif button animation duriing transitions,add correct colors to notif button,make deposit view model take in home view model;,Merge remote-tracking branch 'origin/main' into account_profile,updates, have issue with navigation,Merge pull request #123 from eco/user_gql_fetch
+
+User gql fetch,delete accidentally included file,Merge remote-tracking branch 'origin/main' into user_gql_fetch,Merge pull request #122 from eco/gql_download
+
+Download GQL Schema from Server,Merge branch 'main' into SA-131-login-session,-user can login and go to home,updated changes,finished notification parsing,Merge pull request #99 from eco/merchants
+
+Merchants,use user model in account view,TODO: raw value / label var on depositFrequencies,get user via gql; use bridge architecture to create user model,apollo build phase script -download schema from staging url,Merge remote-tracking branch 'origin/main' into merchants,Merge pull request #106 from eco/login-divider
+
+Login divider color fix,tweak spring,fix conflict,Merge branch 'main' of https://github.com/eco/ecoSwiftUI into login-divider,fixed previews,refactored model,Merge pull request #118 from eco/SA-101-password-reset
+
+Sa 101 password reset,Merge branch 'main' into SA-101-password-reset,Merge pull request #119 from eco/getLinkedBanks2
+
+Get Linked Banks,PR feedback,Merge pull request #120 from eco/notificationAdjustments
+
+fixed userStatus model object, should work in production now,fixed userStatus model object, should work in production now,Merge branch 'main' into SA-101-password-reset,clean up,change link status to a bool on the client model; refine optional fields; add missing balances field to client and server models,Merge pull request #117 from eco/SA-139-ci-upgrade-xcode
+
+-update xcode to 13.2.1 for ci,Merge pull request #116 from eco/SA-99-login-fail-messages
+
+Sa 99 login fail messages,Merge pull request #115 from eco/SA-113-toast-notification-2
+
+Sa 113 toast notification 2,
+add bank accounts endpoint / network call util; make bank account call in root view model; pass bank account to home view model; create necessary server / client models; create server / client bridge,-adding reset call to auth client,-update xcode to 13.2.1 for ci,-xcode autoindent,-refactoring Login.swift to pull out the component text fields into their own component folder
+-adding forgot button to Login.swift
+-making all navigation bars that derive from OnboardingBase.swift to be inline
+-adding PasswordReset.swift file
+-adding email validation extension
+-todo make reset call and show notification,-adding error messages for Login.swift
+-adding color for error toasts,-fixing merge conflicts,Merge branch 'main' into SA-113-toast-notification-2
+
+# Conflicts:
+#	Shared/Core/Onboarding/Landing.swift,-removing state annotation from TextViews.swift
+-cleaning up code
+-reintroducing the OnboardingBase.swift,Merge pull request #102 from eco/account
+
+Placeholder Account View,placeholder image when loading,Merge remote-tracking branch 'origin/main' into account,Merge pull request #113 from eco/newNotifications
+
+New notifications,-landing to login works for toasts without flicker,WIP on notifications,Merge pull request #109 from eco/p-blue
+
+Update positive blue color, add hex helper,Merge pull request #108 from eco/fix-bgd
+
+Fix surface secondary bgd color in dark mode,Merge pull request #105 from eco/landing-logop
+
+Landing logo update,finally fixed previews,Lot of rearchitecting, looking good,update positive blue color, addhex helper,fix surface secondary bgd in dark mode,Merge branch 'main' of https://github.com/eco/ecoSwiftUI,fake commit to re-test,-adding modifier and toast view
+-adding utils function
+-todo need to remove OnboardingBase.swift,Merge branch 'main' of https://github.com/eco/ecoSwiftUI into landing-logop,Merge branch 'main' of https://github.com/eco/ecoSwiftUI into login-divider,Merge pull request #104 from eco/onboarding-input
+
+update onboarding input text size,fix divider color,update onboarding input text size,Merge branch 'main' of https://github.com/eco/ecoSwiftUI,update landing logo to correct svg,Merge pull request #101 from eco/button-cleanup
+
+cleanup button abstraction a bit,update onboarding input text size,add account view and view model to test targets,fix refer view; create placeholder account view; nest all actions in navigation view;,reset file,cleanup button abstraction a bit,Merge pull request #93 from eco/animated-text
+
+add animated text component,fix enum,Merge branch 'main' into animated-text,wip on notifications,add to test target,Merge branch 'main' of https://github.com/eco/ecoSwiftUI into animated-text,Merge pull request #95 from eco/dashboard-header-cleanup
+
+some clean up to dashboard header, pillview,Merge branch 'main' of https://github.com/eco/ecoSwiftUI into dashboard-header-cleanup,Merge pull request #98 from eco/withdraw
+
+Withdraw,remove scrollview,add merchant view + model (first pass),Create Withdraw Flow (withdraw -> confirm withdraw),create withdraw placeholder; fix pill button styling issues on light mode;,Merge pull request #97 from eco/folder
+
+organize folder structure,add details to readme about bypassing login screen,organize folder structure,reset file,some clean up to dashboard header, pillview,Merge pull request #94 from eco/notifications
+
+notifications architecture,got user status field and call in,connect lib to tests,notifictions architecture,abstract out font size,add opacity,add animated text component,Merge pull request #92 from eco/login-polish
+
+add some additional polish to login screen,add constraint,more text field polish,reset project file,remove onboarding dim,minor landing polish,adjust landing page padding,add some additional polish to login screen,Merge pull request #90 from eco/liveDashboard
+
+wired up dashboard,Merge pull request #91 from eco/SA-113-async-button
+
+Sa 113 async button,-merged the PillButton.swift,Merge branch 'main' into SA-113-async-button
+
+# Conflicts:
+#	Shared/SwiftUI/Components/Buttons/PillButton.swift,-adding delay showing of task,Merge pull request #82 from eco/depositFirstPass
+
+Deposit Screens,-adding networking,change navigation bar tint color to match figma,Merge branch 'main' into SA-113-async-button
+
+# Conflicts:
+#	Shared/LocalConfiguration.swift,-adding AsyncButton.swift
+-adding new PillButton.swift structs for loading
+-updating Login.swift with async button
+-making async call to signin,remove getHeight / getWidth / getScreenBounds view extensions,wired up dashboard,Merge remote-tracking branch 'origin/main' into depositFirstPass,nest preview in navigation view to match how it would be in real app,replace all text instances with eco font alternatives; clean up some more TODO's;,Merge pull request #81 from eco/bouncy-menu
+
+make menu buttons use eco button,correct color,add back in interaction removal,Merge branch 'main' into bouncy-menu,Merge pull request #89 from eco/dashboardNetworking
+
+Dashboard networking,clean up,removed IDE thing breaking tests,added currency to homeViewModel,updated config files to allow for better dev customization,create DepositAmountView to be shared by DepositView and ConfirmDepositView; use eco colors,update custom keyboard view to match figma design,add new colors,update PillButton component replacing RoundedRect with cornerRadius = .infinity to Capsule() shape; add custom initializer to allow for more flexible usage,Merge pull request #88 from eco/dashboard
+
+updated dashboard no networking yet,
+removed weird plist that got added,wip on dashboard network calls,Merge pull request #86 from eco/SA-82-signup-placeholder
+
+Sa 82 signup placeholder,small color change,updated dashboard no networking yet,Merge remote-tracking branch 'origin/main' into depositFirstPass,Merge pull request #84 from eco/sheetsRoundTwo
+
+Eco Action Sheet,move sheetify definition to existing View extension file,Merge remote-tracking branch 'origin/main' into sheetsRoundTwo,remove sheetifyExample file; move sheetify view extension to existing View Extension file,-fixing bug,Merge branch 'main' into SA-82-signup-placeholder,Merge pull request #83 from eco/SA-94-eco-nav-header
+
+Sa 94 eco nav header,add ConfirmDepositView,move View extension to existing extensions folder; respect safe area,Merge pull request #85 from eco/newlogin
+
+Newlogin,updated so tests compile,-adding OnboardingCarousel.swift,finished with root navigation,-adding color setting for nav bar,Merge branch 'main' into SA-94-eco-nav-header
+
+# Conflicts:
+#	Shared/SwiftUI/Views/Onboarding/OnboardingBase.swift,added alamofire,create sheetiify view modifier and example view of two separate sheets,Merge pull request #73 from eco/color-system
+
+Color updates + create contextual color system,remove references to colors file,Merge branch 'main' of https://github.com/eco/ecoSwiftUI into color-system,Merge branch 'main' into SA-94-eco-nav-header,Merge pull request #77 from eco/SA-68-login
+
+Sa 68 login,nest deposit view within a navigation view; change default button back style to plain;,-extracting custom eco nav header into a view modifer,add depositListView and depositView;,remove test color:,reset project,remove unused function,remove colors from assets folder, remove swifui color struct,make menu buttons use eco button,-adding custom back button for onboarding flow,-add appsession to landing,Merge branch 'main' into SA-68-login
+
+# Conflicts:
+#	Shared/AppSession.swift,Merge pull request #80 from eco/clean-up-signout
+
+cleanup,add DepositListItemRowView,Merge pull request #75 from eco/SA-76-test-buil-dep
+
+fix test dependencies,-removing revferences to signout,-removing signedoutplaceholder as we are replacing it with the landing screen,-adding appsession to the Landing.swift and Login.swift,Merge branch 'SA-76-test-buil-dep' into SA-68-login,Merge pull request #71 from eco/menu-ease
+
+Menu ease,Merge pull request #72 from eco/galaxy-img
+
+update galaxy image to correct color bgd,-fix test dependencies,-adding landing,Merge branch 'main' into SA-68-login
+
+# Conflicts:
+#	Shared/EcoSwiftUIApp.swift
+#	Shared/SwiftUI/Views/Widgets/Buttons/PillButton.swift,-add padding,reset,remove some unneeded colors,minor rename,set up initial color structure,update galaxy image to correct color bgd,Merge branch 'main' of https://github.com/eco/ecoSwiftUI into menu-ease,Merge pull request #69 from eco/anim-curves
+
+add animation curve options to progress mapper,Merge pull request #70 from eco/eco-button
+
+create base eco button, use with IconButton,add easing to menu presentation,make curve non optional,remove unneded height/width setting,Merge pull request #68 from eco/gql
+
+GraphQL clients,create base eco button, convert iconbutton to use that class. allow icon button to have a bgd,add animation curve options to progress mapper,Merge pull request #66 from eco/action-galaxy
+
+add galaxy image to helix when in action menu,Merge pull request #67 from eco/action-menu-close
+
+update close icon in action menu, add bounce effect,address feedback,few fixes,few updates,updated session responsibilities,polish,fixed tests issue and auth string in header,reverted bad project changes,updated old testing stuff,removed old test site,Graph QL clients for both auth and non authenticated queries,reset project,update close icon in action menu, add bounce effect,minor helix tweaks,add galaxy image to helix when in action menu,Merge pull request #64 from eco/stagingCredentials
+
+updated dev credentials,Merge pull request #65 from eco/fixHelixStatusBar
+
+fixed issue where helix would move on status bar tap when action menu…,fixed issue where helix would move on status bar tap when action menu shown,updated dev credentials,Merge pull request #60 from eco/rootView
+
+Root Architecture,final project update,project file changes,fixed project file back,Merge pull request #63 from eco/action-haptic
+
+add haptics to action menu,fixed previews issue,add prepare method,udpated project so tests won't break?,add haptics to action menu,Merge pull request #59 from eco/helix-anim
+
+Dashboard <> Activity animation tweaking,Merge pull request #58 from eco/action-icons
+
+add action icons to action menu,Merge pull request #62 from eco/action-button-anim
+
+add pressed animation to action button,changed issue breaking circle,Merge pull request #50 from eco/numberPad
+
+Eco Number Pad,

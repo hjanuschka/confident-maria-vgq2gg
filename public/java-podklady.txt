@@ -1,0 +1,19 @@
+udemy kurz:
+https://www.udemy.com/course/java-the-complete-java-developer-course/
+
+
+hackerrank úlohy na precvičovanie:
+https://www.hackerrank.com/domains/java
+
+
+B-OOP predmet na fei:
+(hlavnou témou nieje java ale celkovo technika objektovo-orientovaného programovania)
+
+prednášky (celkom utrpenie ja som tam nechodil, ani som to nepozeral :D,
+ale vraj tam sú základy javy(a oop) celkom pokryté):
+https://www.youtube.com/playlist?list=PLQfMtPjiSM4vwcF3f4hXelyriS1w0oNMH
+
+cvičenia:
+https://www.youtube.com/playlist?list=PLQfMtPjiSM4swbTxGLoxud_6sAYyCCDI1
+
+web predmetu (asi jediná užitočná sekcia je "cvičenia"): https://uim.fei.stuba.sk/predmet/b-oop/

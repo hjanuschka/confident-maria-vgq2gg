@@ -1,0 +1,1 @@
+"A tawarruq consists of two sale and purchase contracts. The first involves the sale of an asset by a seller (the Bank) to a purchaser (Customer) on a deferred basis. Subsequently, the purchaser of the first sale will sell the same asset to a third party on a cash and spot basis"

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 147.14761 30.641366"
+   height="30.641367mm"
+   width="147.14761mm"
+   sodipodi:docname="mevvit.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2256"
+     inkscape:window-height="1398"
+     id="namedview8"
+     showgrid="false"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="293.62823"
+     inkscape:cy="-15.636561"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <defs
+     id="defs2">
+    <marker
+       inkscape:stockid="Tail"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Tail"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <g
+         id="g6551"
+         transform="scale(-1.2)">
+        <path
+           id="path6539"
+           d="M -3.8048674,-3.9585227 0.54352094,0"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.80000001;stroke-linecap:round"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path6541"
+           d="M -1.2866832,-3.9585227 3.0617053,0"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.80000001;stroke-linecap:round"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path6543"
+           d="M 1.3053582,-3.9585227 5.6537466,0"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.80000001;stroke-linecap:round"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path6545"
+           d="M -3.8048674,4.1775838 0.54352094,0.21974226"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.80000001;stroke-linecap:round"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path6547"
+           d="M -1.2866832,4.1775838 3.0617053,0.21974226"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.80000001;stroke-linecap:round"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path6549"
+           d="M 1.3053582,4.1775838 5.6537466,0.21974226"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.80000001;stroke-linecap:round"
+           inkscape:connector-curvature="0" />
+      </g>
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path6503"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="matrix(0.91747812,0,0,0.91747812,41.121848,-96.821045)"
+     id="layer1">
+    <text
+       id="text4520"
+       y="135.17699"
+       x="-9.4875317"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:67.73332977px;line-height:1.25;font-family:'Microsoft Tai Le';-inkscape-font-specification:'Microsoft Tai Le Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:38.80555725px;font-family:Carlito;-inkscape-font-specification:'Carlito Bold';fill:#333333;stroke-width:0.26458332"
+         y="135.17699"
+         x="-9.4875317"
+         id="tspan4518">mevvit</tspan></text>
+  </g>
+  <rect
+     style="opacity:1;fill:#0070ff;fill-opacity:1;stroke:none;stroke-width:0.86491483;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect4518"
+     width="27.702471"
+     height="27.702471"
+     x="2.9554489"
+     y="-27.675524"
+     ry="4.6437855"
+     transform="rotate(89.796596)" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:67.7333374px;line-height:1.25;font-family:'Microsoft Tai Le';-inkscape-font-specification:'Microsoft Tai Le Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458335"
+     x="12.816719"
+     y="18.36529"
+     id="text4524"><tspan
+       sodipodi:role="line"
+       id="tspan4522"
+       x="12.816719"
+       y="78.444695"
+       style="stroke-width:0.26458335" /></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.75555611px;line-height:1.25;font-family:'Microsoft Tai Le';-inkscape-font-specification:'Microsoft Tai Le Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458335"
+     x="-0.73594904"
+     y="18.184587"
+     id="text4532"><tspan
+       sodipodi:role="line"
+       id="tspan4530"
+       x="-0.73594904"
+       y="35.707748"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.75555611px;font-family:'Source Serif Pro';-inkscape-font-specification:'Source Serif Pro';fill:#ffffff;stroke-width:0.26458335" /></text>
+  <g
+     id="g6958"
+     transform="matrix(0.8743605,0,0,0.8743605,1.7287276,1.2440382)">
+    <g
+       transform="translate(0.28063299,-2.245064)"
+       id="g6929">
+      <rect
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.85229528;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+         id="rect6841-5"
+         width="12.39854"
+         height="17.681215"
+         x="-29.821318"
+         y="-7.4195938"
+         ry="3.3771136"
+         transform="matrix(-0.69181739,-0.72207251,-0.70710678,0.70710678,0,0)" />
+      <rect
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.85229528;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+         id="rect6841-5-4"
+         width="12.39854"
+         height="17.681215"
+         x="-10.902102"
+         y="-30.047726"
+         ry="3.3771136"
+         transform="matrix(0.72207251,-0.69181738,-0.70710678,-0.70710678,0,0)" />
+    </g>
+    <g
+       transform="matrix(1,0,0,-1,0.28063299,37.957247)"
+       id="g6929-7">
+      <rect
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.85229528;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+         id="rect6841-5-42"
+         width="12.39854"
+         height="17.681215"
+         x="-29.821318"
+         y="-7.4195938"
+         ry="3.3771136"
+         transform="matrix(-0.69181739,-0.72207251,-0.70710678,0.70710678,0,0)" />
+      <rect
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.85229528;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+         id="rect6841-5-4-0"
+         width="12.39854"
+         height="17.681215"
+         x="-10.902102"
+         y="-30.047726"
+         ry="3.3771136"
+         transform="matrix(0.72207251,-0.69181738,-0.70710678,-0.70710678,0,0)" />
+    </g>
+  </g>
+</svg>

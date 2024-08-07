@@ -1,0 +1,677 @@
+{
+	"info": {
+		"_postman_id": "b5f18759-d238-465d-8463-762c5c9e8026",
+		"name": "Hayat",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2580403"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"firstName\": \"abdullah\",\n\"lastName\": \" \",\n\"email\": \"abdullah2@hayat.com\",\n\"username\": \"abdullah2@hayat.com\",\n\"password\": \"123456789\"\n}\n\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/auth/local/register",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"auth",
+								"local",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "get profile data",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "farm",
+			"item": [
+				{
+					"name": "create farm",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjU4NDc3MTU0LCJleHAiOjE2NjEwNjkxNTR9.509E8bJop7jMH3loIs_kDCfKRL3ss0KgTjMBIfU9_Uc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"data\": {\n    \"address\": \"Sports city\",\n    \"farmNumber\": 1,\n    \"farmArea\": \"324.3\"\n   }\n   \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/farms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"farms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find farm by id",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "list farms",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "update farm",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "update farm Copy",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "warehouse managment",
+			"item": [
+				{
+					"name": "get warehouses",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "productCategory",
+			"item": [
+				{
+					"name": "get product categories",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "list products by category",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "list products",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "offer",
+			"item": [
+				{
+					"name": "list all offers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDUsImlhdCI6MTY1OTk0NjMxMSwiZXhwIjoxNjYyNTM4MzExfQ.X7L-APkngtaMEK8iwST2XLq5GBtw-zavOpqgMqZAqt4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/offers?pagination[page]=0&pagination[pageSize]=10&populate=warehouse,user,product.image",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"offers"
+							],
+							"query": [
+								{
+									"key": "pagination[page]",
+									"value": "0"
+								},
+								{
+									"key": "pagination[pageSize]",
+									"value": "10"
+								},
+								{
+									"key": "populate",
+									"value": "warehouse,user,product.image"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list offers by status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjU4NDc3MTU0LCJleHAiOjE2NjEwNjkxNTR9.509E8bJop7jMH3loIs_kDCfKRL3ss0KgTjMBIfU9_Uc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/offers?filters[offerStatus]=CREATED&pagination[page]=0&pagination[pageSize]=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"offers"
+							],
+							"query": [
+								{
+									"key": "filters[offerStatus]",
+									"value": "CREATED"
+								},
+								{
+									"key": "pagination[page]",
+									"value": "0"
+								},
+								{
+									"key": "pagination[pageSize]",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create offer",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjYyNTM4NDMyLCJleHAiOjE2NjUxMzA0MzJ9.BnjZlpui-ry6nN2uQSz8geK7RaSb9hU_u6QXSLyVAI4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"quantity\": 6,\n        \"product\": 1,\n        \"farm\": 1,\n        \"warehouse\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/offers",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"offers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update offer",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjYyNTM4NDMyLCJleHAiOjE2NjUxMzA0MzJ9.BnjZlpui-ry6nN2uQSz8geK7RaSb9hU_u6QXSLyVAI4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        id: 1,\n        \"quantity\": 6,\n        \"product\": 1,\n        \"farm\": 1,\n        \"warehouse\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/offers/{id}",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"offers",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "offerRequest",
+			"item": [
+				{
+					"name": "acceptOfferRequest",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjYyOTY1Nzg3LCJleHAiOjE2NjU1NTc3ODd9.fzh9ofUs7ApMJ3YPWKKCliycPsM5lk9bGq_vXwLMCUQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"quantity\": 6,\n        \"product\": 1,\n        \"farm\": 1,\n        \"warehouse\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/offer-requests/accept-offer-request",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"offer-requests",
+								"accept-offer-request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rejectOfferRequest",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjYyOTY1Nzg3LCJleHAiOjE2NjU1NTc3ODd9.fzh9ofUs7ApMJ3YPWKKCliycPsM5lk9bGq_vXwLMCUQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"quantity\": 6,\n        \"product\": 1,\n        \"farm\": 1,\n        \"warehouse\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/offer-requests/accept-offer-request",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"offer-requests",
+								"accept-offer-request"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "document",
+			"item": [
+				{
+					"name": "create document",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNjU4NzMzNDEzLCJleHAiOjE2NjEzMjU0MTN9.LweUULBZBEhhvJthgC33BEGqcHrunrLG7sEWTdUJOBk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "files.url",
+									"type": "file",
+									"src": "/Users/ahmedelsabagh/Downloads/WhatsApp Image 2021-09-06 at 22.14.58.jpeg"
+								},
+								{
+									"key": "data",
+									"value": "{\"documentType\":\"FARMER_LICENSE\", \"entityType\": \"FARM\", \"entityId\": \"10\" }",
+									"type": "text"
+								},
+								{
+									"key": "documentType",
+									"value": "FARMER_LICENSE",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/documents?populate=*",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"documents"
+							],
+							"query": [
+								{
+									"key": "populate",
+									"value": "*"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a document",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "list all documents",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Balance",
+			"item": [
+				{
+					"name": "list all offers Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDUsImlhdCI6MTY1OTk0NjMxMSwiZXhwIjoxNjYyNTM4MzExfQ.X7L-APkngtaMEK8iwST2XLq5GBtw-zavOpqgMqZAqt4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/offers?pagination[page]=0&pagination[pageSize]=10&populate=warehouse,user,product.image",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"offers"
+							],
+							"query": [
+								{
+									"key": "pagination[page]",
+									"value": "0"
+								},
+								{
+									"key": "pagination[pageSize]",
+									"value": "10"
+								},
+								{
+									"key": "populate",
+									"value": "warehouse,user,product.image"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "register user",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstName",
+									"value": "internal6",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "test11@test.com",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "test11@test.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "attachmentsMetadata",
+									"value": "[{\"documentType\":\"EID\"}, {\"documentType\":\"EID\"}]",
+									"type": "text"
+								},
+								{
+									"key": "farmAddress",
+									"value": "Ajman",
+									"type": "text"
+								},
+								{
+									"key": "farmNumber",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "farmArea",
+									"value": "231.32",
+									"type": "text"
+								},
+								{
+									"key": "farmName",
+									"value": "Test farms5321",
+									"type": "text"
+								},
+								{
+									"key": "files.farm",
+									"type": "file",
+									"src": [
+										"/Users/ahmedelsabagh/Downloads/IMG_2210.heic",
+										"/Users/ahmedelsabagh/Downloads/IMG_2209.HEIC"
+									]
+								},
+								{
+									"key": "files.farmer",
+									"type": "file",
+									"src": [
+										"/Users/ahmedelsabagh/Downloads/20211202_163849.jpg",
+										"/Users/ahmedelsabagh/Downloads/20211207_113223.jpg"
+									]
+								},
+								{
+									"key": "farmerDocumentsMetadata",
+									"value": "[{\"documentType\":\"EID\"}, {\"documentType\":\"EID\"}]",
+									"type": "text"
+								},
+								{
+									"key": "farmDocumentsMetadata",
+									"value": "[{\"documentType\":\"EID\"}, {\"documentType\":\"EID\"}]",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/register-user",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"register-user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

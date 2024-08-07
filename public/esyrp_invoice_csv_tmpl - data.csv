@@ -1,0 +1,4 @@
+invoice_no,invoice_date,invoice_payment,invoice_cod_flag,invoice_can_be_partial_flag,invoice_delivery_only_flag,customer_code,customer_name,customer_address,customer_telephone,customer_city,customer_zipcode,product_barcode,product_sku,product_name,product_unit,product_price,product_qty
+ABC/123/2022,16/07/2022,CASH,1,0,0,T0001,TESTING IMPORT,TESTING IMPORT,TESTING IMPORT,TESTING IMPORT,0000,B0000000001,B0003,Barang 3,Pcs,50000,5
+ABC/123/2022,16/07/2022,CASH,1,0,0,T0001,TESTING IMPORT,TESTING IMPORT,TESTING IMPORT,TESTING IMPORT,0000,B0000000001,SKU002,Barang 2,Pcs,10000,2
+ABC/124/2022,16/07/2022,CASH,1,0,0,T0002,Testing Customer 2,Testing Customer 2,Testing Customer 2,Testing Customer 2,0000,B0000000001,B0003,Barang 3,Pcs,50000,10

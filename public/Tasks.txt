@@ -1,0 +1,10 @@
+HABILIBAR WISE INFO - Ya
+
+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
+
+* Resolver problema wise, Hacer Unit Testing
+* Proponer migracion a Next
+* Crear sistema NFT (Propuesta para Javier)
+* Hacer Test en Transactions y Refactor
+
+jhonthan

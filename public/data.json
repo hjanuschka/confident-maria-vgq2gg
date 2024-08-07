@@ -1,0 +1,26 @@
+[
+    {
+        "event":"custom_event",
+        "event_category":"header",
+        "event_action":"click",
+        "event_label":"home"
+    },
+    {   "event":"custom_event",
+        "event_category":"header",
+        "event_action":"click",
+        "event_label":"banner"
+    },
+    {
+        "event":"custom_event",
+        "event_category":"header",
+        "event_action":"click",
+        "event_label":"credit_card"
+    },
+    {
+        "event":"custom_event",
+        "event_category":"header",
+        "event_action":"click",
+        "event_label":"personal_loan"
+    }
+]
+

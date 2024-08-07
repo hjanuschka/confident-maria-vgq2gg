@@ -1,0 +1,18 @@
+
+Remove previous version using tool uninstaller
+
+- Install.
+
+- patch.bat
+
+Changes done:
+
+- Pro version that allows unlimited accounts. All Pro version restrictions have been unlocked.
+
+* After some time of use the mail client will try to authorize if your license was verified. To fix this you have the following options:
+
+* Copy empty folders.dat from Crack folder into the following path and replace it:
+
+C:\Users\PcName\AppData\Roaming\eM Client\Local Folders
+
+or basically delete the existing one. Tried both ways and authorize verification thing solved without issues.

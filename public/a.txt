@@ -1,0 +1,58 @@
+@use '../dawn/section-footer.css';
+
+.footer-block--newsletter {
+    background-color: #3478B8 ;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+
+    .footer-block__newsletter {
+        display: flex;
+        justify-content: space-between;
+        padding: 28px 36px;
+    }
+
+    .footer_newletter-text-content {
+        text-align: left;
+        width: 100%;
+
+        .footer-block__heading {
+            font-size: calc(var(--font-heading-scale)*1.99rem);
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-block__description {
+            margin: 0;
+        }
+    }
+
+    .newsletter-form__field-wrapper {
+        max-width: 100%;
+    }
+}
+
+.footer-block__details-content {
+    .list-menu__item {
+        text-decoration: none;
+        color: #8C8C8C;
+        font-weight: var(--font-body-weight);
+    }
+
+    .list-menu__item--active:hover {
+        text-decoration-thickness: unset;
+        color: #3478b8;
+        text-decoration: none;
+    }
+}
+
+.footer-block--menu {
+    .footer-block__heading {
+        font-size: calc(var(--font-heading-scale)*1.5rem);
+    }
+}
+
+.footer__content-top {
+    .footer__blocks-wrapper:last-child {
+        margin-top: 5rem;
+    }
+}
+

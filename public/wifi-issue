@@ -1,0 +1,12 @@
+https://askubuntu.com/questions/1005058/dpkg-error-while-installation-bcmwl-kernel-source-on-ubuntu-16-04
+
+How to mount iso file to media/cdrom directory?
+
+Create a directory to serve as the mount location:
+sudo mkdir /media/iso
+
+Mount the ISO in the target directory:
+sudo mount -o loop path/to/iso/file/YOUR_ISO_FILE.ISO /media/iso
+
+Unmount the ISO:
+sudo umount /media/iso

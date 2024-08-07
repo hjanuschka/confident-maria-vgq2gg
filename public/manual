@@ -1,0 +1,7 @@
+Comunicaçoes privadas:
+É criada a comunicação na bd "comunicacoes-privadas". Esta bd tem um atributo "toUserID", é aqui que fica o id do 
+destinatário selecionado pelo admin ao preencher o form. Na comunicaçaoPage é feito um get de todos os documentos cujo esse atributo "toUserID" é igual ao userID que está logged.
+
+Documentos:
+Ficheiros são colocados no bucket "bd-storage". Ao criar um ficheiro é tambem criado um documento na collection "storage-info" cujo id é igual ao id do ficheiro do bucket. Esta collection tem as informações assunto e texto.
+Na documentosPage ao ir buscar a informação à collection usamos o id para identificar o respetivo ficheiro. 
